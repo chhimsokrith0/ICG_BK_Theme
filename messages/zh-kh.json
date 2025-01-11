@@ -1,0 +1,20 @@
+{
+  "Home": "欢迎来到主页",
+  "homeTitle": "BK 主题",
+  "navbar": {
+    "Sports": "体育",
+    "E-Sports": "电子竞技",
+    "Casino": "赌场",
+    "Slots": "老虎机",
+    "Fishing": "捕鱼",
+    "4DGames": "4D 游戏",
+    "Lottery": "彩票",
+    "FastGames": "快速游戏",
+    "Promos": "促销",
+    "VIP": "VIP",
+    "rightMenu": {
+      "Joinnow": "立即加入",
+      "Login": "登录"
+    }
+  }
+}

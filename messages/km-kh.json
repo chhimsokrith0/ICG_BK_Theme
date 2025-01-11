@@ -1,0 +1,20 @@
+{
+    "Home": "សូមស្វាគមន៍មកកាន់ទំព័រដើម",
+    "homeTitle": "បៃខេ ស្បែកមុខ",
+    "navbar": {
+        "Sports": "កីឡា",
+        "E-Sports": "E-Sports",
+        "Casino": "កាស៊ីណូ",
+        "Slots": "ស្លុត",
+        "Fishing": "នេសាទ",
+        "4DGames": "ហ្គេម 4D",
+        "Lottery": "លូតទឹកប្រាក់",
+        "FastGames": "ហ្គេមលឿន",
+        "Promos": "ប្រូម៉ូសិន",
+        "VIP": "VIP",
+        "rightMenu": {
+            "Joinnow": "ចូលរួមឥឡូវនេះ",
+            "Login": "ចូលគណនី"
+        }
+    }
+}

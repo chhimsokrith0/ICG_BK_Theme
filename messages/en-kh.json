@@ -1,0 +1,20 @@
+{
+  "Home": "Welcome to the Home Page",
+  "homeTitle": "BK Theme",
+  "navbar": {
+    "Sports": "Sports",
+    "E-Sports": "E-Sports",
+    "Casino": "Casino",
+    "Slots": "Slots",
+    "Fishing": "Fishing",
+    "4DGames": "4D Games",
+    "Lottery": "Lottery",
+    "FastGames": "Fast Games",
+    "Promos": "Promos",
+    "VIP": "VIP",
+    "rightMenu": {
+      "Joinnow": "Join now",
+      "Login": "Log in"
+    }
+  }
+}
