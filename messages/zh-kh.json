@@ -1,13 +1,13 @@
 {
   "Home": "欢迎来到主页",
-  "homeTitle": "BK 主题",
+  "homeTitle": "BK主题",
   "navbar": {
     "Sports": "体育",
     "E-Sports": "电子竞技",
     "Casino": "赌场",
     "Slots": "老虎机",
     "Fishing": "捕鱼",
-    "4DGames": "4D 游戏",
+    "4DGames": "4D游戏",
     "Lottery": "彩票",
     "FastGames": "快速游戏",
     "Promos": "促销",
@@ -15,6 +15,100 @@
     "rightMenu": {
       "Joinnow": "立即加入",
       "Login": "登录"
+    }
+  },
+  "Games": {
+    "sports": {
+      "title": "体育",
+      "Header": {
+        "title": "体育博彩",
+        "subtitle": "享受世界级的在线体育博彩。",
+        "description": "最佳的体育博彩赔率尽在您指尖。"
+      },
+      "Tab": {
+        "BK8-Sports": "BK8-体育",
+        "Saba-Sports": "Saba-体育",
+        "Cmd-Sports": "Cmd-体育"
+      },
+      "BK8Sports": {
+        "header": {
+          "title": "BK8-体育",
+          "subtitle": "亚洲最受欢迎的在线体育博彩",
+          "description": "BK8体育是由市场领先的体育博彩平台BK8提供的体育博彩游戏。这家著名的在线体育博彩公司拥有数百名专业交易员和客户服务代表，全天24小时全年无休地工作，为全球玩家提供有竞争力的赔率和最广泛的体育活动选择。"
+        },
+        "button": {
+          "text": "立即游戏"
+        },
+        "image": {
+          "alt": "BK8体育横幅",
+          "url": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736604032/BTI_fhurso.jpg"
+        }
+      }
+    },
+    "saba-sports": {
+      "header": {
+        "title": "Saba-体育",
+        "subtitle": "亚洲最受欢迎的在线体育博彩",
+        "description": "Saba-Sports是由SABA体育博彩提供的体育博彩游戏。SABA体育博彩提供数千场现场比赛，例如Saba足球、篮球、网球、排球等，同时具有最快的定制化和最全面的技术支持。"
+      },
+      "button": {
+        "text": "立即游戏"
+      },
+      "accountSection": {
+        "title": "账户部分",
+        "copy": "复制",
+        "username": {
+          "label": "用户名",
+          "value": "-"
+        },
+        "password": {
+          "label": "密码",
+          "value": "-"
+        },
+        "downloadText": "下载Saba-Sports应用程序，享受精彩游戏"
+      },
+      "promotionSection": {
+        "title": "欢迎来到BK8!",
+        "description": "首次存款即可获得奖励积分！",
+        "info": "更多信息，请访问 https://www.bk33best88.asia/en-my/promotion",
+        "termsAndConditions": {
+          "title": "条款与条件：",
+          "items": [
+            "注册一个BK8账户。",
+            "所有首次存款的会员都有资格享受此促销活动。",
+            "会员需要存入体育钱包以领取奖金。",
+            "促销活动视供应情况而定，适用于所有上述的体育供应商。",
+            "奖金将在成功转账后存入您选择的体育供应商钱包。",
+            "除非另有说明，奖金在发放后30天内有效。",
+            "任何导致无效、平局、取消的投注，或在同一赛事中投注相反结果的行为将不计入有效流水。",
+            "已领取特定供应商促销的会员，在促销活动有效期间不得再次转入该供应商，除非完成流水要求或促销被取消。",
+            "所有客户优惠仅限每人、每家庭、每住址使用一次。",
+            "此促销活动不能与其他BK8促销活动同时使用。",
+            "BK8保留修改、取消、暂停或终止促销活动及/或更改促销条款的权利，恕不另行通知。",
+            "参与会员必须接受并遵守上述所有条款以及BK8网站上的所有条款。",
+            "参与会员必须接受并遵守上述所有条款以及BK8网站上相关的规则和规定。",
+            "BK8通用条款与条件适用。"
+          ]
+        }
+      },
+      "footerImage": {
+        "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736662687/IBC_amzgkv.jpg",
+        "alt": "Saba体育横幅"
+      }
+    },
+    "cmd368": {
+      "header": {
+        "title": "Cmd-体育",
+        "subtitle": "亚洲最受欢迎的在线体育博彩",
+        "description": "C-Sports是由CMD368提供的体育博彩游戏。CMD368为篮球、足球、电子竞技、高尔夫和羽毛球等体育赛事提供基于实时全球动态和市场热点的投注服务。"
+      },
+      "button": {
+        "text": "立即游戏"
+      },
+      "image": {
+        "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663006/CMD_yqy8ea.jpg",
+        "alt": "Cmd-体育横幅"
+      }
     }
   }
 }

@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
-import SportsDropdown from "./Dropdown/SportsDropdown"; // Assume this component renders the sports cards as shown in the image
+import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import SportsDropdown from "./Dropdown/SportsDropdown";
 import E_SportsDropdown from "./Dropdown/E_SportsDropdown";
 import CasinoDropdown from "./Dropdown/CasinoDropdown";
 import SlotsDropdown from "./Dropdown/SlotsDropdown";
@@ -10,51 +11,85 @@ import FourDDropdown from "./Dropdown/4DDropdown";
 import LotteryDropdown from "./Dropdown/LotteryDropdown";
 import FastGamesDropdown from "./Dropdown/FastGamesDropdown";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import "./style.css";
 
-export default function DesktopMenu() {
+export default function DesktopMenu({ locale }: { locale: string }) {
+    const pathname = usePathname();
     const t = useTranslations("navbar");
+
     const menuItems = [
-        { name: t("Sports"), categoryCode: "S", title: "Sports" },
-        { name: t("E-Sports"), categoryCode: "ES", title: "E-Sports" },
-        { name: t("Casino"), categoryCode: "C", title: "Casino" },
-        { name: t("Slots"), categoryCode: "SL", title: "Slots" },
-        { name: t("Fishing"), categoryCode: "F", title: "Fishing" },
-        { name: t("4DGames"), categoryCode: "G", title: "4D Games" },
-        { name: t("Lottery"), categoryCode: "L", title: "Lottery" },
-        { name: t("FastGames"), categoryCode: "FG", title: "Fast Games", isNew: true },
-        { name: t("Promos"), categoryCode: "Promotions", title: "Promos" },
-        { name: t("VIP"), categoryCode: "VIP", title: "VIP" },
+        { key: "sports", name: t("Sports"), link: `/${locale}/Games/sports` },
+        { key: "esports", name: t("E-Sports"), link: `/${locale}/Games/E-Sports` },
+        { key: "casino", name: t("Casino"), link: `/${locale}/Games/casino` },
+        { key: "slots", name: t("Slots"), link: `/${locale}/Games/slots` },
+        { key: "fishing", name: t("Fishing"), link: `/${locale}/Games/fishing` },
+        { key: "4d", name: t("4DGames"), link: `/${locale}/Games/4d` },
+        { key: "lottery", name: t("Lottery"), link: `/${locale}/Games/lottery` },
+        { key: "fastgames", name: t("FastGames"), link: `/${locale}/Games/fastgames`, isNew: true },
+        { key: "promos", name: t("Promos"), link: `/${locale}/Promotions` },
+        { key: "vip", name: t("VIP"), link: `/${locale}/VIP` },
     ];
 
-    const [hoveredItem, setHoveredItem] = useState(null);
+    const [activeItem, setActiveItem] = useState<string>("");
+    const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
-    const handleMouseEnter = (item: any) => {
-        setHoveredItem(item);
+    // Dynamically set active item based on the current pathname
+    useEffect(() => {
+        const matchedItem = menuItems.find((item) => pathname?.startsWith(item.link));
+        setActiveItem(matchedItem ? matchedItem.key : "");
+    }, [pathname, menuItems]);
+
+    const handleMouseEnter = (key: string) => {
+        setHoveredItem(key);
     };
 
     const handleMouseLeave = () => {
         setHoveredItem(null);
     };
 
+    const renderDropdown = (key: string) => {
+        switch (key) {
+            case "sports":
+                return <SportsDropdown />;
+            case "esports":
+                return <E_SportsDropdown />;
+            case "casino":
+                return <CasinoDropdown />;
+            case "slots":
+                return <SlotsDropdown />;
+            case "fishing":
+                return <FishingDropdown />;
+            case "4d":
+                return <FourDDropdown />;
+            case "lottery":
+                return <LotteryDropdown />;
+            case "fastgames":
+                return <FastGamesDropdown />;
+            default:
+                return null;
+        }
+    };
+
     return (
         <div className="relative">
             <ul className="menu-wrapper hidden md:flex items-center h-[80px] text-sm font-medium text-gray-700">
-                {menuItems.map((item, index) => (
+                {menuItems.map((item) => (
                     <li
-                        key={index}
-                        className={`navbar-item relative flex items-center h-full px-4 hover:text-blue-500 cursor-pointer ${
-                            hoveredItem === item.name ? "text-blue-500" : "text-black"
-                        }`}
-                        data-category-name={item.name}
-                        data-category-code={item.categoryCode}
-                        onMouseEnter={() => handleMouseEnter(item.name)}
+                        key={item.key}
+                        className={`navbar-item relative flex items-center h-full px-4 cursor-pointer ${activeItem === item.key
+                                ? "text-blue-500 font-bold border-b-2 border-blue-500"
+                                : "hover:text-blue-500 text-gray-600"
+                            }`}
+                        onMouseEnter={() => handleMouseEnter(item.key)}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <a className="headerLink flex items-center h-full" title={item.title}>
+                        <Link href={item.link} title={item.name}>
                             <div className="menu-item-title">
-                                <p className="m-0">{item.name}</p>
+                                <p className="menu-text m-0 whitespace-nowrap">{item.name}</p>
+
                             </div>
-                        </a>
+                        </Link>
                         {item.isNew && (
                             <div className="icon-container absolute top-[-20px] right-[-5px]">
                                 <img
@@ -64,45 +99,9 @@ export default function DesktopMenu() {
                                 />
                             </div>
                         )}
-                        {/* Render the dropdown only for the 'Sports' menu item */}
-                        {item.name === t("Sports") && hoveredItem === t("Sports") && (
+                        {hoveredItem === item.key && (
                             <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
-                                <SportsDropdown />
-                            </div>
-                        )}
-                        {item.name === t("E-Sports") && hoveredItem === t("E-Sports") && (
-                            <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
-                                <E_SportsDropdown />
-                            </div>
-                        )}
-                        {item.name === t("Casino") && hoveredItem === t("Casino") && (
-                            <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
-                                <CasinoDropdown />
-                            </div>
-                        )}
-                        {item.name === t("Slots") && hoveredItem === t("Slots") && (
-                            <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
-                                <SlotsDropdown />
-                            </div>
-                        )}
-                        {item.name === t("Fishing") && hoveredItem === t("Fishing") && (
-                            <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
-                                <FishingDropdown />
-                            </div>
-                        )}
-                        {item.name === t("4DGames") && hoveredItem === t("4DGames") && (
-                            <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
-                                <FourDDropdown />
-                            </div>
-                        )}
-                        {item.name === t("Lottery") && hoveredItem === t("Lottery") && (
-                            <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
-                                <LotteryDropdown />
-                            </div>
-                        )}
-                        {item.name === t("FastGames") && hoveredItem === t("FastGames") && (
-                            <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
-                                <FastGamesDropdown />
+                                {renderDropdown(item.key)}
                             </div>
                         )}
                     </li>

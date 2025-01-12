@@ -56,6 +56,8 @@ export default function Navbar({ locale }: { locale: string }) {
         return () => clearInterval(timer); // Cleanup interval on component unmount
     }, [timezone]);
 
+    
+
     return (
         <div className="bg-gradient-to-r from-blue-100 via-white to-blue-100 shadow-md">
             {/* Main Navbar */}
@@ -95,14 +97,15 @@ export default function Navbar({ locale }: { locale: string }) {
                     </Link>
 
                     {/* Navigation Links */}
-                    <DesktopMenu />
+                    
+                        <DesktopMenu locale={locale} />
                 </div>
 
                 {/* Right Section */}
                 <div className="flex items-center space-x-4">
                     {/* Date and Time */}
                     <div className="py-2 hidden md:flex justify-end px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-                        <div className="text-xs sm:text-sm font-medium text-gray-700 flex items-center space-x-2">
+                        <div className="text-xs sm:text-sm font-medium text-gray-700 flex items-center space-x-2 whitespace-nowrap">
                             {dateTime || (
                                 <div className="flex items-center space-x-2">
                                     <svg
@@ -142,7 +145,7 @@ export default function Navbar({ locale }: { locale: string }) {
                     </button>
 
                     {/* Language Dropdown */}
-                    <LanguageDropdown locale={locale} />
+                    <LanguageDropdown />
                 </div>
             </nav>
         </div>

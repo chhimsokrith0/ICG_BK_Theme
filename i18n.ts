@@ -6,7 +6,14 @@ import { notFound } from "next/navigation";
 const locales = [
   "km-kh",
   "en-kh",
-  "zh-kh"
+  "zh-kh",
+  "th-th",
+  "en-th",
+  "en-id",
+  "id-id",
+  "en-my",
+  "ms-my",
+  "zh-my",
 ];
 
 export default async function getRequestConfig() {

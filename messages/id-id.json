@@ -1,0 +1,114 @@
+{
+    "Home": "Selamat Datang di Halaman Utama",
+    "homeTitle": "Tema BK",
+    "navbar": {
+        "Sports": "Olahraga",
+        "E-Sports": "E-Sports",
+        "Casino": "Kasino",
+        "Slots": "Slot",
+        "Fishing": "Memancing",
+        "4DGames": "Permainan 4D",
+        "Lottery": "Lotre",
+        "FastGames": "Permainan Cepat",
+        "Promos": "Promosi",
+        "VIP": "VIP",
+        "rightMenu": {
+            "Joinnow": "Daftar Sekarang",
+            "Login": "Masuk"
+        }
+    },
+    "Games": {
+        "sports": {
+            "title": "Olahraga",
+            "Header": {
+                "title": "Sportsbook",
+                "subtitle": "Nikmati taruhan olahraga online kelas dunia.",
+                "description": "Peluang taruhan olahraga terbaik di ujung jari Anda."
+            },
+            "Tab": {
+                "BK8-Sports": "BK8-Olahraga",
+                "Saba-Sports": "Saba-Olahraga",
+                "Cmd-Sports": "Cmd-Olahraga"
+            },
+            "BK8Sports": {
+                "header": {
+                    "title": "BK8-Olahraga",
+                    "subtitle": "Sportsbook online paling terkemuka di Asia",
+                    "description": "BK8 Sports adalah permainan taruhan olahraga yang disediakan oleh sportsbook terkemuka, BK8. Sportsbook online terkenal ini memiliki tim profesional yang terdiri dari ratusan trader dan perwakilan layanan pelanggan yang bekerja 24 jam sehari sepanjang tahun untuk menyediakan peluang kompetitif dan berbagai macam olahraga serta aktivitas bagi pemain di seluruh dunia."
+                },
+                "button": {
+                    "text": "Main Sekarang"
+                },
+                "image": {
+                    "alt": "Banner BK8 Sports",
+                    "url": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736604032/BTI_fhurso.jpg"
+                }
+            }
+        },
+        "saba-sports": {
+            "header": {
+                "title": "Saba-Olahraga",
+                "subtitle": "Sportsbook online paling terkemuka di Asia",
+                "description": "Saba-Sports adalah permainan taruhan olahraga yang disediakan oleh SABA sportsbook. SABA sportsbook menawarkan ribuan pertandingan langsung, seperti Saba-soccer, bola basket, tenis, bola voli, dan lainnya, dengan kustomisasi tercepat dan dukungan teknis yang paling komprehensif."
+            },
+            "button": {
+                "text": "Main Sekarang"
+            },
+            "accountSection": {
+                "title": "Bagian Akun",
+                "copy": "Salin",
+                "username": {
+                    "label": "Nama Pengguna",
+                    "value": "-"
+                },
+                "password": {
+                    "label": "Kata Sandi",
+                    "value": "-"
+                },
+                "downloadText": "Unduh Aplikasi Saba-Sports dan nikmati permainan yang seru"
+            },
+            "promotionSection": {
+                "title": "Selamat Datang di BK8!",
+                "description": "Lakukan deposit pertama Anda dan dapatkan kredit bonus sekarang!",
+                "info": "Untuk informasi lebih lanjut, silakan kunjungi https://www.bk33best88.asia/en-my/promotion",
+                "termsAndConditions": {
+                    "title": "Syarat & Ketentuan:",
+                    "items": [
+                        "Daftarkan akun di BK8.",
+                        "Semua anggota yang melakukan deposit pertama berhak atas promosi ini.",
+                        "Anggota diwajibkan untuk melakukan deposit ke dompet olahraga untuk mengklaim bonus.",
+                        "Promosi tergantung pada ketersediaan. Berlaku untuk semua penyedia olahraga yang disebutkan.",
+                        "Bonus akan dikreditkan ke Dompet Penyedia Olahraga yang Anda pilih setelah transfer dana berhasil.",
+                        "Bonus berlaku selama tiga puluh (30) hari setelah diterbitkan kecuali dinyatakan lain.",
+                        "Taruhan yang dibatalkan, seri, void, atau taruhan di sisi berlawanan dengan hasil yang sama tidak akan dihitung sebagai turnover yang valid.",
+                        "Anggota yang telah mengklaim promosi untuk penyedia tertentu tidak diperbolehkan melakukan transfer kedua ke penyedia yang sama saat promosi aktif, kecuali jika telah memenuhi syarat turnover atau promosi dibatalkan.",
+                        "Semua penawaran pelanggan dibatasi untuk satu orang, keluarga, rumah tangga, atau alamat yang sama.",
+                        "Promosi ini tidak dapat digunakan bersamaan dengan promosi BK8 lainnya.",
+                        "BK8 berhak untuk mengubah, membatalkan, menangguhkan, atau mengakhiri promosi dan/atau mengubah syarat promosi kapan saja tanpa pemberitahuan sebelumnya.",
+                        "Anggota yang berpartisipasi harus menerima dan mematuhi semua syarat yang disebutkan di atas dan yang ada di situs web BK8.",
+                        "Anggota yang berpartisipasi harus menerima dan mematuhi semua syarat yang disebutkan di atas serta semua aturan dan regulasi yang relevan yang tercantum di situs web BK8.",
+                        "Syarat & Ketentuan umum BK8 berlaku."
+                    ]
+                }
+            },
+            "footerImage": {
+                "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736662687/IBC_amzgkv.jpg",
+                "alt": "Banner Saba Sports"
+            }
+        },
+        "cmd368": {
+            "header": {
+                "title": "Cmd-Olahraga",
+                "subtitle": "Sportsbook online paling terkemuka di Asia",
+                "description": "C-Sports adalah permainan taruhan olahraga yang disediakan oleh CMD368 sportsbook. CMD368 menawarkan layanan taruhan untuk acara olahraga berdasarkan dinamika global waktu nyata dan topik populer di pasar, termasuk tetapi tidak terbatas pada bola basket, sepak bola, eSports, golf, dan bulu tangkis."
+            },
+            "button": {
+                "text": "Main Sekarang"
+            },
+            "image": {
+                "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663006/CMD_yqy8ea.jpg",
+                "alt": "Banner Cmd-Sports"
+            }
+        }
+    }
+}

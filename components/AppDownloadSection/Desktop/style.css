@@ -1,0 +1,141 @@
+/* AppDownloadSection.css */
+
+/* Section Styling */
+.app-landing-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.app-landing-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Left Container */
+.left-container {
+    flex: 1;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtitle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.subtitle p {
+    margin: 0;
+}
+
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.app-icon {
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+.description {
+    margin-top: 1rem;
+    color: #555;
+}
+
+/* App Download Links */
+.app-download-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.download-item {
+    text-align: center;
+}
+
+.qr-code {
+    width: 6rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.os-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.os-logo {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.instruction-link {
+    color: #007bff;
+    font-size: 0.8rem;
+}
+
+/* Right Container */
+.right-container {
+    flex: 1;
+    position: relative;
+}
+
+.phone-container {
+    width: 100%;
+    max-width: 466px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+/* Features Grid */
+.features-grid {
+    position: absolute;
+    top: 0;
+    right: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.feature-box {
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.feature-desc {
+    font-size: 0.8rem;
+}

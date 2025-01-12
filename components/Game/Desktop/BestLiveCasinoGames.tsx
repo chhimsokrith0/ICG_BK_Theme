@@ -55,7 +55,7 @@ const BestLiveCasinoGames = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
             {
@@ -89,7 +89,7 @@ const BestLiveCasinoGames = () => {
 
     return (
         <motion.section
-            className="best-live-casino-section mx-auto max-w-[1400px]"
+            className="best-live-casino-section mx-auto max-w-[1400px] px-4 md:px-8 py-8"
             initial="hidden"
             animate="visible"
             variants={{
@@ -98,7 +98,9 @@ const BestLiveCasinoGames = () => {
             }}
         >
             <div className="flex justify-between items-center mb-6">
-                <h2 className="text-3xl font-bold text-gray-900">Best Live Casino Games</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                    Best Live Casino Games
+                </h2>
                 <a href="#" className="text-blue-500 hover:underline text-sm font-medium">
                     See all
                 </a>
@@ -124,12 +126,13 @@ const BestLiveCasinoGames = () => {
                             <img
                                 src={game.image}
                                 alt={game.name}
-                                className="w-full h-[160px] object-cover transition-transform duration-300 transform group-hover:scale-105"
+                                className="w-full h-[160px] md:h-[200px] object-cover transition-transform duration-300 transform group-hover:scale-105"
                             />
                             {game.label && (
                                 <div
-                                    className={`absolute top-2 left-2 ${game.label === "New" ? "bg-red-500" : "bg-orange-500"
-                                        } text-white px-3 py-1 rounded-full text-xs font-bold shadow`}
+                                    className={`absolute top-2 left-2 ${
+                                        game.label === "New" ? "bg-red-500" : "bg-orange-500"
+                                    } text-white px-3 py-1 rounded-full text-xs font-bold shadow`}
                                 >
                                     {game.label}
                                 </div>

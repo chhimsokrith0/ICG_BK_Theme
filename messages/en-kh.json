@@ -16,5 +16,99 @@
       "Joinnow": "Join now",
       "Login": "Log in"
     }
+  },
+  "Games": {
+    "sports": {
+      "title": "Sports",
+      "Header": {
+        "title": "Sportsbook",
+        "subtitle": "Enjoy world-class online sports betting.",
+        "description": "The best sportsbook betting odds at your fingertips."
+      },
+      "Tab": {
+        "BK8-Sports": "BK8-Sports",
+        "Saba-Sports": "Saba-Sports",
+        "Cmd-Sports": "Cmd-Sports"
+      },
+      "BK8Sports": {
+        "header": {
+          "title": "BK8-Sports",
+          "subtitle": "Most reputable online sportsbook in Asia",
+          "description": "BK8 Sports is a sport-betting game provided by the market-leading sportsbook, BK8. The renowned online sportsbook has dedicated teams of hundreds of professional traders and customer service representatives that work 24 hours a day year-round to provide competitive odds and the widest variety of sports and activities possible for players around the globe."
+        },
+        "button": {
+          "text": "Play Now"
+        },
+        "image": {
+          "alt": "BK8 Sports Banner",
+          "url": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736604032/BTI_fhurso.jpg"
+        }
+      }
+    },
+    "saba-sports": {
+      "header": {
+        "title": "Saba-Sports",
+        "subtitle": "Most reputable online sportsbook in Asia",
+        "description": "Saba-Sports is a sport-betting game provided by SABA sportsbook. SABA sportsbook offers thousands of live games, such as Saba-soccer, basketball, tennis, volleyball, and more, featuring the fastest customization and the most comprehensive technical support."
+      },
+      "button": {
+        "text": "Play Now"
+      },
+      "accountSection": {
+        "title": "Account Section",
+        "copy": "Copy",
+        "username": {
+          "label": "Username",
+          "value": "-"
+        },
+        "password": {
+          "label": "Password",
+          "value": "-"
+        },
+        "downloadText": "Download Saba-Sports App and enjoy exciting games"
+      },
+      "promotionSection": {
+        "title": "Welcome to BK8!",
+        "description": "Make your first deposit and get the bonus credits now!",
+        "info": "For more information, kindly refer to https://www.bk33best88.asia/en-my/promotion",
+        "termsAndConditions": {
+          "title": "Terms & Conditions:",
+          "items": [
+            "Register an account with BK8.",
+            "All first deposit members are entitled to this promotion.",
+            "Members are required to deposit into the Sports wallet to claim the bonus.",
+            "Promotion is subject to availability. Applicable to all aforementioned sports providers.",
+            "Bonus will be credited to your chosen Sports Provider Wallet after a successful fund transfer.",
+            "Bonuses are valid for thirty (30) days upon issuance unless stated otherwise.",
+            "Any bets resulting in void, tie, cancelled, or made on opposite sides with the same outcome will not be counted as a valid turnover.",
+            "Members who claimed the promotion for a certain provider are not allowed to make a second transfer to the same provider while the promotion is active, EXCEPT FOR members who achieved the turnover requirement or the promotion is cancelled.",
+            "All customer offers are limited to one per person, family, household, or shared address.",
+            "This promotion cannot be used in conjunction with other BK8 promotions.",
+            "BK8 reserves the right to modify, cancel, suspend or terminate the promotion and/or change the terms of the promotion at any time without prior notice.",
+            "Participating members must accept and comply with all terms mentioned above and those on the BK8 website.",
+            "Participating members must accept and comply with all the terms mentioned above as well as all relevant and rules and regulations stated on the BK8 website.",
+            "General BK8 Terms & Conditions apply."
+          ]
+        }
+      },
+      "footerImage": {
+        "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736662687/IBC_amzgkv.jpg",
+        "alt": "Saba Sports Banner"
+      }
+    },
+    "cmd368": {
+      "header": {
+        "title": "Cmd-Sports",
+        "subtitle": "Most reputable online sportsbook in Asia",
+        "description": "C-Sports is a sport-betting game provided by CMD368 sportsbook. CMD368 sportsbook offers betting service for sports events based on real-time global dynamics and market hot topics, including but not limited to basketball, football, eSports, golf, and badminton."
+      },
+      "button": {
+        "text": "Play Now"
+      },
+      "image": {
+        "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663006/CMD_yqy8ea.jpg",
+        "alt": "Cmd-Sports Banner"
+      }
+    }
   }
 }

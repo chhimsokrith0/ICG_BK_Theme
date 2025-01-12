@@ -1,0 +1,15 @@
+/* Add this CSS to your global stylesheet or as a scoped CSS module */
+
+/* Default - Desktop */
+.responsive-height {
+    height: auto; /* Default height for desktop */
+    max-height: none; /* Allow height to adjust */
+}
+
+/* Mobile - Max height 200px */
+@media (max-width: 768px) {
+    .responsive-height {
+        height: auto; /* Maintain responsiveness */
+        max-height: 200px; /* Restrict height on small screens */
+    }
+}

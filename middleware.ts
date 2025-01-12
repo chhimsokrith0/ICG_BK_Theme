@@ -4,7 +4,7 @@ import createMiddleware from "next-intl/middleware";
 export default createMiddleware({
   // List of supported locales
   locales: [
-    "en-kh", "km-kh", "zh-kh"
+    "en-kh", "km-kh", "zh-kh", "th-th", "en-th", "en-id", "id-id", "en-my", "ms-my", "zh-my",
   ],
   defaultLocale: "en", // Default locale
 });
@@ -14,7 +14,7 @@ export const config = {
   matcher: [
     "/",
     "/((?!api|_next|favicon.ico).*)", // Exclude API routes, assets, and favicon
-    "/(en-kh|km-kh|zh-kh)/:path*", // Include localized paths
+    "/(en-kh|km-kh|zh-kh|th-th|en-th|en-id|id-id|en-my|ms-my|zh-my)/:path*", // Include localized paths
   ],
 };
 

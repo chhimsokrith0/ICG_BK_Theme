@@ -72,6 +72,26 @@ export default function PromoCarousel() {
                 <FaArrowRight className="text-blue-500 w-5 h-5" />
             </CustomArrow>
         ),
+        responsive: [
+            {
+                breakpoint: 1024, // Screens smaller than 1024px
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 768, // Screens smaller than 768px
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480, // Screens smaller than 480px
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     };
 
     return (
@@ -85,7 +105,7 @@ export default function PromoCarousel() {
                         <img
                             src={promo.src}
                             alt={promo.alt}
-                            className="rounded-md shadow-lg object-cover"
+                            className="rounded-md shadow-lg object-cover w-full max-h-40 sm:max-h-48 md:max-h-64 lg:max-h-80"
                         />
                     </div>
                 ))}

@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
@@ -6,13 +5,9 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { useRouter, usePathname } from "next/navigation";
-import "./style.css"
+import "./style.css";
 
-interface LanguageDropdownProps {
-  locale: string;
-}
-
-const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ locale }) => {
+const LanguageDropdown = () => {
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState({
@@ -28,7 +23,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ locale }) => {
       name: "Thailand",
       languageOptions: [
         { name: "English", code: "en-th", link: "/en-th" },
-        { name: "ไทย", code: "th", link: "/th" },
+        { name: "ไทย", code: "th-th", link: "/th-th" },
       ],
       flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640313/th_byfrmv.png",
     },
@@ -36,7 +31,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ locale }) => {
       name: "Indonesia",
       languageOptions: [
         { name: "English", code: "en-id", link: "/en-id" },
-        { name: "Bhs Indonesia", code: "id", link: "/id" },
+        { name: "Bhs Indonesia", code: "id-id", link: "/id-id" },
       ],
       flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/indo_nh6l9k.png",
     },
@@ -187,13 +182,17 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ locale }) => {
       "flag": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640311/canada_rrkhgu.webp",
     }
   ];
+
   // Toggle dropdown visibility
   const toggleDropdown = () => {
     setIsDropdownOpen((prev) => !prev);
   };
 
   // Handle language change
-  const handleLanguageChange = (language: { name: string; flag: string }, link: string) => {
+  const handleLanguageChange = (
+    language: { name: string; flag: string },
+    link: string
+  ) => {
     setSelectedLanguage({ name: language.name, flag: language.flag });
     router.push(link);
     setIsDropdownOpen(false);
@@ -204,7 +203,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ locale }) => {
     const findActiveLanguage = () => {
       for (const lang of languages) {
         for (const option of lang.languageOptions) {
-          if (pathname === option.link) {
+          if (pathname?.startsWith(option.link)) {
             setSelectedLanguage({ name: lang.name, flag: lang.flag });
             return;
           }
@@ -259,9 +258,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ locale }) => {
 
       {/* Dropdown Menu */}
       {isDropdownOpen && (
-        <div
-          className="absolute right-0 mt-2 bg-white border border-gray-200 shadow-lg rounded-lg w-64 z-10 max-h-96 overflow-y-auto custom-scrollbar"
-        >
+        <div className="absolute right-0 mt-2 bg-white border border-gray-200 shadow-lg rounded-lg w-64 z-10 max-h-96 overflow-y-auto custom-scrollbar">
           <ul>
             {languages.map((lang) => (
               <li key={lang.name} className="p-4">
@@ -282,7 +279,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ locale }) => {
                             onClick={() =>
                               handleLanguageChange(lang, option.link)
                             }
-                            className={`hover:text-blue-500 cursor-pointer ${pathname === option.link
+                            className={`hover:text-blue-500 cursor-pointer ${pathname?.startsWith(option.link)
                                 ? "text-blue-600 font-semibold"
                                 : ""
                               }`}
@@ -301,7 +298,6 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ locale }) => {
         </div>
       )}
     </div>
-
   );
 };
 

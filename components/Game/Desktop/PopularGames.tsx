@@ -111,53 +111,53 @@ const PopularGames = () => {
 
     return (
         <motion.section
-            className="hot-games-section mx-auto max-w-[1400px]"
+            className="popular-games-section mx-auto max-w-[1400px] px-4 md:px-8 py-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
         >
             <div className="flex justify-between items-center mb-6">
-                <h2 className="text-3xl font-bold text-gray-900">Popular Games We Love</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Popular Games We Love</h2>
                 <a href="#" className="text-blue-500 hover:underline text-sm font-medium">
                     See all
                 </a>
             </div>
-            <Slider {...settings} className="hot-games-slider">
+            <Slider {...settings} className="popular-games-slider">
                 {games.map((game, index) => (
                     <motion.div
                         key={game.id}
-                        className="hot-game-container p-2"
+                        className="game-container p-2"
                         custom={index}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={fadeIn}
                     >
-                        <div className="hot-game-img-wrapper relative group overflow-hidden rounded-lg shadow-lg">
+                        <div className="game-img-wrapper relative group overflow-hidden rounded-lg shadow-lg">
                             <img
                                 src={game.image}
                                 alt={game.name}
-                                className="w-full h-[160px] object-cover transition-transform transform group-hover:scale-105 duration-300"
+                                className="w-full h-[160px] md:h-[200px] lg:h-[240px] object-cover transition-transform transform group-hover:scale-105 duration-300"
                             />
                             {game.label && (
                                 <div className="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md">
                                     {game.label}
                                 </div>
                             )}
-                            <div className="btn-container  absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <button className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
+                            <div className="btn-container absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button className="bg-yellow-500 text-black px-4 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
                                     Play
                                 </button>
-                                <button className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
+                                <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
                                     Demo
                                 </button>
                             </div>
                         </div>
-                        <div className="hot-game-content mt-4 text-center">
-                            <h3 className="text-lg font-semibold text-gray-900">{game.name}</h3>
+                        <div className="game-content mt-4 text-center">
+                            <h3 className="text-base md:text-lg font-semibold text-gray-900">{game.name}</h3>
                             <p className="text-sm text-gray-600">{game.type}</p>
                             <p className="text-sm text-blue-600 font-bold">
-                                RTP <span>{game.rtp}</span>
+                                RTP <span>{game.rtp}%</span>
                             </p>
                         </div>
                     </motion.div>
