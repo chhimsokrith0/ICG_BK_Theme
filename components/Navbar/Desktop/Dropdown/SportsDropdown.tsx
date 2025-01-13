@@ -1,5 +1,3 @@
-
-
 import React from "react";
 
 export default function SportsDropdown() {
@@ -37,7 +35,6 @@ export default function SportsDropdown() {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 }
