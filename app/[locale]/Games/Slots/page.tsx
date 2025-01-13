@@ -1,9 +1,8 @@
-const page = () => {
-    return (
-        <div>
-            <h1>Slots</h1>
-        </div>
-    )
-}
+import React from 'react';
+import Nextspin from './nextspin/page'; // Make sure to capitalize the component name
 
-export default page
+const Page = () => {
+    return <Nextspin />;
+};
+
+export default Page;
