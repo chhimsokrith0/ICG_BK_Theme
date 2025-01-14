@@ -17,11 +17,20 @@ import BannerCarouselMobile from "./BannerCarousel/Mobile/BannerCarouselMobile";
 import JoinLoginButtons from "./BannerCarousel/Mobile/JoinLoginButtons";
 import AnnouncementBarMobile from "./AnnouncementBar/Mobile/AnnouncementBarMobile";
 import MobileMenuTab from "./Navbar/Mobile/MobileMenuTab";
+import PromoModal from "./PromoModal";
+import LuckyWheel from "./LuckyWheel";
+import LiveChatButton from "./LiveChatButton";
+import BackToTopButton from "./BackToTopButton";
 
 export default function HomeContent({ locale }: { locale: string }) {
     const t = useTranslations();
     return (
-        <div>
+        <div>  
+            <PromoModal />
+            <LuckyWheel />
+            <LiveChatButton />
+            <BackToTopButton />
+
             <div className="hidden lg:block">
                 <BannerCarousel />
                 <br />

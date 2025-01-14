@@ -23,7 +23,7 @@ export default function DesktopMenu({ locale }: { locale: string }) {
         { key: "esports", name: t("E-Sports"), link: `/${locale}/Games/E-Sports` },
         { key: "casino", name: t("Casino"), link: `/${locale}/Games/casino` },
         { key: "slots", name: t("Slots"), link: `/${locale}/Games/Slots` },
-        { key: "fishing", name: t("Fishing"), link: `/${locale}/Games/fishing` },
+        { key: "fishing", name: t("Fishing"), link: `/${locale}/Games/Fishing` },
         { key: "4d", name: t("4DGames"), link: `/${locale}/Games/4d` },
         { key: "lottery", name: t("Lottery"), link: `/${locale}/Games/lottery` },
         { key: "fastgames", name: t("FastGames"), link: `/${locale}/Games/fastgames`, isNew: true },

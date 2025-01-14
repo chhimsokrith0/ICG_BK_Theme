@@ -16,7 +16,7 @@ export default function BannerCarousel() {
     ];
 
     const settings = {
-        dots: true,
+        // dots: true,
         infinite: true,
         speed: 1200,
         slidesToShow: 1,
