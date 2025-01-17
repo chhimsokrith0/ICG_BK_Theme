@@ -19,8 +19,6 @@ import AnnouncementBarMobile from "./AnnouncementBar/Mobile/AnnouncementBarMobil
 import MobileMenuTab from "./Navbar/Mobile/MobileMenuTab";
 import PromoModal from "./PromoModal";
 import LuckyWheel from "./LuckyWheel";
-import LiveChatButton from "./LiveChatButton";
-import BackToTopButton from "./BackToTopButton";
 
 export default function HomeContent({ locale }: { locale: string }) {
     const t = useTranslations();
@@ -28,9 +26,6 @@ export default function HomeContent({ locale }: { locale: string }) {
         <div>  
             <PromoModal />
             <LuckyWheel />
-            <LiveChatButton />
-            <BackToTopButton />
-
             <div className="hidden lg:block">
                 <BannerCarousel />
                 <br />

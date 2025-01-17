@@ -135,14 +135,14 @@ export default function Navbar({ locale }: { locale: string }) {
                     </div>
 
                     {/* Log in Button */}
-                    <button className="text-sm font-medium whitespace-nowrap text-gray-700 hover:text-gray-900">
+                    <Link href={`/${locale}/login`} className="text-sm font-medium whitespace-nowrap text-gray-700 hover:text-gray-900">
                         {t("rightMenu.Login")}
-                    </button>
+                    </Link>
 
                     {/* Join Now Button */}
-                    <button className="bg-orange-500 text-white text-xs md:text-sm font-medium px-2 py-1 md:px-4 md:py-2 rounded-md whitespace-nowrap hover:bg-orange-600 shadow-md">
+                    <Link href={`/${locale}/register`} className="bg-orange-500 text-white text-xs md:text-sm font-medium px-2 py-1 md:px-4 md:py-2 rounded-md whitespace-nowrap hover:bg-orange-600 shadow-md">
                         {t("rightMenu.Joinnow")}
-                    </button>
+                    </Link>
 
                     {/* Language Dropdown */}
                     <LanguageDropdown />

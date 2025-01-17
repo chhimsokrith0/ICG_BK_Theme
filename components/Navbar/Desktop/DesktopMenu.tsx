@@ -19,12 +19,12 @@ export default function DesktopMenu({ locale }: { locale: string }) {
     const t = useTranslations("navbar");
 
     const menuItems = [
-        { key: "sports", name: t("Sports"), link: `/${locale}/Games/sports` },
-        { key: "esports", name: t("E-Sports"), link: `/${locale}/Games/E-Sports` },
-        { key: "casino", name: t("Casino"), link: `/${locale}/Games/casino` },
-        { key: "slots", name: t("Slots"), link: `/${locale}/Games/Slots` },
-        { key: "fishing", name: t("Fishing"), link: `/${locale}/Games/Fishing` },
-        { key: "4d", name: t("4DGames"), link: `/${locale}/Games/4d` },
+        { key: "sports", name: t("Sports"), link: `/${locale}/Games/sports/BK8Sports` },
+        { key: "esports", name: t("E-Sports"), link: `/${locale}/Games/E-Sports/TF-Gaming` },
+        { key: "casino", name: t("Casino"), link: `/${locale}/Games/casino/evolution-gaming` },
+        { key: "slots", name: t("Slots"), link: `/${locale}/Games/Slots/nextspin` },
+        { key: "fishing", name: t("Fishing"), link: `/${locale}/Games/Fishing/Spadegaming` },
+        { key: "4d", name: t("4DGames"), link: `/${locale}/Games/4d/granddragon` },
         { key: "lottery", name: t("Lottery"), link: `/${locale}/Games/lottery` },
         { key: "fastgames", name: t("FastGames"), link: `/${locale}/Games/fastgames`, isNew: true },
         { key: "promos", name: t("Promos"), link: `/${locale}/Promotions` },

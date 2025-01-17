@@ -1,7 +1,8 @@
+import Evolution_gaming from "./evolution-gaming/page";
 const page = () => {
-    return(
-        <div>Casino</div>
+    return (
+        <div className="max-w-[1400px] mx-auto"> <Evolution_gaming /> </div>
     )
 }
 
-export default page
+export default page;
