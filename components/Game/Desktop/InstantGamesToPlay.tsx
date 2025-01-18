@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 
 const InstantGamesToPlay = () => {
@@ -13,7 +13,19 @@ const InstantGamesToPlay = () => {
         { id: 6, name: "Mini Roulette", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505466/imgame12008_pyx0zr.png", label: "New" },
     ];
 
-    const settings = {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize(); // Initial check
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const sliderSettings = {
         dots: false,
         infinite: true,
         speed: 500,
@@ -43,42 +55,81 @@ const InstantGamesToPlay = () => {
                     See all
                 </a>
             </div>
-            <Slider {...settings} className="instant-games-slider">
-                {games.map((game) => (
-                    <div key={game.id} className="instant-game-container p-2">
-                        <div className="instant-game-img-wrapper relative group overflow-hidden rounded-lg shadow-md">
-                            <img
-                                src={game.image}
-                                alt={`Play ${game.name} from ${game.type}`}
-                                className="w-full h-[160px] md:h-[200px] object-cover"
-                            />
-                            {game.label && (
-                                <div className="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
-                                    {game.label}
+            {isMobile ? (
+                <div className="flex overflow-x-auto space-x-4 scrollbar-hide">
+                    {games.map((game) => (
+                        <div key={game.id} className="flex-none w-[40%] sm:w-[50%] md:w-[33%] lg:w-[20%]">
+                            <div className="instant-game-img-wrapper relative group overflow-hidden rounded-lg shadow-md">
+                                <img
+                                    src={game.image}
+                                    alt={`Play ${game.name} from ${game.type}`}
+                                    className="w-full h-[140px] object-cover"
+                                />
+                                {game.label && (
+                                    <div className="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
+                                        {game.label}
+                                    </div>
+                                )}
+                                <div className="btn-container absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <button
+                                        className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm"
+                                        aria-label={`Play ${game.name}`}
+                                    >
+                                        Play
+                                    </button>
+                                    <button
+                                        className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm"
+                                        aria-label={`Demo ${game.name}`}
+                                    >
+                                        Demo
+                                    </button>
                                 </div>
-                            )}
-                            <div className="btn-container absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <button
-                                    className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm"
-                                    aria-label={`Play ${game.name}`}
-                                >
-                                    Play
-                                </button>
-                                <button
-                                    className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm"
-                                    aria-label={`Demo ${game.name}`}
-                                >
-                                    Demo
-                                </button>
+                            </div>
+                            <div className="instant-game-content mt-4 text-center">
+                                <h3 className="text-base font-semibold text-gray-900">{game.name}</h3>
+                                <p className="text-sm text-gray-500">{game.type}</p>
                             </div>
                         </div>
-                        <div className="instant-game-content mt-4 text-center">
-                            <h3 className="text-base md:text-lg font-semibold text-gray-900">{game.name}</h3>
-                            <p className="text-sm text-gray-500">{game.type}</p>
+                    ))}
+                </div>
+            ) : (
+                <Slider {...sliderSettings} className="instant-games-slider">
+                    {games.map((game) => (
+                        <div key={game.id} className="instant-game-container p-2">
+                            <div className="instant-game-img-wrapper relative group overflow-hidden rounded-lg shadow-md">
+                                <img
+                                    src={game.image}
+                                    alt={`Play ${game.name} from ${game.type}`}
+                                    className="w-full h-[160px] md:h-[200px] object-cover"
+                                />
+                                {game.label && (
+                                    <div className="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
+                                        {game.label}
+                                    </div>
+                                )}
+                                <div className="btn-container absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <button
+                                        className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm"
+                                        aria-label={`Play ${game.name}`}
+                                    >
+                                        Play
+                                    </button>
+                                    <button
+                                        className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm"
+                                        aria-label={`Demo ${game.name}`}
+                                    >
+                                        Demo
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="instant-game-content mt-4 text-center">
+                                <h3 className="text-base font-semibold text-gray-900">{game.name}</h3>
+                                <p className="text-sm text-gray-500">{game.type}</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
+                    ))}
+                </Slider>
+            )}
         </section>
     );
 };

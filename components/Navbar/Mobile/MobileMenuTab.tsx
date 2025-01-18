@@ -21,41 +21,30 @@ const MobileMenuTab = () => {
     };
 
     return (
-        <div className="p-4">
+        <div className="p-4 bg-gray-50">
             {/* Tabs */}
-            <div className="mobile-menu-tab flex items-center space-x-4 overflow-x-scroll bg-gray-100 rounded-full shadow-md px-4 py-2 scrollbar-hide">
+            <div className="mobile-menu-tab flex items-center space-x-4 overflow-x-auto bg-white rounded-full shadow-md px-4 py-2 scrollbar-hide">
                 {menuItems.map((item) => (
                     <motion.div
                         key={item.id}
                         onClick={() => handleItemClick(item.id)}
-                        className={`menu-item relative flex items-center space-x-2 px-4 py-2 rounded-full cursor-pointer whitespace-nowrap ${activeItem === item.id ? "text-white" : "text-gray-600"
-                            }`}
+                        className={`menu-item relative flex items-center space-x-2 px-4 py-2 rounded-full cursor-pointer whitespace-nowrap transition-all ${
+                            activeItem === item.id ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white" : "bg-gray-100 text-gray-600"
+                        }`}
                         initial={{ scale: 1 }}
                         animate={activeItem === item.id ? { scale: 1.1 } : { scale: 1 }}
                         transition={{ duration: 0.3 }}
                     >
-                        {activeItem === item.id && (
-                            <motion.div
-                                className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full"
-                                layoutId="active-background"
-                                transition={{
-                                    type: "spring",
-                                    stiffness: 500,
-                                    damping: 30,
-                                }}
-                            />
-                        )}
                         <motion.img
                             src={item.icon}
                             alt={item.name}
-                            className={`w-5 h-5 z-10 ${activeItem === item.id ? "opacity-100" : "opacity-50"
-                                }`}
+                            className={`w-5 h-5 z-10 ${activeItem === item.id ? "opacity-100" : "opacity-50"}`}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.3 }}
                         />
                         <motion.p
-                            className="standard-SmallsubContent-font-size text-sm z-10 pr-2"
+                            className="standard-SmallsubContent-font-size text-sm z-10"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.3 }}

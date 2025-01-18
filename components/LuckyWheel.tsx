@@ -9,7 +9,8 @@ const LuckyWheel = () => {
     const [position, setPosition] = useState({ x: 0, y: window.innerHeight - 200 }); // Bottom-left corner
     const [dragging, setDragging] = useState(false);
 
-    const handleClose = () => {
+    const handleClose = (event: React.MouseEvent) => {
+        event.stopPropagation(); // Prevent triggering the Link click
         setIsVisible(false);
     };
 
@@ -63,14 +64,13 @@ const LuckyWheel = () => {
                     src="https://www.bk33best88.asia/public/html/default_whitelabel/shared-image/lucky_wheel/s2/floating-lucky-wheel.gif"
                     alt="floating-lucky-wheel"
                 />
-                <span
-                    className="close-btn absolute top-0 right-0 cursor-pointer bg-black rounded-full p-1 shadow-md"
-                    onClick={handleClose}
-                >
-                    <XMarkIcon className="w-5 h-5 text-white hover:text-white text-bold" /> {/* Adjust size & color */}
-                </span>
             </Link>
-
+            <span
+                className="close-btn absolute top-0 right-0 cursor-pointer bg-black rounded-full p-1 shadow-md"
+                onClick={handleClose}
+            >
+                <XMarkIcon className="w-10 h-10 text-white hover:text-white font-bold" />
+            </span>
         </div>
     );
 };

@@ -19,6 +19,7 @@ import AnnouncementBarMobile from "./AnnouncementBar/Mobile/AnnouncementBarMobil
 import MobileMenuTab from "./Navbar/Mobile/MobileMenuTab";
 import PromoModal from "./PromoModal";
 import LuckyWheel from "./LuckyWheel";
+import PromoMobile from "./promotion/PromoMobile";
 
 export default function HomeContent({ locale }: { locale: string }) {
     const t = useTranslations();
@@ -56,6 +57,10 @@ export default function HomeContent({ locale }: { locale: string }) {
                 <JoinLoginButtons />
                 <AnnouncementBarMobile />
                 <MobileMenuTab />
+                <PromoMobile />
+                <PopularGames />
+                <BestLiveCasinoGames />
+                <InstantGamesToPlay />
             </div>
 
         </div>
