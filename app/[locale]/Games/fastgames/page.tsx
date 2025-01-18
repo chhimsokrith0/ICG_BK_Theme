@@ -1,6 +1,7 @@
+import Spb from "./spb/page";
 const page = () => {
     return (
-        <div> Fast Games </div>
+        <div className="max-w-[1400px] mx-auto"> <Spb /> </div>
     )
 }
 export default page;

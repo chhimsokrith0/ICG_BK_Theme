@@ -27,8 +27,8 @@ export default function DesktopMenu({ locale }: { locale: string }) {
         { key: "4d", name: t("4DGames"), link: `/${locale}/Games/4d/granddragon` },
         { key: "lottery", name: t("Lottery"), link: `/${locale}/Games/lottery` },
         { key: "fastgames", name: t("FastGames"), link: `/${locale}/Games/fastgames`, isNew: true },
-        { key: "promos", name: t("Promos"), link: `/${locale}/Promotions` },
-        { key: "vip", name: t("VIP"), link: `/${locale}/VIP` },
+        { key: "promos", name: t("Promos"), link: `/${locale}/promotion` },
+        { key: "vip", name: t("VIP"), link: `/${locale}/vip` },
     ];
 
     const [activeItem, setActiveItem] = useState<string>("");
