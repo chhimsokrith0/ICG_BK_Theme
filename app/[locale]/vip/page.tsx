@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import VIPSection from "./VIPSection";
 import VIPTierSection from "./VIPTierSection";
 import HowItWorksSection from "./HowItWorksSection";
@@ -6,92 +6,50 @@ import VIPBenefitsTable from "./VIPBenefitsTable";
 import FAQAndTerms from "./FAQAndTerms";
 import ReferralSection from "./ReferralSection";
 import Testimonials from "./Testimonials";
+import BackgroundImageSection from './BackgroundImageSection';
 
 const VIPPage = () => {
     return (
-        <div className="relative">
+        <div className="relative bg-[#0b2134]">
             {/* Background Image */}
-            <div
-                className="relative h-screen bg-cover bg-center"
-                style={{
-                    backgroundImage: `url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1737192276/top-banner_mb0hvr.jpg')`, // Replace with your actual image URL
-                }}
-            >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-
-                {/* Text Content */}
-                <div className="absolute bottom-60 inset-0 flex flex-col items-start justify-center pl-16 md:pl-60 text-white space-y-4">
-                    <h2 className="text-lg font-medium uppercase">Supreme</h2>
-                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
-                        VIP Lounge
-                    </h1>
-                    <p className="text-sm md:text-base lg:text-lg leading-relaxed">
-                        BK8 is going to show you how great it is to be our VIP,
-                        <br />
-                        stay tuned for something awesome.
-                    </p>
-                </div>
-
-                {/* Footer Navigation */}
-                <div className="absolute bottom-[300px] left-60">
-                    <div className="flex space-x-4 text-gray-300">
-                        <a
-                            href="#about"
-                            className="bg-yellow-600 text-white py-1 px-4 rounded-full hover:bg-yellow-500 transition text-sm md:text-base"
-                        >
-                            About
-                        </a>
-                        <a
-                            href="#upgrade"
-                            className="hover:text-white transition text-sm md:text-base"
-                        >
-                            Upgrade
-                        </a>
-                        <a
-                            href="#benefits"
-                            className="hover:text-white transition text-sm md:text-base"
-                        >
-                            Benefits
-                        </a>
-                        <a
-                            href="#faq"
-                            className="hover:text-white transition text-sm md:text-base"
-                        >
-                            FAQ
-                        </a>
-                        <a
-                            href="#referral"
-                            className="hover:text-white transition text-sm md:text-base"
-                        >
-                            Referral
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
+            <BackgroundImageSection />
+            
             {/* VIP Section */}
-            <VIPSection />
+            <div className="px-4 md:px-16 lg:px-32">
+                <VIPSection />
 
-            {/* VIP Tier Section */}
-            <VIPTierSection />
+                {/* VIP Tier Section */}
+                <div className="mt-8">
+                    <VIPTierSection />
+                </div>
 
-            {/* How It Works Section */}
-            <HowItWorksSection />
+                {/* How It Works Section */}
+                <div className="mt-8">
+                    <HowItWorksSection />
+                </div>
 
-            {/* VIP Benefits Table */}
-            <VIPBenefitsTable />
+                {/* VIP Benefits Table */}
+                <div className="mt-8">
+                    <VIPBenefitsTable />
+                </div>
 
-            {/* FAQ and Terms */}
-            <FAQAndTerms />
+                {/* FAQ and Terms */}
+                <div className="mt-8">
+                    <FAQAndTerms />
+                </div>
 
-            {/* Referral Section */}
-            <ReferralSection />
+                {/* Referral Section */}
+                <div className="mt-8">
+                    <ReferralSection />
+                </div>
 
-            {/* Testimonials */}
-            <Testimonials />
+                {/* Testimonials */}
+                <div className="mt-8">
+                    <Testimonials />
+                </div>
+            </div>
         </div>
+
     );
 };
 

@@ -46,9 +46,18 @@ export function Testimonials() {
     centerPadding: "0",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // Tablet
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 768, // Mobile
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
           centerMode: false,
         },
       },

@@ -1,11 +1,11 @@
 const VIPBenefitsTable = () => {
     return (
-        <section className="bg-[#0b2134] py-16 px-4">
+        <section className="bg-[#0b2134] py-8 md:py-16 px-4">
             <div className="max-w-[1400px] mx-auto">
-                <div className="overflow-auto">
+                <div className="overflow-x-auto">
                     {/* Table Header */}
-                    <div className="grid grid-cols-6 items-center text-center font-semibold text-gray-500 bg-[#0d1f2c] py-4 border-b border-yellow-600">
-                        <div className="text-left pl-4 text-yellow-500">VIP Benefits</div>
+                    <div className="grid grid-cols-6 items-center text-center font-semibold text-gray-500 bg-[#0d1f2c] py-4 border-b border-yellow-600 min-w-[600px]">
+                        <div className="text-left pl-4 text-yellow-500 whitespace-nowrap">VIP Benefits</div>
                         <div>Bronze</div>
                         <div>Silver</div>
                         <div>Gold</div>
@@ -14,7 +14,7 @@ const VIPBenefitsTable = () => {
                     </div>
 
                     {/* Table Rows */}
-                    <div className="bg-gradient-to-r from-[#0d1f2c80] to-[#0b1b27] shadow-md text-gray-300">
+                    <div className="bg-gradient-to-r from-[#0d1f2c80] to-[#0b1b27] shadow-md text-gray-300 min-w-[600px]">
                         {[
                             {
                                 benefit: "Designated Account Manager",
