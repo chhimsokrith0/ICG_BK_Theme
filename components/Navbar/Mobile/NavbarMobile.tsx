@@ -16,6 +16,7 @@ const NavbarMobile = ({ locale }: { locale: string }) => {
   const closeDownloadPopup = () => {
     setIsDownloadPopupVisible(false);
   };
+  
 
   return (
     <nav className="mobile-navbar bg-white shadow-md fixed top-0 left-0 w-full z-50 sticky top-0 lg:z-[200]">
@@ -93,7 +94,7 @@ const NavbarMobile = ({ locale }: { locale: string }) => {
         </div>
 
         {/* App Notification Icon */}
-        <div className="app-icon relative">
+        <Link href="/download" className="app-icon relative">
           <img
             src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736586641/application_1285750_jyqswo.svg"
             alt="App Icon"
@@ -102,7 +103,7 @@ const NavbarMobile = ({ locale }: { locale: string }) => {
           <span className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center">
             1
           </span>
-        </div>
+        </Link>
       </div>
 
       {/* Dropdown Menu */}
