@@ -1,9 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useState } from 'react';
 import { motion } from "framer-motion";
+import AnnouncementModal from '../AnnouncementModal';
 
 export default function AnnouncementBar() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleModalToggle = () => {
+        setIsModalOpen(!isModalOpen);
+    };
     return (
         <section className="announcementBarSection bg-white text-black py-2 overflow-hidden border-b border-gray-200">
             <div className="annoucement-bar-component flex items-center justify-between max-w-[1200px] mx-auto px-4">
@@ -75,10 +81,12 @@ export default function AnnouncementBar() {
                 </div>
 
                 {/* More Button */}
-                <div className="more-btn text-xs sm:text-sm px-2 sm:px-4 text-blue-600 cursor-pointer">
+                <div onClick={handleModalToggle} className="more-btn text-xs sm:text-sm px-2 sm:px-4 text-blue-600 cursor-pointer">
                     More
                 </div>
             </div>
+             {/* Modal */}
+             {isModalOpen && <AnnouncementModal onClose={handleModalToggle} />}
         </section>
     );
 }

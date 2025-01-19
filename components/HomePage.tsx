@@ -20,6 +20,9 @@ import MobileMenuTab from "./Navbar/Mobile/MobileMenuTab";
 import PromoModal from "./PromoModal";
 import LuckyWheel from "./LuckyWheel";
 import PromoMobile from "./promotion/PromoMobile";
+import TestimonialsPage from "./TestimonialsPage/Mobile/TestimonialsPage";
+import BlogSection from "./LatestNews/Mobile/BlogSection";
+import AppPromoSection from "./AppDownloadSection/Mobile/AppPromoSection";
 
 export default function HomeContent({ locale }: { locale: string }) {
     const t = useTranslations();
@@ -61,6 +64,10 @@ export default function HomeContent({ locale }: { locale: string }) {
                 <PopularGames />
                 <BestLiveCasinoGames />
                 <InstantGamesToPlay />
+                <TestimonialsPage />
+                <BlogSection />
+                <AppPromoSection />
+                <PartnershipsAndAwards />
             </div>
 
         </div>

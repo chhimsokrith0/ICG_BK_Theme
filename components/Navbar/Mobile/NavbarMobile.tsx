@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import MobileMenu from "./MobileMenu";
 
 const NavbarMobile = ({ locale }: { locale: string }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ const NavbarMobile = ({ locale }: { locale: string }) => {
             <div className="flex items-center">
               <button
                 className="bg-blue-500 text-white px-4 py-2 text-sm rounded-lg font-medium shadow hover:bg-blue-600 transition"
-                onClick={() => alert("Redirecting to download page...")} // Replace with actual link logic
+                onClick={() => alert("Redirecting to download page...")}
               >
                 Download
               </button>
@@ -106,57 +107,7 @@ const NavbarMobile = ({ locale }: { locale: string }) => {
 
       {/* Dropdown Menu */}
       <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="menu-dropdown bg-white shadow-lg absolute top-full left-0 w-full px-6 py-4"
-          >
-            <ul className="space-y-4 text-center">
-              <li>
-                <a
-                  href="#"
-                  className="block text-gray-800 hover:text-blue-500 font-medium"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block text-gray-800 hover:text-blue-500 font-medium"
-                >
-                  Sports
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block text-gray-800 hover:text-blue-500 font-medium"
-                >
-                  Casino
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block text-gray-800 hover:text-blue-500 font-medium"
-                >
-                  Slots
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block text-gray-800 hover:text-blue-500 font-medium"
-                >
-                  Promotions
-                </a>
-              </li>
-            </ul>
-          </motion.div>
-        )}
+        {isMenuOpen && <MobileMenu onClose={() => setIsMenuOpen(false)} />}
       </AnimatePresence>
     </nav>
   );

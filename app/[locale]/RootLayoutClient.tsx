@@ -62,7 +62,7 @@ export default function RootLayoutClient({
             </header>
             <main>{children}</main>
             {!isLoginPage && !isRegisterPage && (
-              <div className="hidden lg:block">
+              <div >
                 <Footer locale={locale} />
               </div>
             )}
