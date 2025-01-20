@@ -8,15 +8,13 @@ import "./style.css"
 
 export default function BannerCarousel() {
     const banners = [
-        { id: 0, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483978/banner20250103034224969_pibm5o.webp", alt: "Banner 1" },
-        { id: 1, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483977/banner20241009083500289_m2co8o.webp", alt: "Banner 2" },
-        { id: 2, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483976/banner20240426091906333_gdlmpl.webp", alt: "Banner 3" },
-        { id: 3, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483977/banner20241024105658074_o0ifde.webp", alt: "Banner 4" },
-        { id: 4, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483976/banner20231013031432033_xxbz7e.jpg", alt: "Banner 5" },
+        { id: 0, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737360476/Artboard_3_jjazjg.png", alt: "Banner 1" },
+        { id: 1, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737360474/Artboard_1_2_arlpck.png", alt: "Banner 2" },
+        { id: 2, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737360473/Artboard_2_2_wctqre.png", alt: "Banner 3" },
     ];
 
     const settings = {
-        // dots: true,
+        dots: true,
         infinite: true,
         speed: 1200,
         slidesToShow: 1,
@@ -30,9 +28,13 @@ export default function BannerCarousel() {
             </div>
         ),
         customPaging: (i: number) => (
-            <div className="w-3 h-3 bg-gray-300 rounded-full hover:bg-blue-500"></div>
+            <div className="w-4 h-4 flex items-center justify-center">
+                <div className="w-2.5 h-2.5 bg-gray-400 rounded-full transition-all duration-300 hover:bg-blue-600 hover:scale-125"></div>
+            </div>
         ),
     };
+
+
 
     return (
         <div className="relative w-full">

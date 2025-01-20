@@ -1,48 +1,45 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
-
+// Promotions Data
 const promotions = [
   {
     title: '288% "Have You BK8?" Welcome Bonus',
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737186890/prm-20250103035940278_cyvfhw.jpg",
-    days: 72,
-    hours: 3,
-    minutes: 55,
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737186883/prm-20241129172928224_annfvi.jpg",
+    days: 70,
+    hours: 8,
+    minutes: 38,
     seconds: 46,
   },
   {
-    title: "Claim 88 Slots Free Spins",
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737186884/prm-20241212161834082_jzfryj.jpg",
-    days: 72,
-    hours: 3,
-    minutes: 56,
-    seconds: 14,
+    title: "Welcome Bonus",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737186415/prm-20241024064849544_iiobjq.jpg",
+    days: 70,
+    hours: 8,
+    minutes: 38,
+    seconds: 46,
   },
   {
-    title: "BK8 VIP Migration Program",
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737186883/prm-20241129172928224_annfvi.jpg",
-    days: 72,
-    hours: 3,
-    minutes: 56,
-    seconds: 14,
+    title: "Claim 188 Slots Free Spins",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737186415/prm-20240906095723085_cdgbab.jpg",
+    days: 69,
+    hours: 8,
+    minutes: 38,
+    seconds: 46,
   },
   {
-    title: "Lucky Wheel Spin: Login and Win Special Prizes",
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737186883/prm-20241129172133464_vptr5f.jpg",
-    days: 72,
-    hours: 3,
-    minutes: 56,
-    seconds: 14,
+    title: "CNY 2025 Snake Gold Bar Challenge",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737186414/prm-20240823030004959_k12y5c.jpg",
+    days: 20,
+    hours: 8,
+    minutes: 38,
+    seconds: 46,
   },
 ];
 
-// Countdown Component
+// Countdown Timer Component
 interface CountdownProps {
   days: number;
   hours: number;
@@ -80,23 +77,24 @@ const Countdown = ({ days, hours, minutes, seconds }: CountdownProps) => {
   }, []);
 
   return (
-    <div className="countdown-container flex items-center justify-between">
-      <div className="digit-box flex items-center">
-        <p className="text-xl font-bold mr-2">{time.days}</p>
-        <div className="time-box flex items-center">
-          <p className="text-lg">{time.hours}</p>
-          <span className="mx-1">:</span>
-          <p className="text-lg">{time.minutes}</p>
-          <span className="mx-1">:</span>
-          <p className="text-lg">{time.seconds}</p>
-        </div>
+    <div className="countdown-container flex items-center justify-between text-gray-800">
+      <div className="digit-box flex flex-col items-center">
+        <p className="digit-day text-lg font-bold">{time.days}</p>
+        <span className="desc-day text-xs text-gray-500">Day</span>
+      </div>
+      <div className="time-box flex items-center space-x-1">
+        <p className="time-hour text-lg font-bold">{time.hours}</p>
+        <span className="text-sm">:</span>
+        <p className="time-mins text-lg font-bold">{time.minutes}</p>
+        <span className="text-sm">:</span>
+        <p className="time-sec text-lg font-bold">{time.seconds}</p>
       </div>
     </div>
   );
 };
 
-// PromoCard Component
-interface Promo {
+// Promotion Card Component
+interface PromoType {
   title: string;
   image: string;
   days: number;
@@ -105,70 +103,44 @@ interface Promo {
   seconds: number;
 }
 
-const PromoCard = ({ promo }: { promo: Promo }) => (
-  <div className="promo-container bg-white rounded-lg shadow-lg mx-2 flex flex-col overflow-hidden">
-    <div className="promo-banner-images flex-grow">
+const PromoCard = ({ promo }: { promo: PromoType }) => (
+  <div className="promo-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 flex-shrink-0 w-80">
+    <div className="promo-banner-images">
       <img
         src={promo.image}
         alt={promo.title}
-        className="w-full h-36 md:h-40 object-cover"
-        loading="lazy"
-        onError={(e) => {
-          const img = e.target as HTMLImageElement;
-          img.onerror = null;
-          img.src = "/fallback-image.jpg"; // Fallback image
-        }}
+        className="promo-banner w-full object-cover sm:h-48 md:h-56 lg:h-64"
       />
     </div>
-    <div className="promo-content p-4 text-center">
-      <p className="text-base md:text-lg font-semibold mb-2">{promo.title}</p>
+    <div className="promo-content p-4">
+      <p className="promo-title text-sm sm:text-base font-semibold mb-2">
+        {promo.title}
+      </p>
       <Countdown {...promo} />
-      <button className="mt-4 bg-yellow-400 text-white py-2 px-4 rounded-lg hover:bg-yellow-500 transition">
+      <button className="promo-btn mt-4 bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600 transition">
         Login
       </button>
     </div>
   </div>
 );
 
-// PromoMobile Component
-const PromoMobile = () => {
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "20px",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerPadding: "10px",
-        },
-      },
-    ],
-  };
-
+// Main Promos & Rewards Component With Horizontal Slider
+const PromosRewards = () => {
   return (
-    <section className="mobile-latest-promo-section px-4 py-6">
-      <div className="mb-4 flex justify-between items-center">
-        <p className="text-base md:text-lg font-semibold">Latest Promotions</p>
-        <p className="text-sm text-blue-500 cursor-pointer">See all</p>
+    <section className="mobile-latest-promo-section w-full p-4 bg-gray-50">
+      <div className="homeTitleSection flex justify-between items-center mb-4">
+        <p className="homeTitle text-lg font-bold">Promos & Rewards</p>
+        <Link href="/promotion" className="seeAll text-sm text-blue-500 cursor-pointer hover:underline">
+          See all
+        </Link>
       </div>
-      <Slider {...settings}>
+      <div className="promo-slider flex overflow-x-auto space-x-4 scrollbar-hide">
         {promotions.map((promo, index) => (
           <PromoCard key={index} promo={promo} />
         ))}
-      </Slider>
+      </div>
     </section>
   );
 };
 
-export default PromoMobile;
+export default PromosRewards;

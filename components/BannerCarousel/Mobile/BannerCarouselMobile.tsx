@@ -7,11 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function BannerCarouselMobile() {
     const banners = [
-        { id: 0, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483978/banner20250103034224969_pibm5o.webp", alt: "Banner 1" },
-        { id: 1, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483977/banner20241009083500289_m2co8o.webp", alt: "Banner 2" },
-        { id: 2, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483976/banner20240426091906333_gdlmpl.webp", alt: "Banner 3" },
-        { id: 3, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483977/banner20241024105658074_o0ifde.webp", alt: "Banner 4" },
-        { id: 4, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736483976/banner20231013031432033_xxbz7e.jpg", alt: "Banner 5" },
+        { id: 0, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737360476/Artboard_3_jjazjg.png", alt: "Banner 1" },
+        { id: 1, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737360474/Artboard_1_2_arlpck.png", alt: "Banner 2" },
+        { id: 2, src: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737360473/Artboard_2_2_wctqre.png", alt: "Banner 3" },
     ];
 
     const settings = {
@@ -34,7 +32,7 @@ export default function BannerCarouselMobile() {
                             <img
                                 src={banner.src}
                                 alt={banner.alt}
-                                className="w-full h-auto object-cover"
+                                className="w-full object-cover"
                                 style={{ aspectRatio: "16 / 5" }} // Ensures consistent aspect ratio
                             />
                         </picture>
