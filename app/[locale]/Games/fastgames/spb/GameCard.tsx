@@ -54,8 +54,8 @@ const GameCards = () => {
     ];
 
     return (
-        <div className="max-w-screen-lg py-8">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="max-w-screen-lg mx-auto py-8 px-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {games.map((game) => (
                     <div
                         key={game.id}
@@ -65,7 +65,7 @@ const GameCards = () => {
                         <img
                             src={game.image}
                             alt={game.title}
-                            className="w-full h-40 object-cover rounded-lg shadow-md"
+                            className="w-full h-36 sm:h-40 object-cover rounded-lg shadow-md"
                         />
 
                         {/* Hover Overlay */}
@@ -97,11 +97,14 @@ const GameCards = () => {
                         </motion.div>
 
                         {/* Game Title */}
-                        <p className="mt-2 text-gray-700 font-medium">{game.title}</p>
+                        <p className="mt-2 text-gray-700 font-medium text-sm sm:text-base">
+                            {game.title}
+                        </p>
                     </div>
                 ))}
             </div>
         </div>
+
     );
 };
 

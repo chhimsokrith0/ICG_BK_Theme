@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 
@@ -51,9 +52,9 @@ const InstantGamesToPlay = () => {
         <section className="instant-games-section mx-auto max-w-[1400px] px-4 md:px-8 py-8">
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Instant Games To Play</h2>
-                <a href="#" className="text-blue-500 hover:underline text-sm md:text-base font-medium">
+                <Link href="/Games/fastgames" className="text-blue-500 hover:underline text-sm md:text-base font-medium">
                     See all
-                </a>
+                </Link>
             </div>
             {isMobile ? (
                 <div className="flex overflow-x-auto space-x-4 scrollbar-hide">

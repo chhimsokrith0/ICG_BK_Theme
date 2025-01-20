@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
+import Link from "next/link";
 
 const PopularGames = () => {
     const games = [
@@ -89,9 +90,9 @@ const PopularGames = () => {
         >
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Popular Games We Love</h2>
-                <a href="#" className="text-blue-500 hover:underline text-sm font-medium">
+                <Link href="/Games/Slots/nextspin" className="text-blue-500 hover:underline text-sm font-medium">
                     See all
-                </a>
+                </Link>
             </div>
             {isMobile ? (
                 <div className="flex overflow-x-auto space-x-4 scrollbar-hide">
