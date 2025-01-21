@@ -20,7 +20,7 @@ const SportsTab = () => {
 
     useEffect(() => {
         // Update the active tab dynamically based on the current route
-        const currentTab = tabs.find((tab) => pathname.includes(tab.link));
+        const currentTab = tabs.find((tab) => pathname?.includes(tab.link));
         setActiveTab(currentTab ? currentTab.id : null);
     }, [pathname, tabs]);
 

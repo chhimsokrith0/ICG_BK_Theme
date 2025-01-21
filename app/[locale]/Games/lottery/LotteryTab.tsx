@@ -12,7 +12,7 @@ const LotteryTab = () => {
     const [activeTab, setActiveTab] = useState<number | null>(null);
 
     useEffect(() => {
-        const currentTab = tabs.find((tab) => pathname.includes(tab.link));
+        const currentTab = tabs.find((tab) => pathname?.includes(tab.link));
         setActiveTab(currentTab ? currentTab.id : null);
     }, [pathname]);
 
