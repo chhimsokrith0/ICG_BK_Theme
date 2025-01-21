@@ -3,12 +3,16 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { signOut } from "next-auth/react";
 
 export default function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
     const [clones, setClones] = useState<number[]>([]);
 
-    const handleClone = () => {
-        setClones((prevClones) => [...prevClones, clones.length + 1]);
+    const handleLogOut = () => {
+        signOut({
+            redirect: true,
+            callbackUrl: "/", // Redirect to the home page or login page
+        });
     };
 
     const menuItemsMain = [
@@ -99,12 +103,12 @@ export default function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
 
                 {/* Clone Button */}
                 <motion.button
-                    onClick={handleClone}
+                    onClick={handleLogOut}
                     className="bg-orange-500 text-white text-base font-medium px-4 py-2 rounded-md w-full shadow-md hover:bg-orange-600"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    Clone Menu
+                    Log Out
                 </motion.button>
             </div>
 

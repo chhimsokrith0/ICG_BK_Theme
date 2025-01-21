@@ -8,6 +8,8 @@ import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useSession } from "next-auth/react";
+import WalletHeader from "./WalletHeader";
 
 export default function Navbar({ locale }: { locale: string }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +17,7 @@ export default function Navbar({ locale }: { locale: string }) {
     const [dateTime, setDateTime] = useState<string>(""); // To store the date and time
     const [timezone, setTimezone] = useState<string>("UTC"); // To store the user's timezone
     const t = useTranslations("navbar");
+    const { data: session } = useSession();
 
     const handleMenuToggle = () => {
         setIsMenuClicked(!isMenuClicked);
@@ -56,12 +59,12 @@ export default function Navbar({ locale }: { locale: string }) {
         return () => clearInterval(timer); // Cleanup interval on component unmount
     }, [timezone]);
 
-    
+
 
     return (
         <div className="bg-gradient-to-r from-blue-100 via-white to-blue-100 shadow-md">
             {/* Main Navbar */}
-            <nav className="sm:px-8 md:px-12 lg:px-16 xl:px-20 flex items-center justify-between">
+            <nav className="sm:px-8 md:px-12 lg:px-16 xl:px-6 flex items-center justify-between">
                 {/* Left Section */}
                 <div className="flex items-center space-x-6 relative">
                     {/* Menu Button for Mobile */}
@@ -97,8 +100,8 @@ export default function Navbar({ locale }: { locale: string }) {
                     </Link>
 
                     {/* Navigation Links */}
-                    
-                        <DesktopMenu locale={locale} />
+
+                    <DesktopMenu locale={locale} />
                 </div>
 
                 {/* Right Section */}
@@ -134,15 +137,25 @@ export default function Navbar({ locale }: { locale: string }) {
                         </div>
                     </div>
 
-                    {/* Log in Button */}
-                    <Link href={`/${locale}/login`} className="text-sm font-medium whitespace-nowrap text-gray-700 hover:text-gray-900">
-                        {t("rightMenu.Login")}
-                    </Link>
+                    {
+                        session ? (
+                            <WalletHeader />
+                        ) : (
+                            <>
+                                {/* Log in Button */}
+                                <Link href={`/${locale}/login`} className="text-sm font-medium whitespace-nowrap text-gray-700 hover:text-gray-900">
+                                    {t("rightMenu.Login")}
+                                </Link>
 
-                    {/* Join Now Button */}
-                    <Link href={`/${locale}/register`} className="bg-orange-500 text-white text-xs md:text-sm font-medium px-2 py-1 md:px-4 md:py-2 rounded-md whitespace-nowrap hover:bg-orange-600 shadow-md">
-                        {t("rightMenu.Joinnow")}
-                    </Link>
+                                {/* Join Now Button */}
+                                <Link href={`/${locale}/register`} className="bg-orange-500 text-white text-xs md:text-sm font-medium px-2 py-1 md:px-4 md:py-2 rounded-md whitespace-nowrap hover:bg-orange-600 shadow-md">
+                                    {t("rightMenu.Joinnow")}
+                                </Link>
+                            </>
+                        )
+                    }
+
+
 
                     {/* Language Dropdown */}
                     <LanguageDropdown />

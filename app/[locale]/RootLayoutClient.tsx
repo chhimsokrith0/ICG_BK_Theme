@@ -14,6 +14,8 @@ import React, { useState, useEffect } from 'react';
 import LiveChatButton from '@/components/LiveChatButton';
 import BackToTopButton from '@/components/BackToTopButton';
 import { usePathname } from 'next/navigation';
+import SessionProviderWrapper from '@/components/SessionProviderWrapper';
+
 
 export default function RootLayoutClient({
   children,
@@ -32,7 +34,7 @@ export default function RootLayoutClient({
     return () => clearTimeout(timer);
   }, []);
 
-  console.log('Current pathname:', pathname);
+  // console.log('Current pathname:', pathname);
 
   // Adjust the comparison to account for the locale in the path
   const isLoginPage =
@@ -50,6 +52,7 @@ export default function RootLayoutClient({
           <LoadingPage />
         ) : (
           <NextIntlClientProvider locale={locale} messages={messages}>
+            <SessionProviderWrapper>
             <header className="w-full sticky top-0 z-50 lg:z-[200]">
               <div className="hidden lg:block">
                 <Navbar locale={locale} />
@@ -66,7 +69,7 @@ export default function RootLayoutClient({
                 <Footer locale={locale} />
               </div>
             )}
-
+            </SessionProviderWrapper>
           </NextIntlClientProvider>
         )}
       </body>
