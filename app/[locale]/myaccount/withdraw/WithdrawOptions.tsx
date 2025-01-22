@@ -11,15 +11,15 @@ const WithdrawOptions = ({ selectedOption, setSelectedOption }: WithdrawOptionsS
     const withdrawOptions = [
         {
             name: 'Bank Transfer',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737532717/Bank_Transfer_mbbsqj.svg',
+            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557008/T_rd1wjd.gif',
         },
         {
             name: 'Crypto',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737543903/crypto_kjcbeu.svg',
+            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557404/bitcoin_rlsts5.gif',
         },
         {
             name: 'E-Wallet',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737532837/E-Wallet_cmrmmj.svg',
+            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557111/wallet_dtgebd.gif',
         },
     ];
 
@@ -52,7 +52,7 @@ const WithdrawOptions = ({ selectedOption, setSelectedOption }: WithdrawOptionsS
                             <img
                                 src={option.image}
                                 alt={option.name}
-                                className="w-10 h-10 mb-2"
+                                className="w-16 h-16 mb-2"
                             />
                             <span className="font-medium text-gray-700">{option.name}</span>
                         </div>

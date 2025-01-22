@@ -12,7 +12,7 @@ const BankSelection = ({ selectedBank, setSelectedBank }: BankSelectionProps) =>
             image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533469/wingbank_fm7akz.png',
         },
         {
-            name: 'Advanced Bank of Asia (ABA Bank)',
+            name: 'ABA Bank',
             image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533468/aba_bank_logo_d2gbez.jpg',
         },
         {
@@ -33,12 +33,12 @@ const BankSelection = ({ selectedBank, setSelectedBank }: BankSelectionProps) =>
                         onClick={() => setSelectedBank(bank.name)}
                         className={`p-4 rounded-md shadow-md text-center ${
                             selectedBank === bank.name
-                                ? 'border-2 border-blue-500 bg-blue-50'
+                                ? 'border-2 border-blue-500'
                                 : 'border border-gray-200 hover:bg-gray-100'
                         }`}
                     >
                         <div className="flex flex-col items-center">
-                            <img src={bank.image} alt={bank.name} className="w-10 h-10 mb-2" />
+                            <img src={bank.image} alt={bank.name} className="w-16 h-16 rounded-full mb-2" />
                             <span className="font-medium text-gray-700">{bank.name}</span>
                         </div>
                     </button>

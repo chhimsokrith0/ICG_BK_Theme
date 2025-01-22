@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowPathIcon } from "@heroicons/react/24/outline";
 import AddressModal from './AddressModal';
+import { motion } from "framer-motion";
 const CryptoSection = () => {
 
     const [selectedOption, setSelectedOption] = useState('USDT-TRC20'); // Default selected option
@@ -28,11 +29,11 @@ const CryptoSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleOpenModal = () => {
-      setIsModalOpen(true);
+        setIsModalOpen(true);
     };
-  
+
     const handleCloseModal = () => {
-      setIsModalOpen(false);
+        setIsModalOpen(false);
     };
 
     return (
@@ -56,10 +57,14 @@ const CryptoSection = () => {
                             }`}
                     >
                         <div className='flex flex-col items-center'>
-                            <img
+                            <motion.img
                                 src={option.image}
                                 alt={option.name}
-                                className="w-10 h-10 mb-2"
+                                className="w-16 h-16 mb-2 rounded-full"
+                                initial={{ scale: 0.9, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                whileHover={{ scale: 1.1, rotate: 5 }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}
                             />
                             <span className="text-sm">{option.name}</span>
                         </div>

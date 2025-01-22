@@ -48,36 +48,36 @@ const WalletHeader = () => {
 
                 {/* Dropdown Menu */}
                 {isDropdownOpen && (
-                    <div className="absolute right-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-200 py-2">
+                    <div className="absolute right-0 mt-0 w-56 bg-white rounded-xl shadow-lg border border-gray-200 py-2">
                         <button className="w-full flex items-center px-4 py-3 text-white font-medium bg-orange-500 rounded-t-xl hover:bg-orange-600 transition duration-200">
                             <img
-                                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737468120/Deposit_wru1oo.svg"
+                                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557763/profit_iqgfmu.gif"
                                 alt="Deposit"
-                                className="w-5 h-5 mr-3"
+                                className="w-10 h-10 mr-3"
                             />
                             Deposit
                         </button>
                         <button className="w-full flex items-center px-4 py-3 text-gray-700 font-medium hover:bg-gray-100 transition duration-200">
                             <img
-                                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737468121/Transfer_Promo_pqahje.svg"
+                                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557808/promotion_sgoivq.gif"
                                 alt="Transfer / Promo"
-                                className="w-5 h-5 mr-3"
+                                className="w-10 h-10 mr-3"
                             />
                             Transfer / Promo
                         </button>
                         <button className="w-full flex items-center px-4 py-3 text-gray-700 font-medium hover:bg-gray-100 transition duration-200">
                             <img
-                                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737468120/Withdrawal_sljg79.svg"
+                                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557865/atm_syn2yf.gif"
                                 alt="Withdrawal"
-                                className="w-5 h-5 mr-3"
+                                className="w-10 h-10 mr-3"
                             />
                             Withdrawal
                         </button>
                         <button className="w-full flex items-center px-4 py-3 text-gray-700 font-medium hover:bg-gray-100 transition duration-200 rounded-b-xl">
                             <img
-                                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737468120/History_iwixti.svg"
+                                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557928/file_bbjx9v.gif"
                                 alt="History"
-                                className="w-5 h-5 mr-3"
+                                className="w-10 h-10 mr-3"
                             />
                             History
                         </button>
