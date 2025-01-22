@@ -45,7 +45,7 @@ const LoginPage: React.FC = () => {
                 position: 'top-right',
             });
             setTimeout(() => {
-                router.push('/');
+                router.push('/myaccount');
             }, 2000); // Delay for the user to see the toast
         }
     };

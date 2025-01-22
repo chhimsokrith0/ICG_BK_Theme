@@ -10,13 +10,17 @@ const WalletHeader = () => {
             <div className="flex items-center space-x-4">
                 {/* User Avatar */}
                 <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-semibold text-lg">
-                    <span>👤</span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737554111/Personal_lpq7zb.gif" alt="" />
+                    </span>
                 </div>
 
                 {/* Message Icon */}
                 <button className="relative">
                     <div className="w-10 h-10 bg-white rounded-full border border-blue-500 flex items-center justify-center">
-                        <span>✉️</span>
+                        <span>
+                            <img src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737554069/email-file_zpdjcv.gif" alt="" />
+                        </span>
                     </div>
                 </button>
 
