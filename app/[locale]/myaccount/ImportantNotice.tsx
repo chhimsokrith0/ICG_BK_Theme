@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import { ChevronUpIcon, ChevronDownIcon, ExclamationTriangleIcon } from '@heroicons/react/24/solid';
 

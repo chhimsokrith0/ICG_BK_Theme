@@ -1,15 +1,31 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 
-interface Props {
-    activeItem: string;
-    setActiveItem: (item: string) => void;
-}
+const rewardRoutes = [
+    { label: 'Instant Rebate', path: '/myaccount/rebate' },
+    { label: 'Mission Diary', path: '/myaccount/daily-mission' },
+    { label: 'Referral', path: '/myaccount/referral' },
+];
 
-const RewardSection: React.FC<Props> = ({ activeItem, setActiveItem }) => {
+const RewardSection = () => {
     const [isRewardOpen, setIsRewardOpen] = useState(true);
+    const [activeTab, setActiveTab] = useState<string | null>(null);
+    const router = useRouter();
+    const pathname = usePathname();
+
+    useEffect(() => {
+        // Set active tab based on current route
+        const currentRoute = rewardRoutes.find((route) => pathname?.includes(route.path));
+        setActiveTab(currentRoute ? currentRoute.label : null);
+    }, [pathname]);
+
+    const handleTabClick = (route: { label: string; path: string }) => {
+        setActiveTab(route.label);
+        router.push(route.path); // Navigate to the route
+    };
 
     return (
         <div>
@@ -48,36 +64,19 @@ const RewardSection: React.FC<Props> = ({ activeItem, setActiveItem }) => {
                     }}
                     className="space-y-3 bg-white rounded-lg p-4"
                 >
-                    <p
-                        className={`cursor-pointer px-4 py-2 rounded-lg transition-all duration-200 ${
-                            activeItem === 'Instant Rebate'
-                                ? 'bg-gray-100 text-blue-600 font-bold'
-                                : 'hover:text-blue-600'
-                        }`}
-                        onClick={() => setActiveItem('Instant Rebate')}
-                    >
-                        Instant Rebate
-                    </p>
-                    <p
-                        className={`cursor-pointer px-4 py-2 rounded-lg transition-all duration-200 ${
-                            activeItem === 'Mission Diary'
-                                ? 'bg-gray-100 text-blue-600 font-bold'
-                                : 'hover:text-blue-600'
-                        }`}
-                        onClick={() => setActiveItem('Mission Diary')}
-                    >
-                        Mission Diary
-                    </p>
-                    <p
-                        className={`cursor-pointer px-4 py-2 rounded-lg transition-all duration-200 ${
-                            activeItem === 'Referral'
-                                ? 'bg-gray-100 text-blue-600 font-bold'
-                                : 'hover:text-blue-600'
-                        }`}
-                        onClick={() => setActiveItem('Referral')}
-                    >
-                        Referral
-                    </p>
+                    {rewardRoutes.map((route) => (
+                        <p
+                            key={route.label}
+                            onClick={() => handleTabClick(route)}
+                            className={`cursor-pointer px-4 py-2 rounded-lg transition-all duration-200 ${
+                                activeTab === route.label
+                                    ? 'bg-blue-50 text-blue-600 font-bold shadow-sm'
+                                    : 'hover:bg-gray-100 hover:text-blue-600'
+                            }`}
+                        >
+                            {route.label}
+                        </p>
+                    ))}
                 </motion.div>
             )}
         </div>

@@ -8,9 +8,8 @@ import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 const routes = [
     { label: 'Deposit', path: '/myaccount/deposit' },
     { label: 'Withdraw', path: '/myaccount/withdraw' },
-    { label: 'Transfer / Promo', path: '/myaccount/transfer-promo' },
-    { label: 'Withdrawal Details', path: '/myaccount/withdrawal-details' },
-    { label: 'Reward', path: '/myaccount/reward' },
+    { label: 'Transfer / Promo', path: '/myaccount/transfer' },
+    { label: 'Withdrawal Details', path: '/myaccount/bankdetails' }
 ];
 
 const CashierSection = () => {

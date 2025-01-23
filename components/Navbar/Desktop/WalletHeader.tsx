@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SyncIcon from '@mui/icons-material/Sync';
+import Link from 'next/link';
 
 const WalletHeader = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -42,13 +43,13 @@ const WalletHeader = () => {
                 onMouseEnter={() => setIsDropdownOpen(true)}
                 onMouseLeave={() => setIsDropdownOpen(false)}
             >
-                <button className="px-4 py-2 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition duration-300">
+                <Link href="/myaccount/deposit" className="px-4 py-2 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition duration-300">
                     Deposit
-                </button>
+                </Link>
 
                 {/* Dropdown Menu */}
                 {isDropdownOpen && (
-                    <div className="absolute right-0 mt-0 w-56 bg-white rounded-xl shadow-lg border border-gray-200 py-2">
+                    <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-200 py-2">
                         <button className="w-full flex items-center px-4 py-3 text-white font-medium bg-orange-500 rounded-t-xl hover:bg-orange-600 transition duration-200">
                             <img
                                 src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557763/profit_iqgfmu.gif"

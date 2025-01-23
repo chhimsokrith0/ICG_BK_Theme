@@ -28,17 +28,21 @@ export default function Navbar({ locale }: { locale: string }) {
     useEffect(() => {
         const fetchDateTime = async () => {
             try {
-                const response = await axios.get("https://ipapi.co/json/"); // Example IP-based geolocation API
+                const response = await axios.get("https://worldtimeapi.org/api/ip", {
+                    timeout: 10000,
+                });
                 const { timezone } = response.data;
                 setTimezone(timezone);
             } catch (error) {
-                console.error("Error fetching IP or time zone:", error);
-                setTimezone("UTC"); // Fallback to UTC if the API fails
+                console.error("Failed to fetch timezone:", error instanceof Error ? error.message : 'Unknown error');
+                setTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone); // Fallback to browser timezone
             }
         };
 
         fetchDateTime();
     }, []);
+
+
 
     // Timer to update date and time every second
     useEffect(() => {
