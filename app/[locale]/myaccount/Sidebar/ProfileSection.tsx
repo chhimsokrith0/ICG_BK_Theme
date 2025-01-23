@@ -11,7 +11,7 @@ const profileRoutes = [
 ];
 
 const ProfileSection = () => {
-    const [isProfileOpen, setIsProfileOpen] = useState(true);
+    const [isProfileOpen, setIsProfileOpen] = useState(false);
     const [activeTab, setActiveTab] = useState<string | null>(null);
     const router = useRouter();
     const pathname = usePathname();

@@ -11,7 +11,7 @@ const rewardRoutes = [
 ];
 
 const RewardSection = () => {
-    const [isRewardOpen, setIsRewardOpen] = useState(true);
+    const [isRewardOpen, setIsRewardOpen] = useState(false);
     const [activeTab, setActiveTab] = useState<string | null>(null);
     const router = useRouter();
     const pathname = usePathname();

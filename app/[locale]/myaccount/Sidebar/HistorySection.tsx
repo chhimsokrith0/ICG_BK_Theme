@@ -9,7 +9,7 @@ interface Props {
 }
 
 const HistorySection: React.FC<Props> = ({ activeItem, setActiveItem }) => {
-    const [isHistoryOpen, setIsHistoryOpen] = useState(true);
+    const [isHistoryOpen, setIsHistoryOpen] = useState(false);
 
     return (
         <div className="mt-4">

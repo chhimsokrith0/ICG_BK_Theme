@@ -15,7 +15,7 @@ const routes = [
 const CashierSection = () => {
     const router = useRouter();
     const pathname = usePathname();
-    const [isCashierOpen, setIsCashierOpen] = useState(true);
+    const [isCashierOpen, setIsCashierOpen] = useState(false);
     const [activeTab, setActiveTab] = useState<string | null>(null);
 
     useEffect(() => {
