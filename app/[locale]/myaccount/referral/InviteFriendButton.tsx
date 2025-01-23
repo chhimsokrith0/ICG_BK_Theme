@@ -11,11 +11,21 @@ import {
   faSkype,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 const InviteFriendButton = () => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const options = [
+  // Define the types for the options
+  const options: Array<{
+    label: string;
+    icon: React.ComponentType<any>;
+    isHeroIcon: true;
+  } | {
+    label: string;
+    icon: IconDefinition;
+    isHeroIcon: false;
+  }> = [
     { label: 'Copy Code', icon: ClipboardIcon, isHeroIcon: true },
     { label: 'Facebook', icon: faFacebookF, isHeroIcon: false },
     { label: 'Email', icon: faEnvelope, isHeroIcon: false },
@@ -45,10 +55,10 @@ const InviteFriendButton = () => {
               >
                 {option.isHeroIcon ? (
                   // Render Heroicons
-                  React.createElement(option.icon, { className: 'w-5 h-5 mr-2' })
+                  React.createElement(option.icon, { className: "w-5 h-5 mr-2" })
                 ) : (
                   // Render FontAwesome icons
-                  <FontAwesomeIcon icon={option.icon} className="w-5 h-5 mr-2" />
+                  <FontAwesomeIcon icon={option.icon as IconDefinition} className="w-5 h-5 mr-2" />
                 )}
                 {option.label}
               </li>
