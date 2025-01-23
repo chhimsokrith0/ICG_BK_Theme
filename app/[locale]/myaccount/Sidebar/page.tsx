@@ -12,8 +12,8 @@ const Sidebar: React.FC = () => {
     return (
         <div className="w-64 bg-white shadow-lg rounded-lg p-4">
             <CashierSection/>
-            <RewardSection activeItem={activeItem} setActiveItem={setActiveItem} />
-            <ProfileSection activeItem={activeItem} setActiveItem={setActiveItem} />
+            <RewardSection />
+            <ProfileSection/>
             <HistorySection activeItem={activeItem} setActiveItem={setActiveItem} />
             <ReferralSection />
         </div>
