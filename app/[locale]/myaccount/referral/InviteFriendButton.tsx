@@ -45,7 +45,7 @@ const InviteFriendButton = () => {
               >
                 {option.isHeroIcon ? (
                   // Render Heroicons
-                  <option.icon className="w-5 h-5 mr-2" />
+                  React.createElement(option.icon, { className: 'w-5 h-5 mr-2' })
                 ) : (
                   // Render FontAwesome icons
                   <FontAwesomeIcon icon={option.icon} className="w-5 h-5 mr-2" />
