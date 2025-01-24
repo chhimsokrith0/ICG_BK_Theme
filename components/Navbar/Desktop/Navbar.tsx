@@ -9,7 +9,7 @@ import DesktopMenu from "./DesktopMenu";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useSession } from "next-auth/react";
-import WalletHeader from "./WalletHeader";
+import WalletHeader from "./WalletHeader/WalletHeader";
 
 export default function Navbar({ locale }: { locale: string }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
