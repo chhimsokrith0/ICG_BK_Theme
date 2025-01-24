@@ -3,41 +3,111 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import UserProfileCard from "./UserProfileCard";
+import { signOut, useSession } from "next-auth/react";
 
 const MobileMenu = ({ onClose }: { onClose: () => void }) => {
+
+    const handleLogOut = () => {
+        signOut({
+            redirect: true,
+            callbackUrl: "/", // Redirect to the home page or login page
+        });
+    };
+
+    const { data: session } = useSession();
     const menuItems = [
-        { icon: "💰", label: "Sponsors", link: "/sponsors" },
-        { icon: "👑", label: "VIP", link: "/vip" },
-        { icon: "🏆", label: "Leaderboard", badge: "Win", link: "/leaderboard" },
-        { icon: "⬇️", label: "Download", link: "/download" },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737719914/Sponsors_ogwoiu.gif",
+            label: "Sponsors",
+            link: "/sponsors",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737719970/vip_mw97x5.gif",
+            label: "VIP",
+            link: "/vip",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737720124/leaderboard_dch30e.gif",
+            label: "Leaderboard",
+            badge: "Win",
+            link: "/leaderboard",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737720630/download_u6pemj.gif",
+            label: "Download",
+            link: "/download",
+        },
     ];
 
     const mainMenu = [
-        { icon: "🏠", label: "Home", link: "/" },
         {
-            icon: (
-                <motion.img
-                    src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640313/th_byfrmv.png"
-                    alt="Language"
-                    className="w-8 h-8 rounded-full"
-                    whileHover={{ scale: 1.2 }} // Animation on hover
-                    transition={{ type: "spring", stiffness: 300 }}
-                />
-            ),
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737720689/home_o01z9m.gif",
+            label: "Home",
+            link: "/",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737720788/language_gqnpf6.gif",
             label: "Language",
             link: "/language",
         },
-        { icon: "🎁", label: "Promotion", link: "/promotion" },
-        { icon: "⚽", label: "Sports", link: "/sports" },
-        { icon: "🎮", label: "E-Sports", link: "/esports" },
-        { icon: "🎰", label: "Casino", link: "/casino" },
-        { icon: "🎲", label: "Slots", badge: "2", link: "/slots" },
-        { icon: "🎣", label: "Fishing", badge: "1", link: "/fishing" },
-        { icon: "📅", label: "4D", link: "/4d" },
-        { icon: "🎟️", label: "Lottery", link: "/lottery" },
-        { icon: "⚡", label: "Fast Games", link: "/fast-games" },
-        { icon: "🎡", label: "Lucky Wheel", link: "/lucky-wheel" },
-        { icon: "🔵", label: "More", link: "/more" },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737720840/promotion_wyxaws.gif",
+            label: "Promotion",
+            link: "/promotion",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737720920/Sports_fh9dxo.gif",
+            label: "Sports",
+            link: "/sports",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737720994/E-Sports_n95dne.gif",
+            label: "E-Sports",
+            link: "/esports",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737721056/Casino_xyutyp.gif",
+            label: "Casino",
+            link: "/casino",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737721119/Slots_k4exgh.gif",
+            label: "Slots",
+            badge: "2",
+            link: "/slots",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737721176/Fishing_hzb23p.gif",
+            label: "Fishing",
+            badge: "1",
+            link: "/fishing",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737721232/4D_x0yn2w.gif",
+            label: "4D",
+            link: "/4d",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737721280/Lottery_ffi9q6.gif",
+            label: "Lottery",
+            link: "/lottery",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737721355/Fast_Games_ydygzw.gif",
+            label: "Fast Games",
+            link: "/fast-games",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737721404/lucky-wheel_mi8agp.gif",
+            label: "Lucky Wheel",
+            link: "/lucky-wheel",
+        },
+        {
+            icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737721448/More_nondcq.gif",
+            label: "More",
+            link: "/more",
+        },
     ];
 
     // Add `no-scroll` to body when the menu is open
@@ -82,6 +152,11 @@ const MobileMenu = ({ onClose }: { onClose: () => void }) => {
                     </button>
                 </div>
 
+                {/* User Profile Card */}
+                {session ? <UserProfileCard /> : ""}
+
+
+
                 {/* Top Section */}
                 <div className="top-menu space-y-4 mb-6">
                     {menuItems.map((item, index) => (
@@ -97,7 +172,11 @@ const MobileMenu = ({ onClose }: { onClose: () => void }) => {
                                     whileHover={{ scale: 1.1 }} // Animation on hover
                                     transition={{ type: "spring", stiffness: 300 }}
                                 >
-                                    <span className="text-2xl">{item.icon}</span>
+                                    <img
+                                        src={item.icon}
+                                        alt={item.label}
+                                        className="w-14 h-14"
+                                    />
                                     <p className="text-gray-800 font-medium">{item.label}</p>
                                 </motion.div>
                                 {item.badge && (
@@ -126,13 +205,11 @@ const MobileMenu = ({ onClose }: { onClose: () => void }) => {
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
                                 <div className="relative">
-                                    <motion.span
-                                        whileHover={{ rotate: 15 }} // Add rotation effect on hover
-                                        transition={{ duration: 0.3 }}
-                                        className="text-3xl"
-                                    >
-                                        {item.icon}
-                                    </motion.span>
+                                    <img
+                                        src={item.icon}
+                                        alt={item.label}
+                                        className="w-12 h-12"
+                                    />
                                     {item.badge && (
                                         <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                                             {item.badge}
@@ -144,6 +221,19 @@ const MobileMenu = ({ onClose }: { onClose: () => void }) => {
                         </Link>
                     ))}
                 </div>
+                <br />
+                <button
+                    className="block w-full bg-blue-500 text-white text-center py-2 rounded-md shadow-md hover:bg-blue-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 transition-all duration-300 ease-in-out"
+                    onClick={handleLogOut}
+                >
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex items-center justify-center"
+                    >
+                        Log Out
+                    </motion.div>
+                </button>
             </div>
         </motion.div>
     );

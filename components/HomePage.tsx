@@ -26,9 +26,12 @@ import BlogSection from "./LatestNews/Mobile/BlogSection";
 import AppPromoSection from "./AppDownloadSection/Mobile/AppPromoSection";
 import PromoModal from "./PromoModal";
 import LuckyWheel from "./LuckyWheel";
+import { useSession } from "next-auth/react";
+import WalletApplicationsMobile from "./WalletApplicationsMobile/WalletApplicationsMobile";
 
 export default function HomeContent({ locale }: { locale: string }) {
-    const t = useTranslations();
+
+    const { data: session } = useSession();
 
     // Animation variants
     const fadeInVariants = {
@@ -92,13 +95,16 @@ export default function HomeContent({ locale }: { locale: string }) {
             {/* Mobile Version */}
             <div className="lg:hidden">
                 <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
-                    <BannerCarouselMobile />
+                    {session ? ""  : <BannerCarouselMobile />}
                 </motion.div>
                 <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
-                    <JoinLoginButtons />
+                    {session ? ""  : <JoinLoginButtons />}
                 </motion.div>
                 <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
                     <AnnouncementBarMobile />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible" className="p-4">
+                    { session ? <WalletApplicationsMobile /> : "" }
                 </motion.div>
                 <MobileMenuTab />
                 <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
