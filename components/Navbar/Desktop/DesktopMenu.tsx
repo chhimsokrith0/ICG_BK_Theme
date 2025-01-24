@@ -87,7 +87,6 @@ export default function DesktopMenu({ locale }: { locale: string }) {
                         <Link href={item.link} title={item.name}>
                             <div className="menu-item-title">
                                 <p className="menu-text m-0 whitespace-nowrap">{item.name}</p>
-
                             </div>
                         </Link>
                         {item.isNew && (
@@ -100,12 +99,20 @@ export default function DesktopMenu({ locale }: { locale: string }) {
                             </div>
                         )}
                         {hoveredItem === item.key && (
-                            <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
+                            <div
+                                className="absolute top-full left-0 bg-white shadow-lg z-50"
+                                style={{
+                                    width: "100vw", // Full width of the viewport
+                                    left: "380%", // Align center
+                                    transform: "translateX(-50%)", // Adjust to be in the center
+                                }}
+                            >
                                 {renderDropdown(item.key)}
                             </div>
                         )}
                     </li>
                 ))}
+
             </ul>
         </div>
     );

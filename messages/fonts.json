@@ -9,7 +9,7 @@
         "ca": {
             "fontFamily": "Arial, sans-serif"
         },
-        "en": {
+        "en-kh": {
             "fontFamily": "Arial, sans-serif"
         },
         "hi": {
@@ -21,8 +21,10 @@
         "id": {
             "fontFamily": "Arial, sans-serif"
         },
-        "kh": {
-            "fontFamily": "\"Battambang\", sans-serif"
+        "km-kh": {
+            "fontFamily": "\"Battambang\", sans-serif",
+            "font-weight": "300",
+            "font-style": "normal"
         },
         "ko": {
             "fontFamily": "\"Noto Sans KR\", sans-serif"

@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import { getMessages } from "next-intl/server";
 import { headers } from "next/headers";
 import HomePage from "@/components/HomePage";

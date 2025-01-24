@@ -1,15 +1,12 @@
-
-
 import React from "react";
 
-export default function  FourDDropdown() {
+export default function FourDDropdown() {
     const sportsOptions = [
         { name: "ESPRTS", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481725/4d-gdl_vbtf9e.png", badge: "Hot" },
-     
     ];
 
     return (
-        <div className="absolute w-screen top-[0px] left-[-640px] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8  justify-items-center">
+        <div className="absolute top-0 left-0 w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-6 gap-6">
                 {sportsOptions.map((option, index) => (
                     <div
@@ -24,10 +21,11 @@ export default function  FourDDropdown() {
                         <div className="font-medium text-white text-center">{option.name}</div>
                         {option.badge && (
                             <span
-                                className={`absolute top-2 right-2 text-xs font-bold px-2 py-1 rounded-full ${option.badge === "New"
+                                className={`absolute top-2 right-2 text-xs font-bold px-2 py-1 rounded-full ${
+                                    option.badge === "New"
                                         ? "bg-red-500 text-white"
                                         : "bg-yellow-500 text-black"
-                                    }`}
+                                }`}
                             >
                                 {option.badge}
                             </span>
@@ -35,7 +33,6 @@ export default function  FourDDropdown() {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 }

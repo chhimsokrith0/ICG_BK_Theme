@@ -1,5 +1,7 @@
 'use client';
+
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 
@@ -10,6 +12,12 @@ interface Props {
 
 const HistorySection: React.FC<Props> = ({ activeItem, setActiveItem }) => {
     const [isHistoryOpen, setIsHistoryOpen] = useState(false);
+    const router = useRouter();
+
+    const handleHistoryClick = () => {
+        setActiveItem('Transaction History');
+        router.push('/myaccount/history/bettingSummary'); // Navigate to Transaction History
+    };
 
     return (
         <div className="mt-4">
@@ -54,7 +62,7 @@ const HistorySection: React.FC<Props> = ({ activeItem, setActiveItem }) => {
                                 ? 'bg-gray-100 text-blue-600 font-bold'
                                 : 'hover:text-blue-600'
                         }`}
-                        onClick={() => setActiveItem('Transaction History')}
+                        onClick={handleHistoryClick}
                     >
                         Transaction History
                     </p>

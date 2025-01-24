@@ -7,7 +7,7 @@ import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 const profileRoutes = [
     { label: 'My Profile', path: '/myaccount/profile' },
     { label: 'Messaging', path: '/myaccount/messaging' },
-    { label: 'Change Password', path: '/myaccount/change-password' },
+    { label: 'Change Password', path: '/myaccount/changepassword' },
 ];
 
 const ProfileSection = () => {

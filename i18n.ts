@@ -14,6 +14,7 @@ const locales = [
   "en-my",
   "ms-my",
   "zh-my",
+  
 ];
 
 export default async function getRequestConfig() {

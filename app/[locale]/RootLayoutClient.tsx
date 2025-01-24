@@ -6,7 +6,6 @@ import Navbar from '@/components/Navbar/Desktop/Navbar';
 import Footer from '@/components/Footer/Desktop/Footer';
 import NavbarMobile from '@/components/Navbar/Mobile/NavbarMobile';
 import LoadingPage from '@/components/LoadingPage';
-import "../globals.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,6 +14,8 @@ import LiveChatButton from '@/components/LiveChatButton';
 import BackToTopButton from '@/components/BackToTopButton';
 import { usePathname } from 'next/navigation';
 import SessionProviderWrapper from '@/components/SessionProviderWrapper';
+import fonts from "../../messages/fonts.json";
+import "./styleFont.css"
 
 
 export default function RootLayoutClient({
@@ -45,30 +46,33 @@ export default function RootLayoutClient({
     typeof pathname === 'string' &&
     pathname.toLowerCase().replace(/\/$/, '').endsWith('/register');
 
+  const selectedFont =
+    (fonts.fonts as any)[locale]?.fontFamily;
+
   return (
-    <html lang={locale}>
+    <html lang={locale} style={{ fontFamily: selectedFont }}>
       <body className="body min-h-screen">
         {isLoading ? (
           <LoadingPage />
         ) : (
           <NextIntlClientProvider locale={locale} messages={messages}>
             <SessionProviderWrapper>
-            <header className="w-full sticky top-0 z-50 lg:z-[200]">
-              <div className="hidden lg:block">
-                <Navbar locale={locale} />
-              </div>
-              <LiveChatButton />
-              <BackToTopButton />
-              <div className="lg:hidden">
-                <NavbarMobile locale={locale} />
-              </div>
-            </header>
-            <main>{children}</main>
-            {!isLoginPage && !isRegisterPage && (
-              <div >
-                <Footer locale={locale} />
-              </div>
-            )}
+              <header className="w-full sticky top-0 z-50 lg:z-[200]">
+                <div className="hidden lg:block">
+                  <Navbar locale={locale} />
+                </div>
+                <LiveChatButton />
+                <BackToTopButton />
+                <div className="lg:hidden">
+                  <NavbarMobile locale={locale} />
+                </div>
+              </header>
+              <main>{children}</main>
+              {!isLoginPage && !isRegisterPage && (
+                <div >
+                  <Footer locale={locale} />
+                </div>
+              )}
             </SessionProviderWrapper>
           </NextIntlClientProvider>
         )}
