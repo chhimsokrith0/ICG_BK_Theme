@@ -1,5 +1,8 @@
+'use client';
+
 import { useTranslations } from "next-intl";
 import React from "react";
+import { motion } from "framer-motion";
 import BannerCarousel from "./BannerCarousel/Desktop/BannerCarousel";
 import PromoCarousel from "./PromoCarousel/Desktop/PromoCarousel";
 import AnnouncementBar from "./AnnouncementBar/Desktop/AnnouncementBar";
@@ -17,59 +20,112 @@ import BannerCarouselMobile from "./BannerCarousel/Mobile/BannerCarouselMobile";
 import JoinLoginButtons from "./BannerCarousel/Mobile/JoinLoginButtons";
 import AnnouncementBarMobile from "./AnnouncementBar/Mobile/AnnouncementBarMobile";
 import MobileMenuTab from "./Navbar/Mobile/MobileMenuTab";
-import PromoModal from "./PromoModal";
-import LuckyWheel from "./LuckyWheel";
 import PromoMobile from "./promotion/PromoMobile";
 import TestimonialsPage from "./TestimonialsPage/Mobile/TestimonialsPage";
 import BlogSection from "./LatestNews/Mobile/BlogSection";
 import AppPromoSection from "./AppDownloadSection/Mobile/AppPromoSection";
+import PromoModal from "./PromoModal";
+import LuckyWheel from "./LuckyWheel";
 
 export default function HomeContent({ locale }: { locale: string }) {
     const t = useTranslations();
+
+    // Animation variants
+    const fadeInVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    };
+
     return (
-        <div>  
+        <div>
             <PromoModal />
             <LuckyWheel />
+            {/* Desktop Version */}
             <div className="hidden lg:block">
-                <BannerCarousel />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <BannerCarousel />
+                </motion.div>
                 <br />
-                <PromoCarousel />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <PromoCarousel />
+                </motion.div>
                 <AnnouncementBar />
                 <br />
-                <LiveMatchesSection />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <LiveMatchesSection />
+                </motion.div>
                 <br />
-                <HowToRegister />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <HowToRegister />
+                </motion.div>
                 <br />
-                <PopularGames />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <PopularGames />
+                </motion.div>
                 <br />
-                <BestLiveCasinoGames />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <BestLiveCasinoGames />
+                </motion.div>
                 <br />
-                <InstantGamesToPlay />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <InstantGamesToPlay />
+                </motion.div>
                 <br />
-                <AppDownloadSection />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <AppDownloadSection />
+                </motion.div>
                 <br />
-                <OurPartners />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <OurPartners />
+                </motion.div>
                 <br />
-                <Testimonials />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <Testimonials />
+                </motion.div>
                 <LatestNews />
                 <br />
-                <PartnershipsAndAwards />
-            </div>
-            <div className="lg:hidden">
-                <BannerCarouselMobile />
-                <JoinLoginButtons />
-                <AnnouncementBarMobile />
-                <MobileMenuTab />
-                <PromoMobile />
-                <PopularGames />
-                <BestLiveCasinoGames />
-                <InstantGamesToPlay />
-                <TestimonialsPage />
-                <BlogSection />
-                <AppPromoSection />
-                <PartnershipsAndAwards />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <PartnershipsAndAwards />
+                </motion.div>
             </div>
 
+            {/* Mobile Version */}
+            <div className="lg:hidden">
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <BannerCarouselMobile />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <JoinLoginButtons />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <AnnouncementBarMobile />
+                </motion.div>
+                <MobileMenuTab />
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <PromoMobile />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <PopularGames />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <BestLiveCasinoGames />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <InstantGamesToPlay />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <TestimonialsPage />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <BlogSection />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <AppPromoSection />
+                </motion.div>
+                <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
+                    <PartnershipsAndAwards />
+                </motion.div>
+            </div>
         </div>
     );
 }
