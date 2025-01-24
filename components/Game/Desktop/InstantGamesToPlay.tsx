@@ -3,15 +3,17 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
+import { useSession } from "next-auth/react";
 
 const InstantGamesToPlay = () => {
+    const { data: session } = useSession(); // Get session data
     const games = [
-        { id: 1, name: "Mines", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505457/imgame12001_xpsrbr.png", label: "New" },
-        { id: 2, name: "Goal", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505458/imgame12002_iojuox.png", label: "New" },
-        { id: 3, name: "Dice", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505460/imgame12005_xs9taf.png", label: "New" },
-        { id: 4, name: "Plinko", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505462/imgame12006_zhyivn.png", label: "New" },
-        { id: 5, name: "Keno", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505464/imgame12007_hrrofy.png", label: "New" },
-        { id: 6, name: "Mini Roulette", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505466/imgame12008_pyx0zr.png", label: "New" },
+        { id: 1, name: "Mines", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505457/imgame12001_xpsrbr.png", label: "New", link: "/games/mines" },
+        { id: 2, name: "Goal", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505458/imgame12002_iojuox.png", label: "New", link: "/games/goal" },
+        { id: 3, name: "Dice", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505460/imgame12005_xs9taf.png", label: "New", link: "/games/dice" },
+        { id: 4, name: "Plinko", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505462/imgame12006_zhyivn.png", label: "New", link: "/games/plinko" },
+        { id: 5, name: "Keno", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505464/imgame12007_hrrofy.png", label: "New", link: "/games/keno" },
+        { id: 6, name: "Mini Roulette", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505466/imgame12008_pyx0zr.png", label: "New", link: "/games/mini-roulette" },
     ];
 
     const [isMobile, setIsMobile] = useState(false);
@@ -33,18 +35,9 @@ const InstantGamesToPlay = () => {
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
-            {
-                breakpoint: 1024,
-                settings: { slidesToShow: 4, slidesToScroll: 1 },
-            },
-            {
-                breakpoint: 768,
-                settings: { slidesToShow: 2, slidesToScroll: 1 },
-            },
-            {
-                breakpoint: 480,
-                settings: { slidesToShow: 1, slidesToScroll: 1 },
-            },
+            { breakpoint: 1024, settings: { slidesToShow: 4, slidesToScroll: 1 } },
+            { breakpoint: 768, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+            { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
         ],
     };
 
@@ -72,18 +65,43 @@ const InstantGamesToPlay = () => {
                                     </div>
                                 )}
                                 <div className="btn-container absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <button
-                                        className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm"
-                                        aria-label={`Play ${game.name}`}
-                                    >
-                                        Play
-                                    </button>
-                                    <button
-                                        className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm"
-                                        aria-label={`Demo ${game.name}`}
-                                    >
-                                        Demo
-                                    </button>
+                                    {session ? (
+                                        <>
+                                            <Link href={game.link}>
+                                                <button
+                                                    className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm"
+                                                    aria-label={`Play ${game.name}`}
+                                                >
+                                                    Play
+                                                </button>
+                                            </Link>
+                                            <Link href={`${game.link}/demo`}>
+                                                <button
+                                                    className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm"
+                                                    aria-label={`Demo ${game.name}`}
+                                                >
+                                                    Demo
+                                                </button>
+                                            </Link>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Link href="/login">
+                                                <button className="bg-yellow-500 text-black px-4 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
+                                                    Play
+                                                </button>
+                                            </Link>
+                                            <Link
+                                                href="https://play.2umdjcuk.com/gen3/sPac_Man1/202411250258/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sPac_Man1&language=en_US"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
+                                                    Demo
+                                                </button>
+                                            </Link>
+                                        </>
+                                    )}
                                 </div>
                             </div>
                             <div className="instant-game-content mt-4 text-center">
@@ -109,18 +127,43 @@ const InstantGamesToPlay = () => {
                                     </div>
                                 )}
                                 <div className="btn-container absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <button
-                                        className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm"
-                                        aria-label={`Play ${game.name}`}
-                                    >
-                                        Play
-                                    </button>
-                                    <button
-                                        className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm"
-                                        aria-label={`Demo ${game.name}`}
-                                    >
-                                        Demo
-                                    </button>
+                                    {session ? (
+                                        <>
+                                            <Link href={game.link}>
+                                                <button
+                                                    className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm"
+                                                    aria-label={`Play ${game.name}`}
+                                                >
+                                                    Play
+                                                </button>
+                                            </Link>
+                                            <Link href={`${game.link}/demo`}>
+                                                <button
+                                                    className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm"
+                                                    aria-label={`Demo ${game.name}`}
+                                                >
+                                                    Demo
+                                                </button>
+                                            </Link>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Link href="/login">
+                                                <button className="bg-yellow-500 text-black px-4 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
+                                                    Play
+                                                </button>
+                                            </Link>
+                                            <Link
+                                                href="https://play.2umdjcuk.com/gen3/sPac_Man1/202411250258/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sPac_Man1&language=en_US"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
+                                                    Demo
+                                                </button>
+                                            </Link>
+                                        </>
+                                    )}
                                 </div>
                             </div>
                             <div className="instant-game-content mt-4 text-center">

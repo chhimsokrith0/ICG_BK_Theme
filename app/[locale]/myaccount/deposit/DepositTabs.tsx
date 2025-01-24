@@ -1,35 +1,68 @@
-const DepositTabs = ({ selectedTab, setSelectedTab }: { selectedTab: string; setSelectedTab: (tab: string) => void }) => {
+'use client';
+
+import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const DepositTabs = ({
+    selectedTab,
+    setSelectedTab,
+}: {
+    selectedTab: string;
+    setSelectedTab: (tab: string) => void;
+}) => {
     const tabs = [
-        { name: 'Normal Deposit', description: '(5 minutes)' },
-        { name: 'Fast Deposit', description: '(1 minute)' },
-        { name: 'Crypto Deposit', description: '(15 minutes)' },
+        { name: "Normal Deposit", time: "5 minutes" },
+        { name: "Fast Deposit", time: "1 minute" },
+        { name: "Crypto Deposit", time: "15 minutes" },
     ];
+
+    
+
+    const indicatorVariants = {
+        hidden: { opacity: 0, width: 0 },
+        visible: { opacity: 1, width: "100%", transition: { duration: 0.3 } },
+    };
 
     return (
         <div className="flex mb-6 space-x-2">
             {tabs.map((tab) => (
-                <button
+                <motion.button
                     key={tab.name}
-                    className={`flex-1 text-center py-2 rounded-t-md ${
+                    className={`relative flex-1 flex flex-col items-center justify-center py-2 rounded-md transition-all duration-300 ${
                         selectedTab === tab.name
-                            ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold'
-                            : 'bg-gray-200 text-gray-600'
+                            ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold shadow-lg"
+                            : "bg-gray-200 text-gray-600 hover:bg-gray-300"
                     }`}
                     onClick={() => setSelectedTab(tab.name)}
+                    initial="initial"
+                    animate={selectedTab === tab.name ? "active" : "inactive"}
+                    whileTap={{ scale: 0.95 }}
                 >
-                    <div className="flex items-center justify-center space-x-2">
+                    <div className="flex items-center space-x-1">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-4 h-4"
+                            className={`w-4 h-4 ${
+                                selectedTab === tab.name ? "text-white" : "text-gray-600"
+                            }`}
                             fill="currentColor"
                             viewBox="0 0 50 50"
                         >
-                            <path d="..." />
+                            <circle cx="25" cy="25" r="23" stroke="currentColor" strokeWidth="2" fill="none" />
+                            <line x1="25" y1="13" x2="25" y2="25" stroke="currentColor" strokeWidth="2" />
+                            <line x1="25" y1="25" x2="33" y2="29" stroke="currentColor" strokeWidth="2" />
                         </svg>
-                        <span>{tab.name}</span>
+                        <span className="text-sm">{tab.name}</span>
                     </div>
-                    <span className="text-xs font-normal">{tab.description}</span>
-                </button>
+                    <span className="text-xs font-normal">{tab.time}</span>
+                    {selectedTab === tab.name && (
+                        <motion.div
+                            className="absolute bottom-0 left-0 h-1 bg-white rounded-t-md"
+                            variants={indicatorVariants}
+                            initial="hidden"
+                            animate="visible"
+                        />
+                    )}
+                </motion.button>
             ))}
         </div>
     );

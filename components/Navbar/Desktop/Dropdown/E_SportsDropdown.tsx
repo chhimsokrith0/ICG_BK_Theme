@@ -9,7 +9,7 @@ export default function E_SportsDropdown() {
     ];
 
     return (
-        <div className="absolute w-screen top-[0px] left-[-340px] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8  justify-items-center">
+        <div className="absolute top-0 left-[-14.8%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-4 gap-6">
                 {sportsOptions.map((option, index) => (
                     <div

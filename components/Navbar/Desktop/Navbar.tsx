@@ -66,7 +66,7 @@ export default function Navbar({ locale }: { locale: string }) {
 
 
     return (
-        <div className="bg-gradient-to-r from-blue-100 via-white to-blue-100 shadow-md">
+        <div className="bg-gradient-to-r from-blue-100 w-full via-white to-blue-100 shadow-md">
             {/* Main Navbar */}
             <nav className="sm:px-8 md:px-12 lg:px-16 xl:px-6 flex items-center justify-between">
                 {/* Left Section */}

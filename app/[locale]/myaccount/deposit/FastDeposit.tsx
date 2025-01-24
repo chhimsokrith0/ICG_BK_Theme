@@ -7,7 +7,7 @@ const FastDeposit = () => {
     const depositOptions = [
         {
             name: "QR Pay",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737540577/QR_pay_rpom2l.svg", // Replace with actual QR Pay image URL
+            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737704895/qr-scan_weelmi.gif", // Replace with actual QR Pay image URL
         },
     ];
 
@@ -32,7 +32,7 @@ const FastDeposit = () => {
                             onClick={() => setSelectedOption(option.name)}
                             className={`p-4 rounded-md shadow-md text-center ${
                                 selectedOption === option.name
-                                    ? "border-2 border-orange-500 bg-orange-100"
+                                    ? "border-2 border-orange-500"
                                     : "border border-gray-200 hover:bg-gray-100"
                             }`}
                         >
@@ -40,7 +40,7 @@ const FastDeposit = () => {
                                 <img
                                     src={option.image}
                                     alt={option.name}
-                                    className="w-10 h-10 mb-2"
+                                    className="w-16 h-16 mb-2"
                                 />
                                 <span className="font-medium text-gray-700">{option.name}</span>
                             </div>

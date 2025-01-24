@@ -11,7 +11,7 @@ export default function  FastGamesDropdown() {
     ];
 
     return (
-        <div className="absolute w-screen top-[0px] left-[-815px] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8  justify-items-center">
+        <div className="absolute top-0 left-[-39.5%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-6 gap-6">
                 {sportsOptions.map((option, index) => (
                     <div

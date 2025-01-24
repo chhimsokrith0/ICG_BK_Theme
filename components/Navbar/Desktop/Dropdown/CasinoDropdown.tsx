@@ -22,7 +22,7 @@ export default function CasinoDropdown() {
     ];
 
     return (
-        <div className="absolute w-screen top-[0px] left-[-425px] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8  justify-items-center">
+        <div className="absolute top-0 left-[-19.3%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-6 gap-6">
                 {sportsOptions.map((option, index) => (
                     <div

@@ -78,8 +78,8 @@ export default function DesktopMenu({ locale }: { locale: string }) {
                     <li
                         key={item.key}
                         className={`navbar-item relative flex items-center h-full px-4 cursor-pointer ${activeItem === item.key
-                                ? "text-blue-500 font-bold border-b-2 border-blue-500"
-                                : "hover:text-blue-500 text-gray-600"
+                            ? "text-blue-500 font-bold border-b-2 border-blue-500"
+                            : "hover:text-blue-500 text-gray-600"
                             }`}
                         onMouseEnter={() => handleMouseEnter(item.key)}
                         onMouseLeave={handleMouseLeave}
@@ -100,15 +100,11 @@ export default function DesktopMenu({ locale }: { locale: string }) {
                         )}
                         {hoveredItem === item.key && (
                             <div
-                                className="absolute top-full left-0 bg-white shadow-lg z-50"
-                                style={{
-                                    width: "100vw", // Full width of the viewport
-                                    left: "380%", // Align center
-                                    transform: "translateX(-50%)", // Adjust to be in the center
-                                }}
+                                className="absolute top-full left-0 w-screen bg-white shadow-lg z-50"
                             >
                                 {renderDropdown(item.key)}
                             </div>
+
                         )}
                     </li>
                 ))}

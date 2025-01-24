@@ -18,7 +18,7 @@ const dailyMissions = [
 
 const MissionDiary = () => {
     return (
-        <div className="bg-white rounded-lg shadow-md p-6 h-screen">
+        <div className="bg-white ml-2 rounded-lg shadow-md p-6 h-screen">
             {/* Header */}
             <div className="flex justify-between items-center mb-6">
                 <div className="flex items-center space-x-4">

@@ -37,7 +37,7 @@ export default function SlotsDropdown() {
     ];
 
     return (
-        <div className="absolute w-screen top-[0px] left-[-500px] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
+        <div className="absolute top-0 left-[-23.2%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-8 gap-6">
                 {sportsOptions.map((option, index) => (
                     <div
