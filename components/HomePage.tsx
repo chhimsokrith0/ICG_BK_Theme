@@ -29,6 +29,7 @@ import LuckyWheel from "./LuckyWheel";
 import { useSession } from "next-auth/react";
 import WalletApplicationsMobile from "./WalletApplicationsMobile/WalletApplicationsMobile";
 
+
 export default function HomeContent({ locale }: { locale: string }) {
 
     const { data: session } = useSession();
@@ -131,6 +132,9 @@ export default function HomeContent({ locale }: { locale: string }) {
                 <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
                     <PartnershipsAndAwards />
                 </motion.div>
+        
+                
+               
             </div>
         </div>
     );

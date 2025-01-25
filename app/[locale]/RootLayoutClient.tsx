@@ -16,6 +16,7 @@ import { usePathname } from 'next/navigation';
 import SessionProviderWrapper from '@/components/SessionProviderWrapper';
 import fonts from "../../messages/fonts.json";
 import "./styleFont.css"
+import MobileNavigationBar from '@/components/Navbar/Mobile/MobileNavigationBar';
 
 
 export default function RootLayoutClient({
@@ -68,6 +69,11 @@ export default function RootLayoutClient({
                 </div>
               </header>
               <main>{children}</main>
+
+              <div className='block lg:hidden'>
+                <MobileNavigationBar />
+              </div>
+
               {!isLoginPage && !isRegisterPage && (
                 <div >
                   <Footer locale={locale} />

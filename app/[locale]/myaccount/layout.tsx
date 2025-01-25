@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Sidebar from "./Sidebar/page";
 
+
 export default function Layout({ children }: { children: React.ReactNode }) {
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -27,9 +28,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             animate="visible"
             variants={containerVariants}
         >
-            <motion.div variants={sidebarVariants}>
+            <motion.div variants={sidebarVariants} className="hidden lg:block">
                 <Sidebar />
             </motion.div>
+        
+            
+
             <motion.main className="flex-grow" variants={mainContentVariants}>
                 {children}
             </motion.main>
