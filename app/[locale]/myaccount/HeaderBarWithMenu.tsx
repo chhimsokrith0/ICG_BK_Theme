@@ -14,8 +14,8 @@ const HeaderBarWithMenu = () => {
             icon: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737521114/CASHIER_wbrocc.gif',
             subItems: [
                 { label: 'Deposit', link: '/myaccount/deposit' },
-                { label: 'Withdraw', link: '/cashier/withdraw' },
-                { label: 'Transfer / Promo', link: '/cashier/transfer' },
+                { label: 'Withdraw', link: '/myaccount/withdraw' },
+                { label: 'Transfer / Promo', link: '/myaccount/transfer' },
                 { label: 'Withdrawal Details', link: '/cashier/details' },
             ],
         },
