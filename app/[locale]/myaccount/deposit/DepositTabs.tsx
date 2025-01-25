@@ -1,7 +1,7 @@
 'use client';
 
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const DepositTabs = ({
     selectedTab,
@@ -16,19 +16,17 @@ const DepositTabs = ({
         { name: "Crypto Deposit", time: "15 minutes" },
     ];
 
-    
-
     const indicatorVariants = {
         hidden: { opacity: 0, width: 0 },
         visible: { opacity: 1, width: "100%", transition: { duration: 0.3 } },
     };
 
     return (
-        <div className="flex mb-6 space-x-2">
+        <div className="flex flex-wrap gap-2 mb-6">
             {tabs.map((tab) => (
                 <motion.button
                     key={tab.name}
-                    className={`relative flex-1 flex flex-col items-center justify-center py-2 rounded-md transition-all duration-300 ${
+                    className={`relative flex-1 flex flex-col items-center justify-center py-2 px-4 rounded-md transition-all duration-300 ${
                         selectedTab === tab.name
                             ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold shadow-lg"
                             : "bg-gray-200 text-gray-600 hover:bg-gray-300"
@@ -51,9 +49,9 @@ const DepositTabs = ({
                             <line x1="25" y1="13" x2="25" y2="25" stroke="currentColor" strokeWidth="2" />
                             <line x1="25" y1="25" x2="33" y2="29" stroke="currentColor" strokeWidth="2" />
                         </svg>
-                        <span className="text-sm">{tab.name}</span>
+                        <span className="text-sm whitespace-nowrap">{tab.name}</span>
                     </div>
-                    <span className="text-xs font-normal">{tab.time}</span>
+                    <span className="text-xs font-normal whitespace-nowrap">{tab.time}</span>
                     {selectedTab === tab.name && (
                         <motion.div
                             className="absolute bottom-0 left-0 h-1 bg-white rounded-t-md"

@@ -1,6 +1,6 @@
 'use client'
 import WalletApplicationsMobile from "@/components/WalletApplicationsMobile/WalletApplicationsMobile";
-import HeaderBarWithMenu from "./HeaderBarWithMenu";
+import HeaderBarWithMenu from "../HeaderBarWithMenu";
 import React, { useState } from 'react';
 const Page = () => {
     const verificationItems = [
