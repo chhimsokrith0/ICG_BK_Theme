@@ -2,6 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BankWithdrawal from "./BankWithdrawal";
+import HeaderBarWithMenu from "../HeaderBarWithMenu";
+
 
 const Page = () => {
   return (
@@ -13,6 +15,10 @@ const Page = () => {
         ease: "easeOut", // Smooth easing for the animation
       }}
     >
+      <div className="block md:hidden">
+        <HeaderBarWithMenu />
+      </div>
+
       <BankWithdrawal />
     </motion.div>
   );

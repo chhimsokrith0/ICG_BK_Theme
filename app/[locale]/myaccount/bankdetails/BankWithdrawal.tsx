@@ -13,7 +13,7 @@ const BankWithdrawal = () => {
     ];
 
     return (
-        <div className="bg-white rounded-lg shadow-md p-6 ml-2 h-screen">
+        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 lg:p-8 mx-2 sm:mx-4 lg:mx-8 h-full sm:h-auto lg:h-screen">
             {/* Tabs */}
             <div className="flex border-b gap-2 border-gray-300 mb-6">
                 {tabs.map((tab) => (

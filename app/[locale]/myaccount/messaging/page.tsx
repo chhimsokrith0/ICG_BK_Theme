@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import MessageCenter from './MessageCenter';
+import HeaderBarWithMenu from '../HeaderBarWithMenu';
 
 const Page = () => {
     const pageVariants = {
@@ -11,15 +12,32 @@ const Page = () => {
     };
 
     return (
-        <motion.div
-            variants={pageVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className="container mx-auto p-4"
-        >
-            <MessageCenter />
-        </motion.div>
+        <>
+            <div className="hidden lg:block">
+                <motion.div
+                    variants={pageVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                    className="container mx-auto p-4"
+                >
+                    <MessageCenter />
+                </motion.div>
+            </div>
+
+            <div className="lg:hidden">
+                <HeaderBarWithMenu />
+                <motion.div
+                    variants={pageVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                    className="container mx-auto p-4"
+                >
+                    <MessageCenter />
+                </motion.div>
+            </div>
+        </>
     );
 };
 

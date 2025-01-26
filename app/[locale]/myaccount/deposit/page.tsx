@@ -8,10 +8,13 @@ import ImportantNotice from "../ImportantNotice";
 import RecentTransactions from "../RecentTransactions";
 import HeaderBarWithMenu from '../HeaderBarWithMenu';
 import WalletApplicationsMobile from '@/components/WalletApplicationsMobile/WalletApplicationsMobile';
+import dynamic from 'next/dynamic';
 
 const Page = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
+  
 
   const handleAnimation = () => {
     setIsAnimating(true);
@@ -137,9 +140,6 @@ const Page = () => {
       </div>
 
 
-
-
-
       <div className='block lg:hidden'>
         <HeaderBarWithMenu />
         <div className="flex items-center p-4 bg-white rounded-lg shadow-md w-full hover:shadow-lg transition-shadow duration-300 ease-in-out">
@@ -183,7 +183,7 @@ const Page = () => {
         </div>
 
         <WalletApplicationsMobile />
-        
+
         {/* Deposit Tab */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -210,8 +210,6 @@ const Page = () => {
         >
           <RecentTransactions />
         </motion.div>
-
-
       </div>
     </>
   );

@@ -7,6 +7,7 @@ import Link from 'next/link';
 const HeaderBarWithMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [openSubMenuIndex, setOpenSubMenuIndex] = useState<number | null>(null);
+    const [activeSubItem, setActiveSubItem] = useState<string>('Funds'); // Track active sub-item
 
     const menuItems = [
         {
@@ -16,23 +17,25 @@ const HeaderBarWithMenu = () => {
                 { label: 'Deposit', link: '/myaccount/deposit' },
                 { label: 'Withdraw', link: '/myaccount/withdraw' },
                 { label: 'Transfer / Promo', link: '/myaccount/transfer' },
-                { label: 'Withdrawal Details', link: '/cashier/details' },
+                { label: 'Withdrawal Details', link: '/myaccount/bankdetails' },
             ],
         },
         {
             label: 'REWARD',
             icon: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737521114/REWARD_hckb5c.gif',
             subItems: [
-                { label: 'Reward Overview', link: '/reward/overview' },
-                { label: 'Reward History', link: '/reward/history' },
+                { label: 'Instant Rebate', link: '/myaccount/rebate' },
+                { label: 'Mission Diary', link: '/myaccount/daily-mission' },
+                { label: 'Referral', link: '/myaccount/referral' },
             ],
         },
         {
             label: 'PROFILE',
             icon: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737521114/PROFILE_ju1pyh.gif',
             subItems: [
-                { label: 'View Profile', link: '/profile/view' },
-                { label: 'Change Password', link: '/profile/change-password' },
+                { label: 'My Profile', link: '/myaccount/profile' },
+                { label: 'Messaging', link: '/myaccount/messaging' },
+                { label: 'Change Password', link: '/myaccount/changepassword' },
             ],
         },
         {
@@ -49,6 +52,11 @@ const HeaderBarWithMenu = () => {
         setOpenSubMenuIndex(openSubMenuIndex === index ? null : index);
     };
 
+    const handleSubItemClick = (subItemLabel: string) => {
+        setActiveSubItem(subItemLabel);
+        setIsMenuOpen(false); // Close the menu after clicking a sub-item
+    };
+
     return (
         <div className="relative">
             {/* Header Bar */}
@@ -59,6 +67,7 @@ const HeaderBarWithMenu = () => {
                         whileHover={{ x: -5 }}
                         whileTap={{ scale: 0.95 }}
                         className="text-blue-500"
+                        onClick={() => setIsMenuOpen(false)} // Optionally reset the menu
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +84,7 @@ const HeaderBarWithMenu = () => {
                             />
                         </svg>
                     </motion.button>
-                    <p className="text-sm font-medium text-gray-700">Funds</p>
+                    <p className="text-sm font-medium text-gray-700">{activeSubItem}</p>
                 </div>
 
                 {/* Dots */}
@@ -170,7 +179,10 @@ const HeaderBarWithMenu = () => {
                                 <ul className="mt-2 pl-8 space-y-2 text-sm text-gray-600">
                                     {item.subItems.map((subItem, subIndex) => (
                                         <li key={subIndex}>
-                                            <Link href={subItem.link}>
+                                            <Link
+                                                href={subItem.link}
+                                                onClick={() => handleSubItemClick(subItem.label)}
+                                            >
                                                 {subItem.label}
                                             </Link>
                                         </li>

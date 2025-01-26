@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import TransactionHistory from '../TransactionHistory';
+import HeaderBarWithMenu from '../../HeaderBarWithMenu';
 
 const Page = () => {
     const pageVariants = {
@@ -11,15 +12,20 @@ const Page = () => {
     };
 
     return (
-        <motion.div
-            variants={pageVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className="bg-white rounded-lg shadow-md p-6 w-full ml-2 h-screen"
-        >
-            <TransactionHistory />
-        </motion.div>
+        <>
+            <div className='block md:hidden'>
+                <HeaderBarWithMenu />
+            </div>
+            <motion.div
+                variants={pageVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="bg-white rounded-lg shadow-md p-6 w-full ml-2 h-screen"
+            >
+                <TransactionHistory />
+            </motion.div>
+        </>
     );
 };
 

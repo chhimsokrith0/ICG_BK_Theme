@@ -12,37 +12,54 @@ const TransactionHistory = () => {
     };
 
     return (
-        <div className="bg-white">
+        <div className="bg-white px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
             {/* Filter Section */}
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+            <form
+                onSubmit={handleSubmit}
+                className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6"
+            >
+                {/* Transaction Type */}
                 <div>
-                    <label htmlFor="transactionType" className="block text-sm font-medium text-gray-700">
+                    <label
+                        htmlFor="transactionType"
+                        className="block text-xs sm:text-sm font-medium text-gray-700"
+                    >
                         Transaction Type
                     </label>
                     <select
                         id="transactionType"
-                        className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+                        className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300 text-xs sm:text-sm"
                     >
                         <option value="Betting Summary">Betting Summary</option>
                         <option value="Deposit">Deposit</option>
                         <option value="Withdraw">Withdraw</option>
                     </select>
                 </div>
+
+                {/* Transaction Date */}
                 <div>
-                    <label htmlFor="transactionDate" className="block text-sm font-medium text-gray-700">
+                    <label
+                        htmlFor="transactionDate"
+                        className="block text-xs sm:text-sm font-medium text-gray-700"
+                    >
                         Transaction Date
                     </label>
                     <select
                         id="transactionDate"
-                        className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+                        className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300 text-xs sm:text-sm"
                     >
                         <option value="Today">Today</option>
                         <option value="Yesterday">Yesterday</option>
                         <option value="Last 7 Days">Last 7 Days</option>
                     </select>
                 </div>
+
+                {/* From Date */}
                 <div>
-                    <label htmlFor="fromDate" className="block text-sm font-medium text-gray-700">
+                    <label
+                        htmlFor="fromDate"
+                        className="block text-xs sm:text-sm font-medium text-gray-700"
+                    >
                         From <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -50,11 +67,16 @@ const TransactionHistory = () => {
                         id="fromDate"
                         value={fromDate}
                         onChange={(e) => setFromDate(e.target.value)}
-                        className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+                        className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300 text-xs sm:text-sm"
                     />
                 </div>
+
+                {/* To Date */}
                 <div>
-                    <label htmlFor="toDate" className="block text-sm font-medium text-gray-700">
+                    <label
+                        htmlFor="toDate"
+                        className="block text-xs sm:text-sm font-medium text-gray-700"
+                    >
                         To <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -62,39 +84,58 @@ const TransactionHistory = () => {
                         id="toDate"
                         value={toDate}
                         onChange={(e) => setToDate(e.target.value)}
-                        className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+                        className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300 text-xs sm:text-sm"
                     />
                 </div>
-                <div className="md:col-span-4 flex justify-center mt-4">
+
+                {/* Submit Button */}
+                <div className="col-span-1 sm:col-span-2 flex justify-center mt-4">
                     <button
                         type="submit"
-                        className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md focus:outline-none"
+                        className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md focus:outline-none text-sm sm:text-base"
                     >
                         Submit
                     </button>
                 </div>
             </form>
 
+
             {/* Table Section */}
-            <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse border-spacing-0">
+            <div className="overflow-x-auto w-full">
+                <table className="min-w-full text-left border-collapse border-spacing-0 text-xs sm:text-sm md:text-base">
                     <thead className="bg-gray-100 border-b">
                         <tr>
-                            <th className="px-4 py-3 text-gray-700 font-medium">Game Provider</th>
-                            <th className="px-4 py-3 text-gray-700 font-medium">Bet Count</th>
-                            <th className="px-4 py-3 text-gray-700 font-medium">Bet Amount</th>
-                            <th className="px-4 py-3 text-gray-700 font-medium">Valid Bet Amount</th>
-                            <th className="px-4 py-3 text-gray-700 font-medium">Bonus Turnover</th>
-                            <th className="px-4 py-3 text-gray-700 font-medium">Turnover Without Bonus</th>
-                            <th className="px-4 py-3 text-gray-700 font-medium">Total Bonus</th>
-                            <th className="px-4 py-3 text-gray-700 font-medium">Total Rebate</th>
+                            <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium whitespace-nowrap">
+                                Game Provider
+                            </th>
+                            <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium whitespace-nowrap">
+                                Bet Count
+                            </th>
+                            <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium whitespace-nowrap">
+                                Bet Amount
+                            </th>
+                            <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium whitespace-nowrap">
+                                Valid Bet Amount
+                            </th>
+                            <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium whitespace-nowrap">
+                                Bonus Turnover
+                            </th>
+                            <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium whitespace-nowrap">
+                                Turnover Without Bonus
+                            </th>
+                            <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium whitespace-nowrap">
+                                Total Bonus
+                            </th>
+                            <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium whitespace-nowrap">
+                                Total Rebate
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td
                                 colSpan={8}
-                                className="px-4 py-8 text-center text-gray-400 font-medium"
+                                className="px-2 sm:px-4 py-6 text-center text-gray-400 font-medium"
                             >
                                 No transaction yet
                             </td>
@@ -103,9 +144,12 @@ const TransactionHistory = () => {
                 </table>
             </div>
 
+
             {/* Pagination */}
-            <div className="flex justify-between items-center mt-4 text-gray-500">
-                <p className="text-sm">Showing 1 - of items.</p>
+            <div className="flex flex-col sm:flex-row justify-between items-center mt-4 text-gray-500">
+                <p className="text-xs sm:text-sm mb-2 sm:mb-0">
+                    Showing 1 - of items.
+                </p>
                 <div className="flex items-center space-x-2">
                     <button className="px-2 py-1 rounded-md bg-gray-200 hover:bg-gray-300">
                         &laquo;

@@ -18,32 +18,43 @@ const dailyMissions = [
 
 const MissionDiary = () => {
     return (
-        <div className="bg-white ml-2 rounded-lg shadow-md p-6 h-screen">
+        <div className="bg-white mx-2 sm:mx-4 rounded-lg shadow-md p-4 sm:p-6 h-full">
             {/* Header */}
-            <div className="flex justify-between items-center mb-6">
-                <div className="flex items-center space-x-4">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 space-y-4 sm:space-y-0">
+                <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
                     <div className="flex flex-col">
-                        <p className="text-gray-700 font-medium">
-                            Daily Missions: <span className="bg-gray-100 px-2 py-1 rounded-full text-gray-500">00:00 - 23:59 GMT+0</span>
+                        <p className="text-gray-700 font-medium text-sm sm:text-base">
+                            Daily Missions: 
+                            <span className="bg-gray-100 px-2 py-1 rounded-full text-gray-500 ml-2">
+                                00:00 - 23:59 GMT+0
+                            </span>
                         </p>
-                        <p className="text-sm text-gray-500">Last updated 2025-01-23 10:23:03</p>
+                        <p className="text-sm text-gray-500">
+                            Last updated 2025-01-23 10:23:03
+                        </p>
                     </div>
-                    <div className="flex items-center">
-                        <p className="text-gray-700 font-medium">Countdown:</p>
-                        <span className="bg-gray-100 px-2 py-1 rounded-full text-gray-500">13:35:17</span>
+                    <div className="flex items-center space-x-2">
+                        <p className="text-gray-700 font-medium text-sm sm:text-base">
+                            Countdown:
+                        </p>
+                        <span className="bg-gray-100 px-2 py-1 rounded-full text-gray-500">
+                            13:35:17
+                        </span>
                     </div>
                 </div>
-                <button className="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                <button className="flex items-center justify-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
                     <ArrowPathIcon className="w-5 h-5" />
-                    <span>Spin Now</span>
+                    <span className="text-sm sm:text-base">Spin Now</span>
                 </button>
             </div>
 
             {/* Total Points */}
-            <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center space-x-4">
-                    <p className="text-gray-700 font-medium">Total (Point):</p>
-                    <p className="text-blue-600 font-bold text-2xl flex items-center space-x-2">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
+                <div className="flex items-center space-x-2">
+                    <p className="text-gray-700 font-medium text-sm sm:text-base">
+                        Total (Point):
+                    </p>
+                    <p className="text-blue-600 font-bold text-lg sm:text-2xl flex items-center space-x-2">
                         <span>0</span>
                         <button className="text-blue-500 hover:text-blue-700">
                             <ArrowRightCircleIcon className="w-5 h-5" />
@@ -52,10 +63,9 @@ const MissionDiary = () => {
                 </div>
             </div>
 
-
-            {/* Table */}
-            <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse">
+            {/* Table for Larger Screens */}
+            <div className="hidden sm:block overflow-x-auto">
+                <table className="w-full text-left border-collapse text-sm">
                     <thead className="bg-gray-100">
                         <tr>
                             <th className="px-4 py-2 text-gray-700">Completion</th>
@@ -68,35 +78,52 @@ const MissionDiary = () => {
                     </thead>
                     <tbody>
                         {dailyMissions.map((mission, index) => (
-                            <tr key={index} className="border-b">
-                                <td className="px-4 py-2">{mission.completion}</td>
-                                <td className="px-4 py-2">{mission.name}</td>
-                                <td className="px-4 py-2">{mission.target}</td>
-                                <td className="px-4 py-2">{mission.date}</td>
+                            <tr key={index} className="border-b h-20">
+                                <td className="px-4 py-2 text-center">{mission.completion}</td>
+                                <td className="px-4 py-2 text-center">{mission.name}</td>
+                                <td className="px-4 py-2 text-center">{mission.target}</td>
+                                <td className="px-4 py-2 text-center">{mission.date}</td>
                                 <td className="px-4 py-2">
                                     <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden">
                                         <div
                                             className="absolute h-full bg-blue-500"
-                                            style={{ width: `${(mission.progress / mission.maxProgress) * 100}%` }}
+                                            style={{
+                                                width: `${(mission.progress / mission.maxProgress) * 100}%`,
+                                            }}
                                         ></div>
                                     </div>
-                                    <p className="text-sm text-gray-500">{mission.progress}/{mission.maxProgress}</p>
+                                    <p className="text-xs text-gray-500">
+                                        {mission.progress}/{mission.maxProgress}
+                                    </p>
                                 </td>
-                                <td className="px-4 py-2">{mission.reward}</td>
+                                <td className="px-4 py-2 text-center">{mission.reward}</td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
             </div>
 
-            {/* Pagination */}
-            <div className="flex justify-between items-center mt-4">
-                <p className="text-sm text-gray-500">Showing 1 - 10 of 10 items.</p>
-                <div className="flex items-center space-x-2">
-                    <button className="px-2 py-1 rounded-md bg-gray-200 hover:bg-gray-300">&laquo;</button>
-                    <button className="px-2 py-1 rounded-md bg-blue-500 text-white">1</button>
-                    <button className="px-2 py-1 rounded-md bg-gray-200 hover:bg-gray-300">&raquo;</button>
-                </div>
+            {/* Stacked Layout for Mobile */}
+            <div className="block sm:hidden">
+                {dailyMissions.map((mission, index) => (
+                    <div key={index} className="border-b py-4">
+                        <p className="text-gray-700 font-medium text-sm">{mission.name}</p>
+                        <p className="text-xs text-gray-500">Target: {mission.target}</p>
+                        <p className="text-xs text-gray-500">Date: {mission.date}</p>
+                        <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden my-2">
+                            <div
+                                className="absolute h-full bg-blue-500"
+                                style={{
+                                    width: `${(mission.progress / mission.maxProgress) * 100}%`,
+                                }}
+                            ></div>
+                        </div>
+                        <p className="text-xs text-gray-500">
+                            Progress: {mission.progress}/{mission.maxProgress}
+                        </p>
+                        <p className="text-gray-700 font-medium text-sm mt-2">Reward: {mission.reward}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );

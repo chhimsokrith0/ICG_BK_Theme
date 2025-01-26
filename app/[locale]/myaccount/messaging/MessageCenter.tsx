@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { faEnvelopeOpen, faTrash, faThumbtack, faFlag, faTimes  } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeOpen, faTrash, faThumbtack, faFlag, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from 'framer-motion';
 
@@ -111,14 +111,14 @@ const MessageCenter = () => {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-md p-6 h-screen relative">
+        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 h-screen relative">
             {/* Tabs */}
-            <div className="flex border-b gap-2 border-gray-300 mb-6">
+            <div className="flex flex-wrap gap-2 border-b border-gray-300 mb-4 sm:mb-6">
                 {tabs.map((tab) => (
                     <button
                         key={tab.name}
                         onClick={() => handleTabClick(tab.name)}
-                        className={`px-6 py-2 rounded-t-md font-medium ${activeTab === tab.name
+                        className={`px-4 sm:px-6 py-2 rounded-t-md font-medium text-xs sm:text-sm ${activeTab === tab.name
                             ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white'
                             : 'bg-gray-200 text-gray-500 hover:bg-gray-300'
                             }`}
@@ -130,7 +130,7 @@ const MessageCenter = () => {
 
             {/* Table Section */}
             <div>
-                <div className="flex justify-between items-center mb-4">
+                <div className="flex flex-col sm:flex-row justify-between items-center mb-4 space-y-4 sm:space-y-0">
                     {/* Select/Unselect All Section */}
                     <div className="flex items-center">
                         <input
@@ -144,25 +144,25 @@ const MessageCenter = () => {
                     </div>
 
                     {/* Actions Section */}
-                    <div className="flex space-x-6 items-center">
-                        <button className="flex items-center text-gray-500 hover:text-gray-700 text-sm font-medium">
-                            <FontAwesomeIcon icon={faEnvelopeOpen} className="w-5 h-5 mr-2" />
+                    <div className="flex flex-wrap gap-4 items-center">
+                        <button className="flex items-center text-gray-500 hover:text-gray-700 text-xs sm:text-sm font-medium">
+                            <FontAwesomeIcon icon={faEnvelopeOpen} className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                             Mark As Read
                         </button>
-                        <button className="flex items-center text-gray-500 hover:text-gray-700 text-sm font-medium">
-                            <FontAwesomeIcon icon={faTrash} className="w-5 h-5 mr-2" />
+                        <button className="flex items-center text-gray-500 hover:text-gray-700 text-xs sm:text-sm font-medium">
+                            <FontAwesomeIcon icon={faTrash} className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                             Delete
                         </button>
                     </div>
                 </div>
 
                 <div className="overflow-x-auto">
-                    <table className="w-full text-left border-collapse border-spacing-0">
+                    <table className="w-full text-left border-collapse border-spacing-0 text-xs sm:text-sm">
                         <thead className="bg-gray-100 border-b">
                             <tr>
-                                <th className="px-4 py-3 text-gray-700 font-medium">Subject</th>
-                                <th className="px-4 py-3 text-gray-700 font-medium">Date</th>
-                                <th className="px-4 py-3 text-gray-700 font-medium text-center">Remark</th>
+                                <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium">Subject</th>
+                                <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium">Date</th>
+                                <th className="px-2 sm:px-4 py-2 text-gray-700 font-medium text-center">Remark</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -170,13 +170,13 @@ const MessageCenter = () => {
                                 messages.map((message, index) => (
                                     <tr key={index} className="border-b">
                                         <td
-                                            className="px-4 py-3 text-gray-500 cursor-pointer "
+                                            className="px-2 sm:px-4 py-3 text-gray-500 cursor-pointer"
                                             onClick={() => setSelectedMessage(message)}
                                         >
                                             {message.subject}
                                         </td>
-                                        <td className="px-4 py-3 text-gray-700">{message.date}</td>
-                                        <td className="px-4 py-3 text-gray-700 flex justify-center space-x-4">
+                                        <td className="px-2 sm:px-4 py-3 text-gray-700">{message.date}</td>
+                                        <td className="px-2 sm:px-4 py-3 text-gray-700 flex justify-center space-x-2 sm:space-x-4">
                                             <button>
                                                 <FontAwesomeIcon
                                                     icon={faThumbtack}
@@ -202,7 +202,7 @@ const MessageCenter = () => {
                                 <tr>
                                     <td
                                         colSpan={3}
-                                        className="px-4 py-8 text-center text-gray-400 font-medium"
+                                        className="px-2 sm:px-4 py-8 text-center text-gray-400 font-medium"
                                     >
                                         0 message(s)
                                     </td>
@@ -221,23 +221,25 @@ const MessageCenter = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.8 }}
                         transition={{ duration: 0.3 }}
-                        className="bg-white rounded-lg shadow-lg w-1/2 p-6 relative"
+                        className="bg-white rounded-lg shadow-lg w-11/12 sm:w-1/2 p-4 sm:p-6 relative"
                     >
                         <button
                             className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
                             onClick={() => setSelectedMessage(null)}
                         >
-                            <FontAwesomeIcon icon={faTimes} className="w-6 h-6" />
+                            <FontAwesomeIcon icon={faTimes} className="w-5 sm:w-6 h-5 sm:h-6" />
                         </button>
-                        <h2 className="text-lg font-bold text-gray-800 mb-4">
+                        <h2 className="text-sm sm:text-lg font-bold text-gray-800 mb-4">
                             {selectedMessage.subject}
                         </h2>
-                        <p className="text-gray-700 whitespace-pre-line">{selectedMessage.content}</p>
+                        <p className="text-gray-700 whitespace-pre-line text-xs sm:text-sm">
+                            {selectedMessage.content}
+                        </p>
                     </motion.div>
                 </div>
             )}
-
         </div>
+
     );
 };
 

@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ChangePassword from './ChangePassword';
+import HeaderBarWithMenu from '../HeaderBarWithMenu';
 
 const Page = () => {
     const pageVariants = {
@@ -11,15 +12,20 @@ const Page = () => {
     };
 
     return (
-        <motion.div
-            variants={pageVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className="h-screen bg-white p-6 rounded-lg ml-2 shadow-lg"
-        >
-            <ChangePassword />
-        </motion.div>
+        <>
+            <div className='block lg:hidden'>
+                <HeaderBarWithMenu />
+            </div>
+            <motion.div
+                variants={pageVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="h-screen bg-white p-6 rounded-lg ml-2 shadow-lg"
+            >
+                <ChangePassword />
+            </motion.div>
+        </>
     );
 };
 
