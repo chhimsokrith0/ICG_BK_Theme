@@ -11,6 +11,7 @@ export default NextAuth({
   secret: process.env.NEXTAUTH_SECRET || "my-secret-key",
   session: {
     strategy: "jwt",
+    maxAge: 86400, // Set session expiration to 1 day (86,400 seconds)
   },
   providers: [
     CredentialsProvider({

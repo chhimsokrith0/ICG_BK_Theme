@@ -21,6 +21,7 @@ const config: Config = {
         "spin-slow": "spin 2s linear infinite",
         "bounce-slow": "bounce 2s infinite",
         "snow-fall": "snowFall 10s linear infinite", // Added animation for snow effect
+        pulse: "pulse 2s infinite",
       },
       keyframes: {
         scaleUp: {
@@ -48,8 +49,8 @@ const config: Config = {
           "50%": { transform: "translateY(-10px)" },
         },
         pulse: {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.5" },
+          "0%, 100%": { transform: "scale(1)", opacity: "1" },
+          "50%": { transform: "scale(1.1)", opacity: "0.8" },
         },
         spin: {
           "0%": { transform: "rotate(0deg)" },

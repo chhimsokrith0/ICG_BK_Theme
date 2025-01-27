@@ -96,7 +96,7 @@ const NavbarMobile = ({ locale }: { locale: string }) => {
         {/* App Notification Icon */}
         <Link href="/download" className="app-icon relative">
           <img
-            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736586641/application_1285750_jyqswo.svg"
+            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737954501/online-strategy_yxfq63.gif"
             alt="App Icon"
             className="h-10"
           />

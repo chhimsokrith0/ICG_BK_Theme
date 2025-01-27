@@ -24,25 +24,21 @@ export default function Navbar({ locale }: { locale: string }) {
         setIsMenuOpen(false); // Close hover menu if toggle is clicked
     };
 
-    // Fetch the user's IP and time zone
+    // Fetch timezone from the internal API
     useEffect(() => {
-        const fetchDateTime = async () => {
+        const fetchTimezone = async () => {
             try {
-                const response = await axios.get("https://worldtimeapi.org/api/ip", {
-                    timeout: 10000,
-                });
+                const response = await axios.get("/api/timezone");
                 const { timezone } = response.data;
                 setTimezone(timezone);
             } catch (error) {
-                console.error("Failed to fetch timezone:", error instanceof Error ? error.message : 'Unknown error');
+                console.error("Failed to fetch timezone:", error instanceof Error ? error.message : "Unknown error");
                 setTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone); // Fallback to browser timezone
             }
         };
 
-        fetchDateTime();
+        fetchTimezone();
     }, []);
-
-
 
     // Timer to update date and time every second
     useEffect(() => {
@@ -63,8 +59,6 @@ export default function Navbar({ locale }: { locale: string }) {
         return () => clearInterval(timer); // Cleanup interval on component unmount
     }, [timezone]);
 
-
-
     return (
         <div className="bg-gradient-to-r from-blue-100 w-full via-white to-blue-100 shadow-md">
             {/* Main Navbar */}
@@ -79,8 +73,9 @@ export default function Navbar({ locale }: { locale: string }) {
                     >
                         <button
                             onClick={handleMenuToggle}
-                            className={`text-gray-700 mt-4 focus:outline-none ${isMenuClicked ? "text-blue-500" : "hover:text-blue-500"
-                                }`}
+                            className={`text-gray-700 mt-4 focus:outline-none ${
+                                isMenuClicked ? "text-blue-500" : "hover:text-blue-500"
+                            }`}
                             aria-label="Toggle Menu"
                         >
                             <ButtonMenuSvg />
@@ -104,7 +99,6 @@ export default function Navbar({ locale }: { locale: string }) {
                     </Link>
 
                     {/* Navigation Links */}
-
                     <DesktopMenu locale={locale} />
                 </div>
 
@@ -141,25 +135,27 @@ export default function Navbar({ locale }: { locale: string }) {
                         </div>
                     </div>
 
-                    {
-                        session ? (
-                            <WalletHeader />
-                        ) : (
-                            <>
-                                {/* Log in Button */}
-                                <Link href={`/${locale}/login`} className="text-sm font-medium whitespace-nowrap text-gray-700 hover:text-gray-900">
-                                    {t("rightMenu.Login")}
-                                </Link>
+                    {session ? (
+                        <WalletHeader />
+                    ) : (
+                        <>
+                            {/* Log in Button */}
+                            <Link
+                                href={`/${locale}/login`}
+                                className="text-sm font-medium whitespace-nowrap text-gray-700 hover:text-gray-900"
+                            >
+                                {t("rightMenu.Login")}
+                            </Link>
 
-                                {/* Join Now Button */}
-                                <Link href={`/${locale}/register`} className="bg-orange-500 text-white text-xs md:text-sm font-medium px-2 py-1 md:px-4 md:py-2 rounded-md whitespace-nowrap hover:bg-orange-600 shadow-md">
-                                    {t("rightMenu.Joinnow")}
-                                </Link>
-                            </>
-                        )
-                    }
-
-
+                            {/* Join Now Button */}
+                            <Link
+                                href={`/${locale}/register`}
+                                className="bg-orange-500 text-white text-xs md:text-sm font-medium px-2 py-1 md:px-4 md:py-2 rounded-md whitespace-nowrap hover:bg-orange-600 shadow-md"
+                            >
+                                {t("rightMenu.Joinnow")}
+                            </Link>
+                        </>
+                    )}
 
                     {/* Language Dropdown */}
                     <LanguageDropdown />
