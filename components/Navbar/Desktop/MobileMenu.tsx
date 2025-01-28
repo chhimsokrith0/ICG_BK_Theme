@@ -34,7 +34,7 @@ export default function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
         { label: "Info Centre", link: "/info" },
         { label: "Contact Us", link: "/contact" },
         { label: "Responsible Gaming", link: "/responsible-gaming" },
-        { label: "Terms & Conditions", link: "/terms" },
+        { label: "Terms & Conditions", link: "/info-centre" },
         { label: "Affiliate", link: "/affiliate" },
     ];
 
