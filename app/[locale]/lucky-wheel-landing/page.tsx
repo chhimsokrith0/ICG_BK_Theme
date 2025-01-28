@@ -148,7 +148,7 @@ const LuckyWheelLanding = () => {
                                 {/* Spin Button */}
                                 {session ?
                                     <Link
-                                        href="/[locale]/lucky-wheel-spin"
+                                        href=""
                                         className="absolute z-20 bottom-2 bg-orange-500 text-center text-white text-lg font-bold py-2 px-8 rounded-lg shadow-lg hover:bg-orange-700"
                                         style={{ width: "346px" }}
                                     >
@@ -355,7 +355,7 @@ const LuckyWheelLanding = () => {
                     {/* Spin Action */}
                     {session ? (
                         <Link
-                            href="/[locale]/lucky-wheel-spin"
+                            href=""
                             className="absolute bottom-[44%] bg-orange-500 text-center text-white text-sm font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-orange-700 w-[260px]"
                         >
                             Spin Here

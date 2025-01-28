@@ -43,7 +43,7 @@ export default function HomeContent({ locale }: { locale: string }) {
     return (
         <div>
             <PromoModal />
-            <LuckyWheel />
+            <LuckyWheel locale={locale} />
             {/* Desktop Version */}
             <div className="hidden lg:block">
                 <motion.div variants={fadeInVariants} initial="hidden" animate="visible">

@@ -1,5 +1,6 @@
 import React from 'react';
 import WalletBalance from './WalletBalance';
+import Link from 'next/link';
 const WalletApplicationsMobile = () => {
   
 
@@ -16,31 +17,31 @@ const WalletApplicationsMobile = () => {
                     </div>
                     <p className="text-sm text-gray-600 font-medium mt-2">Restore</p>
                 </div>
-                <div className="flex flex-col items-center">
+                <Link href="/myaccount/deposit" className="flex flex-col items-center">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center text-blue-500">
                         <img src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737717089/Deposit_acvffy.gif" alt="" />
                     </div>
                     <p className="text-sm text-gray-600 font-medium mt-2">Deposit</p>
-                </div>
-                <div className="flex flex-col items-center">
+                </Link>
+                <Link href="/myaccount/transfer" className="flex flex-col items-center">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center text-blue-500">
                         <img src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737717160/Transfer_wky3lw.gif" alt="" />
                     </div>
                     <p className="text-sm text-gray-600 font-medium mt-2">Transfer</p>
-                </div>
-                <div className="flex flex-col items-center">
+                </Link>
+                <Link href="/myaccount/withdraw" className="flex flex-col items-center">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center text-blue-500">
                         <img src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737717229/Withdraw_vvmcqc.gif" alt="" />
                     </div>
                     <p className="text-sm text-gray-600 font-medium mt-2">Withdraw</p>
-                </div>
-                <div className="flex flex-col items-center">
+                </Link>
+                <Link href="/myaccount/history/bettingSummary" className="flex flex-col items-center">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center text-blue-500">
                         <img src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737717289/History_hmkasy.gif" alt="" />
                     </div>
                     <p className="text-sm text-gray-600 font-medium mt-2">History</p>
-                </div>
-                <div className="flex flex-col items-center relative">
+                </Link>
+                <Link href="/myaccount/messaging" className="flex flex-col items-center relative">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center text-blue-500">
                         <img src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737717411/Message_j5ak8r.gif" alt="" />
                     </div>
@@ -48,7 +49,7 @@ const WalletApplicationsMobile = () => {
                         0
                     </span>
                     <p className="text-sm text-gray-600 font-medium mt-2">Message</p>
-                </div>
+                </Link>
             </div>
 
             {/* Less Applications Section */}

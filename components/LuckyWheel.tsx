@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
-const LuckyWheel = () => {
+const LuckyWheel = ({ locale }: { locale: string }) => {
     const [isVisible, setIsVisible] = useState(true);
     const [position, setPosition] = useState({ x: 0, y: window.innerHeight - 200 }); // Bottom-left corner
     const [dragging, setDragging] = useState(false);
@@ -57,7 +57,7 @@ const LuckyWheel = () => {
                 top: `${position.y}px`,
             }}
         >
-            <Link href="/lucky-wheel-landing">
+            <Link href={`/${locale}/lucky-wheel-landing`}>
                 <img
                     draggable="false"
                     className="floating-lucky-wheel w-full h-full object-contain"
