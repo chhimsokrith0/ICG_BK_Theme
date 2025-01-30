@@ -11,21 +11,22 @@ interface CustomArrowProps {
     className?: string;
     style?: React.CSSProperties;
     onClick?: () => void;
-    children?: React.ReactNode;
+    direction: "left" | "right";
 }
 
 // Custom Arrow Component
-const CustomArrow: React.FC<CustomArrowProps> = ({ className, style, onClick, children }) => (
+const CustomArrow: React.FC<CustomArrowProps> = ({ className, style, onClick, direction }) => (
     <button
         type="button"
-        className={`${className} bg-white border border-blue-200 rounded-full shadow-md flex items-center justify-center w-10 h-10 absolute top-1/2 transform -translate-y-1/2`}
-        style={{
-            ...style,
-            zIndex: 10,
-        }}
+        className={`absolute top-1/2 -translate-y-1/2 z-10 p-3 bg-gradient-to-r ${
+            direction === "left"
+                ? "from-blue-500 to-blue-700 left-[-50px] md:left-[-40px]"
+                : "from-blue-700 to-blue-500 right-[-50px] md:right-[-40px]"
+        } text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300`}
+        style={{ ...style }}
         onClick={onClick}
     >
-        {children}
+        {direction === "left" ? <FaArrowLeft className="text-xl" /> : <FaArrowRight className="text-xl" />}
     </button>
 );
 
@@ -56,22 +57,15 @@ export default function PromoCarousel() {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 800,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 3500,
+        fade: false,
         arrows: true,
-        prevArrow: (
-            <CustomArrow className="slick-prev -left-4">
-                <FaArrowLeft className="text-blue-500 w-5 h-5" />
-            </CustomArrow>
-        ),
-        nextArrow: (
-            <CustomArrow className="slick-next -right-4">
-                <FaArrowRight className="text-blue-500 w-5 h-5" />
-            </CustomArrow>
-        ),
+        prevArrow: <CustomArrow direction="left" />,
+        nextArrow: <CustomArrow direction="right" />,
         responsive: [
             {
                 breakpoint: 1024, // Screens smaller than 1024px
@@ -95,18 +89,19 @@ export default function PromoCarousel() {
     };
 
     return (
-        <div className="relative w-full px-4 py-6 mx-auto max-w-[1400px]">
+        <div className="relative w-full px-4 py-8 mx-auto max-w-[1400px]">
+
+            {/* Slider */}
             <Slider {...settings}>
                 {promotions.map((promo) => (
-                    <div
-                        key={promo.id}
-                        className="flex justify-center items-center px-2"
-                    >
-                        <img
-                            src={promo.src}
-                            alt={promo.alt}
-                            className="rounded-md shadow-lg object-cover w-full max-h-40 sm:max-h-48 md:max-h-64 lg:max-h-80"
-                        />
+                    <div key={promo.id} className="px-3">
+                        <div className="overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                            <img
+                                src={promo.src}
+                                alt={promo.alt}
+                                className="w-full object-cover rounded-lg"
+                            />
+                        </div>
                     </div>
                 ))}
             </Slider>

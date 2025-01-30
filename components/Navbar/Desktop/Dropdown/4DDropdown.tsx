@@ -1,14 +1,25 @@
 import React from "react";
+import {  useTranslations } from "next-intl";
 
 export default function FourDDropdown() {
-    const sportsOptions = [
-        { name: "ESPRTS", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481725/4d-gdl_vbtf9e.png", badge: "Hot" },
-    ];
+    const t = useTranslations("Dropdown.fourDDropdown");
+    // const sportsOptions = [
+    //     { name: "ESPRTS", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481725/4d-gdl_vbtf9e.png", badge: "Hot" },
+    // ];
+
+    const SportsOptions = t.raw('sportsOptions')
+
+    const sportsOptions = SportsOptions.map((sportsOptions: any) => ({
+        name: sportsOptions.name,
+        image: sportsOptions.image,
+        badge: sportsOptions.badge
+    }));
+
 
     return (
-        <div className="absolute top-0 left-[-30.5%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
+        <div className="absolute top-0 left-[-28.7%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-6 gap-6">
-                {sportsOptions.map((option, index) => (
+                {sportsOptions.map((option: any, index: number) => (
                     <div
                         key={index}
                         className="relative flex flex-col items-center space-y-3 text-white hover:scale-105 transition-transform duration-300"
@@ -22,7 +33,7 @@ export default function FourDDropdown() {
                         {option.badge && (
                             <span
                                 className={`absolute top-2 right-2 text-xs font-bold px-2 py-1 rounded-full ${
-                                    option.badge === "New"
+                                    option.badge === t('sportsOptions.2')
                                         ? "bg-red-500 text-white"
                                         : "bg-yellow-500 text-black"
                                 }`}

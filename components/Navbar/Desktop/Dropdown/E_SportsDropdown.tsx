@@ -1,17 +1,22 @@
 
 
 import React from "react";
-
+import { useTranslations } from "next-intl";
 export default function E_SportsDropdown() {
-    const sportsOptions = [
-        { name: "ESPRTS", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport2_zyuiav.png", badge: "Hot" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport1_cmzaht.png", badge: "New" },
-    ];
+    const t = useTranslations("Dropdown.eSportsDropdown");
+
+    const SportsOptions = t.raw('sportsOptions');
+
+    const sportsOptions = SportsOptions.map((sportsOptions: any) => ({
+        name: sportsOptions.name,
+        image: sportsOptions.image,
+        badge: sportsOptions.badge,
+    }));
 
     return (
         <div className="absolute top-0 left-[-14.8%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-4 gap-6">
-                {sportsOptions.map((option, index) => (
+                {sportsOptions.map((option: any, index: number) => (
                     <div
                         key={index}
                         className="relative flex flex-col items-center space-y-3 text-white hover:scale-105 transition-transform duration-300"

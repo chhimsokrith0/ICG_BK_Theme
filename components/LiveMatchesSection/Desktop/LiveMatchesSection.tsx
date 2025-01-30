@@ -5,10 +5,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 const LiveMatchesSection = () => {
-    const [activeType, setActiveType] = useState("Football");
+    const t = useTranslations("LiveMatchesSection");
+    const [activeType, setActiveType] = useState(t('football'));
     const [isClient, setIsClient] = useState(false);
+    
 
     useEffect(() => {
         setIsClient(true);
@@ -34,7 +37,7 @@ const LiveMatchesSection = () => {
 
     const matches = [
         {
-            type: "Football",
+            type: t('football'),
             matches: [
                 {
                     id: 0,
@@ -118,9 +121,9 @@ const LiveMatchesSection = () => {
     return (
         <section className=" mx-auto max-w-[1400px]">
             <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-semibold">Upcoming LIVE Matches</h2>
+                <h2 className="text-2xl font-semibold"> { t('upcomingLiveMatches') } </h2>
                 <div className="flex space-x-4">
-                    {["Football", "Basketball"].map((type) => (
+                    {[t('football'), t('basketball')].map((type) => (
                         <button
                             key={type}
                             className={`px-4 py-2 rounded-full text-sm font-medium ${activeType === type

@@ -5,65 +5,25 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
+import { useTranslations } from "next-intl";
+
+
 
 const PopularGames = () => {
+    const t = useTranslations("Games.PopularGames");
     const { data: session } = useSession(); // Get the session data
-    const games = [
-        {
-            id: 1,
-            name: "Pac Man Glory",
-            type: "Nextspin",
-            rtp: "96.95",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497775/ns-pacman_xtorka.jpg",
-            label: "Hot",
-            link: "/games/pac-man-glory",
-        },
-        {
-            id: 2,
-            name: "Cleopetra Fortune",
-            type: "Nextspin",
-            rtp: "96.97",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497774/ns-candy-bonanza_qiiu1l.jpg",
-            label: "Hot",
-            link: "/games/cleopetra-fortune",
-        },
-        {
-            id: 3,
-            name: "BK8 Roma",
-            type: "Nextspin",
-            rtp: "96.75",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497776/ns-roma_crzcl9.jpg",
-            label: "Hot",
-            link: "/games/bk8-roma",
-        },
-        {
-            id: 4,
-            name: "BK8 Gates Of Olympus",
-            type: "Pragmatic Play",
-            rtp: "97.6",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497778/sCleopaFor_mrcdws.jpg",
-            label: "Hot",
-            link: "/games/gates-of-olympus",
-        },
-        {
-            id: 5,
-            name: "BK8 Candy Bonanza",
-            type: "Nextspin",
-            rtp: "97.93",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497780/vs20bk8gates_sqy4q9.jpg",
-            label: "Hot",
-            link: "/games/candy-bonanza",
-        },
-        {
-            id: 6,
-            name: "BK8 Sweet Blaster",
-            type: "Nextspin",
-            rtp: "97.93",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497782/vs20fruitsbk8_qznodc.png",
-            label: "Hot",
-            link: "/games/sweet-blaster",
-        },
-    ];
+
+    const gamesList = t.raw('GamesList')
+
+    const games = gamesList.map((game: any) => ({
+        id: game.id,
+        name: game.name,
+        type: game.type,
+        rtp: game.rtp,
+        image: game.image,
+        label: game.label,
+        link: game.link
+    }));
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -97,14 +57,14 @@ const PopularGames = () => {
             transition={{ duration: 0.8 }}
         >
             <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Popular Games We Love</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900"> {t("popularGamesTitle")} </h2>
                 <Link href="/Games/Slots/nextspin" className="text-blue-500 hover:underline text-sm font-medium">
-                    See all
+                    {t("seeAll")}
                 </Link>
             </div>
             {isMobile ? (
                 <div className="flex overflow-x-auto space-x-4 scrollbar-hide">
-                    {games.map((game, index) => (
+                    {games.map((game : any, index: number) => (
                         <motion.div
                             key={game.id}
                             className="flex-none w-[40%] sm:w-[50%] md:w-[33%] lg:w-[20%]"
@@ -130,12 +90,12 @@ const PopularGames = () => {
                                         <>
                                             <Link href={game.link}>
                                                 <button className="bg-yellow-500 text-black px-4 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Play
+                                                    {t("play")}
                                                 </button>
                                             </Link>
                                             <Link href={`${game.link}/demo`}>
                                                 <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Demo
+                                                    {t("demo")}
                                                 </button>
                                             </Link>
                                         </>
@@ -143,7 +103,7 @@ const PopularGames = () => {
                                         <>
                                             <Link href="/login">
                                                 <button className="bg-yellow-500 text-black px-4 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Play
+                                                    {t("play")}
                                                 </button>
                                             </Link>
                                             <Link
@@ -152,7 +112,7 @@ const PopularGames = () => {
                                                 rel="noopener noreferrer"
                                             >
                                                 <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Demo
+                                                    {t("demo")}
                                                 </button>
                                             </Link>
                                         </>
@@ -183,7 +143,7 @@ const PopularGames = () => {
                         { breakpoint: 768, settings: { slidesToShow: 2 } },
                     ]}
                 >
-                    {games.map((game, index) => (
+                    {games.map((game : any, index: number) => (
                         <motion.div
                             key={game.id}
                             className="game-container p-2"
@@ -209,12 +169,12 @@ const PopularGames = () => {
                                         <>
                                             <Link href={game.link}>
                                                 <button className="bg-yellow-500 text-black px-4 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Play
+                                                    {t("play")}
                                                 </button>
                                             </Link>
                                             <Link href={`${game.link}/demo`}>
                                                 <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Demo
+                                                    {t("demo")}
                                                 </button>
                                             </Link>
                                         </>
@@ -222,7 +182,7 @@ const PopularGames = () => {
                                         <>
                                             <Link href="/login">
                                                 <button className="bg-yellow-500 text-black px-4 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Play
+                                                {t("play")}
                                                 </button>
                                             </Link>
                                             <Link
@@ -232,7 +192,7 @@ const PopularGames = () => {
                                             >
 
                                                 <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Demo
+                                                {t("demo")}
                                                 </button>
                                             </Link>
                                         </>

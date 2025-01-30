@@ -1,18 +1,24 @@
 
 
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function  LotteryDropdown() {
-    const sportsOptions = [
-        { name: "ESPRTS", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-tcg_ixvmf4.png", badge: "Hot" },
-        { name: "ESPRTS", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482120/qqkeno_kiruyt.png", badge: "New" },
-        { name: "ESPRTS", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-fg_l52yax.png", badge: "New" },
-    ];
+
+    const t = useTranslations("Dropdown.lotteryDropdown");
+
+    const SportsOptions = t.raw('sportsOptions');
+
+    const sportsOptions = SportsOptions.map((sportsOptions: any) => ({
+        name: sportsOptions.name,
+        image: sportsOptions.image,
+        badge: sportsOptions.badge,
+    }));
 
     return (
         <div className="absolute top-0 left-[-35.6%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-6 gap-6">
-                {sportsOptions.map((option, index) => (
+                {sportsOptions.map((option: any, index: number) => (
                     <div
                         key={index}
                         className="relative flex flex-col items-center space-y-3 text-white hover:scale-105 transition-transform duration-300"

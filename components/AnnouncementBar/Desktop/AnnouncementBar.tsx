@@ -3,9 +3,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import AnnouncementModal from '../AnnouncementModal';
+import { useTranslations } from 'next-intl';
 
 export default function AnnouncementBar() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const t = useTranslations('AnnountcementBar');
 
     const handleModalToggle = () => {
         setIsModalOpen(!isModalOpen);
@@ -18,7 +20,7 @@ export default function AnnouncementBar() {
                     {/* Left Block */}
                     <div className="announcement-moving announcement-content-container flex items-center flex-1 min-w-0">
                         <div className="left-block font-bold text-xs sm:text-sm px-3 py-1 bg-blue-600 text-white rounded-full whitespace-nowrap">
-                            News
+                        {t('news')}
                         </div>
 
                         {/* Animated Text */}
@@ -38,7 +40,7 @@ export default function AnnouncementBar() {
                                 }}
                                 initial={{ x: '100%' }}
                             >
-                                Invite your friends to join ICG Gaming and win big together this Chinese New Year! Up to MYR 4,888 referral bonus awaits!
+                                {t('announcementMessage')}
                             </motion.div>
                         </div>
                     </div>
@@ -48,7 +50,7 @@ export default function AnnouncementBar() {
                         className="more-btn text-xs sm:text-sm px-2 sm:px-4 text-blue-600 cursor-pointer mt-2 sm:mt-0"
                         onClick={handleModalToggle}
                     >
-                        More
+                        {t('more')}
                     </div>
                 </div>
             </section>

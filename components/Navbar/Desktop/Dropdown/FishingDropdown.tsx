@@ -1,26 +1,23 @@
 
 
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function FishingDropdown() {
-    const sportsOptions = [
-        { name: "ESPRTS", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-ygr_e8z6bt.png", badge: "Hot" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-fs_rsufvf.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-jl_ktjqar.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-r88_ezxpwb.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-fc_duw8dt.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-sg_ut7ere.png", badge: "New" },
 
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-cq9_cdtgnm.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-dragoon-soft_uzabnu.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-jdb_hmfqa6.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-vp_xqswfh.png", badge: "New" },
-    ];
+    const t = useTranslations("Dropdown.fishingDropdown");
 
+    const SportsOptions = t.raw('sportsOptions');
+
+    const sportsOptions = SportsOptions.map((sportsOptions: any) => ({
+        name: sportsOptions.name,
+        image: sportsOptions.image,
+        badge: sportsOptions.badge,
+    }));
     return (
         <div className="absolute top-0 left-[-26.5%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-6 gap-6">
-                {sportsOptions.map((option, index) => (
+                {sportsOptions.map((option: any, index: number) => (
                     <div
                         key={index}
                         className="relative flex flex-col items-center space-y-3 text-white hover:scale-105 transition-transform duration-300"

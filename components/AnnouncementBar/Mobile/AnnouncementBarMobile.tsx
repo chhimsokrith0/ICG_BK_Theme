@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import AnnouncementModal from '../AnnouncementModal';
-
+import { useTranslations } from 'next-intl';
 export default function AnnouncementBar() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const t = useTranslations('AnnountcementBar');
 
     const handleModalToggle = () => {
         setIsModalOpen(!isModalOpen);
@@ -76,13 +77,13 @@ export default function AnnouncementBar() {
                         }}
                         initial={{ x: "100%" }}
                     >
-                        Stay active and stand a chance to win amazing rewards! Don’t miss out.
+                        {t('announcementMessage')}
                     </motion.div>
                 </div>
 
                 {/* More Button */}
                 <div onClick={handleModalToggle} className="more-btn text-xs sm:text-sm px-2 sm:px-4 text-blue-600 cursor-pointer">
-                    More
+                {t('more')}
                 </div>
             </div>
              {/* Modal */}

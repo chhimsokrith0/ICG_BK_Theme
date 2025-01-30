@@ -4,8 +4,22 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslations } from "next-intl";
 
 const LatestNews = () => {
+    const t = useTranslations("LatestNews");
+
+    const News = t.raw('news')
+
+    const news = News.map((news: any) => ({
+        title: news.title,
+        description: news.description,
+        date: news.date,
+        image: news.image,
+    }));
+
+
+
     const settings = {
         autoplay: true,
         autoplaySpeed: 5000,
@@ -32,45 +46,13 @@ const LatestNews = () => {
             },
         ],
     };
-
-    const news = [
-        {
-            title: "BK8 x Manny Pacquiao",
-            description:
-                "BK8 betting platform has announced a new Brand Ambassador in the Philippines with renowned boxing legend Manny Pacquiao on 1 December 2023. The partnership with Pacquiao, winner of 12 world titles in eight different weight divisions will surely take BK8's approach to greater heights.",
-            date: "19/12/2023",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512938/manny_pacquiao_tfrpgd.png",
-        },
-        {
-            title: "BK8 x Aston Villa",
-            description:
-                "BK8 and Aston Villa have entered into a multi-year partnership, with BK8 serving as the Principal and Front of Shirt Partner until the 2023/2024 season. BK8 is actively engaged in various local charitable initiatives.",
-            date: "16/06/2023",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512935/bwf_p5bc64.png",
-        },
-        {
-            title: "BK8 x Burnley F.C.",
-            description:
-                "BK8 is the Official Asia Betting Partner for Burnley F.C. since 2022, and the partnership has been further extended to include being the Official Training Wear partner for the 2023/2024 season.",
-            date: "16/06/2023",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512932/burnley-fc_kdlzms.png",
-        },
-        {
-            title: "BK8 x BWF",
-            description:
-                "BK8 serves as the Official Betting Sponsor of selected HSBC BWF World Tour events in 2024. This strategic partnership will be celebrated at international events.",
-            date: "10/5/2024",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512931/aston-villa_kjdc7i.png",
-        },
-    ];
-
     return (
         <section className="latest-news-section mx-auto max-w-[1400px] py-8 px-4 md:px-8 bg-gray-50 rounded-lg shadow-lg">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-                BK8 Latest News
+                {t("latestNewsTitle")}
             </h2>
             <Slider {...settings}>
-                {news.map((item, index) => (
+                {news.map((item: any, index: number) => (
                     <div
                         key={index}
                         className="latest-news-box w-full p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between"

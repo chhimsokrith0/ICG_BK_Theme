@@ -2,8 +2,23 @@
 
 import React from "react";
 import Slider from "react-slick";
+import { useTranslations } from "next-intl";
+import { FaStar } from "react-icons/fa";
 
 const Testimonials = () => {
+
+
+    const t = useTranslations("Testimonials");
+
+    const Testimonials = t.raw('reviews')
+
+    const testimonials = Testimonials.map((testimonials: any) => ({
+        title: testimonials.title,
+        description: testimonials.description,
+        rating: testimonials.rating,
+    }));
+
+
     const settings = {
         autoplay: true,
         autoplaySpeed: 5000,
@@ -31,34 +46,13 @@ const Testimonials = () => {
         ],
     };
 
-    const testimonials = [
-        {
-            title: "Safe and reputable platform that you can trust!",
-            description:
-                "I hesitate to make a deposit or share my information on other platforms because I don't feel safe. However, BK8 gave me the confidence as they have a verified domain and security measures in place. I always feel safe playing on BK8.",
-            rating: 5,
-        },
-        {
-            title: "Happy to switch to BK8! Awesome!",
-            description:
-                "I am really happy to switch to BK8. High payouts and fantastic bonuses. You'd have to try it to believe it!",
-            rating: 5,
-        },
-        {
-            title: "Feel like a real VIP with them!",
-            description:
-                "They are going above and beyond to provide exceptional services for their VIPs, with exclusive rewards and perks from time to time. BK8 gained a loyal member like me now!",
-            rating: 5,
-        },
-    ];
-
     return (
         <section className="testimonial-section mx-auto max-w-[1400px] py-12 px-4 md:px-8 bg-gray-50 rounded-lg shadow-lg">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                What Our Users Say
+                {t("testimonialsTitle")}
             </h2>
             <Slider {...settings}>
-                {testimonials.map((testimonial, index) => (
+                {testimonials.map((testimonial: any, index: number) => (
                     <div
                         key={index}
                         className="testimonial-box p-6 md:p-8 mx-2 flex flex-col items-center text-center "
@@ -71,19 +65,7 @@ const Testimonials = () => {
                         </p>
                         <div className="star-container flex justify-center">
                             {[...Array(testimonial.rating)].map((_, starIndex) => (
-                                <svg
-                                    key={starIndex}
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="24"
-                                    height="24"
-                                    className="text-yellow-500 mx-1"
-                                >
-                                    <path
-                                        d="M12 .587l3.668 7.425 8.2 1.191-5.934 5.8L19.8 23.2 12 19.552 4.2 23.2l1.865-8.197L.132 9.203l8.2-1.191L12 .587z"
-                                        fill="currentColor"
-                                    />
-                                </svg>
+                                <FaStar key={starIndex} className="text-yellow-500 mx-1" size={24} />
                             ))}
                         </div>
                     </div>

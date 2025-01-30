@@ -109,6 +109,763 @@
         "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663006/CMD_yqy8ea.jpg",
         "alt": "Cmd-体育横幅"
       }
+    },
+    "PopularGames": {
+      "popularGamesTitle": "热门游戏推荐",
+      "seeAll": "查看全部",
+      "play": "开始游戏",
+      "demo": "试玩",
+      "hot": "热门",
+      "rtp": "RTP",
+      "GamesList": [
+        {
+          "id": 1,
+          "name": "吃豆人荣耀",
+          "type": "Nextspin",
+          "rtp": "96.95",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497775/ns-pacman_xtorka.jpg",
+          "label": "热门",
+          "link": "/games/pac-man-glory"
+        },
+        {
+          "id": 2,
+          "name": "克娄巴特拉财富",
+          "type": "Nextspin",
+          "rtp": "96.97",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497774/ns-candy-bonanza_qiiu1l.jpg",
+          "label": "热门",
+          "link": "/games/cleopetra-fortune"
+        },
+        {
+          "id": 3,
+          "name": "BK8 罗马",
+          "type": "Nextspin",
+          "rtp": "96.75",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497776/ns-roma_crzcl9.jpg",
+          "label": "热门",
+          "link": "/games/bk8-roma"
+        },
+        {
+          "id": 4,
+          "name": "BK8 奥林匹斯之门",
+          "type": "Pragmatic Play",
+          "rtp": "97.6",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497778/sCleopaFor_mrcdws.jpg",
+          "label": "热门",
+          "link": "/games/gates-of-olympus"
+        },
+        {
+          "id": 5,
+          "name": "BK8 糖果狂欢",
+          "type": "Nextspin",
+          "rtp": "97.93",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497780/vs20bk8gates_sqy4q9.jpg",
+          "label": "热门",
+          "link": "/games/candy-bonanza"
+        },
+        {
+          "id": 6,
+          "name": "BK8 甜蜜爆破",
+          "type": "Nextspin",
+          "rtp": "97.93",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497782/vs20fruitsbk8_qznodc.png",
+          "label": "热门",
+          "link": "/games/sweet-blaster"
+        }
+      ]
+    },
+    "BestLiveCasinoGames": {
+      "bestLiveCasinoGamesTitle": "最佳真人娱乐场游戏",
+      "seeAll": "查看全部",
+      "play": "开始游戏",
+      "logInToPlay": "登录以玩",
+      "new": "新",
+      "hot": "热门",
+      "GamesList": [
+        {
+          "id": 1,
+          "name": "BK8 CN 红 1",
+          "type": "BK8 赌场",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498983/sbc2_asqzgx.jpg",
+          "label": "新",
+          "link": "/games/bk8-cn-red-1"
+        },
+        {
+          "id": 2,
+          "name": "BK8 CN 红 5",
+          "type": "BK8 赌场",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498981/sbc1_uembyf.jpg",
+          "label": "新",
+          "link": "/games/bk8-cn-red-5"
+        },
+        {
+          "id": 3,
+          "name": "BK8 百家乐 1",
+          "type": "PP 真人娱乐场",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498978/salon-prive-baccarat_l6w2df.jpg",
+          "label": "热门",
+          "link": "/games/bk8-baccarat-1"
+        },
+        {
+          "id": 4,
+          "name": "BK8 单人二十一点",
+          "type": "PP 真人娱乐场",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498976/PP-Roulette_zbpkru.jpg",
+          "label": "热门",
+          "link": "/games/bk8-one-blackjack"
+        },
+        {
+          "id": 5,
+          "name": "BK8 轮盘",
+          "type": "PP 真人娱乐场",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498974/PP-blackjack_vpupvs.jpg",
+          "label": "热门",
+          "link": "/games/bk8-roulette"
+        },
+        {
+          "id": 6,
+          "name": "闪电轮盘",
+          "type": "Evolution Gaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498973/PP-baccarat-1_w3pk5c.jpg",
+          "link": "/games/lightning-roulette"
+        }
+      ]
+    },
+    "InstantGamesToPlay": {
+      "instantGamesTitle": "即时游戏推荐",
+      "seeAll": "查看全部",
+      "play": "开始游戏",
+      "demo": "试玩",
+      "logInToPlay": "登录以玩",
+      "new": "新",
+      "GamesList": [
+        {
+          "id": 1,
+          "name": "扫雷",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505457/imgame12001_xpsrbr.png",
+          "label": "新",
+          "link": "/games/mines"
+        },
+        {
+          "id": 2,
+          "name": "射门",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505458/imgame12002_iojuox.png",
+          "label": "新",
+          "link": "/games/goal"
+        },
+        {
+          "id": 3,
+          "name": "骰子",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505460/imgame12005_xs9taf.png",
+          "label": "新",
+          "link": "/games/dice"
+        },
+        {
+          "id": 4,
+          "name": "普林科",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505462/imgame12006_zhyivn.png",
+          "label": "新",
+          "link": "/games/plinko"
+        },
+        {
+          "id": 5,
+          "name": "基诺",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505464/imgame12007_hrrofy.png",
+          "label": "新",
+          "link": "/games/keno"
+        },
+        {
+          "id": 6,
+          "name": "迷你轮盘",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505466/imgame12008_pyx0zr.png",
+          "label": "新",
+          "link": "/games/mini-roulette"
+        }
+      ]
+    }
+  },
+  "AnnountcementBar": {
+    "news": "新闻",
+    "more": "更多",
+    "announcementMessage": "邀请您的朋友加入 ICG Gaming，一起赢得大奖吧！这个农历新年，您将有机会获得高达 MYR 4,888 的推荐奖金！"
+  },
+  "LiveMatchesSection": {
+    "upcomingLiveMatches": "即将到来的现场比赛",
+    "football": "足球",
+    "basketball": "篮球",
+    "officialSponsor": "2024 年 HSBC BWF 世界巡回赛总决赛官方赞助商",
+    "brandAmbassador": "BK8 菲律宾品牌大使 2023 - 2024",
+    "officialPartner": "官方合作伙伴 | 伯恩利足球俱乐部",
+    "betNow": "立即下注",
+    "league": "联赛",
+    "matchTime": "比赛时间",
+    "homeTeam": "主队",
+    "awayTeam": "客队",
+    "handicap": "让球",
+    "odds": "赔率",
+    "home": "主",
+    "away": "客",
+    "vs": "对"
+  },
+  "HowToRegister": {
+    "welcomeMessage": "欢迎来到 BK8 - 亚洲值得信赖的在线赌场",
+    "howToRegister": "如何注册",
+    "createAccount": "创建账户",
+    "createAccountDescription": "点击立即加入，填写您的登录信息",
+    "makeDeposit": "充值",
+    "makeDepositDescription": "使用货币或加密货币进行首次存款",
+    "startWinning": "开始赢取奖励",
+    "startWinningDescription": "在您最喜欢的游戏中赢取奖励",
+    "getReward": "领取奖励",
+    "getRewardDescription": "别忘了领取您的奖金"
+  },
+  "AppDownloadSection": {
+    "appDownloadTitle": "应用下载",
+    "futureOfGaming": "游戏的未来已来。",
+    "greatGamesAllDevices": "精彩游戏适用于所有设备。",
+    "newBK8App": "全新 BK8 应用",
+    "signUpToday": "立即注册，享受源源不断的奖励、促销和丰富的赠品。",
+    "appleIOS": "苹果 iOS",
+    "android": "安卓",
+    "instructions": "安装指南",
+    "features": {
+      "referralMadeEasy": {
+        "title": "推荐轻松赚",
+        "description": "分享您的推荐链接并赚取收益"
+      },
+      "securityAssured": {
+        "title": "安全有保障",
+        "description": "支持人脸识别或指纹解锁账号"
+      },
+      "seamlessWalletTransfer": {
+        "title": "无缝钱包转账",
+        "description": "秒级转账更便捷"
+      },
+      "expressLogin": {
+        "title": "极速登录",
+        "description": "快速安全的方式让您保持登录状态"
+      }
+    }
+  },
+  "OurPartners": {
+    "ourPartners": "我们的合作伙伴",
+    "seeAll": "查看全部"
+  },
+  "Testimonials": {
+    "testimonialsTitle": "用户评价",
+    "reviews": [
+      {
+        "title": "安全可靠的平台，值得信赖！",
+        "description": "我在其他平台存款或分享个人信息时总是犹豫不决，因为我不觉得安全。然而，BK8 让我充满信心，他们拥有经过验证的域名和安全措施。在 BK8 玩游戏让我感到非常安心。",
+        "rating": 5
+      },
+      {
+        "title": "很高兴切换到 BK8！太棒了！",
+        "description": "我真的很高兴选择了 BK8。高额奖金和超棒的促销活动，不试试你都不会相信！",
+        "rating": 5
+      },
+      {
+        "title": "在这里真的有 VIP 级别的体验！",
+        "description": "他们一直在努力为 VIP 提供卓越的服务，并定期提供专属奖励和福利。BK8 让我成为了他们忠实的会员！",
+        "rating": 5
+      }
+    ]
+  },
+  "LatestNews": {
+    "latestNewsTitle": "BK8 最新消息",
+    "news": [
+      {
+        "title": "BK8 x 曼尼·帕奎奥",
+        "description": "BK8 博彩平台于 2023 年 12 月 1 日宣布，菲律宾著名拳击传奇人物曼尼·帕奎奥成为品牌代言人。帕奎奥曾在八个不同级别的比赛中赢得 12 个世界冠军，此次合作将进一步提升 BK8 的品牌高度。",
+        "date": "2023/12/19",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512938/manny_pacquiao_tfrpgd.png"
+      },
+      {
+        "title": "BK8 x 阿斯顿维拉",
+        "description": "BK8 与阿斯顿维拉足球俱乐部达成了一项多年合作协议，BK8 将作为俱乐部的主要合作伙伴及球衣正面赞助商，合作至 2023/2024 赛季。此外，BK8 还积极参与当地慈善活动。",
+        "date": "2023/06/16",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512935/bwf_p5bc64.png"
+      },
+      {
+        "title": "BK8 x 伯恩利足球俱乐部",
+        "description": "自 2022 年起，BK8 成为伯恩利足球俱乐部的官方亚洲博彩合作伙伴，并在 2023/2024 赛季进一步扩展合作，成为官方训练服合作伙伴。",
+        "date": "2023/06/16",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512932/burnley-fc_kdlzms.png"
+      },
+      {
+        "title": "BK8 x BWF",
+        "description": "BK8 作为 2024 年部分 HSBC BWF 世界巡回赛的官方博彩赞助商。这一战略合作伙伴关系将在国际赛事中得到广泛宣传。",
+        "date": "2024/05/10",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512931/aston-villa_kjdc7i.png"
+      }
+    ]
+  },
+  "PartnershipAndAwards": {
+    "partnersAndAwards": "合作伙伴与奖项",
+    "partners": [
+      {
+        "type": "官方合作伙伴",
+        "name": "伯恩利足球俱乐部",
+        "year": "2023-2024",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513807/bfc_uwp4f5.svg"
+      },
+      {
+        "type": "2024 年 HSBC BWF 世界巡回赛总决赛官方赞助商",
+        "name": "",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513821/hsbc_bwf_kypkyc.png"
+      },
+      {
+        "type": "BK8 菲律宾品牌大使 2023 - 2024",
+        "name": "曼尼·帕奎奥",
+        "subTitle": "8 次级别世界拳王 & 12 项世界冠军得主",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513834/sponsor-MP_yxu2in.png",
+        "signature": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513830/signature-MP_bc5uog.png"
+      },
+      {
+        "type": "入围体育博彩创新奖",
+        "name": "",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513814/egr_nomination_xh1xoj.png"
+      }
+    ],
+    "awardNomination": "奖项提名",
+    "ourPreviousSponsorships": "我们过往的赞助",
+    "sponsorships": [
+      {
+        "name": "阿斯顿维拉足球俱乐部",
+        "year": "2023 - 2024",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513778/aston-villa-fc_n6waqu.svg"
+      },
+      {
+        "name": "水晶宫足球俱乐部",
+        "year": "2022 - 2023",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513811/crystal-palace-fc_rpxzrj.svg"
+      },
+      {
+        "name": "哈德斯菲尔德镇足球俱乐部",
+        "year": "2021 - 2023",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513824/huddersfield-town-afc_od3ilw.svg"
+      },
+      {
+        "name": "瓦伦西亚足球俱乐部",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513837/valencia-cf_ipimq6.svg"
+      },
+      {
+        "name": "毕尔巴鄂竞技俱乐部",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513781/athletic-club_oym5cd.svg"
+      },
+      {
+        "name": "比利亚雷亚尔足球俱乐部",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513841/villarreal-cf_uasmsz.svg"
+      },
+      {
+        "name": "埃尔切足球俱乐部",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513817/elche-cf_mxwj73.svg"
+      },
+      {
+        "name": "马洛卡皇家俱乐部",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513827/rcd-mallorca_wdpycz.svg"
+      }
+    ]
+  },
+  "footer": {
+    "aboutBK8": "关于 BK8 体育",
+    "aboutBK8Description": "BK8 Sports（9 Abraham De Veerstraat Willemstad, Curaçao）获得库拉索政府的授权和监管。",
+    "gamingLicense": "游戏许可证",
+    "games": "游戏",
+    "gameCategories": [
+      "体育",
+      "电子竞技",
+      "娱乐场",
+      "老虎机",
+      "捕鱼",
+      "3D 游戏",
+      "彩票",
+      "快速游戏"
+    ],
+    "info": "信息",
+    "infoLinks": [
+      "关于我们",
+      "VIP",
+      "排行榜",
+      "联盟计划",
+      "联系我们",
+      "负责任博彩",
+      "信息中心",
+      "条款和条件"
+    ],
+    "certifications": "认证",
+    "paymentMethods": "支付方式",
+    "followUs": "关注我们",
+    "security": "安全",
+    "responsibleGaming": "负责任博彩",
+    "footerNote": "© 2025 BK8™. 版权所有。"
+  },
+  "Dropdown": {
+    "fourDDropdown": {
+      "sportsOptions": [
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481725/4d-gdl_vbtf9e.png",
+          "badge": "热门"
+        }
+      ]
+    },
+    "casinoDropdown": {
+      "sportsOptions": [
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173709/ug_qtn9ic.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173708/submenu-casino-pp_dwkb7x.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173700/evo_b0vqsw.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173678/dg_ig2wy6.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173660/casino-wm_w7ltn1.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173655/casino-we_d1b65g.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173654/casino-w_qpm7zj.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173653/casino-vc_reuquc.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-mg_px4edh.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-sa_yliyyi.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/casino-gp_wj4hdk.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-ag_vuccon.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/allbet_tniw6e.png",
+          "badge": "新"
+        }
+      ]
+    },
+    "eSportsDropdown": {
+      "sportsOptions": [
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport2_zyuiav.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport1_cmzaht.png",
+          "badge": "新"
+        }
+      ]
+    },
+    "fastGamesDropdown": {
+      "sportsOptions": [
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482510/fastgames-mtv_dqk77q.png",
+          "badge": "热门"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482510/fastgames-jili_pccd4f.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482511/slot-spb_zrjvyd.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482511/fastgames-t1g_y3ppf5.png",
+          "badge": "新"
+        }
+      ]
+    },
+    "fishingDropdown": {
+      "sportsOptions": [
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-ygr_e8z6bt.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-fs_rsufvf.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-jl_ktjqar.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-r88_ezxpwb.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-fc_duw8dt.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-sg_ut7ere.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-cq9_cdtgnm.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-dragoon-soft_uzabnu.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-jdb_hmfqa6.png",
+          "badge": "新"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-vp_xqswfh.png",
+          "badge": "新"
+        }
+      ]
+    },
+    "lotteryDropdown": {
+      "sportsOptions": [
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-tcg_ixvmf4.png",
+          "badge": "热门"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482120/qqkeno_kiruyt.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-fg_l52yax.png",
+          "badge": "新"
+        }
+      ]
+    },
+    "slotsDropdown": {
+      "sportsOptions": [
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174713/slot-ygr_rdcnlz.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174712/slot-ygg_whmuib.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174690/slot-vp_b6fc8p.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174689/slot-sw_lrztyf.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174683/slot-rt_kxytpf.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174671/slot-rg_qzc7sk.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174670/slot-r88_rxi8wk.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174669/slot-ps_uzvvi2.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174668/slot-mg_le2dsf.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174667/slot-jili_rllhe6.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174665/slot-jdb_sh4xq3.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174664/slot-hc_q7hv87.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174663/slot-hb_cobu6g.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174662/slot-gp_gupzie.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174661/slot-fs_akijjt.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174660/slot-fc_vcqegj.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174659/slot-exs_hdmbcd.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174658/slot-ep_xdnoj2.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174657/slot-dragoon-soft_dx6m6x.png"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174656/slot-cq9_dtzqqs.png"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174655/slot-ap_fnyt9h.png"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174655/slot-ag_vqs1z8.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174654/sg_zcbwom.png"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174653/pp_ueh6ba.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174652/pgsoft_wuiway.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174651/pg_ayeutv.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/nextspin_kkapvz.png",
+          "badge": "热门"
+        },
+        {
+          "name": "TFGAMAING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/funkygames_eclias.png",
+          "badge": "新"
+        },
+        {
+          "name": "电子竞技",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/joker_tpr2kv.png"
+        }
+      ]
+    },
+    "SportsDropdown": {
+      "sportsOptions": [
+        {
+          "name": "BK8 体育",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166007/sports1_xsnjcx.png",
+          "badge": "新"
+        },
+        {
+          "name": "Saba 体育",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166007/sports2_pld0ht.png"
+        },
+        {
+          "name": "CMD368",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166006/sports3_czrtsc.png",
+          "badge": "热门"
+        },
+        {
+          "name": "SBOBET",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166008/sports4_vepapb.png"
+        }
+      ]
     }
   }
 }

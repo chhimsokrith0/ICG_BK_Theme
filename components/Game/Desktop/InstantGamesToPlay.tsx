@@ -4,17 +4,22 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { useSession } from "next-auth/react";
+import { useTranslations } from "next-intl";
 
 const InstantGamesToPlay = () => {
     const { data: session } = useSession(); // Get session data
-    const games = [
-        { id: 1, name: "Mines", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505457/imgame12001_xpsrbr.png", label: "New", link: "/games/mines" },
-        { id: 2, name: "Goal", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505458/imgame12002_iojuox.png", label: "New", link: "/games/goal" },
-        { id: 3, name: "Dice", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505460/imgame12005_xs9taf.png", label: "New", link: "/games/dice" },
-        { id: 4, name: "Plinko", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505462/imgame12006_zhyivn.png", label: "New", link: "/games/plinko" },
-        { id: 5, name: "Keno", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505464/imgame12007_hrrofy.png", label: "New", link: "/games/keno" },
-        { id: 6, name: "Mini Roulette", type: "Scribe", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505466/imgame12008_pyx0zr.png", label: "New", link: "/games/mini-roulette" },
-    ];
+    const t = useTranslations("Games.InstantGamesToPlay");
+
+    const gamesList = t.raw('GamesList')
+
+    const games = gamesList.map((game: any) => ({
+        id: game.id,
+        name: game.name,
+        type: game.type,
+        image: game.image,
+        label: game.label,
+        link: game.link
+    }));
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -44,14 +49,14 @@ const InstantGamesToPlay = () => {
     return (
         <section className="instant-games-section mx-auto max-w-[1400px] px-4 md:px-8 py-8">
             <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Instant Games To Play</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{t("instantGamesTitle")}</h2>
                 <Link href="/Games/fastgames" className="text-blue-500 hover:underline text-sm md:text-base font-medium">
-                    See all
+                    {t("seeAll")}
                 </Link>
             </div>
             {isMobile ? (
                 <div className="flex overflow-x-auto space-x-4 scrollbar-hide">
-                    {games.map((game) => (
+                    {games.map((game: any) => (
                         <div key={game.id} className="flex-none w-[40%] sm:w-[50%] md:w-[33%] lg:w-[20%]">
                             <div className="instant-game-img-wrapper relative group overflow-hidden rounded-lg shadow-md">
                                 <img
@@ -72,7 +77,7 @@ const InstantGamesToPlay = () => {
                                                     className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm"
                                                     aria-label={`Play ${game.name}`}
                                                 >
-                                                    Play
+                                                    {t("play")}
                                                 </button>
                                             </Link>
                                             <Link href={`${game.link}/demo`}>
@@ -80,7 +85,7 @@ const InstantGamesToPlay = () => {
                                                     className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm"
                                                     aria-label={`Demo ${game.name}`}
                                                 >
-                                                    Demo
+                                                    {t("demo")}
                                                 </button>
                                             </Link>
                                         </>
@@ -88,7 +93,7 @@ const InstantGamesToPlay = () => {
                                         <>
                                             <Link href="/login">
                                                 <button className="bg-yellow-500 text-black px-4 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Play
+                                                    {t("play")}
                                                 </button>
                                             </Link>
                                             <Link
@@ -97,7 +102,7 @@ const InstantGamesToPlay = () => {
                                                 rel="noopener noreferrer"
                                             >
                                                 <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Demo
+                                                    {t("demo")}
                                                 </button>
                                             </Link>
                                         </>
@@ -113,7 +118,7 @@ const InstantGamesToPlay = () => {
                 </div>
             ) : (
                 <Slider {...sliderSettings} className="instant-games-slider">
-                    {games.map((game) => (
+                    {games.map((game: any) => (
                         <div key={game.id} className="instant-game-container p-2">
                             <div className="instant-game-img-wrapper relative group overflow-hidden rounded-lg shadow-md">
                                 <img
@@ -134,7 +139,7 @@ const InstantGamesToPlay = () => {
                                                     className="bg-yellow-500 text-black px-5 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm"
                                                     aria-label={`Play ${game.name}`}
                                                 >
-                                                    Play
+                                                    {t("play")}
                                                 </button>
                                             </Link>
                                             <Link href={`${game.link}/demo`}>
@@ -142,7 +147,7 @@ const InstantGamesToPlay = () => {
                                                     className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm"
                                                     aria-label={`Demo ${game.name}`}
                                                 >
-                                                    Demo
+                                                    {t("demo")}
                                                 </button>
                                             </Link>
                                         </>
@@ -150,7 +155,7 @@ const InstantGamesToPlay = () => {
                                         <>
                                             <Link href="/login">
                                                 <button className="bg-yellow-500 text-black px-4 py-2 rounded-full mb-2 shadow-md hover:bg-yellow-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Play
+                                                    {t("play")}
                                                 </button>
                                             </Link>
                                             <Link
@@ -159,7 +164,7 @@ const InstantGamesToPlay = () => {
                                                 rel="noopener noreferrer"
                                             >
                                                 <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 transform hover:scale-105 transition duration-200 text-sm">
-                                                    Demo
+                                                    {t("demo")}
                                                 </button>
                                             </Link>
                                         </>

@@ -1,33 +1,20 @@
 "use client";
 
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const PartnershipsAndAwards = () => {
-    const partners = [
-        {
-            type: "Official Partner",
-            name: "Burnley F.C.",
-            year: "2023-2024",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513807/bfc_uwp4f5.svg",
-        },
-        {
-            type: "Official Sponsor of the HSBC BWF World Tour Finals 2024",
-            name: "",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513821/hsbc_bwf_kypkyc.png",
-        },
-        {
-            type: "BK8 Brand Ambassador Philippines 2023 - 2024",
-            name: "Manny Pacquiao",
-            subTitle: "8 Division World Boxing Champion & Winner of 12 Major World Titles",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513834/sponsor-MP_yxu2in.png",
-            signature: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513830/signature-MP_bc5uog.png",
-        },
-        {
-            type: "Nominated for Innovation in Sports Betting",
-            name: "",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513814/egr_nomination_xh1xoj.png",
-        },
-    ];
+    const t = useTranslations("PartnershipAndAwards");
+
+
+    const Partners = t.raw('partners')
+
+    const partners = Partners.map((partners: any) => ({
+        type: partners.type,
+        name: partners.name,
+        year: partners.year,
+        image: partners.image
+    }));
 
     const awards = [
         "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513783/award1_cgutjv.png",
@@ -38,53 +25,21 @@ const PartnershipsAndAwards = () => {
         "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513803/award6_pfp3nd.png",
     ];
 
-    const sponsorships = [
-        {
-            name: "Aston Villa F.C.",
-            year: "2023 - 2024",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513778/aston-villa-fc_n6waqu.svg",
-        },
-        {
-            name: "Crystal Palace F.C.",
-            year: "2022 - 2023",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513811/crystal-palace-fc_rpxzrj.svg",
-        },
-        {
-            name: "Huddersfield Town A.F.C.",
-            year: "2021 - 2023",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513824/huddersfield-town-afc_od3ilw.svg",
-        },
-        {
-            name: "Valencia C.F.",
-            year: "2021 - 2022",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513837/valencia-cf_ipimq6.svg",
-        },
-        {
-            name: "Athletic Club",
-            year: "2021 - 2022",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513781/athletic-club_oym5cd.svg",
-        },
-        {
-            name: "Villarreal C.F.",
-            year: "2021 - 2022",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513841/villarreal-cf_uasmsz.svg",
-        },
-        {
-            name: "Elche C.F.",
-            year: "2021 - 2022",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513817/elche-cf_mxwj73.svg",
-        },
-        {
-            name: "RCD Mallorca",
-            year: "2021 - 2022",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513827/rcd-mallorca_wdpycz.svg",
-        },
-    ];
+
+    const Sponsorships = t.raw('sponsorships');
+
+    const sponsorships = Sponsorships.map((sponsorships: any) => ({
+        name: sponsorships.name,
+        year: sponsorships.year,
+        image: sponsorships.image
+    }));
+
+    
 
     return (
         <div className="partnerships-section mx-auto max-w-[1200px] py-8 px-4">
             <div className="partners-grid grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-                {partners.map((partner, index) => (
+                {partners.map((partner: any, index: number) => (
                     <div key={index} className="partner-box text-center">
                         <p className="text-sm font-semibold mb-4">{partner.type}</p>
                         <img
@@ -108,7 +63,7 @@ const PartnershipsAndAwards = () => {
             </div>
 
             <div className="awards-section text-center mb-12">
-                <p className="text-lg font-semibold mb-6">Award Nomination</p>
+                <p className="text-lg font-semibold mb-6">{ t('awardNomination') }</p>
                 <div className="awards-grid grid grid-cols-3 sm:grid-cols-6 gap-4">
                     {awards.map((award, index) => (
                         <img
@@ -122,9 +77,9 @@ const PartnershipsAndAwards = () => {
             </div>
 
             <div className="sponsorships-section">
-                <p className="text-lg font-semibold mb-6 text-center">Our Previous Sponsorships</p>
+                <p className="text-lg font-semibold mb-6 text-center">  { t('ourPreviousSponsorships') }</p>
                 <div className="sponsorships-grid grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
-                    {sponsorships.map((sponsor, index) => (
+                    {sponsorships.map((sponsor: any, index: number) => (
                         <div key={index} className="sponsor-box text-center">
                             <img
                                 src={sponsor.image}

@@ -1,23 +1,31 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const Footer = ({ locale }: { locale: string }) => {
+
+    const t = useTranslations("footer");
+
+
+    const gameCategories = t.raw('gameCategories');
+    const infoLinks = t.raw('infoLinks');
+
+
     return (
         <footer className="text-gray-700 py-8">
             <div className="max-w-[1600px] mx-auto px-4">
-            <div className="border-t border-gray-300 my-4"></div>
+                <div className="border-t border-gray-300 my-4"></div>
 
                 {/* Top Section */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* About Section */}
                     <div>
-                        <h4 className="font-semibold text-lg mb-4">About BK8 Sports</h4>
+                        <h4 className="font-semibold text-lg mb-4"> {t('aboutBK8')} </h4>
                         <p className="text-sm">
-                            BK8 Sports (9 Abraham De Veerstraat Willemstad, Curaçao) is
-                            licensed and regulated by the Government of Curaçao.
+                            {t('aboutBK8Description')}
                         </p>
                         <div className="mt-4">
                             <h5 className="font-semibold text-sm flex items-center">
-                                Gaming License
+                                {t('gamingLicense')}
                                 <img
                                     src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736514757/tick_w84he0.svg"
                                     className="w-[18px] h-[16px] ml-2"
@@ -35,37 +43,27 @@ const Footer = ({ locale }: { locale: string }) => {
 
                     {/* Games Section */}
                     <div>
-                        <h4 className="font-semibold text-lg mb-4">Games</h4>
+                        <h4 className="font-semibold text-lg mb-4">{t('games')}</h4>
                         <ul className="space-y-2 text-sm">
-                            <li>Sports</li>
-                            <li>E-Sports</li>
-                            <li>Casino</li>
-                            <li>Slots</li>
-                            <li>Fishing</li>
-                            <li>3D Games</li>
-                            <li>Lottery</li>
-                            <li>Fast Games</li>
+                            {gameCategories.map((category: string, index: number) => (
+                                <li key={index}>{category}</li>
+                            ))}
                         </ul>
                     </div>
 
                     {/* Info Section */}
                     <div>
-                        <h4 className="font-semibold text-lg mb-4">Info</h4>
+                        <h4 className="font-semibold text-lg mb-4">{t('info')}</h4>
                         <ul className="space-y-2 text-sm">
-                            <li>About Us</li>
-                            <li>VIP</li>
-                            <li>Leaderboard</li>
-                            <li>Affiliate Program</li>
-                            <li>Contact Us</li>
-                            <li>Responsible Gaming</li>
-                            <li>Info Centre</li>
-                            <li>Terms & Conditions</li>
+                            {infoLinks.map((link: string, index: number) => (
+                                <li key={index}>{link}</li>
+                            ))}
                         </ul>
                     </div>
 
                     {/* Certifications */}
                     <div>
-                        <h4 className="font-semibold text-lg mb-4">Certifications</h4>
+                        <h4 className="font-semibold text-lg mb-4">{t('certifications')}</h4>
                         <div className="flex flex-wrap gap-4">
                             <img
                                 src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736514717/bmm_h7syzs.svg"
@@ -102,7 +100,7 @@ const Footer = ({ locale }: { locale: string }) => {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         {/* Payment Methods */}
                         <div>
-                            <h4 className="font-semibold text-lg mb-4">Payment Methods</h4>
+                            <h4 className="font-semibold text-lg mb-4">{t('paymentMethods')}</h4>
                             <div className="flex gap-4">
                                 <img
                                     src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736514714/Bitcoin_n1vttu.svg"
@@ -145,7 +143,7 @@ const Footer = ({ locale }: { locale: string }) => {
 
                         {/* Follow Us */}
                         <div>
-                            <h4 className="font-semibold text-lg mb-4">Follow Us</h4>
+                            <h4 className="font-semibold text-lg mb-4">{t('followUs')}</h4>
                             <div className="flex space-x-4">
                                 {/* Replace with appropriate icons */}
                                 <i className="fab fa-youtube text-gray-500 hover:text-gray-800 text-xl"></i>
@@ -157,7 +155,7 @@ const Footer = ({ locale }: { locale: string }) => {
 
                         {/* Security */}
                         <div>
-                            <h4 className="font-semibold text-lg mb-4">Security</h4>
+                            <h4 className="font-semibold text-lg mb-4">{t('security')}</h4>
                             <div className="flex flex-col gap-2">
                                 <img
                                     src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736514740/iovation_g8mz8s.svg" // Replace with Iovation logo URL
@@ -175,7 +173,7 @@ const Footer = ({ locale }: { locale: string }) => {
 
                         {/* Responsible Gaming */}
                         <div>
-                            <h4 className="font-semibold text-lg mb-4">Responsible Gaming</h4>
+                            <h4 className="font-semibold text-lg mb-4">{t('responsibleGaming')}</h4>
                             <div className="flex gap-4">
                                 <img
                                     src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736514678/18_g13jas.svg" // Replace with 18+ logo URL
@@ -199,7 +197,7 @@ const Footer = ({ locale }: { locale: string }) => {
 
                     {/* Footer Note */}
                     <p className="text-center text-sm mt-8">
-                        © 2025 BK8™. All rights reserved.
+                        {t('footerNote')}
                     </p>
                 </div>
             </div>

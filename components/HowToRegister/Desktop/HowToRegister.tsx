@@ -2,13 +2,15 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const HowToRegister = () => {
+    const t = useTranslations("HowToRegister");
     const steps = [
         {
             id: 0,
-            title: "Create account",
-            description: "Click Join Now. Fill in your login info",
+            title: t('createAccount'),
+            description: t('createAccountDescription'),
             iconColor: "#FF0000",
             svgPath: (
                 <img
@@ -20,8 +22,8 @@ const HowToRegister = () => {
         },
         {
             id: 1,
-            title: "Make a deposit",
-            description: "Make your first deposit using money or crypto transfer",
+            title: t('makeDeposit'),
+            description: t('makeDepositDescription'),
             iconColor: "#67E59E",
             svgPath: (
                 <img
@@ -33,8 +35,8 @@ const HowToRegister = () => {
         },
         {
             id: 2,
-            title: "Start winning",
-            description: "Start winning while playing on your favourite games",
+            title: t('startWinning'),
+            description: t('startWinningDescription'),
             iconColor: "#F7921A",
             svgPath: (
                 <img
@@ -46,8 +48,8 @@ const HowToRegister = () => {
         },
         {
             id: 3,
-            title: "Get reward",
-            description: "Don't forget to claim your bonuses",
+            title: t('getReward'),
+            description: t('getRewardDescription'),
             iconColor: "#FCB813",
             svgPath: (
                 <img
@@ -67,7 +69,7 @@ const HowToRegister = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                Welcome to BK8 - Trusted Online Casino in Asia
+                {t("welcomeMessage")}
             </motion.h1>
             <motion.h2
                 className="guide-title2 text-xl font-medium text-center mb-8"
@@ -75,7 +77,7 @@ const HowToRegister = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
             >
-                How to Register
+                {t("howToRegister")}
             </motion.h2>
 
             <motion.div

@@ -1,8 +1,10 @@
 "use client";
 
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const AppDownloadSection = () => {
+    const t = useTranslations("AppDownloadSection");
     return (
         <section className="app-landing-section mx-auto max-w-[1400px] py-12 px-8">
             <div className="flex flex-wrap md:flex-nowrap">
@@ -10,19 +12,19 @@ const AppDownloadSection = () => {
                 <div className="left-container flex-1">
                     <div className="header-container">
                         <div>
-                            <h1 className="text-2xl font-bold">App Download</h1><br /><br />
+                            <h1 className="text-2xl font-bold">{t("appDownloadTitle")}</h1><br /><br />
                         </div>
                         <div className="header-1 flex items-start">
 
                             <div className="header-1-title">
                                 <p className="text-3xl font-bold leading-snug">
-                                    The future of gaming is here.
+                                    {t("futureOfGaming")}
                                 </p>
                                 <p className="text-3xl font-bold leading-snug">
-                                    Great games on all devices.
+                                    {t("greatGamesAllDevices")}
                                 </p>
                                 <p className="text-3xl font-bold text-blue-500">
-                                    New BK8 App
+                                    {t("newBK8App")}
                                 </p>
                             </div>
                             <img
@@ -33,7 +35,7 @@ const AppDownloadSection = () => {
                         </div>
                         <div className="header-2 mt-4">
                             <p className="text-gray-600">
-                                Sign up today for never-ending rewards, promotions, and lots of freebies.
+                                {t("signUpToday")}
                             </p>
                         </div>
                     </div>
@@ -55,13 +57,13 @@ const AppDownloadSection = () => {
                                     alt="Apple Logo"
                                     className="w-5 h-5 mr-2"
                                 />
-                                Apple iOS
+                                {t("appleIOS")}
                             </p>
                             <a
                                 href="#"
                                 className="instruction-btn text-blue-500 hover:underline text-sm mt-1"
                             >
-                                Instructions
+                                {t("instructions")}
                             </a>
                         </div>
 
@@ -80,13 +82,13 @@ const AppDownloadSection = () => {
                                     alt="Android Logo"
                                     className="w-5 h-5 mr-2"
                                 />
-                                Android
+                                {t("android")}
                             </p>
                             <a
                                 href="#"
                                 className="instruction-btn text-blue-500 hover:underline text-sm mt-1"
                             >
-                                Instructions
+                                {t("instructions")}
                             </a>
                         </div>
                     </div>
@@ -101,9 +103,9 @@ const AppDownloadSection = () => {
                             <div
                                 className="app-install-box bg-[url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1736507992/referral-made-easy_mmc59e.jpg')] bg-cover bg-center w-[240px] h-[320px] rounded-lg shadow-md p-4"
                             >
-                                <p className="text-white font-bold text-center">Referral Made Easy</p>
+                                <p className="text-white font-bold text-center">{t("features.referralMadeEasy.title")}</p>
                                 <p className="text-white text-sm text-center">
-                                    Share your referral link and earn money
+                                    {t("features.referralMadeEasy.description")}
                                 </p>
                             </div>
 
@@ -111,9 +113,9 @@ const AppDownloadSection = () => {
                             <div
                                 className="app-install-box bg-[url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1736507983/higher-security_i9lujp.jpg')] bg-cover bg-center w-[240px] h-[320px] rounded-lg shadow-md p-4"
                             >
-                                <p className="text-white font-bold text-center">Security Assured</p>
+                                <p className="text-white font-bold text-center">{t("features.securityAssured.title")}</p>
                                 <p className="text-white text-sm text-center">
-                                    Access account via facial recognition or fingerprint
+                                    {t("features.securityAssured.description")}
                                 </p>
                             </div>
 
@@ -122,10 +124,10 @@ const AppDownloadSection = () => {
                                 className="app-install-box bg-[url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1736507995/seamless-wallet-transfer_ysnoga.jpg')] bg-cover bg-center w-[240px] h-[320px] rounded-lg shadow-md p-4"
                             >
                                 <p className="text-white font-bold text-center">
-                                    Seamless Wallet Transfer
+                                    {t("features.seamlessWalletTransfer.title")}
                                 </p>
                                 <p className="text-white text-sm text-center">
-                                    Transfer money in seconds
+                                    {t("features.seamlessWalletTransfer.description")}
                                 </p>
                             </div>
 
@@ -133,9 +135,9 @@ const AppDownloadSection = () => {
                             <div
                                 className="app-install-box bg-[url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1736507980/express-login_pmlwbd.jpg')] bg-cover bg-center w-[240px] h-[320px] rounded-lg shadow-md p-4"
                             >
-                                <p className="text-white font-bold text-center">Express Login</p>
+                                <p className="text-white font-bold text-center">{t("features.expressLogin.title")}</p>
                                 <p className="text-white text-sm text-center">
-                                    Fast and secure way to keep you logged in
+                                    {t("features.expressLogin.description")}
                                 </p>
                             </div>
                         </div>

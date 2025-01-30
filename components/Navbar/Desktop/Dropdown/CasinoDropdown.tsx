@@ -1,30 +1,24 @@
 
 
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function CasinoDropdown() {
-    const sportsOptions = [
-        { name: "ESPRTS", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173709/ug_qtn9ic.png", badge: "Hot" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173708/submenu-casino-pp_dwkb7x.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173700/evo_b0vqsw.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173678/dg_ig2wy6.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173660/casino-wm_w7ltn1.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173655/casino-we_d1b65g.png", badge: "New" },
 
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173654/casino-w_qpm7zj.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173653/casino-vc_reuquc.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-mg_px4edh.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-sa_yliyyi.png", badge: "New" },
 
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/casino-gp_wj4hdk.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-ag_vuccon.png", badge: "New" },
-        { name: "TFGAMAING", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/allbet_tniw6e.png", badge: "New" },
-    ];
+    const t = useTranslations("Dropdown.casinoDropdown");
 
+    const SportsOptions = t.raw('sportsOptions');
+
+    const sportsOptions = SportsOptions.map((sportsOptions: any) => ({
+        name: sportsOptions.name,
+        image: sportsOptions.image,
+        badge: sportsOptions.badge,
+    }));
     return (
         <div className="absolute top-0 left-[-19.3%] w-full bg-blue-900 bg-opacity-90 shadow-lg py-6 px-8 justify-items-center">
             <div className="grid grid-cols-6 gap-6">
-                {sportsOptions.map((option, index) => (
+                {sportsOptions.map((option: any, index: number) => (
                     <div
                         key={index}
                         className="relative flex flex-col items-center space-y-3 text-white hover:scale-105 transition-transform duration-300"

@@ -4,8 +4,9 @@ import React from "react";
 import Slider from "react-slick"; // Import react-slick
 import "slick-carousel/slick/slick.css"; // Import slick-carousel CSS
 import "slick-carousel/slick/slick-theme.css";
-
+import { useTranslations } from "next-intl";
 const OurPartners = () => {
+    const t = useTranslations("OurPartners");
     const settings = {
         dots: false,
         infinite: true,
@@ -69,9 +70,9 @@ const OurPartners = () => {
         <>
             <section className="our-partner-section mx-auto max-w-[1400px] py-6 px-4">
                 <div className="flex justify-between items-center mb-8">
-                    <p className="text-2xl font-bold text-gray-800">Our Partners</p>
+                    <p className="text-2xl font-bold text-gray-800">{t("ourPartners")}</p>
                     <a href="#" className="text-blue-600 hover:underline text-sm font-medium">
-                        See all
+                        {t("seeAll")}
                     </a>
                 </div>
                 <div className="bg-gradient-to-r from-blue-50 to-white rounded-lg shadow-lg p-4">

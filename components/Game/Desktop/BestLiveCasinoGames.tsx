@@ -7,59 +7,22 @@ import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
-
+import { useTranslations } from "next-intl";
 const BestLiveCasinoGames = () => {
     const { data: session } = useSession(); // Fetch session data
+    const t = useTranslations("Games.BestLiveCasinoGames");
 
-    const games = [
-        {
-            id: 1,
-            name: "BK8 CN Red 1",
-            type: "BK8 Casino",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498983/sbc2_asqzgx.jpg",
-            label: "New",
-            link: "/games/bk8-cn-red-1",
-        },
-        {
-            id: 2,
-            name: "BK8 CN Red 5",
-            type: "BK8 Casino",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498981/sbc1_uembyf.jpg",
-            label: "New",
-            link: "/games/bk8-cn-red-5",
-        },
-        {
-            id: 3,
-            name: "BK8 Baccarat 1",
-            type: "PPLiveCasino",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498978/salon-prive-baccarat_l6w2df.jpg",
-            label: "Hot",
-            link: "/games/bk8-baccarat-1",
-        },
-        {
-            id: 4,
-            name: "BK8 One BlackJack",
-            type: "PPLiveCasino",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498976/PP-Roulette_zbpkru.jpg",
-            label: "Hot",
-            link: "/games/bk8-one-blackjack",
-        },
-        {
-            id: 5,
-            name: "BK8 Roulette",
-            type: "PPLiveCasino",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498974/PP-blackjack_vpupvs.jpg",
-            label: "Hot",
-            link: "/games/bk8-roulette",
-        },
-        {
-            id: 6,
-            name: "Lightning Roulette",
-            type: "Evolution Gaming",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498973/PP-baccarat-1_w3pk5c.jpg",
-            link: "/games/lightning-roulette",
-        },
-    ];
+    const gamesList = t.raw('GamesList')
+
+    const games = gamesList.map((game: any) => ({
+        id: game.id,
+        name: game.name,
+        type: game.type,
+        image: game.image,
+        label: game.label,
+        link: game.link
+    }));
+
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -90,15 +53,15 @@ const BestLiveCasinoGames = () => {
         >
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-                    Best Live Casino Games
+                    {t("bestLiveCasinoGamesTitle")}
                 </h2>
                 <Link href="/games/livecasino" className="text-blue-500 hover:underline text-sm font-medium">
-                    See all
+                    {t("seeAll")}
                 </Link>
             </div>
             {isMobile ? (
                 <div className="flex overflow-x-auto space-x-4 scrollbar-hide">
-                    {games.map((game) => (
+                    {games.map((game: any) => (
                         <motion.div
                             key={game.id}
                             className="flex-none w-[40%] sm:w-[50%] md:w-[33%] lg:w-[20%]"
@@ -163,7 +126,7 @@ const BestLiveCasinoGames = () => {
                         { breakpoint: 768, settings: { slidesToShow: 2, slidesToScroll: 1 } },
                     ]}
                 >
-                    {games.map((game) => (
+                    {games.map((game: any) => (
                         <motion.div
                             key={game.id}
                             className="live-casino-game-container p-2"

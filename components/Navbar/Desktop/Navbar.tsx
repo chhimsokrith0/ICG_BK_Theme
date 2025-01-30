@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import axiosRetry from "axios-retry"
 import ButtonMenuSvg from "./ButonMenu";
 import LanguageDropdown from "./LanguageDropdown";
 import MobileMenu from "./MobileMenu";
@@ -24,6 +25,8 @@ export default function Navbar({ locale }: { locale: string }) {
         setIsMenuOpen(false); // Close hover menu if toggle is clicked
     };
 
+    axiosRetry(axios, { retries: 3, retryDelay: axiosRetry.exponentialDelay });
+
     // Fetch timezone from the internal API
     useEffect(() => {
         const fetchTimezone = async () => {
@@ -38,7 +41,8 @@ export default function Navbar({ locale }: { locale: string }) {
         };
 
         fetchTimezone();
-    }, []);
+    }, []); // ✅ Runs only on mount
+
 
     // Timer to update date and time every second
     useEffect(() => {
@@ -73,9 +77,8 @@ export default function Navbar({ locale }: { locale: string }) {
                     >
                         <button
                             onClick={handleMenuToggle}
-                            className={`text-gray-700 mt-4 focus:outline-none ${
-                                isMenuClicked ? "text-blue-500" : "hover:text-blue-500"
-                            }`}
+                            className={`text-gray-700 mt-4 focus:outline-none ${isMenuClicked ? "text-blue-500" : "hover:text-blue-500"
+                                }`}
                             aria-label="Toggle Menu"
                         >
                             <ButtonMenuSvg />

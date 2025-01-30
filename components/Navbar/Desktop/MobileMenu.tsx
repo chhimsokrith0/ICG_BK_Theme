@@ -29,10 +29,10 @@ export default function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
     ];
 
     const menuItemsLinks = [
-        { label: "About Us", link: "/about" },
+        { label: "About Us", link: "/aboutus" },
         { label: "Live Chat", link: "/chat" },
         { label: "Info Centre", link: "/info" },
-        { label: "Contact Us", link: "/contact" },
+        { label: "Contact Us", link: "/contact-us" },
         { label: "Responsible Gaming", link: "/responsible-gaming" },
         { label: "Terms & Conditions", link: "/info-centre" },
         { label: "Affiliate", link: "/affiliate" },
