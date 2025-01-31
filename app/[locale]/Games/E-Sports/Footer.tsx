@@ -1,21 +1,25 @@
+import React from "react";
+import { useTranslations } from "next-intl";
+
 const Footer = () => {
+    const t = useTranslations("E-sports.footer");
     return (
         <div className="relative bg-[#1A1B41] text-center py-16 px-6">
             {/* Header Section */}
             <div className="mb-10">
                 <h1 className="text-5xl font-bold text-white mb-4">
-                    Esports Games
+                    {t("header.title")}
                 </h1>
                 <p className="text-xl text-gray-300 mb-8">
-                    Popular & Massive Multiplayer
+                    {t("header.subtitle")}
                 </p>
             </div>
 
             {/* Game Logos */}
             <div className="flex flex-wrap justify-center mb-10">
                 <img
-                    src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668283/esport-game-logo_db7rd1.png"
-                    alt="Game Logos"
+                    src= {t("gameLogos.image")}
+                    alt={t("gameLogos.alt")}
                     className="mx-auto max-w-[80%] h-auto"
                 />
             </div>
@@ -24,8 +28,8 @@ const Footer = () => {
             <div className="relative">
                 {/* Bottom Character and Effects */}
                 <img
-                    src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668283/esport-btm-bg_eq6ecu.png"
-                    alt="Bottom Characters and Effects"
+                    src={t("backgroundImage.image")}
+                    alt={t("backgroundImage.alt")}
                     className="mx-auto w-full h-auto object-contain"
                 />
             </div>

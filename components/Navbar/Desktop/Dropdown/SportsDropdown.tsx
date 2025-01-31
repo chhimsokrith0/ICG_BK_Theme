@@ -32,8 +32,8 @@ export default function SportsDropdown() {
                         {option.badge && (
                             <span
                                 className={`absolute top-2 right-2 text-xs font-bold px-2 py-1 rounded-full ${option.badge === t('sportsOptions.2')
-                                        ? "bg-red-500 text-white"
-                                        : "bg-yellow-500 text-black"
+                                    ? "bg-red-500 text-white"
+                                    : "bg-yellow-500 text-black"
                                     }`}
                             >
                                 {option.badge}

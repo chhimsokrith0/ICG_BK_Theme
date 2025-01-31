@@ -3,21 +3,27 @@
 import React, { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const ESportsTab = () => {
+    const t = useTranslations("E-sports.EsportsTab");
     const router = useRouter();
     const pathname = usePathname();
 
-    const tabs = [
-        { id: 1, label: "TF Gaming", icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736606861/sports_3311579_mb8lyw.png", tag: "Hot", link: "/Games/E-Sports/TF-Gaming" },
-        { id: 2, label: "IM Esports", icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736606904/app_14979507_beivjt.png", tag: "New", link: "/Games/E-Sports/IM-Esports" },
-    ];
+    const TabsList = t.raw('tabs');
+    const tabs = TabsList.map((tab: any) => ({
+        id: tab.id,
+        label: tab.label,
+        icon: tab.icon,
+        tag: tab.tag,
+        link: tab.link,
+    }));
 
     const [activeTab, setActiveTab] = useState<number | null>(null);
 
     useEffect(() => {
         // Update the active tab dynamically based on the current route
-        const currentTab = tabs.find((tab) => pathname?.includes(tab.link));
+        const currentTab = tabs.find((tab: any) => pathname?.includes(tab.link));
         setActiveTab(currentTab ? currentTab.id : null);
     }, [pathname, tabs]);
 
@@ -34,7 +40,7 @@ const ESportsTab = () => {
             className="bg-[#141539] py-4 rounded-full shadow-lg px-6 max-w-[1400px] mx-auto"
         >
             <div className="flex space-x-4 justify-last">
-                {tabs.map((tab) => (
+                {tabs.map((tab: any) => (
                     <motion.button
                         key={tab.id}
                         onClick={() => handleTabClick(tab)}

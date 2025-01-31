@@ -4,8 +4,13 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
+import { useTranslations } from "next-intl";
 
 export default function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
+
+    const t = useTranslations("MobileMenu");
+
+
     const [clones, setClones] = useState<number[]>([]);
 
     const handleLogOut = () => {
@@ -15,43 +20,33 @@ export default function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
         });
     };
 
-    const menuItemsMain = [
-        { icon: "📥", label: "Download", color: "text-orange-500", link: "/download" },
-        { icon: "⭐", label: "VIP", color: "text-gray-700", link: "/vip" },
-        { icon: "👑", label: "Leaderboard", color: "text-gray-700", link: "/leaderboard" },
-        {
-            icon: "🤝",
-            label: "Sponsors",
-            color: "text-gray-700",
-            link: "/sponsors",
-            badge: { text: "New", color: "bg-red-500 text-white" },
-        },
-    ];
+    const MenuItemsMainList = t.raw("menuItemsMain");
 
-    const menuItemsLinks = [
-        { label: "About Us", link: "/aboutus" },
-        { label: "Live Chat", link: "/chat" },
-        { label: "Info Centre", link: "/info" },
-        { label: "Contact Us", link: "/contact-us" },
-        { label: "Responsible Gaming", link: "/responsible-gaming" },
-        { label: "Terms & Conditions", link: "/info-centre" },
-        { label: "Affiliate", link: "/affiliate" },
-    ];
+    const menuItemsMain = MenuItemsMainList.map((menuItemsMain: any) => ({
+        icon: menuItemsMain.icon,
+        label: menuItemsMain.label,
+        color: menuItemsMain.color,
+        link: menuItemsMain.link,
+        badge: menuItemsMain.badge,
+    }));
 
-    const menuItemsGrid = [
-        { icon: "🏠", label: "Home", link: "/" },
-        { icon: "📱", label: "Mobile", link: "/mobile" },
-        { icon: "⚽", label: "Sports", link: "/sports" },
-        { icon: "🎮", label: "E-Sports", link: "/esports" },
-        { icon: "🎲", label: "Casino", link: "/casino" },
-        { icon: "🎰", label: "Slots", link: "/slots" },
-        { icon: "🎣", label: "Fishing", link: "/fishing" },
-        { icon: "🃏", label: "3D Games", link: "/3d-games" },
-        { icon: "🎟️", label: "Lottery", link: "/lottery" },
-        { icon: "🚀", label: "Fast Games", link: "/fast-games" },
-        { icon: "🎉", label: "Promos", link: "/promos" },
-        { icon: "🎡", label: "Lucky Wheel", link: "/lucky-wheel" },
-    ];
+
+    const MenuItemsLinksList = t.raw("menuItemsLinks");
+
+    const menuItemsLinks = MenuItemsLinksList.map((menuItemsLinks: any) => ({
+        label: menuItemsLinks.label,
+        link: menuItemsLinks.link,
+    }));
+
+    
+
+    const MenuItemsGridList = t.raw("menuItemsGrid");
+
+    const menuItemsGrid = MenuItemsGridList.map((menuItemsGrid: any) => ({
+        icon: menuItemsGrid.icon,
+        label: menuItemsGrid.label,
+        link: menuItemsGrid.link,
+    }));
 
     const renderMenu = (key: number) => (
         <motion.div
@@ -66,7 +61,7 @@ export default function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
             <div className="text-gray-700 text-sm font-medium">
                 {/* Main Section */}
                 <div className="space-y-6 mb-6">
-                    {menuItemsMain.map((item, index) => (
+                    {menuItemsMain.map((item: any, index: number) => (
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.05 }}
@@ -92,7 +87,7 @@ export default function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
 
                 {/* Additional Links Section */}
                 <ul className="space-y-2 pl-4 text-sm list-disc text-gray-500 mb-6">
-                    {menuItemsLinks.map((link, index) => (
+                    {menuItemsLinks.map((link: any, index: number) => (
                         <motion.li key={index} whileHover={{ x: 10 }}>
                             <Link href={link.link}>
                                 <span className="text-base cursor-pointer">{link.label}</span>
@@ -108,13 +103,13 @@ export default function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    Log Out
+                    {t("logoutButton.label")}
                 </motion.button>
             </div>
 
             {/* Right Section */}
             <div className="text-gray-700 text-sm font-medium grid grid-cols-1 gap-4 border-l pl-4 justify-items-center">
-                {menuItemsGrid.map((item, index) => (
+                {menuItemsGrid.map((item: any, index: number) => (
                     <motion.div
                         key={index}
                         whileHover={{ scale: 1.1, rotate: 5 }}

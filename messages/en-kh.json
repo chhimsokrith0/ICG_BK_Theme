@@ -21,9 +21,9 @@
     "sports": {
       "title": "Sports",
       "Header": {
-        "title": "Sportsbook",
+        "title": "Sports Betting",
         "subtitle": "Enjoy world-class online sports betting.",
-        "description": "The best sportsbook betting odds at your fingertips."
+        "description": "Get the best sports betting odds at your fingertips."
       },
       "Tab": {
         "BK8-Sports": "BK8-Sports",
@@ -33,8 +33,8 @@
       "BK8Sports": {
         "header": {
           "title": "BK8-Sports",
-          "subtitle": "Most reputable online sportsbook in Asia",
-          "description": "BK8 Sports is a sport-betting game provided by the market-leading sportsbook, BK8. The renowned online sportsbook has dedicated teams of hundreds of professional traders and customer service representatives that work 24 hours a day year-round to provide competitive odds and the widest variety of sports and activities possible for players around the globe."
+          "subtitle": "Asia's Most Popular Online Sports Betting",
+          "description": "BK8 Sports is a sports betting game provided by BK8, a market-leading sportsbook platform. This renowned online sportsbook has hundreds of professional traders and customer service representatives working 24/7 all year round to provide competitive odds and the widest selection of sports events for players worldwide."
         },
         "button": {
           "text": "Play Now"
@@ -48,8 +48,8 @@
     "saba-sports": {
       "header": {
         "title": "Saba-Sports",
-        "subtitle": "Most reputable online sportsbook in Asia",
-        "description": "Saba-Sports is a sport-betting game provided by SABA sportsbook. SABA sportsbook offers thousands of live games, such as Saba-soccer, basketball, tennis, volleyball, and more, featuring the fastest customization and the most comprehensive technical support."
+        "subtitle": "Asia's Most Popular Online Sports Betting",
+        "description": "Saba-Sports is a sports betting game provided by SABA Sportsbook. SABA Sportsbook offers thousands of live matches, such as Saba football, basketball, tennis, volleyball, and more, along with the fastest customization and the most comprehensive technical support."
       },
       "button": {
         "text": "Play Now"
@@ -65,29 +65,28 @@
           "label": "Password",
           "value": "-"
         },
-        "downloadText": "Download Saba-Sports App and enjoy exciting games"
+        "downloadText": "Download the Saba-Sports app and enjoy exciting games"
       },
       "promotionSection": {
         "title": "Welcome to BK8!",
-        "description": "Make your first deposit and get the bonus credits now!",
-        "info": "For more information, kindly refer to https://www.bk33best88.asia/en-my/promotion",
+        "description": "Get bonus points on your first deposit!",
+        "info": "For more information, visit https://www.bk33best88.asia/en-my/promotion",
         "termsAndConditions": {
-          "title": "Terms & Conditions:",
+          "title": "Terms and Conditions:",
           "items": [
-            "Register an account with BK8.",
-            "All first deposit members are entitled to this promotion.",
-            "Members are required to deposit into the Sports wallet to claim the bonus.",
-            "Promotion is subject to availability. Applicable to all aforementioned sports providers.",
-            "Bonus will be credited to your chosen Sports Provider Wallet after a successful fund transfer.",
-            "Bonuses are valid for thirty (30) days upon issuance unless stated otherwise.",
-            "Any bets resulting in void, tie, cancelled, or made on opposite sides with the same outcome will not be counted as a valid turnover.",
-            "Members who claimed the promotion for a certain provider are not allowed to make a second transfer to the same provider while the promotion is active, EXCEPT FOR members who achieved the turnover requirement or the promotion is cancelled.",
-            "All customer offers are limited to one per person, family, household, or shared address.",
+            "Register a BK8 account.",
+            "All members making their first deposit are eligible for this promotion.",
+            "Members need to deposit into the sports wallet to claim the bonus.",
+            "The promotion is subject to availability and applies to all mentioned sports providers.",
+            "The bonus will be credited to the sports provider wallet of your choice after a successful transfer.",
+            "Unless otherwise specified, the bonus is valid for 30 days after issuance.",
+            "Any bets that are void, tied, or canceled, or placing opposing bets on the same event, will not count toward the wagering requirement.",
+            "Members who have claimed a specific provider promotion may not transfer to that provider again during the promotion period unless they meet the wagering requirements or the promotion is canceled.",
+            "All customer offers are limited to one per person, household, and address.",
             "This promotion cannot be used in conjunction with other BK8 promotions.",
-            "BK8 reserves the right to modify, cancel, suspend or terminate the promotion and/or change the terms of the promotion at any time without prior notice.",
-            "Participating members must accept and comply with all terms mentioned above and those on the BK8 website.",
-            "Participating members must accept and comply with all the terms mentioned above as well as all relevant and rules and regulations stated on the BK8 website.",
-            "General BK8 Terms & Conditions apply."
+            "BK8 reserves the right to modify, cancel, suspend, or terminate the promotion and/or change the promotion terms without prior notice.",
+            "Participating members must accept and comply with all the above terms as well as all the terms on the BK8 website.",
+            "BK8 general terms and conditions apply."
           ]
         }
       },
@@ -99,8 +98,8 @@
     "cmd368": {
       "header": {
         "title": "Cmd-Sports",
-        "subtitle": "Most reputable online sportsbook in Asia",
-        "description": "C-Sports is a sport-betting game provided by CMD368 sportsbook. CMD368 sportsbook offers betting service for sports events based on real-time global dynamics and market hot topics, including but not limited to basketball, football, eSports, golf, and badminton."
+        "subtitle": "Asia's Most Popular Online Sports Betting",
+        "description": "C-Sports is a sports betting game provided by CMD368. CMD368 offers betting services for basketball, football, e-sports, golf, and badminton, based on real-time global dynamics and market highlights."
       },
       "button": {
         "text": "Play Now"
@@ -109,6 +108,1216 @@
         "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663006/CMD_yqy8ea.jpg",
         "alt": "Cmd-Sports Banner"
       }
+    },
+    "PopularGames": {
+      "popularGamesTitle": "Popular Game Recommendations",
+      "seeAll": "See All",
+      "play": "Play Now",
+      "demo": "Demo",
+      "hot": "Hot",
+      "rtp": "RTP",
+      "GamesList": [
+        {
+          "id": 1,
+          "name": "Pac-Man Glory",
+          "type": "Nextspin",
+          "rtp": "96.95",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497775/ns-pacman_xtorka.jpg",
+          "label": "Hot",
+          "link": "/games/pac-man-glory"
+        },
+        {
+          "id": 2,
+          "name": "Cleopatra Fortune",
+          "type": "Nextspin",
+          "rtp": "96.97",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497774/ns-candy-bonanza_qiiu1l.jpg",
+          "label": "Hot",
+          "link": "/games/cleopetra-fortune"
+        },
+        {
+          "id": 3,
+          "name": "BK8 Roma",
+          "type": "Nextspin",
+          "rtp": "96.75",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497776/ns-roma_crzcl9.jpg",
+          "label": "Hot",
+          "link": "/games/bk8-roma"
+        },
+        {
+          "id": 4,
+          "name": "BK8 Gates of Olympus",
+          "type": "Pragmatic Play",
+          "rtp": "97.6",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497778/sCleopaFor_mrcdws.jpg",
+          "label": "Hot",
+          "link": "/games/gates-of-olympus"
+        },
+        {
+          "id": 5,
+          "name": "BK8 Candy Bonanza",
+          "type": "Nextspin",
+          "rtp": "97.93",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497780/vs20bk8gates_sqy4q9.jpg",
+          "label": "Hot",
+          "link": "/games/candy-bonanza"
+        },
+        {
+          "id": 6,
+          "name": "BK8 Sweet Blaster",
+          "type": "Nextspin",
+          "rtp": "97.93",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497782/vs20fruitsbk8_qznodc.png",
+          "label": "Hot",
+          "link": "/games/sweet-blaster"
+        }
+      ]
+    },
+    "BestLiveCasinoGames": {
+      "bestLiveCasinoGamesTitle": "Best Live Casino Games",
+      "seeAll": "See All",
+      "play": "Play Now",
+      "logInToPlay": "Log in to Play",
+      "new": "New",
+      "hot": "Hot",
+      "GamesList": [
+        {
+          "id": 1,
+          "name": "BK8 CN Red 1",
+          "type": "BK8 Casino",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498983/sbc2_asqzgx.jpg",
+          "label": "New",
+          "link": "/games/bk8-cn-red-1"
+        },
+        {
+          "id": 2,
+          "name": "BK8 CN Red 5",
+          "type": "BK8 Casino",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498981/sbc1_uembyf.jpg",
+          "label": "New",
+          "link": "/games/bk8-cn-red-5"
+        },
+        {
+          "id": 3,
+          "name": "BK8 Baccarat 1",
+          "type": "PP Live Casino",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498978/salon-prive-baccarat_l6w2df.jpg",
+          "label": "Hot",
+          "link": "/games/bk8-baccarat-1"
+        },
+        {
+          "id": 4,
+          "name": "BK8 One Blackjack",
+          "type": "PP Live Casino",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498976/PP-Roulette_zbpkru.jpg",
+          "label": "Hot",
+          "link": "/games/bk8-one-blackjack"
+        },
+        {
+          "id": 5,
+          "name": "BK8 Roulette",
+          "type": "PP Live Casino",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498974/PP-blackjack_vpupvs.jpg",
+          "label": "Hot",
+          "link": "/games/bk8-roulette"
+        },
+        {
+          "id": 6,
+          "name": "Lightning Roulette",
+          "type": "Evolution Gaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498973/PP-baccarat-1_w3pk5c.jpg",
+          "link": "/games/lightning-roulette"
+        }
+      ]
+    },
+    "InstantGamesToPlay": {
+      "instantGamesTitle": "Instant Games to Play",
+      "seeAll": "See All",
+      "play": "Play Now",
+      "demo": "Demo",
+      "logInToPlay": "Log in to Play",
+      "new": "New",
+      "GamesList": [
+        {
+          "id": 1,
+          "name": "Mines",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505457/imgame12001_xpsrbr.png",
+          "label": "New",
+          "link": "/games/mines"
+        },
+        {
+          "id": 2,
+          "name": "Goal",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505458/imgame12002_iojuox.png",
+          "label": "New",
+          "link": "/games/goal"
+        },
+        {
+          "id": 3,
+          "name": "Dice",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505460/imgame12005_xs9taf.png",
+          "label": "New",
+          "link": "/games/dice"
+        },
+        {
+          "id": 4,
+          "name": "Plinko",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505462/imgame12006_zhyivn.png",
+          "label": "New",
+          "link": "/games/plinko"
+        },
+        {
+          "id": 5,
+          "name": "Keno",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505464/imgame12007_hrrofy.png",
+          "label": "New",
+          "link": "/games/keno"
+        },
+        {
+          "id": 6,
+          "name": "Mini Roulette",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505466/imgame12008_pyx0zr.png",
+          "label": "New",
+          "link": "/games/mini-roulette"
+        }
+      ]
+    }
+  },
+  "AnnountcementBar": {
+    "news": "News",
+    "more": "More",
+    "announcementMessage": "Invite your friends to join ICG Gaming and win big together! This Lunar New Year, you have a chance to receive a referral bonus of up to MYR 4,888!"
+  },
+  "LiveMatchesSection": {
+    "upcomingLiveMatches": "Upcoming Live Matches",
+    "football": "Football",
+    "basketball": "Basketball",
+    "officialSponsor": "Official Sponsor of the 2024 HSBC BWF World Tour Finals",
+    "brandAmbassador": "BK8 Philippines Brand Ambassador 2023 - 2024",
+    "officialPartner": "Official Partner | Burnley Football Club",
+    "betNow": "Bet Now",
+    "league": "League",
+    "matchTime": "Match Time",
+    "homeTeam": "Home Team",
+    "awayTeam": "Away Team",
+    "handicap": "Handicap",
+    "odds": "Odds",
+    "home": "Home",
+    "away": "Away",
+    "vs": "vs"
+  },
+  "HowToRegister": {
+    "welcomeMessage": "Welcome to BK8 - Trusted Online Casino in Asia",
+    "howToRegister": "How to Register",
+    "createAccount": "Create Account",
+    "createAccountDescription": "Click 'Join Now' and fill in your login details",
+    "makeDeposit": "Make a Deposit",
+    "makeDepositDescription": "Make your first deposit using currency or cryptocurrency",
+    "startWinning": "Start Winning",
+    "startWinningDescription": "Win rewards while playing your favorite games",
+    "getReward": "Claim Your Reward",
+    "getRewardDescription": "Don't forget to claim your bonuses"
+  },
+  "AppDownloadSection": {
+    "appDownloadTitle": "App Download",
+    "futureOfGaming": "The future of gaming is here.",
+    "greatGamesAllDevices": "Great games on all devices.",
+    "newBK8App": "New BK8 App",
+    "signUpToday": "Sign up today for never-ending rewards, promotions, and lots of freebies.",
+    "appleIOS": "Apple iOS",
+    "android": "Android",
+    "instructions": "Installation Guide",
+    "features": {
+      "referralMadeEasy": {
+        "title": "Easy Referrals",
+        "description": "Share your referral link and earn rewards."
+      },
+      "securityAssured": {
+        "title": "Security Assured",
+        "description": "Access your account via facial recognition or fingerprint."
+      },
+      "seamlessWalletTransfer": {
+        "title": "Seamless Wallet Transfer",
+        "description": "Transfer money in seconds."
+      },
+      "expressLogin": {
+        "title": "Express Login",
+        "description": "A fast and secure way to keep you logged in."
+      }
+    }
+  },
+  "OurPartners": {
+    "ourPartners": "Our Partners",
+    "seeAll": "See All"
+  },
+  "Testimonials": {
+    "testimonialsTitle": "User Testimonials",
+    "reviews": [
+      {
+        "title": "A safe and reliable platform!",
+        "description": "I was always hesitant to deposit or share personal information on other platforms because I didn’t feel secure. However, BK8 gives me full confidence with its verified domain and security measures. Playing at BK8 makes me feel very at ease.",
+        "rating": 5
+      },
+      {
+        "title": "So glad I switched to BK8! Amazing!",
+        "description": "I'm really happy I chose BK8. The high bonuses and amazing promotions are unbelievable until you try them!",
+        "rating": 5
+      },
+      {
+        "title": "Truly a VIP experience!",
+        "description": "They are constantly striving to provide excellent service for VIP members and regularly offer exclusive rewards and benefits. BK8 has made me a loyal member!",
+        "rating": 5
+      }
+    ]
+  },
+  "LatestNews": {
+    "latestNewsTitle": "BK8 Latest News",
+    "news": [
+      {
+        "title": "BK8 x Manny Pacquiao",
+        "description": "On December 1, 2023, BK8 announced that the famous Filipino boxing legend Manny Pacquiao has become the brand ambassador. Pacquiao, a 12-time world champion across eight different divisions, will help elevate BK8’s brand presence.",
+        "date": "2023/12/19",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512938/manny_pacquiao_tfrpgd.png"
+      },
+      {
+        "title": "BK8 x Aston Villa",
+        "description": "BK8 has signed a multi-year partnership agreement with Aston Villa Football Club, making BK8 the club’s main partner and front-of-shirt sponsor for the 2023/2024 season. Additionally, BK8 actively participates in local charity events.",
+        "date": "2023/06/16",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512935/bwf_p5bc64.png"
+      },
+      {
+        "title": "BK8 x Burnley Football Club",
+        "description": "Since 2022, BK8 has been the official Asian betting partner of Burnley Football Club. In the 2023/2024 season, BK8 expanded this partnership further by becoming the club’s official training kit partner.",
+        "date": "2023/06/16",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512932/burnley-fc_kdlzms.png"
+      },
+      {
+        "title": "BK8 x BWF",
+        "description": "BK8 is the official betting sponsor for selected HSBC BWF World Tour events in 2024. This strategic partnership will receive extensive international exposure.",
+        "date": "2024/05/10",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512931/aston-villa_kjdc7i.png"
+      }
+    ]
+  },
+  "PartnershipAndAwards": {
+    "partnersAndAwards": "Partnerships & Awards",
+    "partners": [
+      {
+        "type": "Official Partner",
+        "name": "Burnley Football Club",
+        "year": "2023-2024",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513807/bfc_uwp4f5.svg"
+      },
+      {
+        "type": "Official Sponsor of the 2024 HSBC BWF World Tour Finals",
+        "name": "",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513821/hsbc_bwf_kypkyc.png"
+      },
+      {
+        "type": "BK8 Philippines Brand Ambassador 2023 - 2024",
+        "name": "Manny Pacquiao",
+        "subTitle": "8-Division World Champion & 12-Time World Title Winner",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513834/sponsor-MP_yxu2in.png",
+        "signature": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513830/signature-MP_bc5uog.png"
+      },
+      {
+        "type": "Nominated for Sports Betting Innovation Award",
+        "name": "",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513814/egr_nomination_xh1xoj.png"
+      }
+    ],
+    "awardNomination": "Award Nominations",
+    "ourPreviousSponsorships": "Our Previous Sponsorships",
+    "sponsorships": [
+      {
+        "name": "Aston Villa Football Club",
+        "year": "2023 - 2024",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513778/aston-villa-fc_n6waqu.svg"
+      },
+      {
+        "name": "Crystal Palace Football Club",
+        "year": "2022 - 2023",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513811/crystal-palace-fc_rpxzrj.svg"
+      },
+      {
+        "name": "Huddersfield Town A.F.C.",
+        "year": "2021 - 2023",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513824/huddersfield-town-afc_od3ilw.svg"
+      },
+      {
+        "name": "Valencia CF",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513837/valencia-cf_ipimq6.svg"
+      },
+      {
+        "name": "Athletic Club",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513781/athletic-club_oym5cd.svg"
+      },
+      {
+        "name": "Villarreal CF",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513841/villarreal-cf_uasmsz.svg"
+      },
+      {
+        "name": "Elche CF",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513817/elche-cf_mxwj73.svg"
+      },
+      {
+        "name": "RCD Mallorca",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513827/rcd-mallorca_wdpycz.svg"
+      }
+    ]
+  },
+  "footer": {
+    "aboutBK8": "About BK8 Sports",
+    "aboutBK8Description": "BK8 Sports (9 Abraham De Veerstraat Willemstad, Curaçao) is authorized and regulated by the government of Curaçao.",
+    "gamingLicense": "Gaming License",
+    "games": "Games",
+    "gameCategories": [
+      "Sports",
+      "E-Sports",
+      "Casino",
+      "Slots",
+      "Fishing",
+      "3D Games",
+      "Lottery",
+      "Fast Games"
+    ],
+    "info": "Information",
+    "infoLinks": [
+      "About Us",
+      "VIP",
+      "Leaderboard",
+      "Affiliate Program",
+      "Contact Us",
+      "Responsible Gaming",
+      "Information Center",
+      "Terms & Conditions"
+    ],
+    "certifications": "Certifications",
+    "paymentMethods": "Payment Methods",
+    "followUs": "Follow Us",
+    "security": "Security",
+    "responsibleGaming": "Responsible Gaming",
+    "footerNote": "© 2025 BK8™. All rights reserved."
+  },
+  "Dropdown": {
+    "fourDDropdown": {
+      "sportsOptions": [
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481725/4d-gdl_vbtf9e.png",
+          "badge": "Popular"
+        }
+      ]
+    },
+    "casinoDropdown": {
+      "sportsOptions": [
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173709/ug_qtn9ic.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173708/submenu-casino-pp_dwkb7x.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173700/evo_b0vqsw.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173678/dg_ig2wy6.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173660/casino-wm_w7ltn1.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173655/casino-we_d1b65g.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173654/casino-w_qpm7zj.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173653/casino-vc_reuquc.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-mg_px4edh.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-sa_yliyyi.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/casino-gp_wj4hdk.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-ag_vuccon.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/allbet_tniw6e.png",
+          "badge": "New"
+        }
+      ]
+    },
+    "eSportsDropdown": {
+      "sportsOptions": [
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport2_zyuiav.png",
+          "badge": "Popular"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport1_cmzaht.png",
+          "badge": "New"
+        }
+      ]
+    },
+    "fastGamesDropdown": {
+      "sportsOptions": [
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482510/fastgames-mtv_dqk77q.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482510/fastgames-jili_pccd4f.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482511/slot-spb_zrjvyd.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482511/fastgames-t1g_y3ppf5.png",
+          "badge": "New"
+        }
+      ]
+    },
+    "fishingDropdown": {
+      "sportsOptions": [
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-ygr_e8z6bt.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-fs_rsufvf.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-jl_ktjqar.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-r88_ezxpwb.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-fc_duw8dt.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-sg_ut7ere.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-cq9_cdtgnm.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-dragoon-soft_uzabnu.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-jdb_hmfqa6.png",
+          "badge": "New"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-vp_xqswfh.png",
+          "badge": "New"
+        }
+      ]
+    },
+    "lotteryDropdown": {
+      "sportsOptions": [
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-tcg_ixvmf4.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482120/qqkeno_kiruyt.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-fg_l52yax.png",
+          "badge": "New"
+        }
+      ]
+    },
+    "slotsDropdown": {
+      "sportsOptions": [
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174713/slot-ygr_rdcnlz.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174712/slot-ygg_whmuib.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174690/slot-vp_b6fc8p.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174689/slot-sw_lrztyf.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174683/slot-rt_kxytpf.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174671/slot-rg_qzc7sk.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174670/slot-r88_rxi8wk.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174669/slot-ps_uzvvi2.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174668/slot-mg_le2dsf.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174667/slot-jili_rllhe6.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174665/slot-jdb_sh4xq3.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174664/slot-hc_q7hv87.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174663/slot-hb_cobu6g.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174662/slot-gp_gupzie.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174661/slot-fs_akijjt.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174660/slot-fc_vcqegj.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174659/slot-exs_hdmbcd.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174658/slot-ep_xdnoj2.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174657/slot-dragoon-soft_dx6m6x.png"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174656/slot-cq9_dtzqqs.png"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174655/slot-ap_fnyt9h.png"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174655/slot-ag_vqs1z8.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174654/sg_zcbwom.png"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174653/pp_ueh6ba.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174652/pgsoft_wuiway.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174651/pg_ayeutv.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/nextspin_kkapvz.png",
+          "badge": "Hot"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/funkygames_eclias.png",
+          "badge": "New"
+        },
+        {
+          "name": "E-Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/joker_tpr2kv.png"
+        }
+      ]
+    },
+    "SportsDropdown": {
+      "sportsOptions": [
+        {
+          "name": "BK8 Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166007/sports1_xsnjcx.png",
+          "badge": "New"
+        },
+        {
+          "name": "Saba Sports",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166007/sports2_pld0ht.png"
+        },
+        {
+          "name": "CMD368",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166006/sports3_czrtsc.png",
+          "badge": "Popular"
+        },
+        {
+          "name": "SBOBET",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166008/sports4_vepapb.png"
+        }
+      ]
+    }
+  },
+  "MobileMenu": {
+    "menuItemsMain": [
+      {
+        "icon": "📥",
+        "label": "Download",
+        "color": "text-orange-500",
+        "link": "/download"
+      },
+      {
+        "icon": "⭐",
+        "label": "VIP",
+        "color": "text-gray-700",
+        "link": "/vip"
+      },
+      {
+        "icon": "👑",
+        "label": "Leaderboard",
+        "color": "text-gray-700",
+        "link": "/leaderboard"
+      },
+      {
+        "icon": "🤝",
+        "label": "Sponsors",
+        "color": "text-gray-700",
+        "link": "/sponsors",
+        "badge": {
+          "text": "New",
+          "color": "bg-red-500 text-white"
+        }
+      }
+    ],
+    "menuItemsLinks": [
+      {
+        "label": "About Us",
+        "link": "/aboutus"
+      },
+      {
+        "label": "Live Chat",
+        "link": "/chat"
+      },
+      {
+        "label": "Info Centre",
+        "link": "/info"
+      },
+      {
+        "label": "Contact Us",
+        "link": "/contact-us"
+      },
+      {
+        "label": "Responsible Gaming",
+        "link": "/responsible-gaming"
+      },
+      {
+        "label": "Terms & Conditions",
+        "link": "/info-centre"
+      },
+      {
+        "label": "Affiliate",
+        "link": "/affiliate"
+      }
+    ],
+    "menuItemsGrid": [
+      {
+        "icon": "🏠",
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "icon": "📱",
+        "label": "Mobile",
+        "link": "/mobile"
+      },
+      {
+        "icon": "⚽",
+        "label": "Sports",
+        "link": "/sports"
+      },
+      {
+        "icon": "🎮",
+        "label": "E-Sports",
+        "link": "/esports"
+      },
+      {
+        "icon": "🎲",
+        "label": "Casino",
+        "link": "/casino"
+      },
+      {
+        "icon": "🎰",
+        "label": "Slots",
+        "link": "/slots"
+      },
+      {
+        "icon": "🎣",
+        "label": "Fishing",
+        "link": "/fishing"
+      },
+      {
+        "icon": "🃏",
+        "label": "3D Games",
+        "link": "/3d-games"
+      },
+      {
+        "icon": "🎟️",
+        "label": "Lottery",
+        "link": "/lottery"
+      },
+      {
+        "icon": "🚀",
+        "label": "Fast Games",
+        "link": "/fast-games"
+      },
+      {
+        "icon": "🎉",
+        "label": "Promotions",
+        "link": "/promos"
+      },
+      {
+        "icon": "🎡",
+        "label": "Lucky Wheel",
+        "link": "/lucky-wheel"
+      }
+    ],
+    "logoutButton": {
+      "label": "Log Out"
+    }
+  },
+  "E-sports": {
+    "header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663173/esport-bn_wwuc5d.jpg",
+        "alt": "Sports Betting Banner"
+      },
+      "textOverlay": {
+        "title": "Esports Arena"
+      }
+    },
+    "EsportsTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "TF Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736606861/sports_3311579_mb8lyw.png",
+          "tag": "Hot",
+          "link": "/Games/E-Sports/TF-Gaming"
+        },
+        {
+          "id": 2,
+          "label": "IM Esports",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736606904/app_14979507_beivjt.png",
+          "tag": "New",
+          "link": "/Games/E-Sports/IM-Esports"
+        }
+      ]
+    },
+    "TF-Gaming": {
+      "title": "TF Gaming",
+      "subtitle": "Unbeatable Odds & Speedy Settlement",
+      "description": "TF Gaming is developed by a dedicated esports development team and experienced betting traders. Our goal is to provide a unique and convenient esports platform for everyone, covering major and minor esports events worldwide.",
+      "button": {
+        "text": "Play Now"
+      },
+      "features": [
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663245/tfg-icon-1_qd4oqq.png",
+          "descriptions": [
+            "Unbeatable Odds",
+            "Speedy Settlement"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663251/tfg-icon-2_sbwrsm.png",
+          "descriptions": [
+            "Vastly Experienced",
+            "Professional Esports Traders"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663274/tfg-icon-3_vdp25m.png",
+          "descriptions": [
+            "Extensive Choice of",
+            "Esports Markets"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663277/tfg-icon-4_xk6zfz.png",
+          "descriptions": [
+            "Fast and Stable",
+            "System Double Betting Speed"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663294/tfg-icon-5_xni8zs.png",
+          "descriptions": [
+            "Supports PCs, Mobile",
+            "Phones, and Tablets"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663298/tfg-icon-6_tm6mr9.png",
+          "descriptions": [
+            "Industry Leading",
+            "Betting Experience"
+          ]
+        }
+      ],
+      "backgroundImage": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663217/esport-tfg-features-bg_uv9dcb.png"
+    },
+    "IM-Esports": {
+      "title": "IM Esports",
+      "subtitle": "Satisfy Player Demands with Unmatched Services",
+      "description": "IM Esports is a betting platform built for players, founded and developed by a team of professional esports players. Unlike traditional sportsbook models, IM Esports is designed for esports players and fans. Its stunning visual interface is both simple and efficient. Gamers and esports fans alike will feel right at home with this product, and placing a wager will feel like second nature.",
+      "button": {
+        "text": "Play Now"
+      },
+      "backgroundImage": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663336/esport-benefits-bg_b7f4yy.png",
+      "featuresGrid": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668959/esport-benefits_en_bdibu0.png"
+      }
+    },
+    "footer": {
+      "header": {
+        "title": "Esports Games",
+        "subtitle": "Popular & Massive Multiplayer"
+      },
+      "gameLogos": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668283/esport-game-logo_db7rd1.png",
+        "alt": "Game Logos"
+      },
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668283/esport-btm-bg_eq6ecu.png",
+        "alt": "Bottom Characters and Effects"
+      }
+    }
+  },
+  "LiveCasino": {
+    "header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736743401/casino-bn_wazfe8.jpg",
+        "alt": "Casino Banner"
+      },
+      "textOverlay": {
+        "title": "Live Casino",
+        "subtitle": "Play games hosted by our live dealers",
+        "description": "Sign up now and enjoy endless rewards."
+      }
+    },
+    "CasinoTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Evolution Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "Hot",
+          "link": "/Games/casino/evolution-gaming"
+        },
+        {
+          "id": 2,
+          "label": "AE Casino",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "New",
+          "link": "/Games/casino/ae-casino"
+        },
+        {
+          "id": 3,
+          "label": "BK8 Casino",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "New",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 4,
+          "label": "Pragmatic Play",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "Hot",
+          "link": "/Games/casino/pragmatic-play"
+        },
+        {
+          "id": 5,
+          "label": "Asia Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "Hot",
+          "link": "/Games/casino/asia-gaming"
+        },
+        {
+          "id": 6,
+          "label": "SA Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "Hot",
+          "link": "/Games/casino/sa-gaming"
+        },
+        {
+          "id": 7,
+          "label": "W Casino",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "New",
+          "link": "/Games/casino/w-casino"
+        },
+        {
+          "id": 8,
+          "label": "WM Casino",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "New",
+          "link": "/Games/casino/wm-casino"
+        },
+        {
+          "id": 9,
+          "label": "Dream Casino",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "Hot",
+          "link": "/Games/casino/dream-gaming"
+        },
+        {
+          "id": 10,
+          "label": "Big Casino",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "New",
+          "link": "/Games/casino/big-gaming"
+        },
+        {
+          "id": 11,
+          "label": "Microgaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Microgaming"
+        },
+        {
+          "id": 12,
+          "label": "Game Play",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Game-Play"
+        },
+        {
+          "id": 13,
+          "label": "Playtech",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Playtech"
+        },
+        {
+          "id": 14,
+          "label": "Allbet",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/allbet"
+        }
+      ]
+    },
+    "HeaderTabs": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "All",
+          "active": true
+        },
+        {
+          "id": 2,
+          "label": "Baccarat",
+          "active": false
+        },
+        {
+          "id": 3,
+          "label": "Sic Bo",
+          "active": false
+        },
+        {
+          "id": 4,
+          "label": "Roulette",
+          "active": false
+        },
+        {
+          "id": 5,
+          "label": "Dragon Tiger",
+          "active": false
+        },
+        {
+          "id": 6,
+          "label": "Blackjack",
+          "active": false
+        },
+        {
+          "id": 7,
+          "label": "Others",
+          "active": false
+        }
+      ]
+    },
+    "GameCardList": {
+      "gameCards": [
+        {
+          "id": 1,
+          "title": "First Person Baccarat",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/speed-roulette_qoqhms.jpg",
+          "description": "Experience Baccarat like never before!"
+        },
+        {
+          "id": 2,
+          "title": "Super Sic Bo",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/salon-prive-baccarat_yx0cmr.jpg",
+          "description": "Enjoy the thrill of Super Sic Bo!"
+        },
+        {
+          "id": 3,
+          "title": "Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/thai-baccarat_zedyhe.jpg",
+          "description": "Spin the wheel and win big!"
+        },
+        {
+          "id": 4,
+          "title": "Speed Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/korean-speed-baccarat_qptywv.jpg",
+          "description": "Fast-paced Roulette action!"
+        },
+        {
+          "id": 5,
+          "title": "Dragon Tiger",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/lightning-baccarat_pr3jcz.jpg",
+          "description": "Who wins: Dragon or Tiger?"
+        },
+        {
+          "id": 6,
+          "title": "Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/french-gold-roulette_ly6i5n.jpg",
+          "description": "Spin the wheel and win big!"
+        },
+        {
+          "id": 7,
+          "title": "Speed Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/super-sic-bo_ajtnky.jpg",
+          "description": "Fast-paced Roulette action!"
+        },
+        {
+          "id": 8,
+          "title": "Dragon Tiger",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/first-person-roulette_lxdvjz.jpg",
+          "description": "Who wins: Dragon or Tiger?"
+        },
+        {
+          "id": 9,
+          "title": "Speed Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/dragon-tiger_ubw1pl.jpg",
+          "description": "Fast-paced Roulette action!"
+        },
+        {
+          "id": 10,
+          "title": "Dragon Tiger",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/first-person-baccarat_cqw7pb.jpg",
+          "description": "Who wins: Dragon or Tiger?"
+        }
+      ]
     }
   }
 }

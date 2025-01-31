@@ -1,16 +1,20 @@
+import React from "react";
+import { useTranslations } from "next-intl";
+
 const Header = () => {
+    const t = useTranslations("E-sports.header");
     return (
         <div className="relative">
             {/* Background Image */}
             <img
-                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663173/esport-bn_wwuc5d.jpg"
-                alt="Sportsbook Banner"
+                src={t("backgroundImage.image")}
+                alt={t("backgroundImage.alt")}
                 className="w-full h-auto"
             />
             {/* Text Overlay */}
             <div className="absolute inset-0 flex flex-col left-60 justify-center text-white px-4">
                 <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">
-                    Esports Arena
+                    {t("textOverlay.title")}
                 </h1>
             </div>
         </div>

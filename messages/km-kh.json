@@ -1,113 +1,1228 @@
 {
-    "Home": "សូមស្វាគមន៍មកកាន់ទំព័រដើម",
-    "homeTitle": "BK Theme",
-    "navbar": {
-      "Sports": "កីឡា",
-      "E-Sports": "អេស្បកីឡា",
-      "Casino": "កាស៊ីណូ",
-      "Slots": "ម៉ាស៊ីនស្លត",
-      "Fishing": "ការស្ទូចត្រី",
-      "4DGames": "ហ្គេម 4D",
-      "Lottery": "ឆ្នោត",
-      "FastGames": "ហ្គេមលឿន",
-      "Promos": "ប្រូម៉ូសិន",
-      "VIP": "សមាជិក VIP",
-      "rightMenu": {
-        "Joinnow": "ចុះឈ្មោះឥឡូវនេះ",
-        "Login": "ចូល"
-      }
-    },
-    "Games": {
-      "sports": {
-        "title": "កីឡា",
-        "Header": {
-          "title": "សៀវភៅកីឡា",
-          "subtitle": "រីករាយជាមួយការភ្នាល់កីឡាអនឡាញថ្នាក់ពិភពលោក។",
-          "description": "ឱកាសភ្នាល់កីឡាដែលល្អបំផុតនៅចំលើយដៃរបស់អ្នក។"
-        },
-        "Tab": {
-          "BK8-Sports": "BK8-កីឡា",
-          "Saba-Sports": "Saba-កីឡា",
-          "Cmd-Sports": "Cmd-កីឡា"
-        },
-        "BK8Sports": {
-          "header": {
-            "title": "BK8-កីឡា",
-            "subtitle": "សៀវភៅកីឡាអនឡាញដែលមានប្រជាប្រិយបំផុតនៅអាស៊ី",
-            "description": "BK8 Sports គឺជាហ្គេមភ្នាល់កីឡាដែលផ្ដល់ដោយសៀវភៅកីឡាដឹកនាំនៅលើទីផ្សារ BK8។ សៀវភៅកីឡាអនឡាញដែលល្បីល្បាញនេះមានក្រុមការងារជាច្រើនដែលមានជំនាញ និងត្រូវបានបម្រើការនៅពេល 24 ម៉ោងក្នុងមួយថ្ងៃ ដើម្បីផ្ដល់ឱកាសភ្នាល់ប្រកួតប្រជែង និងសកម្មភាពកីឡានានាទូទាំងពិភពលោក។"
-          },
-          "button": {
-            "text": "លេងឥឡូវនេះ"
-          },
-          "image": {
-            "alt": "រូបបដា BK8 Sports",
-            "url": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736604032/BTI_fhurso.jpg"
-          }
-        }
+  "Home": "សូមស្វាគមន៍មកកាន់ទំព័រដើម",
+  "homeTitle": "BK Theme",
+  "navbar": {
+    "Sports": "កីឡា",
+    "E-Sports": "អេស្បកីឡា",
+    "Casino": "កាស៊ីណូ",
+    "Slots": "ម៉ាស៊ីនស្លត",
+    "Fishing": "ការស្ទូចត្រី",
+    "4DGames": "ហ្គេម 4D",
+    "Lottery": "ឆ្នោត",
+    "FastGames": "ហ្គេមលឿន",
+    "Promos": "ប្រូម៉ូសិន",
+    "VIP": "សមាជិក VIP",
+    "rightMenu": {
+      "Joinnow": "ចុះឈ្មោះឥឡូវនេះ",
+      "Login": "ចូល"
+    }
+  },
+  "Games": {
+    "sports": {
+      "title": "កីឡា",
+      "Header": {
+        "title": "សៀវភៅកីឡា",
+        "subtitle": "រីករាយជាមួយការភ្នាល់កីឡាអនឡាញថ្នាក់ពិភពលោក។",
+        "description": "ឱកាសភ្នាល់កីឡាដែលល្អបំផុតនៅចំលើយដៃរបស់អ្នក។"
       },
-      "saba-sports": {
-        "header": {
-          "title": "Saba-កីឡា",
-          "subtitle": "សៀវភៅកីឡាអនឡាញដែលមានប្រជាប្រិយបំផុតនៅអាស៊ី",
-          "description": "Saba-Sports គឺជាហ្គេមភ្នាល់កីឡាដែលផ្ដល់ដោយសៀវភៅកីឡា SABA។ សៀវភៅកីឡា SABA ផ្ដល់ជូនប្រកួតបន្តផ្ទាល់រាប់ពាន់ដូចជា សាប៉ាសុកកឺ បាល់បោះ តេននីស វ៉ូលីបាល់ និងច្រើនទៀត ដែលមានការប្ដូរតាមបំណងលឿនបំផុត និងការគាំទ្រផ្នែកបច្ចេកទេសទូលំទូលាយបំផុត។"
-        },
-        "button": {
-          "text": "លេងឥឡូវនេះ"
-        },
-        "accountSection": {
-          "title": "ផ្នែកគណនី",
-          "copy": "ចម្លង",
-          "username": {
-            "label": "ឈ្មោះអ្នកប្រើ",
-            "value": "-"
-          },
-          "password": {
-            "label": "លេខសំងាត់",
-            "value": "-"
-          },
-          "downloadText": "ទាញយកកម្មវិធី Saba-Sports និងរីករាយជាមួយហ្គេម"
-        },
-        "promotionSection": {
-          "title": "សូមស្វាគមន៍មកកាន់ BK8!",
-          "description": "ធ្វើការដាក់ប្រាក់ដំបូងរបស់អ្នក ហើយទទួលបានឥណទានបន្ថែម។",
-          "info": "សម្រាប់ព័ត៌មានបន្ថែម សូមចូលទៅ https://www.bk33best88.asia/en-my/promotion",
-          "termsAndConditions": {
-            "title": "លក្ខខណ្ឌ & គោលការណ៍៖",
-            "items": [
-              "ចុះឈ្មោះគណនីជាមួយ BK8។",
-              "សមាជិកដាក់ប្រាក់ដំបូងទាំងអស់មានសិទ្ធិប្រើប្រាស់ប្រូម៉ូសិននេះ។",
-              "សមាជិកត្រូវដាក់ប្រាក់ចូលទៅក្នុងកាបូបកីឡាដើម្បីទាមទារប្រាក់រង្វាន់។",
-              "ប្រូម៉ូសិននេះអាចប្រើបានតែពេលដែលមាន។",
-              "ប្រាក់រង្វាន់នឹងត្រូវបានផ្ទេរទៅកាន់កាបូបកីឡាដែលអ្នកជ្រើសរើស។",
-              "ប្រាក់រង្វាន់មានសុពលភាពក្នុងរយៈពេល 30 ថ្ងៃ។",
-              "ការភ្នាល់ដែលបញ្ឈប់ ស្មើ ការោលគ្មានសុពលភាព មិនត្រូវបានរាប់បញ្ចូល។",
-              "ប្រូម៉ូសិនមិនអាចប្រើសម្រាប់ការផ្ទេរដោយស្មើ។",
-              "ការផ្តល់ជូនអតិថិជនមានដែនកំណត់មួយច្បាស់។",
-              "ប្រូម៉ូសិនមិនអាចប្រើសម្រាប់ប្រូម៉ូសិនផ្សេងទៀត។",
-              "BK8 មានសិទ្ធិផ្លាស់ប្តូរ ឬលុបចោលប្រូម៉ូសិន។",
-              "សមាជិកដែលចូលរួមត្រូវទទួលស្គាល់ និងគោរពតាមលក្ខខណ្ឌ។"
-            ]
-          }
-        },
-        "footerImage": {
-          "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736662687/IBC_amzgkv.jpg",
-          "alt": "រូបបដា Saba Sports"
-        }
+      "Tab": {
+        "BK8-Sports": "BK8-កីឡា",
+        "Saba-Sports": "Saba-កីឡា",
+        "Cmd-Sports": "Cmd-កីឡា"
       },
-      "cmd368": {
+      "BK8Sports": {
         "header": {
-          "title": "Cmd-កីឡា",
+          "title": "BK8-កីឡា",
           "subtitle": "សៀវភៅកីឡាអនឡាញដែលមានប្រជាប្រិយបំផុតនៅអាស៊ី",
-          "description": "C-Sports គឺជាហ្គេមភ្នាល់កីឡាដែលផ្ដល់ដោយ CMD368។ CMD368 ផ្ដល់សេវាកម្មភ្នាល់សម្រាប់ព្រឹត្តិការណ៍កីឡាដោយផ្អែកលើដំណើរការជាក់ស្តែង និងប្រធានបទក្តៅក្នុងទីផ្សារ។"
+          "description": "BK8 Sports គឺជាហ្គេមភ្នាល់កីឡាដែលផ្ដល់ដោយសៀវភៅកីឡាដឹកនាំនៅលើទីផ្សារ BK8។ សៀវភៅកីឡាអនឡាញដែលល្បីល្បាញនេះមានក្រុមការងារជាច្រើនដែលមានជំនាញ និងត្រូវបានបម្រើការនៅពេល 24 ម៉ោងក្នុងមួយថ្ងៃ ដើម្បីផ្ដល់ឱកាសភ្នាល់ប្រកួតប្រជែង និងសកម្មភាពកីឡានានាទូទាំងពិភពលោក។"
         },
         "button": {
           "text": "លេងឥឡូវនេះ"
         },
         "image": {
-          "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663006/CMD_yqy8ea.jpg",
-          "alt": "រូបបដា Cmd-Sports"
+          "alt": "រូបបដា BK8 Sports",
+          "url": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736604032/BTI_fhurso.jpg"
         }
       }
+    },
+    "saba-sports": {
+      "header": {
+        "title": "Saba-កីឡា",
+        "subtitle": "សៀវភៅកីឡាអនឡាញដែលមានប្រជាប្រិយបំផុតនៅអាស៊ី",
+        "description": "Saba-Sports គឺជាហ្គេមភ្នាល់កីឡាដែលផ្ដល់ដោយសៀវភៅកីឡា SABA។ សៀវភៅកីឡា SABA ផ្ដល់ជូនប្រកួតបន្តផ្ទាល់រាប់ពាន់ដូចជា សាប៉ាសុកកឺ បាល់បោះ តេននីស វ៉ូលីបាល់ និងច្រើនទៀត ដែលមានការប្ដូរតាមបំណងលឿនបំផុត និងការគាំទ្រផ្នែកបច្ចេកទេសទូលំទូលាយបំផុត។"
+      },
+      "button": {
+        "text": "លេងឥឡូវនេះ"
+      },
+      "accountSection": {
+        "title": "ផ្នែកគណនី",
+        "copy": "ចម្លង",
+        "username": {
+          "label": "ឈ្មោះអ្នកប្រើ",
+          "value": "-"
+        },
+        "password": {
+          "label": "លេខសំងាត់",
+          "value": "-"
+        },
+        "downloadText": "ទាញយកកម្មវិធី Saba-Sports និងរីករាយជាមួយហ្គេម"
+      },
+      "promotionSection": {
+        "title": "សូមស្វាគមន៍មកកាន់ BK8!",
+        "description": "ធ្វើការដាក់ប្រាក់ដំបូងរបស់អ្នក ហើយទទួលបានឥណទានបន្ថែម។",
+        "info": "សម្រាប់ព័ត៌មានបន្ថែម សូមចូលទៅ https://www.bk33best88.asia/en-my/promotion",
+        "termsAndConditions": {
+          "title": "លក្ខខណ្ឌ & គោលការណ៍៖",
+          "items": [
+            "ចុះឈ្មោះគណនីជាមួយ BK8។",
+            "សមាជិកដាក់ប្រាក់ដំបូងទាំងអស់មានសិទ្ធិប្រើប្រាស់ប្រូម៉ូសិននេះ។",
+            "សមាជិកត្រូវដាក់ប្រាក់ចូលទៅក្នុងកាបូបកីឡាដើម្បីទាមទារប្រាក់រង្វាន់។",
+            "ប្រូម៉ូសិននេះអាចប្រើបានតែពេលដែលមាន។",
+            "ប្រាក់រង្វាន់នឹងត្រូវបានផ្ទេរទៅកាន់កាបូបកីឡាដែលអ្នកជ្រើសរើស។",
+            "ប្រាក់រង្វាន់មានសុពលភាពក្នុងរយៈពេល 30 ថ្ងៃ។",
+            "ការភ្នាល់ដែលបញ្ឈប់ ស្មើ ការោលគ្មានសុពលភាព មិនត្រូវបានរាប់បញ្ចូល។",
+            "ប្រូម៉ូសិនមិនអាចប្រើសម្រាប់ការផ្ទេរដោយស្មើ។",
+            "ការផ្តល់ជូនអតិថិជនមានដែនកំណត់មួយច្បាស់។",
+            "ប្រូម៉ូសិនមិនអាចប្រើសម្រាប់ប្រូម៉ូសិនផ្សេងទៀត។",
+            "BK8 មានសិទ្ធិផ្លាស់ប្តូរ ឬលុបចោលប្រូម៉ូសិន។",
+            "សមាជិកដែលចូលរួមត្រូវទទួលស្គាល់ និងគោរពតាមលក្ខខណ្ឌ។"
+          ]
+        }
+      },
+      "footerImage": {
+        "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736662687/IBC_amzgkv.jpg",
+        "alt": "រូបបដា Saba Sports"
+      }
+    },
+    "cmd368": {
+      "header": {
+        "title": "Cmd-កីឡា",
+        "subtitle": "សៀវភៅកីឡាអនឡាញដែលមានប្រជាប្រិយបំផុតនៅអាស៊ី",
+        "description": "C-Sports គឺជាហ្គេមភ្នាល់កីឡាដែលផ្ដល់ដោយ CMD368។ CMD368 ផ្ដល់សេវាកម្មភ្នាល់សម្រាប់ព្រឹត្តិការណ៍កីឡាដោយផ្អែកលើដំណើរការជាក់ស្តែង និងប្រធានបទក្តៅក្នុងទីផ្សារ។"
+      },
+      "button": {
+        "text": "លេងឥឡូវនេះ"
+      },
+      "image": {
+        "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663006/CMD_yqy8ea.jpg",
+        "alt": "រូបបដា Cmd-Sports"
+      }
+    },
+    "PopularGames": {
+      "popularGamesTitle": "ល្បែងពេញនិយម",
+      "seeAll": "មើលទាំងអស់",
+      "play": "ចាប់ផ្តើមលេង",
+      "demo": "សាកល្បង",
+      "hot": "ពេញនិយម",
+      "rtp": "RTP",
+      "GamesList": [
+        {
+          "id": 1,
+          "name": "Pac-Man Glory",
+          "type": "Nextspin",
+          "rtp": "96.95",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497775/ns-pacman_xtorka.jpg",
+          "label": "ពេញនិយម",
+          "link": "/games/pac-man-glory"
+        },
+        {
+          "id": 2,
+          "name": "Cleopatra Fortune",
+          "type": "Nextspin",
+          "rtp": "96.97",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497774/ns-candy-bonanza_qiiu1l.jpg",
+          "label": "ពេញនិយម",
+          "link": "/games/cleopetra-fortune"
+        },
+        {
+          "id": 3,
+          "name": "BK8 Roma",
+          "type": "Nextspin",
+          "rtp": "96.75",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497776/ns-roma_crzcl9.jpg",
+          "label": "ពេញនិយម",
+          "link": "/games/bk8-roma"
+        },
+        {
+          "id": 4,
+          "name": "BK8 Gates of Olympus",
+          "type": "Pragmatic Play",
+          "rtp": "97.6",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497778/sCleopaFor_mrcdws.jpg",
+          "label": "ពេញនិយម",
+          "link": "/games/gates-of-olympus"
+        },
+        {
+          "id": 5,
+          "name": "BK8 Candy Bonanza",
+          "type": "Nextspin",
+          "rtp": "97.93",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497780/vs20bk8gates_sqy4q9.jpg",
+          "label": "ពេញនិយម",
+          "link": "/games/candy-bonanza"
+        },
+        {
+          "id": 6,
+          "name": "BK8 Sweet Blaster",
+          "type": "Nextspin",
+          "rtp": "97.93",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497782/vs20fruitsbk8_qznodc.png",
+          "label": "ពេញនិយម",
+          "link": "/games/sweet-blaster"
+        }
+      ]
+    },
+    "BestLiveCasinoGames": {
+      "bestLiveCasinoGamesTitle": "ល្បែងកាស៊ីណូមានផ្សាយផ្ទាល់ល្អបំផុត",
+      "seeAll": "មើលទាំងអស់",
+      "play": "ចាប់ផ្តើមលេង",
+      "logInToPlay": "ចូលដើម្បីលេង",
+      "new": "ថ្មី",
+      "hot": "ពេញនិយម",
+      "GamesList": [
+        {
+          "id": 1,
+          "name": "BK8 CN ក្រហម 1",
+          "type": "BK8 កាស៊ីណូ",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498983/sbc2_asqzgx.jpg",
+          "label": "ថ្មី",
+          "link": "/games/bk8-cn-red-1"
+        },
+        {
+          "id": 2,
+          "name": "BK8 CN ក្រហម 5",
+          "type": "BK8 កាស៊ីណូ",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498981/sbc1_uembyf.jpg",
+          "label": "ថ្មី",
+          "link": "/games/bk8-cn-red-5"
+        },
+        {
+          "id": 3,
+          "name": "BK8 បាការ៉ាត់ 1",
+          "type": "PP កាស៊ីណូផ្សាយផ្ទាល់",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498978/salon-prive-baccarat_l6w2df.jpg",
+          "label": "ពេញនិយម",
+          "link": "/games/bk8-baccarat-1"
+        },
+        {
+          "id": 4,
+          "name": "BK8 ប្លេកជេកទោល",
+          "type": "PP កាស៊ីណូផ្សាយផ្ទាល់",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498976/PP-Roulette_zbpkru.jpg",
+          "label": "ពេញនិយម",
+          "link": "/games/bk8-one-blackjack"
+        },
+        {
+          "id": 5,
+          "name": "BK8 រុឡេត",
+          "type": "PP កាស៊ីណូផ្សាយផ្ទាល់",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498974/PP-blackjack_vpupvs.jpg",
+          "label": "ពេញនិយម",
+          "link": "/games/bk8-roulette"
+        },
+        {
+          "id": 6,
+          "name": "រុឡេតផ្ទុះអគ្គិសនី",
+          "type": "Evolution Gaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498973/PP-baccarat-1_w3pk5c.jpg",
+          "link": "/games/lightning-roulette"
+        }
+      ]
+    },
+    "InstantGamesToPlay": {
+      "instantGamesTitle": "ល្បែងភ្លាមៗដែលបានផ្ដល់អនុសាសន៍",
+      "seeAll": "មើលទាំងអស់",
+      "play": "ចាប់ផ្តើមលេង",
+      "demo": "លេងសាកល្បង",
+      "logInToPlay": "ចូលដើម្បីលេង",
+      "new": "ថ្មី",
+      "GamesList": [
+        {
+          "id": 1,
+          "name": "MineSweeper",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505457/imgame12001_xpsrbr.png",
+          "label": "ថ្មី",
+          "link": "/games/mines"
+        },
+        {
+          "id": 2,
+          "name": "Penalty Shootout",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505458/imgame12002_iojuox.png",
+          "label": "ថ្មី",
+          "link": "/games/goal"
+        },
+        {
+          "id": 3,
+          "name": "Dice",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505460/imgame12005_xs9taf.png",
+          "label": "ថ្មី",
+          "link": "/games/dice"
+        },
+        {
+          "id": 4,
+          "name": "Plinko",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505462/imgame12006_zhyivn.png",
+          "label": "ថ្មី",
+          "link": "/games/plinko"
+        },
+        {
+          "id": 5,
+          "name": "Keno",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505464/imgame12007_hrrofy.png",
+          "label": "ថ្មី",
+          "link": "/games/keno"
+        },
+        {
+          "id": 6,
+          "name": "Mini Roulette",
+          "type": "Scribe",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505466/imgame12008_pyx0zr.png",
+          "label": "ថ្មី",
+          "link": "/games/mini-roulette"
+        }
+      ]
+    }
+  },
+  "AnnountcementBar": {
+    "news": "ព័ត៌មាន",
+    "more": "ច្រើនទៀត",
+    "announcementMessage": "អញ្ជើញមិត្តរបស់អ្នកចូលរួម ICG Gaming ហើយឈ្នះរង្វាន់ធំជាមួយគ្នា! ក្នុងឱកាសបុណ្យចូលឆ្នាំចិននេះ អ្នកនឹងមានឱកាសទទួលបានប្រាក់រង្វាន់សរុបដល់ទៅ MYR 4,888 សម្រាប់ការបញ្ជូនផ្ញើ!"
+  },
+  "LiveMatchesSection": {
+    "upcomingLiveMatches": "ការប្រកួតផ្សាយផ្ទាល់ខាងមុខ",
+    "football": "បាល់ទាត់",
+    "basketball": "បាល់បោះ",
+    "officialSponsor": "អ្នកឧបត្ថម្ភផ្លូវការសម្រាប់ 2024 HSBC BWF World Tour Finals",
+    "brandAmbassador": "ទូតម៉ាក BK8 ប្រទេសហ្វីលីពីន 2023 - 2024",
+    "officialPartner": "ដៃគូផ្លូវការរបស់ | ក្លឹបបាល់ទាត់ Burnley",
+    "betNow": "ភ្នាល់ឥឡូវនេះ",
+    "league": "លីគ",
+    "matchTime": "ពេលវេលាការប្រកួត",
+    "homeTeam": "ក្រុមម្ចាស់ផ្ទះ",
+    "awayTeam": "ក្រុមភ្ញៀវ",
+    "handicap": "អនុលោម",
+    "odds": "អត្រា",
+    "home": "ម្ចាស់ផ្ទះ",
+    "away": "ភ្ញៀវ",
+    "vs": "ប្រកួតប្រឆាំង"
+  },
+  "HowToRegister": {
+    "welcomeMessage": "សូមស្វាគមន៍មកកាន់ BK8 - កាស៊ីណូអនឡាញដែលអាចជឿទុកចិត្តបាននៅអាស៊ី",
+    "howToRegister": "របៀបចុះឈ្មោះ",
+    "createAccount": "បង្កើតគណនី",
+    "createAccountDescription": "ចុច 'ចូលរួមឥឡូវនេះ' ហើយបំពេញព័ត៌មានចូលរបស់អ្នក",
+    "makeDeposit": "ដាក់ប្រាក់",
+    "makeDepositDescription": "ប្រើប្រាស់រូបិយបណ្ណ័ ឬ គ្រឿងបច្ចេកវិទ្យារូបិយបណ្ណ័ដើម្បីដាក់ប្រាក់លើកដំបូង",
+    "startWinning": "ចាប់ផ្តើមឈ្នះរង្វាន់",
+    "startWinningDescription": "ឈ្នះរង្វាន់ក្នុងល្បែងដែលអ្នកចូលចិត្តបំផុត",
+    "getReward": "ទទួលរង្វាន់",
+    "getRewardDescription": "កុំភ្លេចទទួលរង្វាន់របស់អ្នក!"
+  },
+  "AppDownloadSection": {
+    "appDownloadTitle": "ទាញយកកម្មវិធី",
+    "futureOfGaming": "អនាគតនៃការលេងហ្គេមបានមកដល់។",
+    "greatGamesAllDevices": "ល្បែងអស្ចារ្យអាចលេងបានលើគ្រប់ឧបករណ៍។",
+    "newBK8App": "កម្មវិធី BK8 ថ្មី",
+    "signUpToday": "ចុះឈ្មោះថ្ងៃនេះ ដើម្បីទទួលបានរង្វាន់ ការផ្សព្វផ្សាយ និងអត្ថប្រយោជន៍ជាច្រើន។",
+    "appleIOS": "iOS របស់ Apple",
+    "android": "Android",
+    "instructions": "ការណែនាំការដំឡើង",
+    "features": {
+      "referralMadeEasy": {
+        "title": "ល្អសម្រាប់ការណែនាំ",
+        "description": "ចែករំលែកតំណភ្ជាប់ណែនាំរបស់អ្នក ហើយទទួលបានប្រាក់ចំណូល"
+      },
+      "securityAssured": {
+        "title": "សុវត្ថិភាពថ្នាក់ខ្ពស់",
+        "description": "ចូលគណនីដោយប្រើការកំណត់អត្តសញ្ញាណមុខ ឬស្នាមម្រាមដៃ"
+      },
+      "seamlessWalletTransfer": {
+        "title": "ផ្ទេរថវិកាបានរលូន",
+        "description": "អាចផ្ទេរប្រាក់បានរហ័សក្នុងរយៈពេលប៉ុន្មានវិនាទី"
+      },
+      "expressLogin": {
+        "title": "ការចូលប្រើប្រាស់យ៉ាងលឿន",
+        "description": "វិធីងាយស្រួល និងមានសុវត្ថិភាពដើម្បីរក្សាការចូលប្រើប្រាស់របស់អ្នក"
+      }
+    }
+  },
+  "OurPartners": {
+    "ourPartners": "ដៃគូរបស់យើង",
+    "seeAll": "មើលទាំងអស់"
+  },
+  "Testimonials": {
+    "testimonialsTitle": "សាកសពអ្នកប្រើប្រាស់",
+    "reviews": [
+      {
+        "title": "វេទិកាមានសុវត្ថិភាព និងអាចទុកចិត្តបាន!",
+        "description": "ខ្ញុំស្ទាក់ស្ទើរក្នុងការដាក់ប្រាក់ ឬចែករំលែកព័ត៌មានផ្ទាល់ខ្លួនលើវេទិកាផ្សេងៗ ព្រោះខ្ញុំមិនមានអារម្មណ៍ថាវាមានសុវត្ថិភាព។ ទោះជាយ៉ាងណា BK8 បានផ្តល់ឲ្យខ្ញុំនូវភាពទុកចិត្ត ពីព្រោះវាមានឈ្មោះដែនដែលត្រូវបានផ្ទៀងផ្ទាត់ និងវិធានការសុវត្ថិភាព។",
+        "rating": 5
+      },
+      {
+        "title": "ខ្ញុំរីករាយណាស់ដែលបានផ្លាស់ប្តូរមក BK8! វាមានអស្ចារ្យ!",
+        "description": "ខ្ញុំពិតជាមានអំណរព្រោះបានជ្រើសរើស BK8។ ប្រាក់រង្វាន់ខ្ពស់ និងការផ្ដល់ជូនពិសេសដ៏អស្ចារ្យ ដែលអ្នកមិនអាចជឿបានទាល់តែអ្នកសាកល្បងដោយខ្លួនឯង!",
+        "rating": 5
+      },
+      {
+        "title": "មានបទពិសោធន៍ជាមួយ VIP ពិតប្រាកដ!",
+        "description": "ពួកគេព្យាយាមផ្តល់សេវាកម្មល្អបំផុតសម្រាប់អតិថិជន VIP ជារឿយៗ ដោយផ្ដល់នូវប្រាក់រង្វាន់ និងអត្ថប្រយោជន៍ពិសេសជាច្រើន។ BK8 ធ្វើឲ្យខ្ញុំក្លាយជាសមាជិកដ៏ស្មោះត្រង់របស់ពួកគេ!",
+        "rating": 5
+      }
+    ]
+  },
+  "LatestNews": {
+    "latestNewsTitle": "ព័ត៌មានថ្មីបំផុតពី BK8",
+    "news": [
+      {
+        "title": "BK8 x ម៉ានី ប៉ាក្យាវ",
+        "description": "ក្រុមហ៊ុន BK8 បានប្រកាសនៅថ្ងៃទី 1 ធ្នូ ឆ្នាំ 2023 ថា ឯកឧត្ដម ម៉ានី ប៉ាក្យាវ អតីតមេក្រុមប្រដាល់ល្បីល្បាញនៅហ្វីលីពីន បានក្លាយជាទូតស្លាកយីហោរបស់ក្រុមហ៊ុន។ ប៉ាក្យាវ ឈ្នះជើងឯកពិភពលោកចំនួន 12 នៅក្នុងប្រភេទគុនខុសៗគ្នា 8 ដង។ កិច្ចសហការនេះនឹងជួយលើកកម្ពស់ឈ្មោះយីហោ BK8 ទៅកម្រិតខ្ពស់ជាងមុន។",
+        "date": "2023/12/19",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512938/manny_pacquiao_tfrpgd.png"
+      },
+      {
+        "title": "BK8 x អាស្តុន វីឡា",
+        "description": "BK8 បានចុះកិច្ចសហការជាមួយក្លឹបបាល់ទាត់ Aston Villa ក្នុងរយៈពេលជាច្រើនឆ្នាំ។ BK8 ជាដៃគូសហការចម្បង និងជាសហការីផ្លូវការលើឯកសណ្ឋានរបស់ក្លឹបនេះក្នុងរដូវកាល 2023/2024។ លើសពីនេះទៀត BK8 ក៏បានចូលរួមក្នុងសកម្មភាពសប្បុរសធម៌ក្នុងសហគមន៍ផងដែរ។",
+        "date": "2023/06/16",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512935/bwf_p5bc64.png"
+      },
+      {
+        "title": "BK8 x ក្លឹបបាល់ទាត់ ប៊ឺនលី",
+        "description": "ចាប់តាំងពីឆ្នាំ 2022 BK8 បានក្លាយជាដៃគូផ្លូវការសម្រាប់ក្លឹបបាល់ទាត់ Burnley ក្នុងតំបន់អាស៊ី។ ក្នុងរដូវកាល 2023/2024 កិច្ចសហការនេះត្រូវបានពង្រីកបន្ថែម ដោយ BK8 ក្លាយជាដៃគូផ្លូវការសម្រាប់ឯកសណ្ឋានហ្វឹកហាត់របស់ក្លឹប។",
+        "date": "2023/06/16",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512932/burnley-fc_kdlzms.png"
+      },
+      {
+        "title": "BK8 x BWF",
+        "description": "BK8 បានក្លាយជាដៃគូផ្លូវការសម្រាប់ការប្រកួត HSBC BWF World Tour 2024 ជាផ្នែកមួយនៃការផ្សាយពាណិជ្ជកម្មអន្តរជាតិ។ កិច្ចសហការមានកិច្ចចុះហត្ថលេខានៅលើការប្រកួតកីឡា និងសកម្មភាពផ្សេងៗទៀត។",
+        "date": "2024/05/10",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512931/aston-villa_kjdc7i.png"
+      }
+    ]
+  },
+  "PartnershipAndAwards": {
+    "partnersAndAwards": "ដៃគូសហការនិងពានរង្វាន់",
+    "partners": [
+      {
+        "type": "ដៃគូផ្លូវការ",
+        "name": "ក្លឹបបាល់ទាត់ ប៊ឺនលី",
+        "year": "2023-2024",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513807/bfc_uwp4f5.svg"
+      },
+      {
+        "type": "អ្នកឧបត្ថម្ភផ្លូវការនៃការប្រកួត HSBC BWF World Tour Final 2024",
+        "name": "",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513821/hsbc_bwf_kypkyc.png"
+      },
+      {
+        "type": "ទូតស្លាកយីហោ BK8 នៅហ្វីលីពីន 2023 - 2024",
+        "name": "ម៉ានី ប៉ាក្យាវ",
+        "subTitle": "ជើងឯកប្រដាល់ពិភពលោកក្នុង 8 ប្រភេទ & 12 ជើងឯកពិភពលោក",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513834/sponsor-MP_yxu2in.png",
+        "signature": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513830/signature-MP_bc5uog.png"
+      },
+      {
+        "type": "ការតែងតាំងចូលជាបេក្ខភាពសម្រាប់ពានរង្វាន់សម្រាប់ការបង្កើតថ្មីនៅវិស័យកីឡាប្រកួតបៀ",
+        "name": "",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513814/egr_nomination_xh1xoj.png"
+      }
+    ],
+    "awardNomination": "ការតែងតាំងសម្រាប់ពានរង្វាន់",
+    "ourPreviousSponsorships": "ការឧបត្ថម្ភមុនរបស់យើង",
+    "sponsorships": [
+      {
+        "name": "ក្លឹបបាល់ទាត់ អាស្តុន វីឡា",
+        "year": "2023 - 2024",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513778/aston-villa-fc_n6waqu.svg"
+      },
+      {
+        "name": "ក្លឹបបាល់ទាត់ ក្រិសថល បាឡេស",
+        "year": "2022 - 2023",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513811/crystal-palace-fc_rpxzrj.svg"
+      },
+      {
+        "name": "ក្លឹបបាល់ទាត់ ហាដឺសហ្វៀលដ៍ ថោន",
+        "year": "2021 - 2023",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513824/huddersfield-town-afc_od3ilw.svg"
+      },
+      {
+        "name": "ក្លឹបបាល់ទាត់ វ៉ាឡិនស៊ី",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513837/valencia-cf_ipimq6.svg"
+      },
+      {
+        "name": "ក្លឹបបាល់ទាត់ អាត្លេទីក បិលបាវ",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513781/athletic-club_oym5cd.svg"
+      },
+      {
+        "name": "ក្លឹបបាល់ទាត់ វីលឡារិយ៉ាល",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513841/villarreal-cf_uasmsz.svg"
+      },
+      {
+        "name": "ក្លឹបបាល់ទាត់ អែលចេ",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513817/elche-cf_mxwj73.svg"
+      },
+      {
+        "name": "ក្លឹបបាល់ទាត់ ម៉ាឡូកា",
+        "year": "2021 - 2022",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513827/rcd-mallorca_wdpycz.svg"
+      }
+    ]
+  },
+  "footer": {
+    "aboutBK8": "អំពី BK8 Sports",
+    "aboutBK8Description": "BK8 Sports (9 Abraham De Veerstraat Willemstad, Curaçao) ត្រូវបានអនុញ្ញាត និងគ្រប់គ្រងដោយរដ្ឋាភិបាលកូរ៉ាសូ។",
+    "gamingLicense": "អាជ្ញាប័ណ្ណល្បែង",
+    "games": "ល្បែង",
+    "gameCategories": [
+      "កីឡា",
+      "អេស្ប័រ",
+      "កាស៊ីណូ",
+      "ស្លុត",
+      "នេសាទ",
+      "ល្បែង 3D",
+      "ឆ្នោត",
+      "ល្បែងរហ័ស"
+    ],
+    "info": "ព័ត៌មាន",
+    "infoLinks": [
+      "អំពីយើង",
+      "VIP",
+      "តារាងចំណាត់ថ្នាក់",
+      "កម្មវិធីដៃគូ",
+      "ទាក់ទងមកយើង",
+      "ការលេងល្បែងដោយមានការទទួលខុសត្រូវ",
+      "មជ្ឈមណ្ឌលព័ត៌មាន",
+      "លក្ខខណ្ឌនានា"
+    ],
+    "certifications": "វិញ្ញាបនបត្រ",
+    "paymentMethods": "វិធីបង់ប្រាក់",
+    "followUs": "តាមដានពួកយើង",
+    "security": "សុវត្ថិភាព",
+    "responsibleGaming": "ការលេងល្បែងដោយមានការទទួលខុសត្រូវ",
+    "footerNote": "© 2025 BK8™. រក្សាសិទ្ធិគ្រប់យ៉ាង។"
+  },
+  "Dropdown": {
+    "fourDDropdown": {
+      "sportsOptions": [
+        {
+          "name": "អេស្ប័រ",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481725/4d-gdl_vbtf9e.png",
+          "badge": "ពេញនិយម"
+        }
+      ]
+    },
+    "casinoDropdown": {
+      "sportsOptions": [
+        {
+          "name": "អេស្ប័រ",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173709/ug_qtn9ic.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173708/submenu-casino-pp_dwkb7x.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173700/evo_b0vqsw.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173678/dg_ig2wy6.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173660/casino-wm_w7ltn1.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173655/casino-we_d1b65g.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173654/casino-w_qpm7zj.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173653/casino-vc_reuquc.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-mg_px4edh.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-sa_yliyyi.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/casino-gp_wj4hdk.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-ag_vuccon.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/allbet_tniw6e.png",
+          "badge": "ថ្មី"
+        }
+      ]
+    },
+    "eSportsDropdown": {
+      "sportsOptions": [
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport2_zyuiav.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport1_cmzaht.png",
+          "badge": "ថ្មី"
+        }
+      ]
+    },
+    "fastGamesDropdown": {
+      "sportsOptions": [
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482510/fastgames-mtv_dqk77q.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482510/fastgames-jili_pccd4f.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482511/slot-spb_zrjvyd.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482511/fastgames-t1g_y3ppf5.png",
+          "badge": "ថ្មី"
+        }
+      ]
+    },
+    "fishingDropdown": {
+      "sportsOptions": [
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-ygr_e8z6bt.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-fs_rsufvf.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-jl_ktjqar.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-r88_ezxpwb.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-fc_duw8dt.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-sg_ut7ere.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-cq9_cdtgnm.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-dragoon-soft_uzabnu.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-jdb_hmfqa6.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-vp_xqswfh.png",
+          "badge": "ថ្មី"
+        }
+      ]
+    },
+    "lotteryDropdown": {
+      "sportsOptions": [
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-tcg_ixvmf4.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482120/qqkeno_kiruyt.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-fg_l52yax.png",
+          "badge": "ថ្មី"
+        }
+      ]
+    },
+    "slotsDropdown": {
+      "sportsOptions": [
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174713/slot-ygr_rdcnlz.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174712/slot-ygg_whmuib.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174690/slot-vp_b6fc8p.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174689/slot-sw_lrztyf.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174683/slot-rt_kxytpf.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174671/slot-rg_qzc7sk.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174670/slot-r88_rxi8wk.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174669/slot-ps_uzvvi2.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174668/slot-mg_le2dsf.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174667/slot-jili_rllhe6.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174665/slot-jdb_sh4xq3.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174664/slot-hc_q7hv87.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174663/slot-hb_cobu6g.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174662/slot-gp_gupzie.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174661/slot-fs_akijjt.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174660/slot-fc_vcqegj.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174659/slot-exs_hdmbcd.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174658/slot-ep_xdnoj2.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174657/slot-dragoon-soft_dx6m6x.png"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174656/slot-cq9_dtzqqs.png"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174655/slot-ap_fnyt9h.png"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174655/slot-ag_vqs1z8.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174654/sg_zcbwom.png"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174653/pp_ueh6ba.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174652/pgsoft_wuiway.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174651/pg_ayeutv.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/nextspin_kkapvz.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "TFGAMING",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/funkygames_eclias.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "កីឡាអេឡិចត្រូនិក",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/joker_tpr2kv.png"
+        }
+      ]
+    },
+    "SportsDropdown": {
+      "sportsOptions": [
+        {
+          "name": "BK8 កីឡា",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166007/sports1_xsnjcx.png",
+          "badge": "ថ្មី"
+        },
+        {
+          "name": "Saba កីឡា",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166007/sports2_pld0ht.png"
+        },
+        {
+          "name": "CMD368",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166006/sports3_czrtsc.png",
+          "badge": "ពេញនិយម"
+        },
+        {
+          "name": "SBOBET",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166008/sports4_vepapb.png"
+        }
+      ]
+    }
+  },
+  "MobileMenu": {
+    "menuItemsMain": [
+      {
+        "icon": "📥",
+        "label": "ទាញយក",
+        "color": "text-orange-500",
+        "link": "/download"
+      },
+      {
+        "icon": "⭐",
+        "label": "VIP",
+        "color": "text-gray-700",
+        "link": "/vip"
+      },
+      {
+        "icon": "👑",
+        "label": "តារាងជើង",
+        "color": "text-gray-700",
+        "link": "/leaderboard"
+      },
+      {
+        "icon": "🤝",
+        "label": "អ្នកឧបត្ថម្ភ",
+        "color": "text-gray-700",
+        "link": "/sponsors",
+        "badge": {
+          "text": "ថ្មី",
+          "color": "bg-red-500 text-white"
+        }
+      }
+    ],
+    "menuItemsLinks": [
+      {
+        "label": "អំពីពួកយើង",
+        "link": "/aboutus"
+      },
+      {
+        "label": "ជជែកផ្ទាល់",
+        "link": "/chat"
+      },
+      {
+        "label": "មជ្ឈមណ្ឌលព័ត៌មាន",
+        "link": "/info"
+      },
+      {
+        "label": "ទាក់ទង​មក​ពួក​យើង",
+        "link": "/contact-us"
+      },
+      {
+        "label": "ការលេងល្បែងមានការទទួលខុសត្រូវ",
+        "link": "/responsible-gaming"
+      },
+      {
+        "label": "លក្ខខណ្ឌ & ទៅតាម",
+        "link": "/info-centre"
+      },
+      {
+        "label": "ដៃគូសហការ",
+        "link": "/affiliate"
+      }
+    ],
+    "menuItemsGrid": [
+      {
+        "icon": "🏠",
+        "label": "ទំព័រដើម",
+        "link": "/"
+      },
+      {
+        "icon": "📱",
+        "label": "ទូរស័ព្ទចល័ត",
+        "link": "/mobile"
+      },
+      {
+        "icon": "⚽",
+        "label": "កីឡា",
+        "link": "/sports"
+      },
+      {
+        "icon": "🎮",
+        "label": "កីឡាអេឡិចត្រូនិច",
+        "link": "/esports"
+      },
+      {
+        "icon": "🎲",
+        "label": "កាស៊ីណូ",
+        "link": "/casino"
+      },
+      {
+        "icon": "🎰",
+        "label": "ស្លុត",
+        "link": "/slots"
+      },
+      {
+        "icon": "🎣",
+        "label": "នេសាទ",
+        "link": "/fishing"
+      },
+      {
+        "icon": "🃏",
+        "label": "ហ្គេម 3D",
+        "link": "/3d-games"
+      },
+      {
+        "icon": "🎟️",
+        "label": "ល្បែងឆ្នោត",
+        "link": "/lottery"
+      },
+      {
+        "icon": "🚀",
+        "label": "ល្បែងលឿន",
+        "link": "/fast-games"
+      },
+      {
+        "icon": "🎉",
+        "label": "ការផ្សព្វផ្សាយ",
+        "link": "/promos"
+      },
+      {
+        "icon": "🎡",
+        "label": "កង់សំណាង",
+        "link": "/lucky-wheel"
+      }
+    ],
+    "logoutButton": {
+      "label": "ចាកចេញ"
+    }
+  },
+  "LiveCasino": {
+    "header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736743401/casino-bn_wazfe8.jpg",
+        "alt": "បដាកាស៊ីណូ"
+      },
+      "textOverlay": {
+        "title": "កាស៊ីណូផ្សាយផ្ទាល់",
+        "subtitle": "លេងល្បែងជាមួយដីលរ់ផ្សាយផ្ទាល់របស់យើង",
+        "description": "ចុះឈ្មោះឥឡូវនេះ ដើម្បីទទួលបានរង្វាន់គ្មានដែនកំណត់។"
+      }
+    },
+    "CasinoTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Evolution Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/evolution-gaming"
+        },
+        {
+          "id": 2,
+          "label": "AE កាស៊ីណូ",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/ae-casino"
+        },
+        {
+          "id": 3,
+          "label": "BK8 កាស៊ីណូ",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 4,
+          "label": "Pragmatic Play",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/pragmatic-play"
+        },
+        {
+          "id": 5,
+          "label": "BK8 កាស៊ីណូ",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 6,
+          "label": "អាស៊ី បេត",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/asia-gaming"
+        },
+        {
+          "id": 7,
+          "label": "SA កាស៊ីណូ",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/sa-gaming"
+        },
+        {
+          "id": 8,
+          "label": "W កាស៊ីណូ",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/w-casino"
+        },
+        {
+          "id": 9,
+          "label": "WM កាស៊ីណូ",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/wm-casino"
+        },
+        {
+          "id": 10,
+          "label": "កាស៊ីណូ សុបិន",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/dream-gaming"
+        },
+        {
+          "id": 11,
+          "label": "Big កាស៊ីណូ",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/big-gaming"
+        },
+        {
+          "id": 12,
+          "label": "Microgaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Microgaming"
+        },
+        {
+          "id": 13,
+          "label": "Game Play",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Game-Play"
+        },
+        {
+          "id": 14,
+          "label": "Playtech",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Playtech"
+        },
+        {
+          "id": 15,
+          "label": "Allbet",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/allbet"
+        },
+        {
+          "id": 16,
+          "label": "Via កាស៊ីណូ",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/via-casino"
+        }
+      ]
+    },
+    "HeaderTabs": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "ទាំងអស់",
+          "active": true
+        },
+        {
+          "id": 2,
+          "label": "បាការ៉ាត់",
+          "active": false
+        },
+        {
+          "id": 3,
+          "label": "សីសបូ",
+          "active": false
+        },
+        {
+          "id": 4,
+          "label": "រុឡេត",
+          "active": false
+        },
+        {
+          "id": 5,
+          "label": "ដ្រាកុន & តៃហ្គឺរ",
+          "active": false
+        },
+        {
+          "id": 6,
+          "label": "ប្លេកជេក",
+          "active": false
+        },
+        {
+          "id": 7,
+          "label": "ផ្សេងទៀត",
+          "active": false
+        }
+      ]
+    },
+    "GameCardList": {
+      "gameCards": [
+        {
+          "id": 1,
+          "title": "បាការ៉ាត់ First Person",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/speed-roulette_qoqhms.jpg",
+          "description": "បទពិសោធន៍បាការ៉ាត់ដែលមិនធ្លាប់មានពីមុន!"
+        },
+        {
+          "id": 2,
+          "title": "Super Sic Bo",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/salon-prive-baccarat_yx0cmr.jpg",
+          "description": "រីករាយជាមួយបទពិសោធន៍ Super Sic Bo ដែលរំភើប!"
+        },
+        {
+          "id": 3,
+          "title": "Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/thai-baccarat_zedyhe.jpg",
+          "description": "បង្វិលកង់ហើយឈ្នះរង្វាន់ធំ!"
+        },
+        {
+          "id": 4,
+          "title": "Speed Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/korean-speed-baccarat_qptywv.jpg",
+          "description": "Roulette ដែលមានល្បឿនលឿន!"
+        },
+        {
+          "id": 5,
+          "title": "Dragon Tiger",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/lightning-baccarat_pr3jcz.jpg",
+          "description": "នរណាជាអ្នកឈ្នះ៖ ដ្រាកុន ឬ តៃហ្គឺរ?"
+        },
+        {
+          "id": 6,
+          "title": "Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/french-gold-roulette_ly6i5n.jpg",
+          "description": "បង្វិលកង់ហើយឈ្នះរង្វាន់ធំ!"
+        },
+        {
+          "id": 7,
+          "title": "Speed Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/super-sic-bo_ajtnky.jpg",
+          "description": "Roulette ដែលមានល្បឿនលឿន!"
+        },
+        {
+          "id": 8,
+          "title": "Dragon Tiger",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/first-person-roulette_lxdvjz.jpg",
+          "description": "នរណាជាអ្នកឈ្នះ៖ ដ្រាកុន ឬ តៃហ្គឺរ?"
+        },
+        {
+          "id": 9,
+          "title": "Speed Roulette",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/dragon-tiger_ubw1pl.jpg",
+          "description": "Roulette ដែលមានល្បឿនលឿន!"
+        },
+        {
+          "id": 10,
+          "title": "Dragon Tiger",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/first-person-baccarat_cqw7pb.jpg",
+          "description": "នរណាជាអ្នកឈ្នះ៖ ដ្រាកុន ឬ តៃហ្គឺរ?"
+        }
+      ]
     }
   }
-  
+}

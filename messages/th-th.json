@@ -109,6 +109,998 @@
                 "src": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663006/CMD_yqy8ea.jpg",
                 "alt": "แบนเนอร์ Cmd-Sports"
             }
+        },
+        "PopularGames": {
+            "popularGamesTitle": "เกมยอดนิยมแนะนำ",
+            "seeAll": "ดูทั้งหมด",
+            "play": "เริ่มเกม",
+            "demo": "ทดลองเล่น",
+            "hot": "ยอดนิยม",
+            "rtp": "RTP",
+            "GamesList": [
+                {
+                    "id": 1,
+                    "name": "Pac-Man Glory",
+                    "type": "Nextspin",
+                    "rtp": "96.95",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497775/ns-pacman_xtorka.jpg",
+                    "label": "ยอดนิยม",
+                    "link": "/games/pac-man-glory"
+                },
+                {
+                    "id": 2,
+                    "name": "Cleopatra Fortune",
+                    "type": "Nextspin",
+                    "rtp": "96.97",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497774/ns-candy-bonanza_qiiu1l.jpg",
+                    "label": "ยอดนิยม",
+                    "link": "/games/cleopetra-fortune"
+                },
+                {
+                    "id": 3,
+                    "name": "BK8 โรม่า",
+                    "type": "Nextspin",
+                    "rtp": "96.75",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497776/ns-roma_crzcl9.jpg",
+                    "label": "ยอดนิยม",
+                    "link": "/games/bk8-roma"
+                },
+                {
+                    "id": 4,
+                    "name": "BK8 ประตูแห่งโอลิมปัส",
+                    "type": "Pragmatic Play",
+                    "rtp": "97.6",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497778/sCleopaFor_mrcdws.jpg",
+                    "label": "ยอดนิยม",
+                    "link": "/games/gates-of-olympus"
+                },
+                {
+                    "id": 5,
+                    "name": "BK8 ขนมหวานมหาสนุก",
+                    "type": "Nextspin",
+                    "rtp": "97.93",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497780/vs20bk8gates_sqy4q9.jpg",
+                    "label": "ยอดนิยม",
+                    "link": "/games/candy-bonanza"
+                },
+                {
+                    "id": 6,
+                    "name": "BK8 หวานระเบิด",
+                    "type": "Nextspin",
+                    "rtp": "97.93",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736497782/vs20fruitsbk8_qznodc.png",
+                    "label": "ยอดนิยม",
+                    "link": "/games/sweet-blaster"
+                }
+            ]
+        },
+        "BestLiveCasinoGames": {
+            "bestLiveCasinoGamesTitle": "เกมคาสิโนสดที่ดีที่สุด",
+            "seeAll": "ดูทั้งหมด",
+            "play": "เริ่มเกม",
+            "logInToPlay": "เข้าสู่ระบบเพื่อเล่น",
+            "new": "ใหม่",
+            "hot": "ยอดนิยม",
+            "GamesList": [
+                {
+                    "id": 1,
+                    "name": "BK8 CN Red 1",
+                    "type": "BK8 คาสิโน",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498983/sbc2_asqzgx.jpg",
+                    "label": "ใหม่",
+                    "link": "/games/bk8-cn-red-1"
+                },
+                {
+                    "id": 2,
+                    "name": "BK8 CN Red 5",
+                    "type": "BK8 คาสิโน",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498981/sbc1_uembyf.jpg",
+                    "label": "ใหม่",
+                    "link": "/games/bk8-cn-red-5"
+                },
+                {
+                    "id": 3,
+                    "name": "BK8 บาคาร่า 1",
+                    "type": "PP คาสิโนสด",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498978/salon-prive-baccarat_l6w2df.jpg",
+                    "label": "ยอดนิยม",
+                    "link": "/games/bk8-baccarat-1"
+                },
+                {
+                    "id": 4,
+                    "name": "BK8 แบล็คแจ็คเดี่ยว",
+                    "type": "PP คาสิโนสด",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498976/PP-Roulette_zbpkru.jpg",
+                    "label": "ยอดนิยม",
+                    "link": "/games/bk8-one-blackjack"
+                },
+                {
+                    "id": 5,
+                    "name": "BK8 รูเล็ต",
+                    "type": "PP คาสิโนสด",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498974/PP-blackjack_vpupvs.jpg",
+                    "label": "ยอดนิยม",
+                    "link": "/games/bk8-roulette"
+                },
+                {
+                    "id": 6,
+                    "name": "Lightning Roulette",
+                    "type": "Evolution Gaming",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736498973/PP-baccarat-1_w3pk5c.jpg",
+                    "link": "/games/lightning-roulette"
+                }
+            ]
+        },
+        "InstantGamesToPlay": {
+            "instantGamesTitle": "แนะนำเกมทันใจ",
+            "seeAll": "ดูทั้งหมด",
+            "play": "เริ่มเกม",
+            "demo": "ทดลองเล่น",
+            "logInToPlay": "เข้าสู่ระบบเพื่อเล่น",
+            "new": "ใหม่",
+            "GamesList": [
+                {
+                    "id": 1,
+                    "name": "เกมกวาดทุ่นระเบิด",
+                    "type": "Scribe",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505457/imgame12001_xpsrbr.png",
+                    "label": "ใหม่",
+                    "link": "/games/mines"
+                },
+                {
+                    "id": 2,
+                    "name": "ยิงประตู",
+                    "type": "Scribe",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505458/imgame12002_iojuox.png",
+                    "label": "ใหม่",
+                    "link": "/games/goal"
+                },
+                {
+                    "id": 3,
+                    "name": "ลูกเต๋า",
+                    "type": "Scribe",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505460/imgame12005_xs9taf.png",
+                    "label": "ใหม่",
+                    "link": "/games/dice"
+                },
+                {
+                    "id": 4,
+                    "name": "พลิงโก",
+                    "type": "Scribe",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505462/imgame12006_zhyivn.png",
+                    "label": "ใหม่",
+                    "link": "/games/plinko"
+                },
+                {
+                    "id": 5,
+                    "name": "คีโน",
+                    "type": "Scribe",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505464/imgame12007_hrrofy.png",
+                    "label": "ใหม่",
+                    "link": "/games/keno"
+                },
+                {
+                    "id": 6,
+                    "name": "มินิรูเล็ต",
+                    "type": "Scribe",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736505466/imgame12008_pyx0zr.png",
+                    "label": "ใหม่",
+                    "link": "/games/mini-roulette"
+                }
+            ]
+        }
+    },
+    "AnnountcementBar": {
+        "news": "ข่าวสาร",
+        "more": "เพิ่มเติม",
+        "announcementMessage": "เชิญเพื่อนของคุณเข้าร่วม ICG Gaming และลุ้นรับรางวัลใหญ่ด้วยกัน! ในช่วงตรุษจีนนี้ คุณมีโอกาสรับโบนัสแนะนำเพื่อนสูงสุดถึง MYR 4,888!"
+    },
+    "LiveMatchesSection": {
+        "upcomingLiveMatches": "การแข่งขันสดที่กำลังจะมาถึง",
+        "football": "ฟุตบอล",
+        "basketball": "บาสเกตบอล",
+        "officialSponsor": "ผู้สนับสนุนอย่างเป็นทางการของ HSBC BWF World Tour Finals 2024",
+        "brandAmbassador": "แบรนด์แอมบาสเดอร์ของ BK8 ฟิลิปปินส์ 2023 - 2024",
+        "officialPartner": "พันธมิตรอย่างเป็นทางการ | สโมสรฟุตบอลเบิร์นลีย์",
+        "betNow": "เดิมพันตอนนี้",
+        "league": "ลีก",
+        "matchTime": "เวลาแข่งขัน",
+        "homeTeam": "ทีมเหย้า",
+        "awayTeam": "ทีมเยือน",
+        "handicap": "แฮนดิแคป",
+        "odds": "อัตราต่อรอง",
+        "home": "เหย้า",
+        "away": "เยือน",
+        "vs": "พบ"
+    },
+    "HowToRegister": {
+        "welcomeMessage": "ยินดีต้อนรับสู่ BK8 - คาสิโนออนไลน์ที่น่าเชื่อถือในเอเชีย",
+        "howToRegister": "วิธีการสมัคร",
+        "createAccount": "สร้างบัญชี",
+        "createAccountDescription": "คลิก 'เข้าร่วมทันที' และกรอกข้อมูลการเข้าสู่ระบบของคุณ",
+        "makeDeposit": "ฝากเงิน",
+        "makeDepositDescription": "ฝากเงินครั้งแรกโดยใช้สกุลเงินปกติหรือสกุลเงินดิจิทัล",
+        "startWinning": "เริ่มชนะรางวัล",
+        "startWinningDescription": "รับรางวัลจากเกมที่คุณชื่นชอบ",
+        "getReward": "รับโบนัส",
+        "getRewardDescription": "อย่าลืมรับโบนัสของคุณ"
+    },
+    "AppDownloadSection": {
+        "appDownloadTitle": "ดาวน์โหลดแอป",
+        "futureOfGaming": "อนาคตของเกมมาถึงแล้ว",
+        "greatGamesAllDevices": "เพลิดเพลินกับเกมยอดเยี่ยมบนทุกอุปกรณ์",
+        "newBK8App": "แอป BK8 เวอร์ชันใหม่",
+        "signUpToday": "สมัครวันนี้เพื่อรับรางวัล โปรโมชัน และของรางวัลมากมาย",
+        "appleIOS": "iOS",
+        "android": "Android",
+        "instructions": "คำแนะนำในการติดตั้ง",
+        "features": {
+            "referralMadeEasy": {
+                "title": "แนะนำเพื่อนง่ายๆ ได้เงินเร็ว",
+                "description": "แชร์ลิงก์แนะนำของคุณและรับรายได้"
+            },
+            "securityAssured": {
+                "title": "ปลอดภัยสูงสุด",
+                "description": "รองรับการปลดล็อกบัญชีด้วย Face ID หรือสแกนลายนิ้วมือ"
+            },
+            "seamlessWalletTransfer": {
+                "title": "โอนเงินสะดวกและรวดเร็ว",
+                "description": "โอนเงินในพริบตา ง่ายและสะดวกยิ่งขึ้น"
+            },
+            "expressLogin": {
+                "title": "เข้าสู่ระบบได้ทันที",
+                "description": "วิธีที่รวดเร็วและปลอดภัยให้คุณอยู่ในระบบตลอดเวลา"
+            }
+        }
+    },
+    "OurPartners": {
+        "ourPartners": "พันธมิตรของเรา",
+        "seeAll": "ดูทั้งหมด"
+    },
+    "Testimonials": {
+        "testimonialsTitle": "รีวิวจากผู้ใช้",
+        "reviews": [
+            {
+                "title": "แพลตฟอร์มที่ปลอดภัยและเชื่อถือได้!",
+                "description": "ฉันมักจะลังเลเมื่อฝากเงินหรือแชร์ข้อมูลส่วนตัวบนแพลตฟอร์มอื่น ๆ เพราะไม่มั่นใจเรื่องความปลอดภัย แต่ BK8 ทำให้ฉันรู้สึกมั่นใจ ด้วยระบบโดเมนที่ได้รับการตรวจสอบและมาตรการรักษาความปลอดภัย เล่นเกมที่ BK8 แล้วรู้สึกอุ่นใจมาก!",
+                "rating": 5
+            },
+            {
+                "title": "ดีใจที่เปลี่ยนมาใช้ BK8! สุดยอดมาก!",
+                "description": "ฉันรู้สึกดีใจมากที่เลือก BK8 โบนัสสูงและโปรโมชันสุดพิเศษ บอกเลยว่าต้องลองถึงจะรู้!",
+                "rating": 5
+            },
+            {
+                "title": "ประสบการณ์ระดับ VIP ที่แท้จริง!",
+                "description": "BK8 ทุ่มเทอย่างเต็มที่เพื่อมอบบริการที่ดีที่สุดสำหรับ VIP พร้อมของรางวัลและสิทธิพิเศษสุดเอ็กซ์คลูซีฟ ตอนนี้ฉันกลายเป็นสมาชิกประจำของ BK8 ไปแล้ว!",
+                "rating": 5
+            }
+        ]
+    },
+    "LatestNews": {
+        "latestNewsTitle": "ข่าวสารล่าสุดจาก BK8",
+        "news": [
+            {
+                "title": "BK8 x แมนนี่ ปาเกียว",
+                "description": "เมื่อวันที่ 1 ธันวาคม 2023 BK8 ประกาศว่า แมนนี่ ปาเกียว ตำนานนักชกชื่อดังจากฟิลิปปินส์ ได้รับเลือกให้เป็นแบรนด์แอมบาสเดอร์ของ BK8 ปาเกียวเป็นแชมป์โลก 12 สมัยใน 8 รุ่นน้ำหนักที่แตกต่างกัน การร่วมมือครั้งนี้จะช่วยยกระดับภาพลักษณ์ของ BK8 ให้สูงขึ้นไปอีกขั้น",
+                "date": "2023/12/19",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512938/manny_pacquiao_tfrpgd.png"
+            },
+            {
+                "title": "BK8 x แอสตัน วิลล่า",
+                "description": "BK8 ได้ลงนามข้อตกลงความร่วมมือระยะยาวกับสโมสรฟุตบอลแอสตัน วิลล่า โดย BK8 จะเป็นพันธมิตรหลักและสปอนเซอร์เสื้อแข่งขันหลักของทีมจนถึงฤดูกาล 2023/2024 นอกจากนี้ BK8 ยังมีส่วนร่วมในกิจกรรมเพื่อสังคมในท้องถิ่นอีกด้วย",
+                "date": "2023/06/16",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512935/bwf_p5bc64.png"
+            },
+            {
+                "title": "BK8 x เบิร์นลีย์ เอฟซี",
+                "description": "ตั้งแต่ปี 2022 BK8 ได้เป็นพันธมิตรด้านการเดิมพันอย่างเป็นทางการของสโมสรฟุตบอลเบิร์นลีย์ และในฤดูกาล 2023/2024 ความร่วมมือดังกล่าวได้ขยายออกไปสู่การเป็นพันธมิตรอย่างเป็นทางการของชุดฝึกซ้อมของสโมสร",
+                "date": "2023/06/16",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512932/burnley-fc_kdlzms.png"
+            },
+            {
+                "title": "BK8 x BWF",
+                "description": "BK8 ได้รับการแต่งตั้งให้เป็นผู้สนับสนุนการเดิมพันอย่างเป็นทางการของบางรายการแข่งขันในศึก HSBC BWF World Tour 2024 โดยความร่วมมือนี้จะได้รับการโปรโมตอย่างกว้างขวางในเวทีการแข่งขันระดับนานาชาติ",
+                "date": "2024/05/10",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736512931/aston-villa_kjdc7i.png"
+            }
+        ]
+    },
+    "PartnershipAndAwards": {
+        "partnersAndAwards": "พันธมิตรและรางวัล",
+        "partners": [
+            {
+                "type": "พันธมิตรอย่างเป็นทางการ",
+                "name": "สโมสรฟุตบอลเบิร์นลีย์",
+                "year": "2023-2024",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513807/bfc_uwp4f5.svg"
+            },
+            {
+                "type": "ผู้สนับสนุนอย่างเป็นทางการของ HSBC BWF World Tour Finals 2024",
+                "name": "",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513821/hsbc_bwf_kypkyc.png"
+            },
+            {
+                "type": "แบรนด์แอมบาสเดอร์ BK8 ฟิลิปปินส์ 2023 - 2024",
+                "name": "แมนนี่ ปาเกียว",
+                "subTitle": "แชมป์โลก 8 รุ่นน้ำหนัก & แชมป์โลก 12 สมัย",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513834/sponsor-MP_yxu2in.png",
+                "signature": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513830/signature-MP_bc5uog.png"
+            },
+            {
+                "type": "เข้ารอบสุดท้ายรางวัลนวัตกรรมการเดิมพันกีฬา",
+                "name": "",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513814/egr_nomination_xh1xoj.png"
+            }
+        ],
+        "awardNomination": "การเสนอชื่อรางวัล",
+        "ourPreviousSponsorships": "การเป็นผู้สนับสนุนที่ผ่านมา",
+        "sponsorships": [
+            {
+                "name": "สโมสรฟุตบอลแอสตัน วิลล่า",
+                "year": "2023 - 2024",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513778/aston-villa-fc_n6waqu.svg"
+            },
+            {
+                "name": "สโมสรฟุตบอลคริสตัล พาเลซ",
+                "year": "2022 - 2023",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513811/crystal-palace-fc_rpxzrj.svg"
+            },
+            {
+                "name": "สโมสรฟุตบอลฮัดเดอส์ฟีลด์ ทาวน์",
+                "year": "2021 - 2023",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513824/huddersfield-town-afc_od3ilw.svg"
+            },
+            {
+                "name": "สโมสรฟุตบอลบาเลนเซีย",
+                "year": "2021 - 2022",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513837/valencia-cf_ipimq6.svg"
+            },
+            {
+                "name": "สโมสรฟุตบอลแอธเลติก บิลเบา",
+                "year": "2021 - 2022",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513781/athletic-club_oym5cd.svg"
+            },
+            {
+                "name": "สโมสรฟุตบอลบียาร์เรอัล",
+                "year": "2021 - 2022",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513841/villarreal-cf_uasmsz.svg"
+            },
+            {
+                "name": "สโมสรฟุตบอลเอลเช่",
+                "year": "2021 - 2022",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513817/elche-cf_mxwj73.svg"
+            },
+            {
+                "name": "สโมสรฟุตบอลมายอร์ก้า",
+                "year": "2021 - 2022",
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736513827/rcd-mallorca_wdpycz.svg"
+            }
+        ]
+    },
+    "footer": {
+        "aboutBK8": "เกี่ยวกับ BK8 Sports",
+        "aboutBK8Description": "BK8 Sports (9 Abraham De Veerstraat Willemstad, Curaçao) ได้รับอนุญาตและอยู่ภายใต้การกำกับดูแลของรัฐบาลคูราเซา",
+        "gamingLicense": "ใบอนุญาตการเล่นเกม",
+        "games": "เกม",
+        "gameCategories": [
+            "กีฬา",
+            "อีสปอร์ต",
+            "คาสิโนสด",
+            "สล็อต",
+            "เกมยิงปลา",
+            "เกม 3D",
+            "ลอตเตอรี่",
+            "เกมเร็ว"
+        ],
+        "info": "ข้อมูล",
+        "infoLinks": [
+            "เกี่ยวกับเรา",
+            "VIP",
+            "กระดานผู้นำ",
+            "แผนพันธมิตร",
+            "ติดต่อเรา",
+            "การพนันอย่างมีความรับผิดชอบ",
+            "ศูนย์ข้อมูล",
+            "ข้อกำหนดและเงื่อนไข"
+        ],
+        "certifications": "ใบรับรอง",
+        "paymentMethods": "วิธีการชำระเงิน",
+        "followUs": "ติดตามเรา",
+        "security": "ความปลอดภัย",
+        "responsibleGaming": "การพนันอย่างมีความรับผิดชอบ",
+        "footerNote": "© 2025 BK8™. สงวนลิขสิทธิ์"
+    },
+    "Dropdown": {
+        "fourDDropdown": {
+            "sportsOptions": [
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481725/4d-gdl_vbtf9e.png",
+                    "badge": "ยอดนิยม"
+                }
+            ]
+        },
+        "casinoDropdown": {
+            "sportsOptions": [
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173709/ug_qtn9ic.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173708/submenu-casino-pp_dwkb7x.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173700/evo_b0vqsw.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173678/dg_ig2wy6.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173660/casino-wm_w7ltn1.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173655/casino-we_d1b65g.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173654/casino-w_qpm7zj.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173653/casino-vc_reuquc.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-mg_px4edh.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-sa_yliyyi.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/casino-gp_wj4hdk.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173652/casino-ag_vuccon.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736173651/allbet_tniw6e.png",
+                    "badge": "ใหม่"
+                }
+            ]
+        },
+        "eSportsDropdown": {
+            "sportsOptions": [
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport2_zyuiav.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736172845/e-sport1_cmzaht.png",
+                    "badge": "ใหม่"
+                }
+            ]
+        },
+        "fastGamesDropdown": {
+            "sportsOptions": [
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482510/fastgames-mtv_dqk77q.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482510/fastgames-jili_pccd4f.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482511/slot-spb_zrjvyd.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482511/fastgames-t1g_y3ppf5.png",
+                    "badge": "ใหม่"
+                }
+            ]
+        },
+        "fishingDropdown": {
+            "sportsOptions": [
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-ygr_e8z6bt.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-fs_rsufvf.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-jl_ktjqar.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481309/fishing-r88_ezxpwb.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-fc_duw8dt.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-sg_ut7ere.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-cq9_cdtgnm.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-dragoon-soft_uzabnu.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-jdb_hmfqa6.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736481308/fishing-vp_xqswfh.png",
+                    "badge": "ใหม่"
+                }
+            ]
+        },
+        "lotteryDropdown": {
+            "sportsOptions": [
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-tcg_ixvmf4.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482120/qqkeno_kiruyt.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736482119/lottery-fg_l52yax.png",
+                    "badge": "ใหม่"
+                }
+            ]
+        },
+        "slotsDropdown": {
+            "sportsOptions": [
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174713/slot-ygr_rdcnlz.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174712/slot-ygg_whmuib.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174690/slot-vp_b6fc8p.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174689/slot-sw_lrztyf.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174683/slot-rt_kxytpf.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174671/slot-rg_qzc7sk.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174670/slot-r88_rxi8wk.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174669/slot-ps_uzvvi2.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174668/slot-mg_le2dsf.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174667/slot-jili_rllhe6.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174665/slot-jdb_sh4xq3.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174664/slot-hc_q7hv87.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174663/slot-hb_cobu6g.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174662/slot-gp_gupzie.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174661/slot-fs_akijjt.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174660/slot-fc_vcqegj.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174659/slot-exs_hdmbcd.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174658/slot-ep_xdnoj2.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174657/slot-dragoon-soft_dx6m6x.png"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174656/slot-cq9_dtzqqs.png"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174655/slot-ap_fnyt9h.png"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174655/slot-ag_vqs1z8.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174654/sg_zcbwom.png"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174653/pp_ueh6ba.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174652/pgsoft_wuiway.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174651/pg_ayeutv.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/nextspin_kkapvz.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "TFGAMING",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/funkygames_eclias.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736174650/joker_tpr2kv.png"
+                }
+            ]
+        },
+        "SportsDropdown": {
+            "sportsOptions": [
+                {
+                    "name": "BK8 กีฬา",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166007/sports1_xsnjcx.png",
+                    "badge": "ใหม่"
+                },
+                {
+                    "name": "Saba กีฬา",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166007/sports2_pld0ht.png"
+                },
+                {
+                    "name": "CMD368",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166006/sports3_czrtsc.png",
+                    "badge": "ยอดนิยม"
+                },
+                {
+                    "name": "SBOBET",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736166008/sports4_vepapb.png"
+                }
+            ]
+        }
+    },
+    "MobileMenu": {
+        "menuItemsMain": [
+            {
+                "icon": "📥",
+                "label": "ดาวน์โหลด",
+                "color": "text-orange-500",
+                "link": "/download"
+            },
+            {
+                "icon": "⭐",
+                "label": "VIP",
+                "color": "text-gray-700",
+                "link": "/vip"
+            },
+            {
+                "icon": "👑",
+                "label": "กระดานผู้นำ",
+                "color": "text-gray-700",
+                "link": "/leaderboard"
+            },
+            {
+                "icon": "🤝",
+                "label": "ผู้สนับสนุน",
+                "color": "text-gray-700",
+                "link": "/sponsors",
+                "badge": {
+                    "text": "ใหม่",
+                    "color": "bg-red-500 text-white"
+                }
+            }
+        ],
+        "menuItemsLinks": [
+            {
+                "label": "เกี่ยวกับเรา",
+                "link": "/aboutus"
+            },
+            {
+                "label": "แชทสด",
+                "link": "/chat"
+            },
+            {
+                "label": "ศูนย์ข้อมูล",
+                "link": "/info"
+            },
+            {
+                "label": "ติดต่อเรา",
+                "link": "/contact-us"
+            },
+            {
+                "label": "การพนันอย่างมีความรับผิดชอบ",
+                "link": "/responsible-gaming"
+            },
+            {
+                "label": "ข้อกำหนดและเงื่อนไข",
+                "link": "/info-centre"
+            },
+            {
+                "label": "พันธมิตร",
+                "link": "/affiliate"
+            }
+        ],
+        "menuItemsGrid": [
+            {
+                "icon": "🏠",
+                "label": "หน้าหลัก",
+                "link": "/"
+            },
+            {
+                "icon": "📱",
+                "label": "มือถือ",
+                "link": "/mobile"
+            },
+            {
+                "icon": "⚽",
+                "label": "กีฬา",
+                "link": "/sports"
+            },
+            {
+                "icon": "🎮",
+                "label": "อีสปอร์ต",
+                "link": "/esports"
+            },
+            {
+                "icon": "🎲",
+                "label": "คาสิโน",
+                "link": "/casino"
+            },
+            {
+                "icon": "🎰",
+                "label": "สล็อต",
+                "link": "/slots"
+            },
+            {
+                "icon": "🎣",
+                "label": "ตกปลา",
+                "link": "/fishing"
+            },
+            {
+                "icon": "🃏",
+                "label": "เกม 3D",
+                "link": "/3d-games"
+            },
+            {
+                "icon": "🎟️",
+                "label": "ลอตเตอรี่",
+                "link": "/lottery"
+            },
+            {
+                "icon": "🚀",
+                "label": "เกมเร็ว",
+                "link": "/fast-games"
+            },
+            {
+                "icon": "🎉",
+                "label": "โปรโมชั่น",
+                "link": "/promos"
+            },
+            {
+                "icon": "🎡",
+                "label": "วงล้อนำโชค",
+                "link": "/lucky-wheel"
+            }
+        ],
+        "logoutButton": {
+            "label": "ออกจากระบบ"
+        }
+    },
+    "E-sports": {
+        "header": {
+            "backgroundImage": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663173/esport-bn_wwuc5d.jpg",
+                "alt": "แบนเนอร์การเดิมพันกีฬา"
+            },
+            "textOverlay": {
+                "title": "อารีน่าอีสปอร์ต"
+            }
+        },
+        "EsportsTab": {
+            "tabs": [
+                {
+                    "id": 1,
+                    "label": "TF อีสปอร์ต",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736606861/sports_3311579_mb8lyw.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/E-Sports/TF-Gaming"
+                },
+                {
+                    "id": 2,
+                    "label": "IM อีสปอร์ต",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736606904/app_14979507_beivjt.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/E-Sports/IM-Esports"
+                }
+            ]
+        },
+        "TF-Gaming": {
+            "title": "TF อีสปอร์ต",
+            "subtitle": "อัตราต่อรองที่ดีที่สุด & การจ่ายเงินที่รวดเร็ว",
+            "description": "TF อีสปอร์ตได้รับการพัฒนาโดยทีมพัฒนาอีสปอร์ตที่มุ่งมั่นและนักเดิมพันที่มีประสบการณ์ เป้าหมายของเราคือการมอบแพลตฟอร์มอีสปอร์ตที่เป็นเอกลักษณ์และสะดวกสบายให้กับทุกคน ครอบคลุมทั้งการแข่งขันอีสปอร์ตหลักและรองทั่วโลก",
+            "button": {
+                "text": "เล่นเลย"
+            },
+            "features": [
+                {
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663245/tfg-icon-1_qd4oqq.png",
+                    "descriptions": [
+                        "อัตราต่อรองที่ดีที่สุด",
+                        "การจ่ายเงินที่รวดเร็ว"
+                    ]
+                },
+                {
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663251/tfg-icon-2_sbwrsm.png",
+                    "descriptions": [
+                        "มีประสบการณ์สูง",
+                        "นักเดิมพันอีสปอร์ตมืออาชีพ"
+                    ]
+                },
+                {
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663274/tfg-icon-3_vdp25m.png",
+                    "descriptions": [
+                        "ตัวเลือกตลาดอีสปอร์ต",
+                        "ที่หลากหลาย"
+                    ]
+                },
+                {
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663277/tfg-icon-4_xk6zfz.png",
+                    "descriptions": [
+                        "ระบบที่รวดเร็วและเสถียร",
+                        "เพิ่มความเร็วการเดิมพัน"
+                    ]
+                },
+                {
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663294/tfg-icon-5_xni8zs.png",
+                    "descriptions": [
+                        "รองรับ PC, มือถือ",
+                        "และแท็บเล็ต"
+                    ]
+                },
+                {
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663298/tfg-icon-6_tm6mr9.png",
+                    "descriptions": [
+                        "ประสบการณ์การเดิมพัน",
+                        "ชั้นนำของอุตสาหกรรม"
+                    ]
+                }
+            ],
+            "backgroundImage": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663217/esport-tfg-features-bg_uv9dcb.png"
+        },
+        "IM-Esports": {
+            "title": "IM อีสปอร์ต",
+            "subtitle": "ตอบสนองความต้องการของผู้เล่นด้วยบริการที่เหนือระดับ",
+            "description": "IM อีสปอร์ตเป็นแพลตฟอร์มการเดิมพันที่สร้างขึ้นเพื่อผู้เล่น ก่อตั้งและพัฒนาโดยทีมผู้เล่นอีสปอร์ตมืออาชีพ แตกต่างจากรูปแบบการเดิมพันกีฬาแบบดั้งเดิม IM อีสปอร์ตได้รับการออกแบบมาสำหรับผู้เล่นและแฟนกีฬาอีสปอร์ตโดยเฉพาะ อินเทอร์เฟซที่สวยงามและเรียบง่ายทำให้ทุกคนสามารถเข้าใจและใช้งานได้ง่าย การวางเดิมพันจะเป็นเรื่องที่เป็นธรรมชาติเหมือนการเล่นเกม",
+            "button": {
+                "text": "เล่นเลย"
+            },
+            "backgroundImage": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663336/esport-benefits-bg_b7f4yy.png",
+            "featuresGrid": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668959/esport-benefits_en_bdibu0.png"
+            }
+        },
+        "footer": {
+            "header": {
+                "title": "เกมอีสปอร์ต",
+                "subtitle": "ยอดนิยม & ผู้เล่นหลายคนขนาดใหญ่"
+            },
+            "gameLogos": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668283/esport-game-logo_db7rd1.png",
+                "alt": "โลโก้เกม"
+            },
+            "backgroundImage": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668283/esport-btm-bg_eq6ecu.png",
+                "alt": "ตัวละครและเอฟเฟกต์ด้านล่าง"
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useTranslations } from "next-intl";
 
 interface GameCard {
     id: number;
@@ -9,70 +10,13 @@ interface GameCard {
     description: string;
 }
 
-const gameCards: GameCard[] = [
-    {
-        id: 1,
-        title: "First Person Baccarat",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/speed-roulette_qoqhms.jpg",
-        description: "Experience Baccarat like never before!",
-    },
-    {
-        id: 2,
-        title: "Super Sic Bo",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/salon-prive-baccarat_yx0cmr.jpg",
-        description: "Enjoy the thrill of Super Sic Bo!",
-    },
-    {
-        id: 3,
-        title: "Roulette",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/thai-baccarat_zedyhe.jpg",
-        description: "Spin the wheel and win big!",
-    },
-    {
-        id: 4,
-        title: "Speed Roulette",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/korean-speed-baccarat_qptywv.jpg",
-        description: "Fast-paced Roulette action!",
-    },
-    {
-        id: 5,
-        title: "Dragon Tiger",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/lightning-baccarat_pr3jcz.jpg",
-        description: "Who wins: Dragon or Tiger?",
-    },
-    {
-        id: 3,
-        title: "Roulette",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/french-gold-roulette_ly6i5n.jpg",
-        description: "Spin the wheel and win big!",
-    },
-    {
-        id: 4,
-        title: "Speed Roulette",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/super-sic-bo_ajtnky.jpg",
-        description: "Fast-paced Roulette action!",
-    },
-    {
-        id: 5,
-        title: "Dragon Tiger",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/first-person-roulette_lxdvjz.jpg",
-        description: "Who wins: Dragon or Tiger?",
-    },
-    {
-        id: 4,
-        title: "Speed Roulette",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/dragon-tiger_ubw1pl.jpg",
-        description: "Fast-paced Roulette action!",
-    },
-    {
-        id: 5,
-        title: "Dragon Tiger",
-        image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/first-person-baccarat_cqw7pb.jpg",
-        description: "Who wins: Dragon or Tiger?",
-    },
-];
+
 
 const GameCardList: React.FC = () => {
+    const t = useTranslations("LiveCasino.GameCardList");
+
+    const gameCards: GameCard[] = t.raw("gameCards");
+    
     return (
         <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
             {gameCards.map((game) => (

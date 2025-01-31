@@ -867,5 +867,472 @@
         }
       ]
     }
+  },
+  "MobileMenu": {
+    "menuItemsMain": [
+      {
+        "icon": "📥",
+        "label": "下载",
+        "color": "text-orange-500",
+        "link": "/download"
+      },
+      {
+        "icon": "⭐",
+        "label": "VIP",
+        "color": "text-gray-700",
+        "link": "/vip"
+      },
+      {
+        "icon": "👑",
+        "label": "排行榜",
+        "color": "text-gray-700",
+        "link": "/leaderboard"
+      },
+      {
+        "icon": "🤝",
+        "label": "赞助商",
+        "color": "text-gray-700",
+        "link": "/sponsors",
+        "badge": {
+          "text": "新",
+          "color": "bg-red-500 text-white"
+        }
+      }
+    ],
+    "menuItemsLinks": [
+      {
+        "label": "关于我们",
+        "link": "/aboutus"
+      },
+      {
+        "label": "在线客服",
+        "link": "/chat"
+      },
+      {
+        "label": "信息中心",
+        "link": "/info"
+      },
+      {
+        "label": "联系我们",
+        "link": "/contact-us"
+      },
+      {
+        "label": "负责任博彩",
+        "link": "/responsible-gaming"
+      },
+      {
+        "label": "条款与条件",
+        "link": "/info-centre"
+      },
+      {
+        "label": "联盟计划",
+        "link": "/affiliate"
+      }
+    ],
+    "menuItemsGrid": [
+      {
+        "icon": "🏠",
+        "label": "首页",
+        "link": "/"
+      },
+      {
+        "icon": "📱",
+        "label": "移动版",
+        "link": "/mobile"
+      },
+      {
+        "icon": "⚽",
+        "label": "体育",
+        "link": "/sports"
+      },
+      {
+        "icon": "🎮",
+        "label": "电子竞技",
+        "link": "/esports"
+      },
+      {
+        "icon": "🎲",
+        "label": "娱乐场",
+        "link": "/casino"
+      },
+      {
+        "icon": "🎰",
+        "label": "老虎机",
+        "link": "/slots"
+      },
+      {
+        "icon": "🎣",
+        "label": "捕鱼",
+        "link": "/fishing"
+      },
+      {
+        "icon": "🃏",
+        "label": "3D 游戏",
+        "link": "/3d-games"
+      },
+      {
+        "icon": "🎟️",
+        "label": "彩票",
+        "link": "/lottery"
+      },
+      {
+        "icon": "🚀",
+        "label": "快速游戏",
+        "link": "/fast-games"
+      },
+      {
+        "icon": "🎉",
+        "label": "优惠活动",
+        "link": "/promos"
+      },
+      {
+        "icon": "🎡",
+        "label": "幸运轮盘",
+        "link": "/lucky-wheel"
+      }
+    ],
+    "logoutButton": {
+      "label": "退出登录"
+    }
+  },
+  "E-sports": {
+    "header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663173/esport-bn_wwuc5d.jpg",
+        "alt": "体育博彩横幅"
+      },
+      "textOverlay": {
+        "title": "电子竞技竞技场"
+      }
+    },
+    "EsportsTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "TF 电竞",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736606861/sports_3311579_mb8lyw.png",
+          "tag": "热门",
+          "link": "/Games/E-Sports/TF-Gaming"
+        },
+        {
+          "id": 2,
+          "label": "IM 电竞",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736606904/app_14979507_beivjt.png",
+          "tag": "新",
+          "link": "/Games/E-Sports/IM-Esports"
+        }
+      ]
+    },
+    "TF-Gaming": {
+      "title": "TF 电竞",
+      "subtitle": "无与伦比的赔率 & 快速结算",
+      "description": "TF 电竞由一支专注的电竞开发团队和经验丰富的博彩交易员开发。我们的目标是为所有人提供一个独特且便捷的电竞平台，涵盖全球主要和次要的电竞赛事。",
+      "button": {
+        "text": "立即游戏"
+      },
+      "features": [
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663245/tfg-icon-1_qd4oqq.png",
+          "descriptions": [
+            "无与伦比的赔率",
+            "快速结算"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663251/tfg-icon-2_sbwrsm.png",
+          "descriptions": [
+            "经验丰富",
+            "专业电竞交易员"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663274/tfg-icon-3_vdp25m.png",
+          "descriptions": [
+            "广泛的",
+            "电竞市场选择"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663277/tfg-icon-4_xk6zfz.png",
+          "descriptions": [
+            "快速稳定的",
+            "系统双倍投注速度"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663294/tfg-icon-5_xni8zs.png",
+          "descriptions": [
+            "支持 PC、手机",
+            "和平板电脑"
+          ]
+        },
+        {
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663298/tfg-icon-6_tm6mr9.png",
+          "descriptions": [
+            "行业领先",
+            "投注体验"
+          ]
+        }
+      ],
+      "backgroundImage": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663217/esport-tfg-features-bg_uv9dcb.png"
+    },
+    "IM-Esports": {
+      "title": "IM 电竞",
+      "subtitle": "以无与伦比的服务满足玩家需求",
+      "description": "IM 电竞是一个专为玩家打造的投注平台，由一支专业电竞选手团队创建和开发。不同于传统的体育博彩模式，IM 电竞专为电竞玩家和粉丝设计。其惊艳的视觉界面既简洁又高效。无论是游戏玩家还是电竞爱好者，都能轻松上手，而下注过程将变得如同本能般自然。",
+      "button": {
+        "text": "立即游戏"
+      },
+      "backgroundImage": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736663336/esport-benefits-bg_b7f4yy.png",
+      "featuresGrid": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668959/esport-benefits_en_bdibu0.png"
+      }
+    },
+    "footer": {
+      "header": {
+        "title": "电子竞技游戏",
+        "subtitle": "热门 & 大型多人在线游戏"
+      },
+      "gameLogos": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668283/esport-game-logo_db7rd1.png",
+        "alt": "游戏徽标"
+      },
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736668283/esport-btm-bg_eq6ecu.png",
+        "alt": "底部角色和效果"
+      }
+    }
+  },
+  "LiveCasino": {
+    "header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736743401/casino-bn_wazfe8.jpg",
+        "alt": "赌场横幅"
+      },
+      "textOverlay": {
+        "title": "真人娱乐场",
+        "subtitle": "与我们的真人荷官一起畅玩游戏",
+        "description": "立即注册，享受无尽奖励。"
+      }
+    },
+    "CasinoTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Evolution Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/evolution-gaming"
+        },
+        {
+          "id": 2,
+          "label": "AE 赌场",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/ae-casino"
+        },
+        {
+          "id": 3,
+          "label": "BK8 赌场",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 4,
+          "label": "Pragmatic Play",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/pragmatic-play"
+        },
+        {
+          "id": 5,
+          "label": "BK8 赌场",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 6,
+          "label": "亚洲博彩",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/asia-gaming"
+        },
+        {
+          "id": 7,
+          "label": "SA 赌场",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/sa-gaming"
+        },
+        {
+          "id": 8,
+          "label": "W 赌场",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/w-casino"
+        },
+        {
+          "id": 9,
+          "label": "WM 赌场",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/wm-casino"
+        },
+        {
+          "id": 10,
+          "label": "梦幻赌场",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/dream-gaming"
+        },
+        {
+          "id": 11,
+          "label": "Big 赌场",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/big-gaming"
+        },
+        {
+          "id": 12,
+          "label": "Microgaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Microgaming"
+        },
+        {
+          "id": 13,
+          "label": "游戏玩法",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Game-Play"
+        },
+        {
+          "id": 14,
+          "label": "Playtech",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Playtech"
+        },
+        {
+          "id": 15,
+          "label": "Allbet",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/allbet"
+        },
+        {
+          "id": 16,
+          "label": "Via 赌场",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/via-casino"
+        }
+      ]
+    },
+    "HeaderTabs": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "全部",
+          "active": true
+        },
+        {
+          "id": 2,
+          "label": "百家乐",
+          "active": false
+        },
+        {
+          "id": 3,
+          "label": "骰宝",
+          "active": false
+        },
+        {
+          "id": 4,
+          "label": "轮盘",
+          "active": false
+        },
+        {
+          "id": 5,
+          "label": "龙虎",
+          "active": false
+        },
+        {
+          "id": 6,
+          "label": "二十一点",
+          "active": false
+        },
+        {
+          "id": 7,
+          "label": "其他",
+          "active": false
+        }
+      ]
+    },
+    "GameCardList": {
+      "gameCards": [
+        {
+          "id": 1,
+          "title": "第一人称百家乐",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/speed-roulette_qoqhms.jpg",
+          "description": "前所未有的百家乐体验！"
+        },
+        {
+          "id": 2,
+          "title": "超级骰宝",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/salon-prive-baccarat_yx0cmr.jpg",
+          "description": "享受超级骰宝的刺激体验！"
+        },
+        {
+          "id": 3,
+          "title": "轮盘",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/thai-baccarat_zedyhe.jpg",
+          "description": "转动轮盘，赢取大奖！"
+        },
+        {
+          "id": 4,
+          "title": "极速轮盘",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/korean-speed-baccarat_qptywv.jpg",
+          "description": "快节奏的轮盘游戏！"
+        },
+        {
+          "id": 5,
+          "title": "龙虎",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/lightning-baccarat_pr3jcz.jpg",
+          "description": "谁会赢：龙还是虎？"
+        },
+        {
+          "id": 6,
+          "title": "轮盘",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/french-gold-roulette_ly6i5n.jpg",
+          "description": "转动轮盘，赢取大奖！"
+        },
+        {
+          "id": 7,
+          "title": "极速轮盘",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/super-sic-bo_ajtnky.jpg",
+          "description": "快节奏的轮盘游戏！"
+        },
+        {
+          "id": 8,
+          "title": "龙虎",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/first-person-roulette_lxdvjz.jpg",
+          "description": "谁会赢：龙还是虎？"
+        },
+        {
+          "id": 9,
+          "title": "极速轮盘",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/dragon-tiger_ubw1pl.jpg",
+          "description": "快节奏的轮盘游戏！"
+        },
+        {
+          "id": 10,
+          "title": "龙虎",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/first-person-baccarat_cqw7pb.jpg",
+          "description": "谁会赢：龙还是虎？"
+        }
+      ]
+    }
   }
 }
