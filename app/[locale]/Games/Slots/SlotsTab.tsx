@@ -3,16 +3,34 @@
 import React, { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { tabs, Tab } from "./tabs"; // Import tabs and Tab type
+import { useTranslations } from "next-intl";
+
+interface Tab {
+    id: number;
+    label: string;
+    icon: string;
+    tag?: string;
+    link: string;
+}
 
 const SlotsTab = () => {
+    const t = useTranslations("Slots.SlotsTab");
     const router = useRouter();
     const pathname = usePathname();
+
+    const TabsList = t.raw('tabs');
+    const tabs = TabsList.map((tab: any) => ({
+        id: tab.id,
+        label: tab.label,
+        icon: tab.icon,
+        tag: tab.tag,
+        link: tab.link,
+    }));
 
     const [activeTab, setActiveTab] = useState<number | null>(null);
 
     useEffect(() => {
-        const currentTab = tabs.find((tab) => pathname?.includes(tab.link));
+        const currentTab = tabs.find((tab: any) => pathname?.includes(tab.link));
         setActiveTab(currentTab ? currentTab.id : null);
     }, [pathname]);
 
@@ -29,7 +47,7 @@ const SlotsTab = () => {
             className="bg-gray-100 py-4 rounded-lg shadow-md px-4 max-w-[1400px] mx-auto"
         >
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4">
-                {tabs.map((tab) => (
+                {tabs.map((tab: Tab) => (
                     <motion.button
                         key={tab.id}
                         onClick={() => handleTabClick(tab)}

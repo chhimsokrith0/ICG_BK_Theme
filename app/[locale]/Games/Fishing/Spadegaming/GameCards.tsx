@@ -3,30 +3,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+
+interface GameCard {
+    id: number;
+    title: string;
+    image: string;
+}
 
 const GameCards = () => {
-    const games = [
-        {
-            id: 1,
-            title: "Zombie Party",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855697/F-AH01_irz1hv.jpg",
-        },
-        {
-            id: 2,
-            title: "Fishing God",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855697/F-SF01_ygbpkj.jpg",
-        },
-        {
-            id: 3,
-            title: "Fishing War",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855698/F-SF02_cif5n1.jpg",
-        },
-        {
-            id: 4,
-            title: "Alien Hunter",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855698/F-ZP01_guvs3z.jpg",
-        },
-    ];
+
+    const t = useTranslations("Fishing.Spadegaming.GameCards");
+
+    const games: GameCard[] = t.raw("games");
+
 
     return (
         <div className="max-w-screen-lg py-8">
@@ -53,7 +43,7 @@ const GameCards = () => {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.1 }}
                             >
-                                Play
+                                {t("buttons.play")}
                             </motion.button>
                             <motion.div
                                 initial={{ y: 20, opacity: 0 }}
@@ -66,7 +56,7 @@ const GameCards = () => {
                                     rel="noopener noreferrer"
                                     className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-md"
                                 >
-                                    Demo
+                                    {t("buttons.demo")}
                                 </Link>
                             </motion.div>
                         </motion.div>

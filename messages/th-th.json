@@ -1102,5 +1102,737 @@
                 "alt": "ตัวละครและเอฟเฟกต์ด้านล่าง"
             }
         }
+    },
+    "LiveCasino": {
+        "header": {
+            "backgroundImage": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736743401/casino-bn_wazfe8.jpg",
+                "alt": "แบนเนอร์คาสิโนสด"
+            },
+            "textOverlay": {
+                "title": "คาสิโนสด",
+                "subtitle": "เล่นเกมกับดีลเลอร์สดของเรา",
+                "description": "สมัครตอนนี้เพื่อรับรางวัลไม่รู้จบ"
+            }
+        },
+        "CasinoTab": {
+            "tabs": [
+                {
+                    "id": 1,
+                    "label": "Evolution Gaming",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/evolution-gaming"
+                },
+                {
+                    "id": 2,
+                    "label": "AE คาสิโน",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/ae-casino"
+                },
+                {
+                    "id": 3,
+                    "label": "BK8 คาสิโน",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/bk8-casino"
+                },
+                {
+                    "id": 4,
+                    "label": "Pragmatic Play",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/pragmatic-play"
+                },
+                {
+                    "id": 5,
+                    "label": "BK8 คาสิโน",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/bk8-casino"
+                },
+                {
+                    "id": 6,
+                    "label": "Asia Gaming",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/asia-gaming"
+                },
+                {
+                    "id": 7,
+                    "label": "SA คาสิโน",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/sa-gaming"
+                },
+                {
+                    "id": 8,
+                    "label": "W คาสิโน",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/w-casino"
+                },
+                {
+                    "id": 9,
+                    "label": "WM คาสิโน",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/wm-casino"
+                },
+                {
+                    "id": 10,
+                    "label": "Dream Gaming",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/dream-gaming"
+                }
+            ]
+        },
+        "HeaderTabs": {
+            "tabs": [
+                {
+                    "id": 1,
+                    "label": "ทั้งหมด",
+                    "active": true
+                },
+                {
+                    "id": 2,
+                    "label": "บาคาร่า",
+                    "active": false
+                },
+                {
+                    "id": 3,
+                    "label": "ไฮโล",
+                    "active": false
+                },
+                {
+                    "id": 4,
+                    "label": "รูเล็ต",
+                    "active": false
+                },
+                {
+                    "id": 5,
+                    "label": "เสือมังกร",
+                    "active": false
+                },
+                {
+                    "id": 6,
+                    "label": "แบล็คแจ็ค",
+                    "active": false
+                },
+                {
+                    "id": 7,
+                    "label": "อื่นๆ",
+                    "active": false
+                }
+            ]
+        },
+        "GameCardList": {
+            "gameCards": [
+                {
+                    "id": 1,
+                    "title": "บาคาร่าเวอร์ชันบุคคลที่หนึ่ง",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/speed-roulette_qoqhms.jpg",
+                    "description": "สัมผัสประสบการณ์บาคาร่าอย่างที่ไม่เคยมีมาก่อน!"
+                },
+                {
+                    "id": 2,
+                    "title": "ซูเปอร์ไฮโล",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/salon-prive-baccarat_yx0cmr.jpg",
+                    "description": "สนุกไปกับประสบการณ์ซูเปอร์ไฮโล!"
+                },
+                {
+                    "id": 3,
+                    "title": "รูเล็ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/thai-baccarat_zedyhe.jpg",
+                    "description": "หมุนวงล้อและลุ้นรางวัลใหญ่!"
+                },
+                {
+                    "id": 4,
+                    "title": "สปีดรูเล็ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/korean-speed-baccarat_qptywv.jpg",
+                    "description": "เกมรูเล็ตที่รวดเร็ว!"
+                },
+                {
+                    "id": 5,
+                    "title": "เสือมังกร",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758588/lightning-baccarat_pr3jcz.jpg",
+                    "description": "ใครจะเป็นผู้ชนะ: เสือหรือมังกร?"
+                },
+                {
+                    "id": 6,
+                    "title": "รูเล็ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/french-gold-roulette_ly6i5n.jpg",
+                    "description": "หมุนวงล้อและลุ้นรางวัลใหญ่!"
+                },
+                {
+                    "id": 7,
+                    "title": "สปีดรูเล็ต",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/super-sic-bo_ajtnky.jpg",
+                    "description": "เกมรูเล็ตที่รวดเร็ว!"
+                },
+                {
+                    "id": 8,
+                    "title": "เสือมังกร",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736758587/first-person-roulette_lxdvjz.jpg",
+                    "description": "ใครจะเป็นผู้ชนะ: เสือหรือมังกร?"
+                }
+            ]
+        }
+    },
+    "Slots": {
+        "Header": {
+            "backgroundImage": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/slots-bn-MYR_ok8ybq.jpg",
+                "alt": "แบนเนอร์เดิมพันกีฬา"
+            },
+            "textOverlay": {
+                "title": "สล็อตแมชชีน",
+                "subtitle": "หมุนเพื่อชิงรางวัลใหญ่!",
+                "description": "สำรวจเกมสล็อต RTP ที่ดีที่สุด และรับรางวัลสุดพิเศษ!"
+            }
+        },
+        "TopGames": {
+            "title": "เกมยอดนิยม",
+            "games": [
+                {
+                    "id": 1,
+                    "title": "Pac-Man's Glory",
+                    "provider": "Nextspin",
+                    "rtp": "96.95",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/sPac_Man1_soexjf.png",
+                    "isNew": true,
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sPac_Man1/202411250258/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sPac_Man1&language=th_TH"
+                },
+                {
+                    "id": 2,
+                    "title": "Giant Tossakan",
+                    "provider": "Nextspin",
+                    "rtp": "96.92",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/sHG0001_hfxll3.png",
+                    "isNew": true,
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sHG0001/202501030931/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sHG0001&language=th_TH"
+                },
+                {
+                    "id": 3,
+                    "title": "Legend of Guan Yu",
+                    "provider": "Nextspin",
+                    "rtp": "96.99",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768339/sAztecGolT_tphxsz.png",
+                    "isNew": true,
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sGuanGong/202412260744/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sGuanGong&language=th_TH"
+                },
+                {
+                    "id": 4,
+                    "title": "Mahjong Phoenix",
+                    "provider": "Nextspin",
+                    "rtp": "96.94",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/sMahPhe_nu5z8k.png",
+                    "isNew": true,
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sMahPhe/202411250241/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sMahPhe&language=th_TH"
+                },
+                {
+                    "id": 5,
+                    "title": "Aztec Gold Treasure",
+                    "provider": "Nextspin",
+                    "rtp": "96.98",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768339/sGuanGong_yq96ix.png",
+                    "isNew": true,
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sAztecGolT/202411250226/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sAztecGolT&language=th_TH"
+                }
+            ],
+            "buttons": {
+                "play": "เริ่มเล่น",
+                "demo": "ทดลองเล่น"
+            },
+            "labels": {
+                "new": "ใหม่",
+                "rtp": "RTP"
+            }
+        },
+        "SlotsTab": {
+            "tabs": [
+                {
+                    "id": 1,
+                    "label": "Nextspin",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/Slots/nextspin"
+                },
+                {
+                    "id": 2,
+                    "label": "Spadegaming",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/ae-casino"
+                },
+                {
+                    "id": 3,
+                    "label": "Pragmatic Play",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/bk8-casino"
+                },
+                {
+                    "id": 4,
+                    "label": "Jili",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/pragmatic-play"
+                },
+                {
+                    "id": 5,
+                    "label": "YesGetRich",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/bk8-casino"
+                },
+                {
+                    "id": 6,
+                    "label": "Fa Chai",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/asia-gaming"
+                },
+                {
+                    "id": 7,
+                    "label": "Mega888",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/sa-gaming"
+                },
+                {
+                    "id": 8,
+                    "label": "918Kiss",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/w-casino"
+                },
+                {
+                    "id": 9,
+                    "label": "Funky Games",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/wm-casino"
+                },
+                {
+                    "id": 10,
+                    "label": "Joker",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/dream-gaming"
+                },
+                {
+                    "id": 11,
+                    "label": "Habanero",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/big-gaming"
+                },
+                {
+                    "id": 12,
+                    "label": "Red Tiger",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/casino/Microgaming"
+                },
+                {
+                    "id": 13,
+                    "label": "Asia Gaming",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/casino/Game-Play"
+                },
+                {
+                    "id": 14,
+                    "label": "Game Play",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/casino/Playtech"
+                },
+                {
+                    "id": 15,
+                    "label": "Microgaming",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/casino/allbet"
+                },
+                {
+                    "id": 16,
+                    "label": "Playtech",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/casino/via-casino"
+                },
+                {
+                    "id": 17,
+                    "label": "CQ9",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/casino/via-casino"
+                }
+            ]
+        },
+        "nextspin": {
+            "HeaderTabs": {
+                "tabs": [
+                    {
+                        "id": 1,
+                        "label": "เกมทั้งหมด",
+                        "active": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "เกมยอดนิยม",
+                        "active": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "เกมใหม่",
+                        "active": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "สล็อต",
+                        "active": false
+                    },
+                    {
+                        "id": 5,
+                        "label": "อาร์เคด",
+                        "active": false
+                    }
+                ],
+                "sortOptions": {
+                    "popularity": "ความนิยม",
+                    "newest": "ล่าสุด",
+                    "featured": "แนะนำ"
+                },
+                "searchPlaceholder": "ค้นหา"
+            },
+            "TopGames": {
+                "title": "เกมยอดนิยม",
+                "buttons": {
+                    "play": "เริ่มเกม",
+                    "demo": "ลองเล่น"
+                },
+                "labels": {
+                    "rtp": "RTP"
+                },
+                "games": [
+                    {
+                        "id": 1,
+                        "title": "Pac-Man's Glory",
+                        "rtp": "96.95",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773785/sPac_Man1_fvid9f.png"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Candy Bonanza",
+                        "rtp": "97.93",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773785/sRoma_icxqqo.png"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Candy Bonanza Xmas",
+                        "rtp": "97.93",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773784/sHG0001_ls6w1s.png"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Roma",
+                        "rtp": "96.75",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773784/sGuanGong_b3o7q9.png"
+                    },
+                    {
+                        "id": 5,
+                        "title": "Giant Tossakan",
+                        "rtp": "96.92",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773784/sCandyXmas_iwl0is.png"
+                    },
+                    {
+                        "id": 6,
+                        "title": "Legend of Guan Gong",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773783/sCandyBona_iu75ki.png"
+                    },
+                    {
+                        "id": 7,
+                        "title": "7 Dragons",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777870/s7Dragons_ghpdg1.png"
+                    },
+                    {
+                        "id": 8,
+                        "title": "Aztec Gold Treasure",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777870/sAztecGolT_lyjgn6.png"
+                    },
+                    {
+                        "id": 9,
+                        "title": "Cleopatra’s Fortune",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777871/sCleopaFor_aabspa.png"
+                    },
+                    {
+                        "id": 10,
+                        "title": "Caishen",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777870/sCaiShen_raijgu.png"
+                    },
+                    {
+                        "id": 11,
+                        "title": "Lightning Dragon",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777871/sLightnDrg_lr10v2.png"
+                    },
+                    {
+                        "id": 12,
+                        "title": "Triple Dragon",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777872/sLongX3_o1rnvk.png"
+                    },
+                    {
+                        "id": 13,
+                        "title": "Lucky Gems",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777873/sLuckyGems_bsbefw.png"
+                    },
+                    {
+                        "id": 14,
+                        "title": "Mahjong Dragon",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777874/sMahDrg_xu6p1s.png"
+                    },
+                    {
+                        "id": 15,
+                        "title": "Mahjong Phoenix",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777874/sMahPhe_ealtac.png"
+                    },
+                    {
+                        "id": 16,
+                        "title": "Princess’s Rage",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777875/sPrincessR_g0ywj0.png"
+                    },
+                    {
+                        "id": 17,
+                        "title": "Prosperous Dragon",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777876/sProsDrg_zioomf.png"
+                    },
+                    {
+                        "id": 18,
+                        "title": "Roma II",
+                        "rtp": "96.99",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777877/sRomaII_bz1ora.png"
+                    }
+                ]
+            }
+        }
+    },
+    "Fishing": {
+        "Header": {
+            "backgroundImage": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850073/fishing-bn_esugrf.jpg",
+                "alt": "แบนเนอร์ตกปลา"
+            },
+            "textOverlay": {
+                "title": "ตกปลา",
+                "subtitle": "ประสบการณ์ตกปลาที่ไม่เหมือนใคร",
+                "description": "ลงทะเบียนตอนนี้เพื่อรับรางวัลไม่รู้จบ"
+            }
+        },
+        "TopGames": {
+            "title": "เกมยอดนิยม",
+            "games": [
+                {
+                    "id": 1,
+                    "title": "นักล่ามนุษย์ต่างดาว",
+                    "provider": "Spadegaming",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850287/alien-hunter_rsfkug.png",
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sPac_Man1/202411250258/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sPac_Man1&language=th_TH"
+                },
+                {
+                    "id": 2,
+                    "title": "สงครามตกปลา",
+                    "provider": "Spadegaming",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850288/fishing-god_bhawtr.png",
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sHG0001/202501030931/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sHG0001&language=th_TH"
+                },
+                {
+                    "id": 3,
+                    "title": "เทพเจ้าแห่งการตกปลา",
+                    "provider": "Spadegaming",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850289/fishing-war_qhjm70.png",
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sGuanGong/202412260744/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sGuanGong&language=th_TH"
+                },
+                {
+                    "id": 4,
+                    "title": "ปาร์ตี้ซอมบี้",
+                    "provider": "Spadegaming",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850290/royal-fishing_lh7dzi.png",
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sMahPhe/202411250241/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sMahPhe&language=th_TH"
+                },
+                {
+                    "id": 5,
+                    "title": "ราชาตกปลา",
+                    "provider": "Spadegaming",
+                    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850291/zombie-party_lp1uqw.png",
+                    "demoLink": "https://play.2umdjcuk.com/gen3/sAztecGolT/202411250226/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sAztecGolT&language=th_TH"
+                }
+            ],
+            "buttons": {
+                "play": "เริ่มเกม",
+                "demo": "ลองเล่น"
+            }
+        },
+        "FishingTab": {
+            "tabs": [
+                {
+                    "id": 1,
+                    "label": "Spadegaming",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/Fishing/Spadegaming"
+                },
+                {
+                    "id": 2,
+                    "label": "Jili",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/ae-casino"
+                },
+                {
+                    "id": 3,
+                    "label": "YesGetRich",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/bk8-casino"
+                },
+                {
+                    "id": 4,
+                    "label": "Fa Chai",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/pragmatic-play"
+                },
+                {
+                    "id": 5,
+                    "label": "CQ9",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/bk8-casino"
+                },
+                {
+                    "id": 6,
+                    "label": "JDB Gaming",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/asia-gaming"
+                },
+                {
+                    "id": 7,
+                    "label": "Dragoon Soft",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/sa-gaming"
+                },
+                {
+                    "id": 8,
+                    "label": "V-Power",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/w-casino"
+                },
+                {
+                    "id": 9,
+                    "label": "FastSpin",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/wm-casino"
+                },
+                {
+                    "id": 10,
+                    "label": "Rich88",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/dream-gaming"
+                }
+            ]
+        },
+        "Spadegaming": {
+            "HeaderTabs": {
+                "tabs": [
+                    {
+                        "id": 1,
+                        "label": "เกมทั้งหมด",
+                        "active": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "เกมยอดนิยม",
+                        "active": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "เกมใหม่",
+                        "active": false
+                    }
+                ],
+                "sortOptions": {
+                    "popularity": "ความนิยม",
+                    "newest": "ใหม่ล่าสุด",
+                    "featured": "แนะนำ"
+                },
+                "searchPlaceholder": "ค้นหา"
+            },
+            "GameCards": {
+                "games": [
+                    {
+                        "id": 1,
+                        "title": "ปาร์ตี้ซอมบี้",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855697/F-AH01_irz1hv.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "title": "นักตกปลามือโปร",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855697/F-SF01_ygbpkj.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "title": "สงครามตกปลา",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855698/F-SF02_cif5n1.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "title": "นักล่ามนุษย์ต่างดาว",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855698/F-ZP01_guvs3z.jpg"
+                    }
+                ],
+                "buttons": {
+                    "play": "เล่นเลย",
+                    "demo": "ลองเล่น"
+                }
+            }
+        },
+        "Footer": {
+            "bonusSection": {
+                "welcomeBonus": {
+                    "amount": "150%",
+                    "label": "โบนัสต้อนรับ"
+                },
+                "weeklyRescueBonus": {
+                    "amount": "MYR 6,888",
+                    "label": "โบนัสช่วยเหลือรายสัปดาห์"
+                },
+                "cryptoCasino": {
+                    "amount": "#1 คาสิโนคริปโต",
+                    "label": "ได้รับใบอนุญาตเต็มรูปแบบในเอเชีย"
+                }
+            },
+            "joinNow": "เข้าร่วมตอนนี้"
+        }
     }
 }

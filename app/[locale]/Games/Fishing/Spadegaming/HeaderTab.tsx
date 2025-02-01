@@ -1,14 +1,20 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
+
+
 
 const HeaderTabs = () => {
-    const tabs = [
-        { id: 1, label: "All games", active: true },
-        { id: 2, label: "Hot games", active: false },
-        { id: 3, label: "New games", active: false }
-    ];
+    const t = useTranslations("Fishing.Spadegaming.HeaderTabs");
 
+    const tabsList = t.raw("tabs");
+
+    const tabs = tabsList.map((tab: any) => ({
+        id: tab.id,
+        label: tab.label,
+        active: tab.active,
+    }));
     const [activeTab, setActiveTab] = useState(1);
 
     const handleTabClick = (tabId: number) => {
@@ -19,7 +25,7 @@ const HeaderTabs = () => {
         <div className="flex items-center justify-between px-4 py-2 max-w-[1400px] mx-auto">
             {/* Tabs Section */}
             <div className="flex space-x-4">
-                {tabs.map((tab) => (
+                {tabs.map((tab: any) => (
                     <button
                         key={tab.id}
                         onClick={() => handleTabClick(tab.id)}
@@ -41,9 +47,9 @@ const HeaderTabs = () => {
                     <select
                         className="border border-gray-300 rounded-full px-4 py-2 text-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
                     >
-                        <option value="popularity">Popularity</option>
-                        <option value="newest">Newest</option>
-                        <option value="featured">Featured</option>
+                        <option value="popularity">{t("sortOptions.popularity")}</option>
+                        <option value="newest">{t("sortOptions.newest")}</option>
+                        <option value="featured">{t("sortOptions.featured")}</option>
                     </select>
                 </div>
 
@@ -51,7 +57,7 @@ const HeaderTabs = () => {
                 <div className="relative">
                     <input
                         type="text"
-                        placeholder="Search"
+                        placeholder={t("searchPlaceholder")}
                         className="border border-gray-300 rounded-full px-4 py-2 pr-10 text-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
                     />
                     <i className="absolute right-3 top-2 text-gray-500 fas fa-search"></i>

@@ -3,11 +3,25 @@
 import React, { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { tabs, Tab } from "./tab"; // Import tabs and Tab type
+import { useTranslations } from "next-intl";
+
+
+interface Tab {
+    id: number;
+    label: string;
+    link: string;
+    icon: string;
+    tag?: string;
+}
+
 
 const SlotsTab = () => {
+    const t = useTranslations("Fishing.FishingTab");
     const router = useRouter();
     const pathname = usePathname();
+
+
+   const tabs: Tab[] = t.raw("tabs");
 
     const [activeTab, setActiveTab] = useState<number | null>(null);
 

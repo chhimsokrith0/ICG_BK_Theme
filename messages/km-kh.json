@@ -1224,5 +1224,559 @@
         }
       ]
     }
+  },
+  "Slots": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/slots-bn-MYR_ok8ybq.jpg",
+        "alt": "បដាស្ពតបូក"
+      },
+      "textOverlay": {
+        "title": "ស្លុត",
+        "subtitle": "បង្វិលដើម្បីឈ្នះរង្វាន់ធំ!",
+        "description": "ស្វែងរកហ្គេម RTP ល្អបំផុត និងរីករាយនឹងរង្វាន់អស្ចារ្យ!"
+      }
+    },
+    "TopGames": {
+      "title": "ហ្គេមពេញនិយម",
+      "games": [
+        {
+          "id": 1,
+          "title": "Pac-Man's Glory",
+          "provider": "Nextspin",
+          "rtp": "96.95",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/sPac_Man1_soexjf.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sPac_Man1/202411250258/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sPac_Man1&language=km_KH"
+        },
+        {
+          "id": 2,
+          "title": "Giant Tossakan",
+          "provider": "Nextspin",
+          "rtp": "96.92",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/sHG0001_hfxll3.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sHG0001/202501030931/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sHG0001&language=km_KH"
+        },
+        {
+          "id": 3,
+          "title": "Legend of Guan Yu",
+          "provider": "Nextspin",
+          "rtp": "96.99",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768339/sAztecGolT_tphxsz.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sGuanGong/202412260744/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sGuanGong&language=km_KH"
+        },
+        {
+          "id": 4,
+          "title": "Mahjong Phoenix",
+          "provider": "Nextspin",
+          "rtp": "96.94",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/sMahPhe_nu5z8k.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sMahPhe/202411250241/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sMahPhe&language=km_KH"
+        },
+        {
+          "id": 5,
+          "title": "Aztec Gold Treasure",
+          "provider": "Nextspin",
+          "rtp": "96.98",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768339/sGuanGong_yq96ix.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sAztecGolT/202411250226/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sAztecGolT&language=km_KH"
+        }
+      ],
+      "buttons": {
+        "play": "ចាប់ផ្តើមលេង",
+        "demo": "លេងសាកល្បង"
+      },
+      "labels": {
+        "new": "ថ្មី",
+        "rtp": "RTP"
+      }
+    },
+    "SlotsTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Nextspin",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/Slots/nextspin"
+        },
+        {
+          "id": 2,
+          "label": "Spadegaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/ae-casino"
+        },
+        {
+          "id": 3,
+          "label": "Pragmatic Play",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 4,
+          "label": "Jili",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/pragmatic-play"
+        },
+        {
+          "id": 5,
+          "label": "YesGetRich",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 6,
+          "label": "Fa Chai",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/asia-gaming"
+        },
+        {
+          "id": 7,
+          "label": "Mega888",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/sa-gaming"
+        },
+        {
+          "id": 8,
+          "label": "918Kiss",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/w-casino"
+        },
+        {
+          "id": 9,
+          "label": "Funky Games",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/wm-casino"
+        },
+        {
+          "id": 10,
+          "label": "Joker",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/dream-gaming"
+        },
+        {
+          "id": 11,
+          "label": "Habanero",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/big-gaming"
+        },
+        {
+          "id": 12,
+          "label": "Red Tiger",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Microgaming"
+        },
+        {
+          "id": 13,
+          "label": "អាស៊ីប៉ូរកាស៊ីណូ",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Game-Play"
+        },
+        {
+          "id": 14,
+          "label": "របៀបលេងហ្គេម",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Playtech"
+        },
+        {
+          "id": 15,
+          "label": "Microgaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/allbet"
+        },
+        {
+          "id": 16,
+          "label": "Playtech",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/via-casino"
+        },
+        {
+          "id": 17,
+          "label": "CQ9",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/via-casino"
+        }
+      ]
+    },
+    "nextspin": {
+      "HeaderTabs": {
+        "tabs": [
+          {
+            "id": 1,
+            "label": "ហ្គេមទាំងអស់",
+            "active": true
+          },
+          {
+            "id": 2,
+            "label": "ហ្គេមពេញនិយម",
+            "active": false
+          },
+          {
+            "id": 3,
+            "label": "ហ្គេមថ្មី",
+            "active": false
+          },
+          {
+            "id": 4,
+            "label": "ស្លុត",
+            "active": false
+          },
+          {
+            "id": 5,
+            "label": "អាឃេត",
+            "active": false
+          }
+        ],
+        "sortOptions": {
+          "popularity": "ពេញនិយម",
+          "newest": "ថ្មីបំផុត",
+          "featured": "ពិសេស"
+        },
+        "searchPlaceholder": "ស្វែងរក"
+      },
+      "TopGames": {
+        "title": "ហ្គេមពេញនិយម",
+        "buttons": {
+          "play": "ចាប់ផ្តើមលេង",
+          "demo": "លេងសាកល្បង"
+        },
+        "labels": {
+          "rtp": "RTP"
+        },
+        "games": [
+          {
+            "id": 1,
+            "title": "Pac-Man's Glory",
+            "rtp": "96.95",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773785/sPac_Man1_fvid9f.png"
+          },
+          {
+            "id": 2,
+            "title": "បុណ្យអំបុកស្ករត្នោត",
+            "rtp": "97.93",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773785/sRoma_icxqqo.png"
+          },
+          {
+            "id": 3,
+            "title": "បុណ្យអំបុកស្ករត្នោត X'mas",
+            "rtp": "97.93",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773784/sHG0001_ls6w1s.png"
+          },
+          {
+            "id": 4,
+            "title": "រ៉ូម",
+            "rtp": "96.75",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773784/sGuanGong_b3o7q9.png"
+          },
+          {
+            "id": 5,
+            "title": "យក្ស Tossakan",
+            "rtp": "96.92",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773784/sCandyXmas_iwl0is.png"
+          },
+          {
+            "id": 6,
+            "title": "Legend Of Guan Gong",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773783/sCandyBona_iu75ki.png"
+          },
+          {
+            "id": 7,
+            "title": "7 Dragons",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777870/s7Dragons_ghpdg1.png"
+          },
+          {
+            "id": 8,
+            "title": "អំណោយសម្បត្តិអាហ្សិតក",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777870/sAztecGolT_lyjgn6.png"
+          },
+          {
+            "id": 9,
+            "title": "ទ្រនិចសម្បត្តិ Cleopatra",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777871/sCleopaFor_aabspa.png"
+          },
+          {
+            "id": 10,
+            "title": "Cai Shen (សំណាង)",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777870/sCaiShen_raijgu.png"
+          },
+          {
+            "id": 11,
+            "title": "ស្នែងផ្កាយផ្លេក",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777871/sLightnDrg_lr10v2.png"
+          },
+          {
+            "id": 12,
+            "title": "ឡុង X3",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777872/sLongX3_o1rnvk.png"
+          },
+          {
+            "id": 13,
+            "title": "ផ្កាយសំណាង",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777873/sLuckyGems_bsbefw.png"
+          },
+          {
+            "id": 14,
+            "title": "Mahjong Dragon",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777874/sMahDrg_xu6p1s.png"
+          },
+          {
+            "id": 15,
+            "title": "Mahjong Phoenix",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777874/sMahPhe_ealtac.png"
+          },
+          {
+            "id": 16,
+            "title": "公主之怒 (កម្ដៅសម្រស់)",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777875/sPrincessR_g0ywj0.png"
+          },
+          {
+            "id": 17,
+            "title": "Prosperity Dragon",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777876/sProsDrg_zioomf.png"
+          },
+          {
+            "id": 18,
+            "title": "Roma II",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777877/sRomaII_bz1ora.png"
+          }
+        ]
+      }
+    }
+  },
+  "Fishing": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850073/fishing-bn_esugrf.jpg",
+        "alt": "បដាពីអូ"
+      },
+      "textOverlay": {
+        "title": "ការលេងបាញ់ត្រី",
+        "subtitle": "បទពិសោធន៍បាញ់ត្រីដែលមានភាពអស្ចារ្យបំផុត",
+        "description": "ចុះឈ្មោះឥឡូវនេះ ដើម្បីទទួលសុភមង្គលអស់កល្បជានិច្ច។"
+      }
+    },
+    "TopGames": {
+      "title": "ហ្គេមពេញនិយម",
+      "games": [
+        {
+          "id": 1,
+          "title": "អ្នកបាញ់អាលីយែន",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850287/alien-hunter_rsfkug.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sPac_Man1/202411250258/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sPac_Man1&language=zh_CN"
+        },
+        {
+          "id": 2,
+          "title": "សង្គ្រាមបាញ់ត្រី",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850288/fishing-god_bhawtr.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sHG0001/202501030931/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sHG0001&language=zh_CN"
+        },
+        {
+          "id": 3,
+          "title": "បាញ់ត្រីព្រះ",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850289/fishing-war_qhjm70.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sGuanGong/202412260744/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sGuanGong&language=zh_CN"
+        },
+        {
+          "id": 4,
+          "title": "បញ្ចប់អាប",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850290/royal-fishing_lh7dzi.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sMahPhe/202411250241/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sMahPhe&language=zh_CN"
+        },
+        {
+          "id": 5,
+          "title": "បាញ់ត្រីរាជវង្ស",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850291/zombie-party_lp1uqw.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sAztecGolT/202411250226/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sAztecGolT&language=zh_CN"
+        }
+      ],
+      "buttons": {
+        "play": "ចាប់ផ្តើមលេង",
+        "demo": "លេងសាកល្បង"
+      }
+    },
+    "FishingTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Spadegaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/Fishing/Spadegaming"
+        },
+        {
+          "id": 2,
+          "label": "Jili",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/ae-casino"
+        },
+        {
+          "id": 3,
+          "label": "YesGetRich",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 4,
+          "label": "Fa Chai",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/pragmatic-play"
+        },
+        {
+          "id": 5,
+          "label": "CQ9",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 6,
+          "label": "JDB Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/asia-gaming"
+        },
+        {
+          "id": 7,
+          "label": "Dragoon Soft",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/sa-gaming"
+        },
+        {
+          "id": 8,
+          "label": "V-Power",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/w-casino"
+        },
+        {
+          "id": 9,
+          "label": "FastSpin",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/wm-casino"
+        },
+        {
+          "id": 10,
+          "label": "Rich88",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/dream-gaming"
+        }
+      ]
+    },
+    "Spadegaming": {
+      "HeaderTabs": {
+        "tabs": [
+          {
+            "id": 1,
+            "label": "គ្រប់ល្បែង",
+            "active": true
+          },
+          {
+            "id": 2,
+            "label": "ល្បែងពេញនិយម",
+            "active": false
+          },
+          {
+            "id": 3,
+            "label": "ល្បែងថ្មី",
+            "active": false
+          }
+        ],
+        "sortOptions": {
+          "popularity": "ពេញនិយម",
+          "newest": "ថ្មីបំផុត",
+          "featured": "精选"
+        },
+        "searchPlaceholder": "ស្វែងរក"
+      },
+      "GameCards": {
+        "games": [
+          {
+            "id": 1,
+            "title": "បាដីខ្មោច",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855697/F-AH01_irz1hv.jpg"
+          },
+          {
+            "id": 2,
+            "title": "បាញ់ត្រី",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855697/F-SF01_ygbpkj.jpg"
+          },
+          {
+            "id": 3,
+            "title": "សង្គ្រាមបាញ់ត្រី",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855698/F-SF02_cif5n1.jpg"
+          },
+          {
+            "id": 4,
+            "title": "អ្នកបាញ់អតិផរណា",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855698/F-ZP01_guvs3z.jpg"
+          }
+        ],
+        "buttons": {
+          "play": "ចាប់ផ្តើមលេង",
+          "demo": "សាកល្បង"
+        }
+      }
+    },
+    "Footer": {
+      "bonusSection": {
+        "welcomeBonus": {
+          "amount": "150%",
+          "label": "ប្រាក់រង្វាន់ស្វាគមន៍"
+        },
+        "weeklyRescueBonus": {
+          "amount": "MYR 6,888",
+          "label": "ប្រាក់រង្វាន់ជួយសង្គ្រោះប្រចាំសប្ដាហ៍"
+        },
+        "cryptoCasino": {
+          "amount": "#1 កាស៊ីណូក្រមបញ្ចូល",
+          "label": "អាជ្ញាប័ណ្ណពេញលេញនៅអាស៊ី"
+        }
+      },
+      "joinNow": "ចូលរួមឥឡូវនេះ"
+    }
   }
 }

@@ -1334,5 +1334,559 @@
         }
       ]
     }
+  },
+  "Slots": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/slots-bn-MYR_ok8ybq.jpg",
+        "alt": "体育博彩横幅"
+      },
+      "textOverlay": {
+        "title": "老虎机",
+        "subtitle": "旋转赢取大奖！",
+        "description": "探索最佳RTP游戏，享受惊人的奖励！"
+      }
+    },
+    "TopGames": {
+      "title": "热门游戏",
+      "games": [
+        {
+          "id": 1,
+          "title": "吃豆人的荣耀",
+          "provider": "Nextspin",
+          "rtp": "96.95",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/sPac_Man1_soexjf.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sPac_Man1/202411250258/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sPac_Man1&language=zh_CN"
+        },
+        {
+          "id": 2,
+          "title": "巨人托萨坎",
+          "provider": "Nextspin",
+          "rtp": "96.92",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/sHG0001_hfxll3.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sHG0001/202501030931/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sHG0001&language=zh_CN"
+        },
+        {
+          "id": 3,
+          "title": "关羽传奇",
+          "provider": "Nextspin",
+          "rtp": "96.99",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768339/sAztecGolT_tphxsz.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sGuanGong/202412260744/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sGuanGong&language=zh_CN"
+        },
+        {
+          "id": 4,
+          "title": "麻将凤凰",
+          "provider": "Nextspin",
+          "rtp": "96.94",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768340/sMahPhe_nu5z8k.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sMahPhe/202411250241/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sMahPhe&language=zh_CN"
+        },
+        {
+          "id": 5,
+          "title": "阿兹特克黄金宝藏",
+          "provider": "Nextspin",
+          "rtp": "96.98",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736768339/sGuanGong_yq96ix.png",
+          "isNew": true,
+          "demoLink": "https://play.2umdjcuk.com/gen3/sAztecGolT/202411250226/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sAztecGolT&language=zh_CN"
+        }
+      ],
+      "buttons": {
+        "play": "开始游戏",
+        "demo": "试玩"
+      },
+      "labels": {
+        "new": "新",
+        "rtp": "RTP"
+      }
+    },
+    "SlotsTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Nextspin",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/Slots/nextspin"
+        },
+        {
+          "id": 2,
+          "label": "Spadegaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/ae-casino"
+        },
+        {
+          "id": 3,
+          "label": "Pragmatic Play",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 4,
+          "label": "Jili",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/pragmatic-play"
+        },
+        {
+          "id": 5,
+          "label": "YesGetRich",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 6,
+          "label": "Fa Chai",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/asia-gaming"
+        },
+        {
+          "id": 7,
+          "label": "Mega888",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/sa-gaming"
+        },
+        {
+          "id": 8,
+          "label": "918Kiss",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/w-casino"
+        },
+        {
+          "id": 9,
+          "label": "Funky Games",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/wm-casino"
+        },
+        {
+          "id": 10,
+          "label": "Joker",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/dream-gaming"
+        },
+        {
+          "id": 11,
+          "label": "Habanero",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/big-gaming"
+        },
+        {
+          "id": 12,
+          "label": "Red Tiger",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Microgaming"
+        },
+        {
+          "id": 13,
+          "label": "亚洲博彩",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Game-Play"
+        },
+        {
+          "id": 14,
+          "label": "游戏玩法",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/Playtech"
+        },
+        {
+          "id": 15,
+          "label": "Microgaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/allbet"
+        },
+        {
+          "id": 16,
+          "label": "Playtech",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/via-casino"
+        },
+        {
+          "id": 17,
+          "label": "CQ9",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/casino/via-casino"
+        }
+      ]
+    },
+    "nextspin": {
+      "HeaderTabs": {
+        "tabs": [
+          {
+            "id": 1,
+            "label": "所有游戏",
+            "active": true
+          },
+          {
+            "id": 2,
+            "label": "热门游戏",
+            "active": false
+          },
+          {
+            "id": 3,
+            "label": "新游戏",
+            "active": false
+          },
+          {
+            "id": 4,
+            "label": "老虎机",
+            "active": false
+          },
+          {
+            "id": 5,
+            "label": "街机",
+            "active": false
+          }
+        ],
+        "sortOptions": {
+          "popularity": "人气",
+          "newest": "最新",
+          "featured": "精选"
+        },
+        "searchPlaceholder": "搜索"
+      },
+      "TopGames": {
+        "title": "热门游戏",
+        "buttons": {
+          "play": "开始游戏",
+          "demo": "试玩"
+        },
+        "labels": {
+          "rtp": "RTP"
+        },
+        "games": [
+          {
+            "id": 1,
+            "title": "吃豆人的荣耀",
+            "rtp": "96.95",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773785/sPac_Man1_fvid9f.png"
+          },
+          {
+            "id": 2,
+            "title": "糖果狂欢",
+            "rtp": "97.93",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773785/sRoma_icxqqo.png"
+          },
+          {
+            "id": 3,
+            "title": "糖果狂欢圣诞版",
+            "rtp": "97.93",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773784/sHG0001_ls6w1s.png"
+          },
+          {
+            "id": 4,
+            "title": "罗马",
+            "rtp": "96.75",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773784/sGuanGong_b3o7q9.png"
+          },
+          {
+            "id": 5,
+            "title": "巨型托萨坎",
+            "rtp": "96.92",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773784/sCandyXmas_iwl0is.png"
+          },
+          {
+            "id": 6,
+            "title": "关公传奇",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736773783/sCandyBona_iu75ki.png"
+          },
+          {
+            "id": 7,
+            "title": "七龙",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777870/s7Dragons_ghpdg1.png"
+          },
+          {
+            "id": 8,
+            "title": "阿兹特克黄金宝藏",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777870/sAztecGolT_lyjgn6.png"
+          },
+          {
+            "id": 9,
+            "title": "埃及艳后财富",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777871/sCleopaFor_aabspa.png"
+          },
+          {
+            "id": 10,
+            "title": "财神",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777870/sCaiShen_raijgu.png"
+          },
+          {
+            "id": 11,
+            "title": "闪电龙",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777871/sLightnDrg_lr10v2.png"
+          },
+          {
+            "id": 12,
+            "title": "龙兴三倍",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777872/sLongX3_o1rnvk.png"
+          },
+          {
+            "id": 13,
+            "title": "幸运宝石",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777873/sLuckyGems_bsbefw.png"
+          },
+          {
+            "id": 14,
+            "title": "麻将龙",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777874/sMahDrg_xu6p1s.png"
+          },
+          {
+            "id": 15,
+            "title": "麻将凤凰",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777874/sMahPhe_ealtac.png"
+          },
+          {
+            "id": 16,
+            "title": "公主之怒",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777875/sPrincessR_g0ywj0.png"
+          },
+          {
+            "id": 17,
+            "title": "繁荣之龙",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777876/sProsDrg_zioomf.png"
+          },
+          {
+            "id": 18,
+            "title": "罗马II",
+            "rtp": "96.99",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736777877/sRomaII_bz1ora.png"
+          }
+        ]
+      }
+    }
+  },
+  "Fishing": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850073/fishing-bn_esugrf.jpg",
+        "alt": "捕鱼横幅"
+      },
+      "textOverlay": {
+        "title": "捕鱼",
+        "subtitle": "最独特的捕鱼体验",
+        "description": "立即注册，享受无尽奖励。"
+      }
+    },
+    "TopGames": {
+      "title": "热门游戏",
+      "games": [
+        {
+          "id": 1,
+          "title": "外星猎人",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850287/alien-hunter_rsfkug.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sPac_Man1/202411250258/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sPac_Man1&language=zh_CN"
+        },
+        {
+          "id": 2,
+          "title": "捕鱼战争",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850288/fishing-god_bhawtr.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sHG0001/202501030931/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sHG0001&language=zh_CN"
+        },
+        {
+          "id": 3,
+          "title": "捕鱼天神",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850289/fishing-war_qhjm70.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sGuanGong/202412260744/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sGuanGong&language=zh_CN"
+        },
+        {
+          "id": 4,
+          "title": "僵尸派对",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850290/royal-fishing_lh7dzi.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sMahPhe/202411250241/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sMahPhe&language=zh_CN"
+        },
+        {
+          "id": 5,
+          "title": "皇家捕鱼",
+          "provider": "Spadegaming",
+          "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850291/zombie-party_lp1uqw.png",
+          "demoLink": "https://play.2umdjcuk.com/gen3/sAztecGolT/202411250226/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sAztecGolT&language=zh_CN"
+        }
+      ],
+      "buttons": {
+        "play": "开始游戏",
+        "demo": "试玩"
+      }
+    },
+    "FishingTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Spadegaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/Fishing/Spadegaming"
+        },
+        {
+          "id": 2,
+          "label": "Jili",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/ae-casino"
+        },
+        {
+          "id": 3,
+          "label": "YesGetRich",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 4,
+          "label": "Fa Chai",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/pragmatic-play"
+        },
+        {
+          "id": 5,
+          "label": "CQ9",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 6,
+          "label": "JDB Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/asia-gaming"
+        },
+        {
+          "id": 7,
+          "label": "Dragoon Soft",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/sa-gaming"
+        },
+        {
+          "id": 8,
+          "label": "V-Power",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/w-casino"
+        },
+        {
+          "id": 9,
+          "label": "FastSpin",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "新",
+          "link": "/Games/casino/wm-casino"
+        },
+        {
+          "id": 10,
+          "label": "Rich88",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "热门",
+          "link": "/Games/casino/dream-gaming"
+        }
+      ]
+    },
+    "Spadegaming": {
+      "HeaderTabs": {
+        "tabs": [
+          {
+            "id": 1,
+            "label": "所有游戏",
+            "active": true
+          },
+          {
+            "id": 2,
+            "label": "热门游戏",
+            "active": false
+          },
+          {
+            "id": 3,
+            "label": "新游戏",
+            "active": false
+          }
+        ],
+        "sortOptions": {
+          "popularity": "人气",
+          "newest": "最新",
+          "featured": "精选"
+        },
+        "searchPlaceholder": "搜索"
+      },
+      "GameCards": {
+        "games": [
+          {
+            "id": 1,
+            "title": "僵尸派对",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855697/F-AH01_irz1hv.jpg"
+          },
+          {
+            "id": 2,
+            "title": "捕鱼达人",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855697/F-SF01_ygbpkj.jpg"
+          },
+          {
+            "id": 3,
+            "title": "捕鱼战争",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855698/F-SF02_cif5n1.jpg"
+          },
+          {
+            "id": 4,
+            "title": "外星猎人",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736855698/F-ZP01_guvs3z.jpg"
+          }
+        ],
+        "buttons": {
+          "play": "开始游戏",
+          "demo": "试玩"
+        }
+      }
+    },
+    "Footer": {
+      "bonusSection": {
+        "welcomeBonus": {
+          "amount": "150%",
+          "label": "欢迎奖金"
+        },
+        "weeklyRescueBonus": {
+          "amount": "MYR 6,888",
+          "label": "每周救援奖金"
+        },
+        "cryptoCasino": {
+          "amount": "#1 加密赌场",
+          "label": "亚洲全牌照认证"
+        }
+      },
+      "joinNow": "立即加入"
+    }
   }
 }

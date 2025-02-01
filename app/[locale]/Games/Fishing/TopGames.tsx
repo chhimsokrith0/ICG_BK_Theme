@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface Game {
     id: number;
@@ -13,47 +14,15 @@ interface Game {
 }
 
 const TopGames: React.FC = () => {
-    const games: Game[] = [
-        {
-            id: 1,
-            title: "Alien Hunter",
-            provider: "Spadegaming",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850287/alien-hunter_rsfkug.png",
-            demoLink: "https://play.2umdjcuk.com/gen3/sPac_Man1/202411250258/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sPac_Man1&language=en_US", // Replace with actual link
-        },
-        {
-            id: 2,
-            title: "Fishing War",
-            provider: "Spadegaming",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850288/fishing-god_bhawtr.png",
-            demoLink: "https://play.2umdjcuk.com/gen3/sHG0001/202501030931/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sHG0001&language=en_US",
-        },
-        {
-            id: 3,
-            title: "Fishing God",
-            provider: "Spadegaming",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850289/fishing-war_qhjm70.png",
-            demoLink: "https://play.2umdjcuk.com/gen3/sGuanGong/202412260744/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sGuanGong&language=en_US",
-        },
-        {
-            id: 4,
-            title: "Zombie Party",
-            provider: "Spadegaming",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850290/royal-fishing_lh7dzi.png",
-            demoLink: "https://play.2umdjcuk.com/gen3/sMahPhe/202411250241/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sMahPhe&language=en_US",
-        },
-        {
-            id: 5,
-            title: "Royal Fishing",
-            provider: "Spadegaming",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736850291/zombie-party_lp1uqw.png",
-            demoLink: "https://play.2umdjcuk.com/gen3/sAztecGolT/202411250226/index.html?brand=NEXTSPIN&merchantCode=SS001&game=sAztecGolT&language=en_US",
-        },
-    ];
+
+    const t = useTranslations("Fishing.TopGames");
+
+    const games: Game[] = t.raw("games");
+
 
     return (
         <div className="max-w-[1400px] mx-auto py-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Top Games</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">{t("title")}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                 {games.map((game) => (
                     <motion.div
@@ -74,7 +43,7 @@ const TopGames: React.FC = () => {
                                 whileHover={{ opacity: 1 }}
                             >
                                 <button className="bg-orange-500 text-white font-bold py-2 px-4 rounded-full mb-2">
-                                    Play
+                                    {t("buttons.play")}
                                 </button>
                                 {/* Demo Button with Link */}
                                 <Link
@@ -83,7 +52,7 @@ const TopGames: React.FC = () => {
                                     rel="noopener noreferrer"
                                     className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-center block"
                                 >
-                                    Demo
+                                    {t("buttons.demo")}
                                 </Link>
                             </motion.div>
                         </div>
