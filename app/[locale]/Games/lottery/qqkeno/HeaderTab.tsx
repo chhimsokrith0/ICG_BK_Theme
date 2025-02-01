@@ -1,13 +1,18 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
+
+interface Tab {
+    id: number;
+    label: string;
+    active: boolean;
+}
 
 const HeaderTabs = () => {
-    const tabs = [
-        { id: 1, label: "ALL", active: true },
-        { id: 2, label: "Hot Games", active: false },
-        { id: 3, label: "New Games", active: false },
-    ];
+    const t = useTranslations("lottery.qqkeno.HeaderTabs");
+
+    const tabs : Tab[] = t.raw("tabs");
 
     const [activeTab, setActiveTab] = useState(1);
 

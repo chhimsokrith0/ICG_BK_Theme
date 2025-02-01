@@ -1,11 +1,14 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 const VIPSection = () => {
+    const t = useTranslations('vip.VIPSection');
     const [bgImage, setBgImage] = useState(
         'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737193449/about-background_wl7rdv.jpg'
     );
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -47,20 +50,20 @@ const VIPSection = () => {
                     {/* Left Side: Text Content */}
                     <div className="text-white w-full lg:w-1/2 space-y-4 md:space-y-6">
                         <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-yellow-400 tracking-wide">
-                            Be a BK8 VIP
+                            {t('heading')}
                         </h2>
                         <h3 className="text-lg md:text-xl lg:text-3xl font-bold leading-snug lg:leading-tight">
-                            Experience Exclusivity Like None Other — Special Promotions, Gifts, and Rebates.
-                            <span className="text-yellow-400"> More than you expect!</span>
+                            {t('subheading')}
+                            <span className="text-yellow-400"> {t('highlight')}</span>
                         </h3>
                         <p className="text-sm md:text-base lg:text-lg text-gray-300 leading-6 md:leading-8">
-                            As Cambodia’s most innovative and all-inclusive online gaming website, BK8 never stops trying to give members the best. From game options to service standards, BK8 provides the latest and the finest.
+                            {t('description.part1')}
                         </p>
                         <p className="text-sm md:text-base lg:text-lg text-gray-300 leading-6 md:leading-8">
-                            To take it up a notch, BK8 is introducing an exclusive VIP program designed to give loyal members more reasons to continue trusting us as their entertainment provider. The five tiers that form the backbone of BK8 VIP Program are Bronze, Silver, Gold, Platinum & Diamond.
+                        {t('description.part2')}
                         </p>
                         <p className="text-sm md:text-base lg:text-lg text-gray-300 leading-6 md:leading-8">
-                            The purpose of having a tier-based program is to give members the incentives needed to upgrade progressively. Although we encourage members to achieve VIP tier requirements and keep moving up, our focus is always on members’ satisfaction, especially VIP members.
+                        {t('description.part3')}
                         </p>
                     </div>
                 </div>

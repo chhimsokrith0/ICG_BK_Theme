@@ -1873,5 +1873,801 @@
       },
       "joinNow": "Join Now"
     }
+  },
+  "4d": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736858449/4d-bn_gutbu4.png",
+        "alt": "4D Lottery Banner"
+      },
+      "textOverlay": {
+        "title": "4D Lottery"
+      }
+    },
+    "Tab4d": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Grand Dragon",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/4d/granddragon"
+        }
+      ]
+    },
+    "Footer": {
+      "disclaimer": {
+        "title": "Disclaimer:",
+        "content": "The content displayed on this page is provided by the respective 4D providers and is for general information purposes only. While the information is presented in good faith, we make no guarantees or representations regarding the accuracy, validity, timeliness, and/or completeness of any gaming results published on this page. This site may contain links to third-party websites, advertisers, services, or content that are not owned or controlled by BK8. By accessing and using our site, users acknowledge and agree that they have read and understood the aforementioned assumption of risk. Under no circumstances shall we bear any liability for any loss or damage resulting from the use of the site or reliance on its information. We do not endorse or assume any responsibility for any such third-party sites, information, materials, products, or services. We are not responsible for monitoring transactions between users and third-party providers. All trademarks and product names are the properties of their respective holders. This site is not affiliated with any of the organizations linked or described."
+      },
+      "appDownload": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736921418/app-download_mezkyi.jpg",
+        "alt": "App Download"
+      },
+      "bonusSection": {
+        "welcomeBonus": {
+          "amount": "150%",
+          "label": "Welcome Bonus"
+        },
+        "weeklyRescueBonus": {
+          "amount": "MYR 6,888",
+          "label": "Weekly Rescue Bonus"
+        },
+        "cryptoCasino": {
+          "amount": "#1 Crypto Casino",
+          "label": "Fully Licensed in Asia"
+        }
+      },
+      "joinNow": "Join Now"
+    }
+  },
+  "lottery": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737088068/lottery-bn_MY_hafegz.jpg",
+        "alt": "Lottery Banner"
+      },
+      "textOverlay": {
+        "title": "Lottery",
+        "subtitle": "Low Bet, High Winning",
+        "description": "Newly released 'KENO' from BK8,\n an easy game played every 30 seconds"
+      }
+    },
+    "LotteryTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "QQKeno",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/lottery/qqkeno"
+        },
+        {
+          "id": 2,
+          "label": "Funky Games",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/lottery/funkygames"
+        },
+        {
+          "id": 3,
+          "label": "TC Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/lottery/tcg"
+        }
+      ]
+    },
+    "Footer": {
+      "appDownload": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737090573/app-download_qrcnvh.jpg",
+        "alt": "App Download"
+      },
+      "bonusSection": {
+        "welcomeBonus": {
+          "amount": "150%",
+          "label": "Welcome Bonus"
+        },
+        "weeklyRescueBonus": {
+          "amount": "MYR 6,888",
+          "label": "Weekly Rescue Bonus"
+        },
+        "cryptoCasino": {
+          "amount": "#1 Crypto Casino",
+          "label": "Fully Licensed in Asia"
+        }
+      },
+      "joinNow": "Join Now"
+    },
+    "qqkeno": {
+      "HeaderTabs": {
+        "tabs": [
+          {
+            "id": 1,
+            "label": "All",
+            "active": true
+          },
+          {
+            "id": 2,
+            "label": "Hot Games",
+            "active": false
+          },
+          {
+            "id": 3,
+            "label": "New Games",
+            "active": false
+          }
+        ]
+      }
+    }
+  },
+  "fastgames": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737112860/fastgames-bn_zs2ojf.jpg",
+        "alt": "Fast Games Banner"
+      },
+      "textOverlay": {
+        "title": "Fast Games",
+        "subtitle": "Bringing you the fastest wins like never before",
+        "description": "Sign up now and enjoy endless rewards."
+      }
+    },
+    "fastgamesTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Spribe",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "Hot",
+          "link": "/Games/fastgames/spb"
+        },
+        {
+          "id": 2,
+          "label": "T1Games",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "New",
+          "link": "/Games/casino/ae-casino"
+        },
+        {
+          "id": 3,
+          "label": "Jili",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "New",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 4,
+          "label": "Motivation",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "Hot",
+          "link": "/Games/casino/pragmatic-play"
+        }
+      ]
+    },
+    "spb": {
+      "GameCards": {
+        "games": [
+          {
+            "id": 1,
+            "title": "Zombie Party",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12001_dbnecn.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Fishing God",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12002_zlq6w8.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Fishing War",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12003_rg3cg1.jpg"
+          },
+          {
+            "id": 4,
+            "title": "Alien Hunter",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12004_ns20cj.jpg"
+          },
+          {
+            "id": 5,
+            "title": "Alien Hunter",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182913/imgame12005_cwzah8.jpg"
+          },
+          {
+            "id": 6,
+            "title": "Alien Hunter",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182913/imgame12006_wplr6g.jpg"
+          },
+          {
+            "id": 7,
+            "title": "Alien Hunter",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182914/imgame12007_phsqrz.jpg"
+          },
+          {
+            "id": 8,
+            "title": "Alien Hunter",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182915/imgame12008_tuyceh.jpg"
+          },
+          {
+            "id": 9,
+            "title": "Alien Hunter",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182916/imgame12009_d6gidd.jpg"
+          }
+        ]
+      },
+      "HeaderTabs": {
+        "tabs": [
+          {
+            "id": 1,
+            "label": "All Games",
+            "active": true
+          },
+          {
+            "id": 2,
+            "label": "Hot Games",
+            "active": false
+          },
+          {
+            "id": 3,
+            "label": "New Games",
+            "active": false
+          }
+        ],
+        "sortOptions": {
+          "popularity": "Popularity",
+          "newest": "Newest",
+          "featured": "Featured"
+        },
+        "searchPlaceholder": "Search"
+      }
+    }
+  },
+  "promotion": {
+    "defaultMessage": "No content available",
+    "Countdown": {
+      "text": "Remaining Time",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "Tabs": {
+      "tabs": [
+        {
+          "name": "New Member",
+          "id": "new_member"
+        },
+        {
+          "name": "Slots",
+          "id": "slots"
+        },
+        {
+          "name": "Casino",
+          "id": "casino"
+        },
+        {
+          "name": "Esports",
+          "id": "esport"
+        },
+        {
+          "name": "Sports",
+          "id": "sports"
+        },
+        {
+          "name": "Fishing",
+          "id": "fishing"
+        },
+        {
+          "name": "VIP",
+          "id": "vip"
+        },
+        {
+          "name": "Lottery",
+          "id": "lottery"
+        },
+        {
+          "name": "Special Events",
+          "id": "special"
+        },
+        {
+          "name": "Crypto",
+          "id": "crypto"
+        }
+      ]
+    },
+    "NewMemberTab": {
+      "promotions": [
+        {
+          "title": "288% 'Have You BK8?' Welcome Bonus",
+          "description": "Power up your play with a 288% 'Have You BK8?' Welcome Bonus and receive up to MYR 2,880!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183976/20240723044632-a93b5695-3fd7-4b1f-b15e-4a7f997ee8bc_orvzie.jpg",
+          "time": "72 : 09 : 01 : 45"
+        },
+        {
+          "title": "150% Welcome Bonus",
+          "description": "Welcome to BK8! Make your first deposit and get up to MYR 300 in bonus credits! (First promotion application only)",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183975/20240723044519-b482ae48-a353-4d8d-9597-d074a75c2e4f_uvotup.jpg",
+          "time": "72 : 09 : 01 : 45"
+        },
+        {
+          "title": "Claim 188 Slots Free Spins",
+          "description": "Make a deposit and claim up to 188 free spins! Exclusive for newly registered members!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183974/20240723044310-53adf0af-40fc-43c0-9d77-e43afb8954aa_j1k8xz.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "CNY 2025 Snake Gold Bar Challenge",
+          "description": "Give your 2025 a golden start with our Snake Gold Bar! Deposit MYR 500,000 and win a gold bar now!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183973/20240523104206-4602e816-8930-4704-9981-de9ced8b1367_vmgjsg.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "BK8 Sports Free Bet Challenge and Mystery Box",
+          "description": "Win endless rewards in BK8 Sports! Join challenges for free bets and earn mystery coins for mystery boxes!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183972/20240520161728-5dd628c7-d3d5-4591-bb51-fae596dd467e_knlaca.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "Spadegaming Play & Win Tournament",
+          "description": "Play Spadegaming slot games for instant wins! Boost your fortunes from the prize pool of MYR 2,568,150 with bets as low as MYR 4.5!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183918/20240520161610-e338744f-3b1d-4668-bf32-2a895b556f99_jmdxvs.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "Spadegaming Fishing Frenzy Tournament",
+          "description": "Turn your MYR 4.5 bet into a massive win worth up to MYR 2,568,150 in Spadegaming! Get your game on now!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183917/20240520161407-22522f67-f31c-4ec4-b410-fcc3bebecd3a_iligqy.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "BK8 Exclusive Debit Card",
+          "description": "You are invited to join our BK8 Exclusive Debit Card Program!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183917/20230614135145-f7767e0f-9f0b-4880-a620-5e95f91511f1_cwf9rp.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "BK8 Rewards Club",
+          "description": "New in BK8! Get active and earn points to exchange for luxury items in our Rewards Club!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183916/20230531074715-1de8b68f-25f2-4364-a1f7-82fee1f691f4_qgskvu.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "Lucky Wheel Spin: Login and Win Special Prizes",
+          "description": "Want more spins? Complete easy daily missions and earn activity points!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183915/20230226104118-112daf38-936d-4c12-8401-0838c98f2335_l9ldtm.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "Refer A Friend & VIP Program",
+          "description": "New and improved! Enjoy up to MYR 3,888 bonus for referring friends to join BK8 as VIP!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183915/20230226104118-112daf38-936d-4c12-8401-0838c98f2335_l9ldtm.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "You Play, We Pay",
+          "description": "Here’s MYR 200 for your first bet. Go ahead, make your best bet!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183915/20221030165241-f9ad1d22-c11a-403a-add1-04dd175a7c8a_ulyqmn.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "Baccarat Natural 8 Lose to Natural 9 Cashback",
+          "description": "Let us share your losses! Get up to MYR 888 cashback when you lose natural 8 to natural 9!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183914/20220930062421-17b1db40-fa60-472b-8273-798aac143713_xt1qnh.jpg",
+          "time": "71 : 09 : 01 : 45"
+        }
+      ],
+      "buttons": {
+        "moreInfo": "More Info",
+        "joinNow": "Join Now"
+      },
+      "countdown": {
+        "label": "Remaining Time"
+      }
+    },
+    "promotionModal": {
+      "title": "288% 'Have You BK8?' Welcome Bonus",
+      "promotionPeriod": "Promotion Period: January 1, 2025, 00:00:00 (GMT+8) to March 31, 2025, 23:59:59 (GMT+8)",
+      "joinNow": "Join Now",
+      "countdownLabel": "Remaining Time",
+      "eventDetails": {
+        "title": "Event Details",
+        "table": {
+          "headers": [
+            "Minimum Deposit",
+            "Bonus",
+            "Maximum Bonus",
+            "Turnover Requirement",
+            "Validity Period"
+          ],
+          "rows": [
+            [
+              "MYR 50",
+              "288%",
+              "MYR 2,880",
+              "35x",
+              "30 Days"
+            ]
+          ]
+        }
+      },
+      "howToApply": {
+        "title": "How to Apply",
+        "steps": [
+          "Register a BK8 account. Not a member yet? [Click here to register](#).",
+          "All first-time deposit MYR account members are eligible for this promotion.",
+          "Members must transfer a minimum of MYR 50 to the designated slot provider wallet to claim the bonus.",
+          "Go to the [Transfer] page and select 'Transfer'.",
+          "Enter the amount you want to transfer from the [Main Wallet] to the designated [Provider] wallet.",
+          "Select the applicable [Promo Code] from the promo code dropdown menu."
+        ]
+      },
+      "applicableProviders": {
+        "title": "Applicable Providers",
+        "table": {
+          "headers": [
+            "Game Type",
+            "Applicable Providers"
+          ],
+          "rows": [
+            [
+              "Slots",
+              "Pragmatic Play, Habanero, RedTiger, GoldenBay, CQ9, Fa Chai, Spribe, Relax Gaming, YGGDrasil, Advantplay, BBIN, Expanse Studio, V-Power, Evoplay"
+            ]
+          ]
+        }
+      },
+      "termsAndConditions": {
+        "title": "Terms & Conditions",
+        "points": [
+          "This promotion applies to all slot providers except JDB, PlayStar, Nextspin, Spadegaming, YesGetRich, Joker, JiLi, Funky Games, PlayTech, Dragoon Soft, FastSpin, GamePlay, AsiaGaming, Microgaming, 918Kiss, and Mega888.",
+          "The bonus will be automatically credited to your designated provider wallet after a successful transfer.",
+          "The bonus is valid for 30 days. If the turnover requirement is not met within this period, both the bonus and winnings will be forfeited.",
+          "Bets that are void, tied, canceled, or hedged do not count towards the turnover requirement.",
+          "All non-live table games (e.g., Blackjack, Video Poker, Craps, American Roulette, Baccarat, etc.) do not count towards the turnover requirement unless otherwise stated.",
+          "Each member is allowed to apply for this promotion only once.",
+          "BK8 reserves the right to modify, cancel, or terminate this promotion at any time.",
+          "BK8 holds the final interpretation of this promotion.",
+          "All members must accept these terms and comply with BK8’s relevant rules.",
+          "[Applicable BK8 General Terms & Conditions](#)"
+        ]
+      },
+      "promotionDetails": {
+        "title": "Promotion Details",
+        "example": {
+          "title": "Turnover Calculation Example",
+          "table": {
+            "headers": [
+              "Deposit Amount",
+              "Bonus (288%)",
+              "Required Turnover"
+            ],
+            "rows": [
+              [
+                "MYR 100",
+                "+ MYR 288",
+                "MYR 13,580"
+              ]
+            ]
+          }
+        }
+      },
+      "additionalTerms": {
+        "title": "Additional Terms & Conditions",
+        "points": [
+          "The promotion is subject to availability. It applies to all slot providers except JDB, PlayStar, Nextspin, Spadegaming, YesGetRich, Joker, JiLi, Funky Games, PlayTech, Dragoon Soft, FastSpin, GamePlay, AsiaGaming, Microgaming, 918Kiss, and Mega888.",
+          "The bonus will be credited to your chosen provider wallet after a successful transfer.",
+          "The bonus is valid for 30 days from the date of issuance unless otherwise stated. If the turnover requirement is not met within the specified time, any winnings from the bonus will be deducted from the member's account.",
+          "Any bets that result in void, tie, cancellation, or opposite outcomes will not be counted as valid turnover.",
+          "All types of non-live table games (e.g., Blackjack, Video Poker, Dice, American Roulette, Baccarat, etc.), non-slot games, and arcade games will not count towards the turnover requirement unless specifically stated.",
+          "Members who have claimed this promotion are not allowed to make a second transfer to the same provider while the promotion is active, <strong>EXCEPT</strong> for members who have met the turnover requirement or if the promotion is canceled.",
+          "All customer offers are limited to one per person, meaning one per household, address, IP address, email address, phone number, credit or debit card, e-payment account, or shared computer (e.g., school, public library, or workplace).",
+          "This promotion cannot be used in conjunction with other BK8 promotions.",
+          "BK8 reserves the right to modify, cancel, suspend, or terminate this promotion and/or change the promotion terms at any time without prior notice.",
+          "If any customer or group is found to be in violation of any clause, BK8 reserves the right to confiscate all bonuses/winnings and has the final decision.",
+          "BK8 has the sole discretion to interpret the terms of this promotion.",
+          "Participating members must accept and comply with all the above terms and all relevant rules and regulations stated on the BK8 website.",
+          "Applies to <a href='/info-centre' class='text-blue-500 hover:underline'>BK8 General Terms & Conditions</a>."
+        ]
+      }
+    }
+  },
+  "vip": {
+    "BackgroundImageSection": {
+      "title": "Supreme",
+      "mainTitle": "VIP Lounge",
+      "description": "BK8 is going to show you how great it is to be our VIP,\nstay tuned for something awesome.",
+      "navigation": {
+        "about": "About",
+        "upgrade": "Upgrade",
+        "benefits": "Benefits",
+        "faq": "FAQ",
+        "referral": "Referral"
+      }
+    },
+    "VIPSection": {
+      "heading": "Become a BK8 VIP",
+      "subheading": "Experience unparalleled exclusivity – special promotions, gifts, and rewards.",
+      "highlight": "Beyond Your Expectations!",
+      "description": {
+        "part1": "As Cambodia’s most innovative and comprehensive online gaming platform, BK8 continuously strives to provide the highest quality service for its members. From game options to service standards, BK8 offers the latest and the best experiences.",
+        "part2": "To take it a step further, BK8 has introduced an exclusive VIP program designed to give loyal members even more reasons to trust us. The BK8 VIP program consists of five tiers: Bronze, Silver, Gold, Platinum, and Diamond.",
+        "part3": "The purpose of having a tiered system is to provide members with incentives for upgrading. While we encourage members to meet the VIP tier requirements and progress, our primary focus remains on member satisfaction, especially the VIP experience."
+      }
+    },
+    "VIPTierSection": {
+      "title": "Minimum Monthly Deposit"
+    },
+    "HowItWorksSection": {
+      "title": "How Does It Work?",
+      "subtitle": "BK8 VIP Journey",
+      "steps": [
+        "Regular members will automatically be upgraded to VIP members after meeting the deposit requirements within the given timeframe.",
+        "Please allow the system up to 2 working days to verify and update your data.",
+        "Sit back, relax, and start enjoying your VIP rewards!"
+      ],
+      "firstTimeUpgrade": {
+        "title": "Important Notice for First-Time Upgrades",
+        "description": [
+          "For your safety and security, you are required to provide all necessary details as stated in the BK8 VIP upgrading policy. Our team will take up to 2 working days to review and verify the information you provide. Once completed, we will update your latest status and information in our system, and your VIP journey will officially begin!",
+          "To ensure a smooth and efficient upgrade process, please adhere to all upgrading regulations. If you need assistance, feel free to contact our",
+          "Customer Service"
+        ]
+      }
+    },
+    "VIPBenefitsTable": {
+      "title": "VIP Benefits Table",
+      "lastUpdated": "Last Updated: (2024-12-06)",
+      "headers": [
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Platinum",
+        "Diamond"
+      ],
+      "rows": [
+        {
+          "benefit": "Dedicated Account Manager",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "Yes",
+            "Yes"
+          ]
+        },
+        {
+          "benefit": "Maximum Daily Withdrawal Limit",
+          "values": [
+            "20,000",
+            "25,000",
+            "35,000",
+            "45,000",
+            "By Invitation"
+          ]
+        },
+        {
+          "benefit": "Daily Bank Withdrawal Limit",
+          "values": [
+            "15,000",
+            "20,000",
+            "30,000",
+            "40,000",
+            "By Invitation"
+          ]
+        },
+        {
+          "benefit": "Daily Crypto Withdrawal Limit",
+          "values": [
+            "20,000",
+            "25,000",
+            "35,000",
+            "45,000",
+            "By Invitation"
+          ]
+        },
+        {
+          "benefit": "Daily Transaction Counts",
+          "values": [
+            "10",
+            "15",
+            "15",
+            "15",
+            "By Invitation"
+          ]
+        },
+        {
+          "benefit": "Tier Upgrade Bonus",
+          "values": [
+            "50",
+            "150",
+            "300",
+            "500",
+            "1,000"
+          ]
+        },
+        {
+          "benefit": "Weekly Rescue Bonus",
+          "values": [
+            "288",
+            "388",
+            "588",
+            "688",
+            "1,288"
+          ]
+        },
+        {
+          "benefit": "Birthday Bonus",
+          "values": [
+            "188",
+            "288",
+            "388",
+            "588",
+            "888"
+          ]
+        },
+        {
+          "benefit": "Sports Rebate",
+          "values": [
+            "0.30%",
+            "0.40%",
+            "0.50%",
+            "0.60%",
+            "0.70%"
+          ]
+        },
+        {
+          "benefit": "BK8 Sports Rebate",
+          "values": [
+            "0.40%",
+            "0.50%",
+            "0.60%",
+            "0.70%",
+            "0.80%"
+          ]
+        },
+        {
+          "benefit": "Live Casino Rebate - Baccarat",
+          "values": [
+            "0.30%",
+            "0.40%",
+            "0.50%",
+            "0.60%",
+            "0.70%"
+          ]
+        },
+        {
+          "benefit": "Live Casino Rebate - Roulette, Blackjack, Dragon Tiger, Sic Bo",
+          "values": [
+            "0.20%",
+            "0.30%",
+            "0.40%",
+            "0.50%",
+            "0.60%"
+          ]
+        },
+        {
+          "benefit": "Slot Rebate",
+          "values": [
+            "0.50%",
+            "0.60%",
+            "0.70%",
+            "0.80%",
+            "1.00%"
+          ]
+        },
+        {
+          "benefit": "Virtual Sports Rebate",
+          "values": [
+            "0.50%",
+            "0.60%",
+            "0.70%",
+            "0.80%",
+            "0.90%"
+          ]
+        },
+        {
+          "benefit": "Monthly Tier Upgrade Requirement",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "benefit": "Minimum Deposit",
+          "values": [
+            "15,000",
+            "60,000",
+            "150,000",
+            "250,000",
+            "By Invitation"
+          ]
+        },
+        {
+          "benefit": "Membership Renewal",
+          "values": [
+            "Lifetime",
+            "Lifetime",
+            "3 Months",
+            "3 Months",
+            "3 Months"
+          ]
+        }
+      ]
+    },
+    "FAQAndTerms": {
+      "FAQ": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How do I upgrade to BK8 VIP?",
+            "answer": "There are multiple ways to become a BK8 VIP member:\n(1) By depositing the required amount within the stated timeframe\n(2) By special invitation"
+          },
+          {
+            "question": "Can BK8 VIP members reserve annual rewards?",
+            "answer": "All rewards are based on a first come, first served basis and are available while stocks last."
+          },
+          {
+            "question": "How is the deposit amount calculated?",
+            "answer": "Deposit and turnover requirements are calculated based on the accumulated amount from the first day to the last day of the respective month."
+          },
+          {
+            "question": "When can I start enjoying the benefits as a BK8 VIP member?",
+            "answer": "Members are entitled to enjoy special promotions and benefits starting from the first day after successfully upgrading to the VIP level."
+          }
+        ]
+      },
+      "TermsAndConditions": {
+        "title": "Terms & Conditions",
+        "content": [
+          "BK8 reserves the right to modify, cancel, terminate, or suspend the rewards redemption or any part thereof, including applicable terms and conditions, at any time without prior notice.",
+          "Members participating in the VIP program must accept and comply with the above rules and terms, as well as all relevant rules and terms implemented by BK8 on the website.",
+          "General BK8 Terms & Conditions apply."
+        ]
+      }
+    },
+    "ReferralSection": {
+      "title": "Spread the Word - Share the Reward",
+      "subtitle": "Get rewarded for referring!",
+      "description": [
+        "Our referral program offers existing VIP members even more rewards for inviting friends and family to join our VIP program.",
+        "The BK8 Referral Program is designed to provide additional rewards to existing members, encouraging them to share the benefits of being a VIP member. This is our way of appreciating your loyalty and contribution to growing the BK8 VIP community. Know someone who would love to join your VIP club? Refer them now – exciting rewards and bonuses await!",
+        "For more information on how to refer, follow the steps below:"
+      ],
+      "howToReferTitle": "How to Refer?",
+      "howToReferSteps": [
+        "Refer a friend or relative.",
+        "Both the referrer and referee will each receive a referral bonus of USD 300 after the referee successfully becomes a valid VIP member.",
+        "The referred member must deposit USD 15,000 within 30 days to be considered a valid VIP member.",
+        "Only first-time VIP applicants are eligible for the referral bonus."
+      ]
+    },
+    "Testimonials": {
+      "title": "What Our VIP Members Say...",
+      "testimonials": [
+        {
+          "title": "Highly recommended if you're a high roller!",
+          "description": "I've registered on many betting platforms, but BK8's exclusive VIP rewards and personalized experience are unmatched. That's why I choose to play here.",
+          "stars": 5
+        },
+        {
+          "title": "Truly specialized in crypto deposits and withdrawals",
+          "description": "I've been looking for a platform that accepts cryptocurrency. BK8 makes deposits and withdrawals very convenient, which is why I play here.",
+          "stars": 5
+        },
+        {
+          "title": "Haven't seen a better VIP experience than BK8~",
+          "description": "I really love being their GOLD VIP. Their hospitality and thoughtful gifts always surprise me.",
+          "stars": 5
+        },
+        {
+          "title": "The ultimate VIP experience!",
+          "description": "BK8 provides the best experience for VIP members. They pamper you with lucrative bonuses, promotions, and gifts, ensuring you have a great time here!",
+          "stars": 5
+        }
+      ]
+    }
   }
 }

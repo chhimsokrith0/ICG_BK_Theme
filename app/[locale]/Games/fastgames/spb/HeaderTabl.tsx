@@ -1,13 +1,17 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 
+interface Tab {
+    id: number;
+    label: string;
+    active: boolean;
+} 
 const HeaderTabs = () => {
-    const tabs = [
-        { id: 1, label: "All games", active: true },
-        { id: 2, label: "Hot games", active: false },
-        { id: 3, label: "New games", active: false }
-    ];
+    const t = useTranslations("fastgames.spb.HeaderTabs");
+
+    const tabs: Tab[] = t.raw("tabs");
 
     const [activeTab, setActiveTab] = useState(1);
 
@@ -41,9 +45,9 @@ const HeaderTabs = () => {
                     <select
                         className="border border-gray-300 rounded-full px-4 py-2 text-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
                     >
-                        <option value="popularity">Popularity</option>
-                        <option value="newest">Newest</option>
-                        <option value="featured">Featured</option>
+                        <option value="popularity">{t('sortOptions.popularity')}</option>
+                        <option value="newest">{t('sortOptions.newest')}</option>
+                        <option value="featured">{t('sortOptions.featured')}</option>
                     </select>
                 </div>
 
@@ -51,7 +55,7 @@ const HeaderTabs = () => {
                 <div className="relative">
                     <input
                         type="text"
-                        placeholder="Search"
+                        placeholder={t('searchPlaceholder')}
                         className="border border-gray-300 rounded-full px-4 py-2 pr-10 text-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
                     />
                     <i className="absolute right-3 top-2 text-gray-500 fas fa-search"></i>

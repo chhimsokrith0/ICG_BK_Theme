@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-
+import { useTranslations } from 'next-intl';
 const BackgroundImageSection = () => {
+    const t = useTranslations('vip.BackgroundImageSection');
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -32,11 +33,10 @@ const BackgroundImageSection = () => {
 
             {/* Text Content */}
             <div className="absolute bottom-16 md:bottom-32 lg:bottom-60 inset-0 flex flex-col items-start justify-center px-6 md:px-16 lg:pl-60 text-white space-y-3 md:space-y-4">
-                <h2 className="text-xs sm:text-sm md:text-lg font-medium uppercase">Supreme</h2>
-                <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold">VIP Lounge</h1>
+                <h2 className="text-xs sm:text-sm md:text-lg font-medium uppercase">{t('title')}</h2>
+                <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold">{t('mainTitle')}</h1>
                 <p className="text-[10px] sm:text-xs md:text-sm lg:text-lg leading-relaxed">
-                    BK8 is going to show you how great it is to be our VIP,
-                    <br className="hidden md:block" /> stay tuned for something awesome.
+                    {t('description')}
                 </p>
             </div>
 
@@ -47,31 +47,31 @@ const BackgroundImageSection = () => {
                         href="#about"
                         className="bg-yellow-600 text-white py-1 px-2 sm:py-2 sm:px-3 md:py-2 md:px-4 rounded-full hover:bg-yellow-500 transition text-[10px] sm:text-xs md:text-sm"
                     >
-                        About
+                        {t('navigation.about')}
                     </a>
                     <a
                         href="#upgrade"
                         className="hover:text-white transition text-[10px] sm:text-xs md:text-sm"
                     >
-                        Upgrade
+                         {t('navigation.upgrade')}
                     </a>
                     <a
                         href="#benefits"
                         className="hover:text-white transition text-[10px] sm:text-xs md:text-sm"
                     >
-                        Benefits
+                        {t('navigation.benefits')}
                     </a>
                     <a
                         href="#faq"
                         className="hover:text-white transition text-[10px] sm:text-xs md:text-sm"
                     >
-                        FAQ
+                        {t('navigation.faq')}
                     </a>
                     <a
                         href="#referral"
                         className="hover:text-white transition text-[10px] sm:text-xs md:text-sm"
                     >
-                        Referral
+                        {t('navigation.referral')}
                     </a>
                 </div>
             </div>

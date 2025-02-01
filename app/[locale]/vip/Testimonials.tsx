@@ -4,37 +4,24 @@ import React from "react";
 import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslations } from "next-intl";
+
+
+interface Testimonial {
+  title: string;
+  description: string;
+  stars: number;
+}
 
 // Dynamically import react-slick for SSR compatibility
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 export function Testimonials() {
-  const testimonials = [
-    {
-      title: "Highly recommend if you're a high roller!",
-      description:
-        "I registered in a lot of betting platforms but nothing beats BK8's exclusive rewards and personalised experience for their VIPs. That's why I play here.",
-      stars: 5,
-    },
-    {
-      title: "Truly specialise in crypto deposit and withdrawal",
-      description:
-        "I've been searching for a platform that accepts crypto. BK8 is convenient in depositing or withdrawing with crypto. That's why I play here.",
-      stars: 5,
-    },
-    {
-      title: "Haven't seen such nice treatment than BK8~",
-      description:
-        "I really like being their GOLD VIP. I am always positively surprised by their hospitality and thoughtful gifts that I truly enjoy.",
-      stars: 5,
-    },
-    {
-      title: "Fantastic VIP experience!",
-      description:
-        "You can expect the best VIP experience with BK8. They spoil you with lucrative bonuses, offers, and gifts, making sure you're a happy camper here!",
-      stars: 5,
-    },
-  ];
+
+  const t = useTranslations("vip.Testimonials");
+
+
+  const testimonials: Testimonial[] = t.raw('testimonials');
 
   const settings = {
     dots: true,
@@ -68,7 +55,7 @@ export function Testimonials() {
     <section className="bg-[#0b2134] py-16">
       <div className="max-w-[1400px] mx-auto px-6 text-center">
         <h2 className="text-yellow-500 text-lg font-semibold mb-8">
-          Here's what our customers say about being a VIP...
+          {t("title")}
         </h2>
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (

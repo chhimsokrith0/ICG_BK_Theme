@@ -1778,5 +1778,484 @@
       },
       "joinNow": "ចូលរួមឥឡូវនេះ"
     }
+  },
+  "4d": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736858449/4d-bn_gutbu4.png",
+        "alt": "បដាប៊ីឡើយ 4D"
+      },
+      "textOverlay": {
+        "title": "ឆ្នោត 4D"
+      }
+    },
+    "Tab4d": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Grand Dragon",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/4d/granddragon"
+        }
+      ]
+    },
+    "Footer": {
+      "disclaimer": {
+        "title": "ការបដិសេធទំនួលខុសត្រូវ៖",
+        "content": "មាតិកាដែលបង្ហាញនៅលើទំព័រនេះត្រូវបានផ្ដល់ដោយក្រុមហ៊ុនផ្ដល់សេវា 4D ដែលទាក់ទងនិងគឺសម្រាប់ព័ត៌មានទូទៅប៉ុណ្ណោះ។ ទោះបីជាមានការបង្ហាញព័ត៌មានដោយមានសុចរិតក៏ដោយ យើងមិនធានា ឬតំណាងឲ្យភាពត្រឹមត្រូវ សុពលភាព ការផ្សាយពេល និង/ឬការបំពេញលម្អិតនៃលទ្ធផលហ្គេមដែលបានបោះពុម្ពផ្សាយនៅលើទំព័រនេះឡើយ។ វេបសាយនេះអាចមានតំណភ្ជាប់ទៅកាន់វេបសាយបុគ្គលទីបី ការផ្សាយពាណិជ្ជកម្ម សេវាកម្ម ឬមាតិកាដែលមិនមានការជាកម្មសិទ្ធិ ឬការគ្រប់គ្រងដោយ BK8។ ការចូលប្រើនិងប្រើប្រាស់វេបសាយរបស់យើងមានន័យថាប្រើប្រាស់បានទទួលស្គាល់ និងយល់ព្រមថាបានអាននិងយល់ដឹងអំពីការប៉ាន់ស្មានហានិភ័យខាងលើ។ ក្នុងករណីណាមួយយើងនឹងមិនទទួលខុសត្រូវចំពោះការខាតបង់ ឬការខូចខាតដែលលើកលែងដោយការប្រើប្រាស់វេបសាយ ឬការពឹងផ្អែកលើព័ត៌មានរបស់វេបសាយនោះឡើយ។ យើងមិនទទួលខុសត្រូវ ឬអះអាងលើវេបសាយបុគ្គលទីបី ព័ត៌មាន សម្ភារៈ ផលិតផល ឬសេវាកម្មណាមួយទេ។ យើងមិនមានទំនួលខុសត្រូវចំពោះការត្រួតពិនិត្យប្រតិបត្តិការរវាងអ្នកប្រើប្រាស់ និងក្រុមហ៊ុនផ្ដល់សេវាកម្មបុគ្គលទីបីទេ។ គ្រប់សញ្ញាសិទ្ធិអាជ្ញាប័ណ្ណនិងឈ្មោះផលិតផលទាំងអស់គឺជាកម្មសិទ្ធិរបស់ម្ចាស់ដែលពាក់ព័ន្ធ។ វេបសាយនេះមិនមានទំនាក់ទំនងជាមួយអង្គការ ដែលត្រូវបានភ្ជាប់ឬបានពិពណ៌នាទេ។"
+      },
+      "appDownload": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736921418/app-download_mezkyi.jpg",
+        "alt": "ទាញយកកម្មវិធី"
+      },
+      "bonusSection": {
+        "welcomeBonus": {
+          "amount": "150%",
+          "label": "ប្រាក់រង្វាន់ស្វាគមន៍"
+        },
+        "weeklyRescueBonus": {
+          "amount": "MYR 6,888",
+          "label": "ប្រាក់រង្វាន់សងបង់ប្រចាំសប្ដាហ៍"
+        },
+        "cryptoCasino": {
+          "amount": "#1 កាស៊ីណូ Crypto",
+          "label": "មានអាជ្ញាប័ណ្ណពេញលេញនៅអាស៊ី"
+        }
+      },
+      "joinNow": "ចូលរួមឥឡូវនេះ"
+    }
+  },
+  "lottery": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737088068/lottery-bn_MY_hafegz.jpg",
+        "alt": "បដាឡូតូ"
+      },
+      "textOverlay": {
+        "title": "ឡូតូ",
+        "subtitle": "ភ្នាល់ទាប កម្រៃខ្ពស់",
+        "description": "បើកដំណើរការថ្មី 'KENO' ពី BK8,\nហ្គេមងាយៗដែលលេងបានរៀងរាល់ 30 វិនាទី"
+      }
+    },
+    "LotteryTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "QQKeno",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/lottery/qqkeno"
+        },
+        {
+          "id": 2,
+          "label": "Funky Games",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/lottery/funkygames"
+        },
+        {
+          "id": 3,
+          "label": "TC Gaming",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "",
+          "link": "/Games/lottery/tcg"
+        }
+      ]
+    },
+    "Footer": {
+      "appDownload": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737090573/app-download_qrcnvh.jpg",
+        "alt": "ទាញយកកម្មវិធី"
+      },
+      "bonusSection": {
+        "welcomeBonus": {
+          "amount": "150%",
+          "label": "ប្រាក់អបអរសាទរ"
+        },
+        "weeklyRescueBonus": {
+          "amount": "MYR 6,888",
+          "label": "ប្រាក់បង្វិលសប្តាហ៍"
+        },
+        "cryptoCasino": {
+          "amount": "#1 កាស៊ីណូក្រិបតូ",
+          "label": "មានអាជ្ញាបណ្ណពេញលេញនៅអាស៊ី"
+        }
+      },
+      "joinNow": "ចូលរួមឥឡូវនេះ"
+    },
+    "qqkeno": {
+      "HeaderTabs": {
+        "tabs": [
+          {
+            "id": 1,
+            "label": "ទាំងអស់",
+            "active": true
+          },
+          {
+            "id": 2,
+            "label": "ហ្គេមពេញនិយម",
+            "active": false
+          },
+          {
+            "id": 3,
+            "label": "ហ្គេមថ្មី",
+            "active": false
+          }
+        ]
+      }
+    }
+  },
+  "fastgames": {
+    "Header": {
+      "backgroundImage": {
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737112860/fastgames-bn_zs2ojf.jpg",
+        "alt": "បដាហ្គេមលឿន"
+      },
+      "textOverlay": {
+        "title": "ហ្គេមលឿន",
+        "subtitle": "ផ្តល់ឱ្យអ្នកនូវជ័យជម្នះលឿនជាងមុន",
+        "description": "ចុះឈ្មោះថ្ងៃនេះ ដើម្បីទទួលបានរង្វាន់ដែលមិនអស់"
+      }
+    },
+    "fastgamesTab": {
+      "tabs": [
+        {
+          "id": 1,
+          "label": "Spribe",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/fastgames/spb"
+        },
+        {
+          "id": 2,
+          "label": "T1Games",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/ae-casino"
+        },
+        {
+          "id": 3,
+          "label": "Jili",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ថ្មី",
+          "link": "/Games/casino/bk8-casino"
+        },
+        {
+          "id": 4,
+          "label": "Motivation",
+          "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+          "tag": "ពេញនិយម",
+          "link": "/Games/casino/pragmatic-play"
+        }
+      ]
+    },
+    "spb": {
+      "GameCards": {
+        "games": [
+          {
+            "id": 1,
+            "title": "បារៀងអណ្ដើក",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12001_dbnecn.jpg"
+          },
+          {
+            "id": 2,
+            "title": "ទេពឆ្លងទឹក",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12002_zlq6w8.jpg"
+          },
+          {
+            "id": 3,
+            "title": "សង្គ្រាមនេសាទ",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12003_rg3cg1.jpg"
+          },
+          {
+            "id": 4,
+            "title": "អ្នកប្រមាញ់អាឡិន",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12004_ns20cj.jpg"
+          },
+          {
+            "id": 5,
+            "title": "អ្នកប្រមាញ់អាឡិន",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182913/imgame12005_cwzah8.jpg"
+          },
+          {
+            "id": 6,
+            "title": "អ្នកប្រមាញ់អាឡិន",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182913/imgame12006_wplr6g.jpg"
+          },
+          {
+            "id": 7,
+            "title": "អ្នកប្រមាញ់អាឡិន",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182914/imgame12007_phsqrz.jpg"
+          },
+          {
+            "id": 8,
+            "title": "អ្នកប្រមាញ់អាឡិន",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182915/imgame12008_tuyceh.jpg"
+          },
+          {
+            "id": 9,
+            "title": "អ្នកប្រមាញ់អាឡិន",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182916/imgame12009_d6gidd.jpg"
+          }
+        ]
+      },
+      "HeaderTabs": {
+        "tabs": [
+          {
+            "id": 1,
+            "label": "ហ្គេមទាំងអស់",
+            "active": true
+          },
+          {
+            "id": 2,
+            "label": "ហ្គេមពេញនិយម",
+            "active": false
+          },
+          {
+            "id": 3,
+            "label": "ហ្គេមថ្មី",
+            "active": false
+          }
+        ],
+        "sortOptions": {
+          "popularity": "ពេញនិយម",
+          "newest": "ថ្មីបំផុត",
+          "featured": "លក្ខណៈពិសេស"
+        },
+        "searchPlaceholder": "ស្វែងរក"
+      }
+    }
+  },
+  "promotion": {
+    "defaultMessage": "មិនមានមាតិកា",
+    "Countdown": {
+      "text": "ពេលដែលនៅសល់",
+      "days": "ថ្ងៃ",
+      "hours": "ម៉ោង",
+      "minutes": "នាទី",
+      "seconds": "វិនាទី"
+    },
+    "Tabs": {
+      "tabs": [
+        {
+          "name": "សមាជិកថ្មី",
+          "id": "new_member"
+        },
+        {
+          "name": "ស្លុត",
+          "id": "slots"
+        },
+        {
+          "name": "កាស៊ីណូ",
+          "id": "casino"
+        },
+        {
+          "name": "អេស្ប៉ត",
+          "id": "esport"
+        },
+        {
+          "name": "កីឡា",
+          "id": "sports"
+        },
+        {
+          "name": "ត្រីមាស",
+          "id": "fishing"
+        },
+        {
+          "name": "VIP",
+          "id": "vip"
+        },
+        {
+          "name": "ឡូតូ",
+          "id": "lottery"
+        },
+        {
+          "name": "ព្រឹត្តិការណ៍ពិសេស",
+          "id": "special"
+        },
+        {
+          "name": "Cryptocurrency",
+          "id": "crypto"
+        }
+      ]
+    },
+    "NewMemberTab": {
+      "promotions": [
+        {
+          "title": "288% \"តើអ្នកមាន BK8 ឬទេ?\" ប្រាក់រង្វាន់ស្វាគមន៍",
+          "description": "បង្កើនបទពិសោធន៍លេងរបស់អ្នកជាមួយ 288% \"តើអ្នកមាន BK8 ឬទេ?\" ប្រាក់រង្វាន់ស្វាគមន៍ និងទទួលបានរហូតដល់ MYR 2,880!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183976/20240723044632-a93b5695-3fd7-4b1f-b15e-4a7f997ee8bc_orvzie.jpg",
+          "time": "72 : 09 : 01 : 45"
+        },
+        {
+          "title": "150% ប្រាក់រង្វាន់ស្វាគមន៍",
+          "description": "ស្វាគមន៍មកកាន់ BK8! ដាក់ប្រាក់ដំបូង រួចទទួលបានប្រាក់រង្វាន់រហូតដល់ MYR 300! (សម្រាប់ការចុះឈ្មោះលើកដំបូងប៉ុណ្ណោះ)",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183975/20240723044519-b482ae48-a353-4d8d-9597-d074a75c2e4f_uvotup.jpg",
+          "time": "72 : 09 : 01 : 45"
+        },
+        {
+          "title": "ទទួលបាន 188 ដង Free Spins ល្បែងស្លុត",
+          "description": "ដាក់ប្រាក់ ហើយទទួលបានរហូតដល់ 188 Free Spins! សម្រាប់សមាជិកថ្មីប៉ុណ្ណោះ!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183974/20240723044310-53adf0af-40fc-43c0-9d77-e43afb8954aa_j1k8xz.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "ការប្រកួតឈ្នះដុំមាស ឆ្នាំ 2025",
+          "description": "ចាប់ផ្តើមឆ្នាំ 2025 របស់អ្នកជាមួយមាសដ៏មានតម្លៃ! ដាក់ប្រាក់ MYR 500,000 ហើយឈ្នះដុំមាស!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183973/20240523104206-4602e816-8930-4704-9981-de9ced8b1367_vmgjsg.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "BK8 ការប្រកួត Free Bet និងប្រអប់អាថ៌កំបាំង",
+          "description": "ឈ្នះរង្វាន់គ្មានទីបញ្ចប់នៅ BK8 Sports! ចូលរួមការប្រកួតដើម្បីទទួលបាន Free Bets និងប្រមូលកាក់អាថ៌កំបាំង!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183972/20240520161728-5dd628c7-d3d5-4591-bb51-fae596dd467e_knlaca.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "ការប្រកួត Spadegaming លេងហើយឈ្នះ",
+          "description": "លេងល្បែងស្លុត Spadegaming ហើយឈ្នះរង្វាន់ភ្លាមៗ! ដាក់ដំបូងត្រឹមតែ MYR 4.5 ហើយមានឱកាសឈ្នះរហូតដល់ MYR 2,568,150!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183918/20240520161610-e338744f-3b1d-4668-bf32-2a895b556f99_jmdxvs.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "ការប្រកួតបាញ់ត្រី Spadegaming",
+          "description": "ដាក់ប្រាក់ MYR 4.5 នៅ Spadegaming ហើយឈ្នះរង្វាន់ធំរហូតដល់ MYR 2,568,150!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183917/20240520161407-22522f67-f31c-4ec4-b410-fcc3bebecd3a_iligqy.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "ប័ណ្ណឥណទានឯកជន BK8",
+          "description": "អ្នកត្រូវបានអញ្ជើញចូលរួមកម្មវិធីប័ណ្ណឥណទានឯកជន BK8!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183917/20230614135145-f7767e0f-9f0b-4880-a620-5e95f91511f1_cwf9rp.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "ក្លឹបរង្វាន់ BK8",
+          "description": "សមាជិក BK8 អាចចូលរួមដើម្បីប្រមូលពិន្ទុ និងប្តូររង្វាន់!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183916/20230531074715-1de8b68f-25f2-4364-a1f7-82fee1f691f4_qgskvu.jpg",
+          "time": "71 : 09 : 01 : 45"
+        },
+        {
+          "title": "ចាក់សង្កត់សំណាង៖ ចូលគណនីហើយឈ្នះរង្វាន់ពិសេស",
+          "description": "ចង់បានចំនួនផ្តួលច្រើនជាងនេះ? បំពេញភារកិច្ចប្រចាំថ្ងៃ ហើយទទួលបានពិន្ទុសកម្មភាព!",
+          "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183915/20230226104118-112daf38-936d-4c12-8401-0838c98f2335_l9ldtm.jpg",
+          "time": "71 : 09 : 01 : 45"
+        }
+      ],
+      "buttons": {
+        "moreInfo": "ព័ត៌មានបន្ថែម",
+        "joinNow": "ចូលរួមឥឡូវនេះ"
+      },
+      "countdown": {
+        "label": "រយៈពេលនៅសល់"
+      }
+    },
+    "promotionModal": {
+      "title": "288% \"តើអ្នកមាន BK8 ឬទេ?\" ប្រាក់រង្វាន់ស្វាគមន៍",
+      "promotionPeriod": "រយៈពេលប្រម៉ូសិន៖ 1 មករា 2025 00:00:00 (GMT+8) ដល់ 31 មីនា 2025 23:59:59 (GMT+8)",
+      "joinNow": "ចូលរួមឥឡូវនេះ",
+      "countdownLabel": "រយៈពេលនៅសល់",
+      "eventDetails": {
+        "title": "ព័ត៌មានលម្អិតអំពីព្រឹត្តិការណ៍",
+        "table": {
+          "headers": [
+            "ប្រាក់ដាក់បញ្ចាំអប្បបរមា",
+            "ប្រាក់រង្វាន់",
+            "ប្រាក់រង្វាន់អតិបរមា",
+            "លក្ខខណ្ឌការភ្នាល់",
+            "អាយុកាល"
+          ],
+          "rows": [
+            [
+              "MYR 50",
+              "288%",
+              "MYR 2,880",
+              "35x",
+              "30 ថ្ងៃ"
+            ]
+          ]
+        }
+      },
+      "howToApply": {
+        "title": "របៀបដាក់ពាក្យ",
+        "steps": [
+          "ចុះឈ្មោះគណនី BK8។ មិនទាន់មានសមាជិកទេ? [ចុចទីនេះដើម្បីចុះឈ្មោះ](#)",
+          "សមាជិកគណនី MYR ដែលបានដាក់ប្រាក់ដំបូងទាំងអស់ មានសិទ្ធិចូលរួមក្នុងការផ្សព្វផ្សាយនេះ។",
+          "សមាជិកត្រូវផ្ទេរប្រាក់អប្បបរមា MYR 50 ទៅកាន់កាបូបផ្គត់ផ្គង់ស្លុតដែលបានបញ្ជាក់ ដើម្បីទទួលបានប្រាក់រង្វាន់។",
+          "ចូលទៅកាន់ទំព័រ [ផ្ទេរ] និងជ្រើស \"ផ្ទេរ\"។",
+          "បញ្ចូលចំនួនប្រាក់ដែលអ្នកចង់ផ្ទេរពី [កាបូបមេ] ទៅកាន់កាបូប [ផ្គត់ផ្គង់] ដែលបានបញ្ជាក់។",
+          "ជ្រើសរើស [កូដផ្សព្វផ្សាយ] ដែលអាចប្រើបានពីម៉ឺនុយទម្លាក់។"
+        ]
+      },
+      "applicableProviders": {
+        "title": "ផ្គត់ផ្គង់ដែលអាចប្រើបាន",
+        "table": {
+          "headers": [
+            "ប្រភេទហ្គេម",
+            "ផ្គត់ផ្គង់ដែលអាចប្រើបាន"
+          ],
+          "rows": [
+            [
+              "ស្លុត",
+              "Pragmatic Play, Habanero, RedTiger, GoldenBay, CQ9, Fa Chai, Spribe, Relax Gaming, YGGDrasil, Advantplay, BBIN, Expanse Studio, V-Power, Evoplay"
+            ]
+          ]
+        }
+      },
+      "termsAndConditions": {
+        "title": "លក្ខខណ្ឌនិងកាតព្វកិច្ច",
+        "points": [
+          "ការផ្សព្វផ្សាយនេះអាចអនុវត្តចំពោះអ្នកផ្គត់ផ្គង់ស្លុតទាំងអស់ លើកលែងតែ JDB, PlayStar, Nextspin, Spadegaming, YesGetRich, Joker, JiLi, Funky Games, PlayTech, Dragoon Soft, FastSpin, GamePlay, AsiaGaming, Microgaming, 918Kiss និង Mega888។",
+          "ប្រាក់រង្វាន់នឹងត្រូវបញ្ចូលទៅកាបូបផ្គត់ផ្គង់ដែលបានជ្រើសរើស បន្ទាប់ពីផ្ទេរប្រាក់បានជោគជ័យ។",
+          "ប្រាក់រង្វាន់មានសុពលភាពរយៈពេល 30 ថ្ងៃ។ បើសិនជាមិនបានបំពេញតាមលក្ខខណ្ឌទឹកប្រាក់រត់នៅក្នុងរយៈពេលកំណត់ នឹងត្រូវលុបចោល។",
+          "ការភ្នាល់ដែលមិនមានសុពលភាព ស្មើគ្នា បោះបង់ ឬការភ្នាល់ផ្ទុយគ្នា មិនត្រូវបានរាប់បញ្ចូលក្នុងការចងវិនិយោគ។",
+          "ហ្គេមតុដែលមិនមានបន្ទាប់បន្សំជាក់ស្តែង (ដូចជា 21, វីដេអូប៉ូគឺ, ការបោះឌីស, អាមេរិកាំងរូឡែត, បាការ៉ាត និងហ្គេមតុផ្សេងៗ) មិនត្រូវបានរាប់បញ្ចូលក្នុងលក្ខខណ្ឌទឹកប្រាក់រត់ លើកលែងតែមានការបញ្ជាក់។",
+          "សមាជិកម្នាក់អាចដាក់ពាក្យសុំការផ្សព្វផ្សាយនេះបានតែម្តងប៉ុណ្ណោះ។",
+          "BK8 មានសិទ្ធិផ្លាស់ប្តូរ លុបចោល ឬបញ្ឈប់ការផ្សព្វផ្សាយនេះនៅពេលណាក៏បាន។",
+          "BK8 មានសិទ្ធិអនុវត្តការសម្រេចចិត្តចុងក្រោយលើការផ្សព្វផ្សាយនេះ។",
+          "សមាជិកទាំងអស់ត្រូវតែយល់ព្រម និងគោរពលក្ខខណ្ឌទាំងអស់នៃការផ្សព្វផ្សាយនេះ។",
+          "[អនុវត្តលក្ខខណ្ឌទូទៅរបស់ BK8](#)"
+        ]
+      },
+      "promotionDetails": {
+        "title": "ព័ត៌មានអំពីការផ្សព្វផ្សាយ",
+        "example": {
+          "title": "ឧទាហរណ៍នៃការគណនាទឹកប្រាក់រត់",
+          "table": {
+            "headers": [
+              "ចំនួនប្រាក់បញ្ចូល",
+              "ប្រាក់រង្វាន់ (288%)",
+              "ទឹកប្រាក់ដែលត្រូវប្រើ"
+            ],
+            "rows": [
+              [
+                "MYR 100",
+                "+ MYR 288",
+                "MYR 13,580"
+              ]
+            ]
+          }
+        }
+      },
+      "additionalTerms": {
+        "title": "លក្ខខណ្ឌបន្ថែម",
+        "points": [
+          "ការផ្សព្វផ្សាយនេះអាស្រ័យលើស្ថានភាពផ្គត់ផ្គង់។ អាចអនុវត្តចំពោះអ្នកផ្គត់ផ្គង់ស្លុតទាំងអស់ លើកលែងតែ JDB, PlayStar, Nextspin, Spadegaming, YesGetRich, Joker, JiLi, Funky Games, PlayTech, Dragoon Soft, FastSpin, GamePlay, AsiaGaming, Microgaming, 918Kiss និង Mega888។",
+          "ប្រាក់រង្វាន់នឹងត្រូវបញ្ចូលទៅកាបូបផ្គត់ផ្គង់ដែលអ្នកបានជ្រើសរើស បន្ទាប់ពីការផ្ទេរបានជោគជ័យ។",
+          "ប្រាក់រង្វាន់មានសុពលភាព 30 ថ្ងៃចាប់ពីថ្ងៃបញ្ចូល លើកលែងតែមានការបញ្ជាក់។ ប្រសិនបើមិនបានបំពេញលក្ខខណ្ឌក្នុងរយៈពេលកំណត់ ប្រាក់ដែលទទួលបានពីប្រាក់រង្វាន់នឹងត្រូវលុបចោល។",
+          "ការភ្នាល់ដែលមិនមានសុពលភាព ស្មើគ្នា បោះបង់ ឬការភ្នាល់ផ្ទុយគ្នា មិនត្រូវបានរាប់បញ្ចូលក្នុងការចងវិនិយោគ។",
+          "ហ្គេមតុដែលមិនមានបន្ទាប់បន្សំជាក់ស្តែង (ដូចជា 21, វីដេអូប៉ូគឺ, ការបោះឌីស, អាមេរិកាំងរូឡែត, បាការ៉ាត និងហ្គេមតុផ្សេងៗ) និងហ្គេមផ្សេងៗដែលមិនមែនជាស្លុត និងហ្គេមបែប Arcade មិនត្រូវបានរាប់បញ្ចូលក្នុងលក្ខខណ្ឌទឹកប្រាក់រត់ លើកលែងតែមានការបញ្ជាក់។",
+          "សមាជិកដែលបានដាក់ពាក្យសុំការផ្សព្វផ្សាយនេះ មិនអាចធ្វើការផ្ទេរប្រាក់លើកទីពីរក្នុងកំឡុងពេលផ្សព្វផ្សាយលើផ្គត់ផ្គង់ដដែល <strong>លើកលែង</strong> បើបានបំពេញលក្ខខណ្ឌទឹកប្រាក់រត់ ឬការផ្សព្វផ្សាយត្រូវបានលុបចោល។",
+          "ការផ្តល់អត្ថប្រយោជន៍សម្រាប់អតិថិជនគ្រប់ប្រភេទមានកំណត់ម្តងដល់ម្នាក់ម្នាក់ប៉ុណ្ណោះ។ ដូចជាគ្រួសារ អាសយដ្ឋាន IP អាសយដ្ឋានអ៊ីមែល លេខទូរស័ព្ទ កាតឥណទាន ឬកាតឌីប៊ីត ការបង់ប្រាក់អេឡិចត្រូនិច ឬការចូលប្រើដោយកុំព្យូទ័រដែលចែករំលែក (ឧ. សាលារៀន បណ្ណាល័យសាធារណៈ ឬកន្លែងធ្វើការ)។",
+          "ការផ្សព្វផ្សាយនេះមិនអាចប្រើប្រាស់រួមជាមួយការផ្សព្វផ្សាយផ្សេងទៀតរបស់ BK8។",
+          "BK8 មានសិទ្ធិផ្លាស់ប្តូរ លុបចោល ឬផ្អាកការផ្សព្វផ្សាយនេះ ដោយមិនចាំបាច់ជម្រាបជូនជាមុន។",
+          "ប្រសិនបើរកឃើញអតិថិជនណាមួយ ឬក្រុមអតិថិជនមិនគោរពលក្ខខណ្ឌទាំងអស់ BK8 មានសិទ្ធិបោះបង់ប្រាក់រង្វាន់ទាំងអស់។",
+          "BK8 មានសិទ្ធិអនុវត្តការសម្រេចចិត្តចុងក្រោយលើការផ្សព្វផ្សាយនេះ។",
+          "សមាជិកដែលចូលរួមក្នុងកម្មវិធីនេះ ត្រូវតែយល់ព្រម និងគោរពលក្ខខណ្ឌទាំងអស់ដែលបានរៀបរាប់ខាងលើ។",
+          "អាចអនុវត្ត <a href='/info-centre' class='text-blue-500 hover:underline'>លក្ខខណ្ឌទូទៅរបស់ BK8</a>។"
+        ]
+      }
+    }
   }
 }

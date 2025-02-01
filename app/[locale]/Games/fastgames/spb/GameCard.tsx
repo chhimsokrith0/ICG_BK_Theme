@@ -3,58 +3,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+
+
+interface GameCardProps {
+    id: number;
+    title: string;
+    image: string;
+}
 
 const GameCards = () => {
-    const games = [
-        {
-            id: 1,
-            title: "Zombie Party",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12001_dbnecn.jpg",
-        },
-        {
-            id: 2,
-            title: "Fishing God",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12002_zlq6w8.jpg",
-        },
-        {
-            id: 3,
-            title: "Fishing War",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12003_rg3cg1.jpg",
-        },
-        {
-            id: 4,
-            title: "Alien Hunter",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12004_ns20cj.jpg",
-        },
-        {
-            id: 5,
-            title: "Alien Hunter",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182913/imgame12005_cwzah8.jpg",
-        },
-        {
-            id: 6,
-            title: "Alien Hunter",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182913/imgame12006_wplr6g.jpg",
-        },
-        {
-            id: 7,
-            title: "Alien Hunter",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182914/imgame12007_phsqrz.jpg",
-        },
-        {
-            id: 8,
-            title: "Alien Hunter",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182915/imgame12008_tuyceh.jpg",
-        },
-        {
-            id: 9,
-            title: "Alien Hunter",
-            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182916/imgame12009_d6gidd.jpg",
-        },
-    ];
+    const t = useTranslations("fastgames.spb.GameCards");
+
+    const games : GameCardProps[] = t.raw("games");
+
 
     return (
-        <div className="max-w-screen-lg mx-auto py-8 px-4">
+        <div className=" mx-auto py-8 px-4">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {games.map((game) => (
                     <div

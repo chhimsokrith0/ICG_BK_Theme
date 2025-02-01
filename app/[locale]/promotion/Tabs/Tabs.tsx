@@ -3,22 +3,18 @@
 import { useState } from "react";
 import TabContent from "./TabContent";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
-const tabs = [
-    { name: "New member", id: "new_member" },
-    { name: "Slots", id: "slots" },
-    { name: "Casino", id: "casino" },
-    { name: "Esport", id: "esport" },
-    { name: "Sports", id: "sports" },
-    { name: "Fishing", id: "fishing" },
-    { name: "Vip", id: "vip" },
-    { name: "Lottery", id: "lottery" },
-    { name: "Special", id: "special" },
-    { name: "Crypto", id: "crypto" },
-];
+interface Tab {
+    name: string;
+    id: string;
+}
 
 const Tabs = () => {
-    const [activeTab, setActiveTab] = useState("new_member");
+    const t = useTranslations("promotion.Tabs");
+    const [activeTab, setActiveTab] = useState(t('tabs.0.id'));
+
+    const tabs: Tab[] = t.raw("tabs");
 
     return (
         <div className="max-w-[1400px] mx-auto overflow-x-auto scrollbar-hide">

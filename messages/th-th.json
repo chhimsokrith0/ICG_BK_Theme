@@ -1834,5 +1834,502 @@
             },
             "joinNow": "เข้าร่วมตอนนี้"
         }
+    },
+    "4d": {
+        "Header": {
+            "backgroundImage": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736858449/4d-bn_gutbu4.png",
+                "alt": "แบนเนอร์ลอตเตอรี่ 4D"
+            },
+            "textOverlay": {
+                "title": "ลอตเตอรี่ 4D"
+            }
+        },
+        "Tab4d": {
+            "tabs": [
+                {
+                    "id": 1,
+                    "label": "แกรนด์ดราก้อน",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/4d/granddragon"
+                }
+            ]
+        },
+        "Footer": {
+            "disclaimer": {
+                "title": "ข้อจำกัดความรับผิดชอบ:",
+                "content": "เนื้อหาที่แสดงในหน้านี้จัดทำโดยผู้ให้บริการ 4D แต่ละรายและใช้เพื่อเป็นข้อมูลทั่วไปเท่านั้น แม้ว่าข้อมูลจะนำเสนอโดยสุจริต แต่เราไม่รับประกันหรือแสดงความรับผิดชอบใด ๆ ต่อความถูกต้อง ความถูกต้องตามกฎหมาย ความทันเวลา และ/หรือความสมบูรณ์ของผลลัพธ์เกมที่เผยแพร่ในหน้านี้ เว็บไซต์นี้อาจมีลิงก์ไปยังเว็บไซต์ของบุคคลที่สาม โฆษณา บริการ หรือเนื้อหาที่ไม่ได้เป็นเจ้าของหรือควบคุมโดย BK8 การเข้าถึงและใช้เว็บไซต์ของเราถือว่าผู้ใช้รับทราบและยอมรับว่าได้อ่านและเข้าใจข้อสมมติฐานความเสี่ยงข้างต้นแล้ว ภายใต้สถานการณ์ใด ๆ เราจะไม่รับผิดชอบต่อความสูญเสียหรือความเสียหายใด ๆ ที่เกิดจากการใช้เว็บไซต์หรือการพึ่งพาข้อมูลของเว็บไซต์ เราไม่รับรองหรือรับผิดชอบต่อเว็บไซต์บุคคลที่สาม ข้อมูล วัสดุ ผลิตภัณฑ์ หรือบริการใด ๆ เราไม่รับผิดชอบต่อการตรวจสอบธุรกรรมระหว่างผู้ใช้และผู้ให้บริการบุคคลที่สาม เครื่องหมายการค้าและชื่อผลิตภัณฑ์ทั้งหมดเป็นทรัพย์สินของเจ้าของที่เกี่ยวข้อง เว็บไซต์นี้ไม่ได้เกี่ยวข้องกับองค์กรที่เชื่อมโยงหรืออธิบายไว้"
+            },
+            "appDownload": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736921418/app-download_mezkyi.jpg",
+                "alt": "ดาวน์โหลดแอป"
+            },
+            "bonusSection": {
+                "welcomeBonus": {
+                    "amount": "150%",
+                    "label": "โบนัสต้อนรับ"
+                },
+                "weeklyRescueBonus": {
+                    "amount": "MYR 6,888",
+                    "label": "โบนัสกู้คืนรายสัปดาห์"
+                },
+                "cryptoCasino": {
+                    "amount": "#1 คาสิโนคริปโต",
+                    "label": "ได้รับใบอนุญาตครบถ้วนในเอเชีย"
+                }
+            },
+            "joinNow": "เข้าร่วมตอนนี้"
+        }
+    },
+    "lottery": {
+        "Header": {
+            "backgroundImage": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737088068/lottery-bn_MY_hafegz.jpg",
+                "alt": "แบนเนอร์ลอตเตอรี่"
+            },
+            "textOverlay": {
+                "title": "ลอตเตอรี่",
+                "subtitle": "เดิมพันต่ำ กำไรสูง",
+                "description": "เปิดตัวใหม่ 'KENO' จาก BK8,\nเกมง่าย ๆ ที่เล่นได้ทุก 30 วินาที"
+            }
+        },
+        "LotteryTab": {
+            "tabs": [
+                {
+                    "id": 1,
+                    "label": "QQKeno",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/lottery/qqkeno"
+                },
+                {
+                    "id": 2,
+                    "label": "Funky Games",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/lottery/funkygames"
+                },
+                {
+                    "id": 3,
+                    "label": "TC Gaming",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "",
+                    "link": "/Games/lottery/tcg"
+                }
+            ]
+        },
+        "Footer": {
+            "appDownload": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737090573/app-download_qrcnvh.jpg",
+                "alt": "ดาวน์โหลดแอป"
+            },
+            "bonusSection": {
+                "welcomeBonus": {
+                    "amount": "150%",
+                    "label": "โบนัสต้อนรับ"
+                },
+                "weeklyRescueBonus": {
+                    "amount": "MYR 6,888",
+                    "label": "โบนัสช่วยเหลือรายสัปดาห์"
+                },
+                "cryptoCasino": {
+                    "amount": "#1 คาสิโนคริปโต",
+                    "label": "ได้รับใบอนุญาตเต็มรูปแบบในเอเชีย"
+                }
+            },
+            "joinNow": "เข้าร่วมตอนนี้"
+        },
+        "qqkeno": {
+            "HeaderTabs": {
+                "tabs": [
+                    {
+                        "id": 1,
+                        "label": "ทั้งหมด",
+                        "active": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "เกมยอดนิยม",
+                        "active": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "เกมใหม่",
+                        "active": false
+                    }
+                ]
+            }
+        }
+    },
+    "fastgames": {
+        "Header": {
+            "backgroundImage": {
+                "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737112860/fastgames-bn_zs2ojf.jpg",
+                "alt": "แบนเนอร์เกมเร็ว"
+            },
+            "textOverlay": {
+                "title": "เกมเร็ว",
+                "subtitle": "มอบชัยชนะที่รวดเร็วที่สุดให้คุณอย่างที่ไม่เคยมีมาก่อน",
+                "description": "สมัครสมาชิกตอนนี้และรับรางวัลไม่มีที่สิ้นสุด"
+            }
+        },
+        "fastgamesTab": {
+            "tabs": [
+                {
+                    "id": 1,
+                    "label": "Spribe",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/fastgames/spb"
+                },
+                {
+                    "id": 2,
+                    "label": "T1Games",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/ae-casino"
+                },
+                {
+                    "id": 3,
+                    "label": "Jili",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ใหม่",
+                    "link": "/Games/casino/bk8-casino"
+                },
+                {
+                    "id": 4,
+                    "label": "Motivation",
+                    "icon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1736747778/casino_2130241_oax4se.png",
+                    "tag": "ยอดนิยม",
+                    "link": "/Games/casino/pragmatic-play"
+                }
+            ]
+        },
+        "spb": {
+            "GameCards": {
+                "games": [
+                    {
+                        "id": 1,
+                        "title": "ปาร์ตี้ซอมบี้",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12001_dbnecn.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "title": "เทพเจ้าแห่งการตกปลา",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12002_zlq6w8.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "title": "สงครามตกปลา",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12003_rg3cg1.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "title": "นักล่าต่างดาว",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182912/imgame12004_ns20cj.jpg"
+                    },
+                    {
+                        "id": 5,
+                        "title": "นักล่าต่างดาว",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182913/imgame12005_cwzah8.jpg"
+                    },
+                    {
+                        "id": 6,
+                        "title": "นักล่าต่างดาว",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182913/imgame12006_wplr6g.jpg"
+                    },
+                    {
+                        "id": 7,
+                        "title": "นักล่าต่างดาว",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182914/imgame12007_phsqrz.jpg"
+                    },
+                    {
+                        "id": 8,
+                        "title": "นักล่าต่างดาว",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182915/imgame12008_tuyceh.jpg"
+                    },
+                    {
+                        "id": 9,
+                        "title": "นักล่าต่างดาว",
+                        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737182916/imgame12009_d6gidd.jpg"
+                    }
+                ]
+            },
+            "HeaderTabs": {
+                "tabs": [
+                    {
+                        "id": 1,
+                        "label": "เกมทั้งหมด",
+                        "active": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "เกมยอดนิยม",
+                        "active": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "เกมใหม่",
+                        "active": false
+                    }
+                ],
+                "sortOptions": {
+                    "popularity": "ความนิยม",
+                    "newest": "ใหม่ล่าสุด",
+                    "featured": "แนะนำ"
+                },
+                "searchPlaceholder": "ค้นหา"
+            }
+        }
+    },
+    "promotion": {
+        "defaultMessage": "ไม่มีเนื้อหา",
+        "Countdown": {
+            "text": "เวลาที่เหลือ",
+            "days": "วัน",
+            "hours": "ชั่วโมง",
+            "minutes": "นาที",
+            "seconds": "วินาที"
+        },
+        "Tabs": {
+            "tabs": [
+                {
+                    "name": "สมาชิกใหม่",
+                    "id": "new_member"
+                },
+                {
+                    "name": "สล็อต",
+                    "id": "slots"
+                },
+                {
+                    "name": "คาสิโน",
+                    "id": "casino"
+                },
+                {
+                    "name": "อีสปอร์ต",
+                    "id": "esport"
+                },
+                {
+                    "name": "กีฬา",
+                    "id": "sports"
+                },
+                {
+                    "name": "ยิงปลา",
+                    "id": "fishing"
+                },
+                {
+                    "name": "VIP",
+                    "id": "vip"
+                },
+                {
+                    "name": "ลอตเตอรี่",
+                    "id": "lottery"
+                },
+                {
+                    "name": "กิจกรรมพิเศษ",
+                    "id": "special"
+                },
+                {
+                    "name": "คริปโต",
+                    "id": "crypto"
+                }
+            ]
+        },
+        "NewMemberTab": {
+            "promotions": [
+                {
+                    "title": "โบนัสต้อนรับ 288% “คุณมี BK8 หรือไม่?”",
+                    "description": "เพิ่มประสบการณ์การเล่นของคุณด้วยโบนัสต้อนรับ 288% “คุณมี BK8 หรือไม่?” และรับสูงสุด MYR 2,880!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183976/20240723044632-a93b5695-3fd7-4b1f-b15e-4a7f997ee8bc_orvzie.jpg",
+                    "time": "72 : 09 : 01 : 45"
+                },
+                {
+                    "title": "โบนัสต้อนรับ 150%",
+                    "description": "ยินดีต้อนรับสู่ BK8! ฝากเงินครั้งแรกและรับโบนัสสูงสุด MYR 300! (สำหรับการสมัครโปรโมชั่นครั้งแรกเท่านั้น)",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183975/20240723044519-b482ae48-a353-4d8d-9597-d074a75c2e4f_uvotup.jpg",
+                    "time": "72 : 09 : 01 : 45"
+                },
+                {
+                    "title": "รับ 188 ฟรีสปินสล็อต",
+                    "description": "ฝากเงินเพื่อรับฟรีสปินสูงสุด 188 ครั้ง! พิเศษสำหรับสมาชิกใหม่เท่านั้น!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183974/20240723044310-53adf0af-40fc-43c0-9d77-e43afb8954aa_j1k8xz.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "ท้าทายทองคำปีมะเส็ง 2025",
+                    "description": "เริ่มต้นปี 2025 ของคุณด้วยทองคำ! ฝากเงิน MYR 500,000 แล้วลุ้นรับทองคำแท่ง!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183973/20240523104206-4602e816-8930-4704-9981-de9ced8b1367_vmgjsg.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "BK8 ท้าทายเดิมพันฟรีและกล่องลึกลับ",
+                    "description": "รับรางวัลไม่รู้จบใน BK8 Sports! เข้าร่วมท้าทายเพื่อรับเดิมพันฟรี และสะสมเหรียญลึกลับเพื่อแลกรับกล่องลึกลับ!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183972/20240520161728-5dd628c7-d3d5-4591-bb51-fae596dd467e_knlaca.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "การแข่งขัน Spadegaming Play & Win",
+                    "description": "เล่นเกมสล็อต Spadegaming และรับรางวัลทันที! เดิมพันขั้นต่ำเพียง MYR 4.5 เพื่อรับรางวัลจากเงินรางวัลรวม MYR 2,568,150!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183918/20240520161610-e338744f-3b1d-4668-bf32-2a895b556f99_jmdxvs.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "การแข่งขันตกปลาสุดมันส์ Spadegaming",
+                    "description": "วางเดิมพัน MYR 4.5 ใน Spadegaming และรับรางวัลใหญ่สูงถึง MYR 2,568,150!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183917/20240520161407-22522f67-f31c-4ec4-b410-fcc3bebecd3a_iligqy.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "บัตรเดบิตพิเศษของ BK8",
+                    "description": "คุณได้รับเชิญให้เข้าร่วมโปรแกรมบัตรเดบิตพิเศษของ BK8!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183917/20230614135145-f7767e0f-9f0b-4880-a620-5e95f91511f1_cwf9rp.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "BK8 Rewards Club",
+                    "description": "ใหม่ใน BK8! สะสมคะแนนเพื่อแลกของรางวัลสุดหรูใน Rewards Club!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183916/20230531074715-1de8b68f-25f2-4364-a1f7-82fee1f691f4_qgskvu.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "วงล้อนำโชค: ล็อกอินและลุ้นรับรางวัลพิเศษ",
+                    "description": "ต้องการสปินเพิ่มเติมหรือไม่? ทำภารกิจรายวันง่าย ๆ แล้วรับคะแนนกิจกรรม!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183915/20230226104118-112daf38-936d-4c12-8401-0838c98f2335_l9ldtm.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "แนะนำเพื่อน & โปรแกรม VIP",
+                    "description": "อัปเกรดใหม่! แนะนำเพื่อนเข้าร่วม BK8 และเป็น VIP รับโบนัสสูงสุด MYR 3,888!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183915/20230226104118-112daf38-936d-4c12-8401-0838c98f2335_l9ldtm.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "You Play We Pay",
+                    "description": "รับ MYR 200 สำหรับการเดิมพันครั้งแรกของคุณ ลุยเลย!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183915/20221030165241-f9ad1d22-c11a-403a-add1-04dd175a7c8a_ulyqmn.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                },
+                {
+                    "title": "คืนเงินบาคาร่า Natural 8 แพ้ Natural 9",
+                    "description": "เราจะแชร์การสูญเสียของคุณ! รับเงินคืนสูงสุด MYR 888 เมื่อคุณแพ้ Natural 8 ให้กับ Natural 9 ในบาคาร่า!",
+                    "img": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737183914/20220930062421-17b1db40-fa60-472b-8273-798aac143713_xt1qnh.jpg",
+                    "time": "71 : 09 : 01 : 45"
+                }
+            ],
+            "buttons": {
+                "moreInfo": "ข้อมูลเพิ่มเติม",
+                "joinNow": "เข้าร่วมทันที"
+            },
+            "countdown": {
+                "label": "เวลาที่เหลือ"
+            }
+        },
+        "promotionModal": {
+            "title": "โบนัสต้อนรับ 288% “คุณมี BK8 หรือไม่?”",
+            "promotionPeriod": "ระยะเวลาโปรโมชั่น: 1 มกราคม 2025 00:00:00 (GMT+8) ถึง 31 มีนาคม 2025 23:59:59 (GMT+8)",
+            "joinNow": "เข้าร่วมทันที",
+            "countdownLabel": "เวลาที่เหลือ",
+            "eventDetails": {
+                "title": "รายละเอียดโปรโมชั่น",
+                "table": {
+                    "headers": [
+                        "เงินฝากขั้นต่ำ",
+                        "โบนัส",
+                        "โบนัสสูงสุด",
+                        "ยอดเทิร์นโอเวอร์",
+                        "ระยะเวลาที่ใช้ได้"
+                    ],
+                    "rows": [
+                        [
+                            "MYR 50",
+                            "288%",
+                            "MYR 2,880",
+                            "35x",
+                            "30 วัน"
+                        ]
+                    ]
+                }
+            },
+            "howToApply": {
+                "title": "วิธีสมัคร",
+                "steps": [
+                    "ลงทะเบียนบัญชี BK8 หากคุณยังไม่ได้เป็นสมาชิก? [คลิกที่นี่เพื่อลงทะเบียน](#)",
+                    "สมาชิกที่ทำการฝากเงินครั้งแรกในบัญชี MYR มีสิทธิ์เข้าร่วมโปรโมชั่นนี้",
+                    "สมาชิกต้องโอนเงินขั้นต่ำ MYR 50 ไปยังกระเป๋าเงินของผู้ให้บริการสล็อตที่กำหนดเพื่อรับโบนัส",
+                    "ไปที่หน้า [โอนเงิน] และเลือก “โอนเงิน”",
+                    "ป้อนจำนวนเงินที่คุณต้องการโอนจาก [กระเป๋าหลัก] ไปยังกระเป๋าของ [ผู้ให้บริการ] ที่กำหนด",
+                    "เลือก [รหัสโปรโมชั่น] ที่เหมาะสมจากเมนูแบบเลื่อนลง"
+                ]
+            },
+            "applicableProviders": {
+                "title": "ผู้ให้บริการที่ใช้ได้",
+                "table": {
+                    "headers": [
+                        "ประเภทเกม",
+                        "ผู้ให้บริการที่ใช้ได้"
+                    ],
+                    "rows": [
+                        [
+                            "สล็อต",
+                            "Pragmatic Play, Habanero, RedTiger, GoldenBay, CQ9, Fa Chai, Spribe, Relax Gaming, YGGDrasil, Advantplay, BBIN, Expanse Studio, V-Power, Evoplay"
+                        ]
+                    ]
+                }
+            },
+            "termsAndConditions": {
+                "title": "ข้อกำหนดและเงื่อนไข",
+                "points": [
+                    "โปรโมชั่นนี้ใช้ได้กับผู้ให้บริการสล็อตทั้งหมด ยกเว้น JDB, PlayStar, Nextspin, Spadegaming, YesGetRich, Joker, JiLi, Funky Games, PlayTech, Dragoon Soft, FastSpin, GamePlay, AsiaGaming, Microgaming, 918Kiss และ Mega888",
+                    "โบนัสจะถูกโอนเข้าสู่กระเป๋าเงินของผู้ให้บริการที่คุณเลือกโดยอัตโนมัติหลังจากทำรายการโอนเงินสำเร็จ",
+                    "โบนัสมีอายุ 30 วัน หากไม่สามารถทำยอดเทิร์นโอเวอร์ได้ตามข้อกำหนดภายในเวลาที่กำหนด โบนัสและเงินรางวัลที่ได้จากโบนัสจะถูกยกเลิก",
+                    "การเดิมพันที่เป็นโมฆะ, เสมอ, ถูกยกเลิก หรือเป็นการเดิมพันสวนทางกันจะไม่นับรวมในการคำนวณยอดเทิร์นโอเวอร์",
+                    "เกมบนโต๊ะที่ไม่ใช่คาสิโนสด เช่น แบล็คแจ็ค, วิดีโอโป๊กเกอร์, แคร็ปส์, อเมริกันรูเล็ต, บาคาร่า และเกมอื่น ๆ ที่ไม่ใช่คาสิโนสด จะไม่นับรวมในข้อกำหนดยอดเทิร์นโอเวอร์ เว้นแต่จะระบุไว้เป็นพิเศษ",
+                    "สมาชิกแต่ละท่านสามารถเข้าร่วมโปรโมชั่นนี้ได้เพียงครั้งเดียวเท่านั้น",
+                    "BK8 ขอสงวนสิทธิ์ในการเปลี่ยนแปลง ยกเลิก หรือยุติโปรโมชั่นนี้ได้ทุกเมื่อ",
+                    "BK8 มีสิทธิ์ตัดสินใจขั้นสุดท้ายเกี่ยวกับโปรโมชั่นนี้",
+                    "สมาชิกทุกคนต้องยอมรับและปฏิบัติตามข้อกำหนดและเงื่อนไขของ BK8",
+                    "[เงื่อนไขและข้อตกลงทั่วไปของ BK8](#)"
+                ]
+            },
+            "promotionDetails": {
+                "title": "รายละเอียดโปรโมชั่น",
+                "example": {
+                    "title": "ตัวอย่างการคำนวณยอดเทิร์นโอเวอร์",
+                    "table": {
+                        "headers": [
+                            "จำนวนเงินฝาก",
+                            "โบนัส (288%)",
+                            "ยอดเทิร์นโอเวอร์ที่ต้องทำ"
+                        ],
+                        "rows": [
+                            [
+                                "MYR 100",
+                                "+ MYR 288",
+                                "MYR 13,580"
+                            ]
+                        ]
+                    }
+                }
+            },
+            "additionalTerms": {
+                "title": "ข้อกำหนดและเงื่อนไขเพิ่มเติม",
+                "points": [
+                    "โปรโมชั่นนี้ขึ้นอยู่กับสถานะของซัพพลายเออร์ ใช้ได้กับผู้ให้บริการสล็อตทั้งหมด ยกเว้น JDB, PlayStar, Nextspin, Spadegaming, YesGetRich, Joker, JiLi, Funky Games, PlayTech, Dragoon Soft, FastSpin, GamePlay, AsiaGaming, Microgaming, 918Kiss และ Mega888",
+                    "โบนัสจะถูกโอนเข้ากระเป๋าเงินของผู้ให้บริการที่คุณเลือกหลังจากการโอนสำเร็จ",
+                    "โบนัสมีอายุ 30 วัน นับจากวันที่ได้รับ เว้นแต่จะมีการระบุเป็นอย่างอื่น หากไม่สามารถทำตามเงื่อนไขที่กำหนดภายในระยะเวลาที่กำหนด เงินรางวัลที่ได้รับจากโบนัสจะถูกหักออกจากบัญชีของสมาชิก",
+                    "การเดิมพันที่เป็นโมฆะ, เสมอ, ถูกยกเลิก หรือเป็นการเดิมพันสวนทางกันจะไม่นับรวมเป็นยอดเทิร์นโอเวอร์",
+                    "เกมบนโต๊ะที่ไม่ใช่คาสิโนสด เช่น แบล็คแจ็ค, วิดีโอโป๊กเกอร์, แคร็ปส์, อเมริกันรูเล็ต, บาคาร่า และเกมที่ไม่ใช่สล็อตหรือเกมอาร์เคดอื่น ๆ จะไม่นับรวมเป็นยอดเทิร์นโอเวอร์ เว้นแต่จะมีการระบุเป็นพิเศษ",
+                    "สมาชิกที่เข้าร่วมโปรโมชั่นนี้จะไม่สามารถทำรายการโอนเงินไปยังผู้ให้บริการเดียวกันเป็นครั้งที่สองได้ในระหว่างระยะเวลาของโปรโมชั่น <strong>เว้นแต่</strong> จะมีการทำยอดเทิร์นโอเวอร์ครบตามเงื่อนไขหรือโปรโมชั่นถูกยกเลิก",
+                    "โปรโมชั่นนี้จำกัดให้ใช้ได้เพียงครั้งเดียวต่อหนึ่งบุคคล ครอบครัว ที่อยู่ IP อีเมล หมายเลขโทรศัพท์ บัตรเครดิต/เดบิต หรือบัญชีชำระเงินออนไลน์ รวมถึงคอมพิวเตอร์ที่ใช้ร่วมกัน (เช่น สถานศึกษา ห้องสมุด หรือที่ทำงาน)",
+                    "โปรโมชั่นนี้ไม่สามารถใช้ร่วมกับโปรโมชั่นอื่น ๆ ของ BK8 ได้",
+                    "BK8 ขอสงวนสิทธิ์ในการเปลี่ยนแปลง ยกเลิก ระงับ หรือยุติโปรโมชั่นนี้ และปรับเปลี่ยนเงื่อนไขของโปรโมชั่นได้โดยไม่ต้องแจ้งให้ทราบล่วงหน้า",
+                    "หากพบว่าสมาชิกหรือกลุ่มสมาชิกใดฝ่าฝืนข้อกำหนด BK8 ขอสงวนสิทธิ์ในการริบโบนัสหรือรางวัลทั้งหมด โดยมีคำตัดสินเป็นที่สิ้นสุด",
+                    "BK8 มีอำนาจตัดสินใจขั้นสุดท้ายในโปรโมชั่นนี้",
+                    "สมาชิกที่เข้าร่วมโปรโมชั่นนี้ต้องยอมรับและปฏิบัติตามข้อกำหนดข้างต้น รวมถึงกฎระเบียบและข้อบังคับทั้งหมดบนเว็บไซต์ BK8",
+                    "เงื่อนไขทั่วไปของ BK8 ใช้บังคับที่ <a href='/info-centre' class='text-blue-500 hover:underline'>ข้อกำหนดและเงื่อนไขทั่วไปของ BK8</a>"
+                ]
+            }
+        }
     }
 }

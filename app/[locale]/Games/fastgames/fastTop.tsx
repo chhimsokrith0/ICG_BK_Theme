@@ -3,13 +3,25 @@
 import React, { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { tabs, Tab } from "./tab"; // Import tabs and Tab type
+import { useTranslations } from "next-intl";
+
+
+interface Tab {
+    id: number;
+    label: string;
+    icon: string;
+    tag: string;
+    link: string;
+}
 
 const fastgamesTab = () => {
+    const t = useTranslations("fastgames.fastgamesTab");
     const router = useRouter();
     const pathname = usePathname();
 
     const [activeTab, setActiveTab] = useState<number | null>(null);
+
+    const tabs: Tab[] = t.raw("tabs");
 
     useEffect(() => {
         const currentTab = tabs.find((tab) => pathname?.includes(tab.link));

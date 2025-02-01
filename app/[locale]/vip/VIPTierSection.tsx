@@ -1,4 +1,8 @@
+import React from "react";
+import { useTranslations } from "next-intl";
+
 const VIPTierSection = () => {
+    const t = useTranslations("vip.VIPTierSection");
     return (
         <section
             className="bg-[#0b2134] py-10 md:py-16"
@@ -11,7 +15,7 @@ const VIPTierSection = () => {
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 text-center">
                 {/* Header */}
                 <h2 className="text-sm md:text-lg font-semibold text-yellow-500 mb-6">
-                    Minimum Deposit Within A Month
+                    {t("title")}
                 </h2>
 
                 {/* Tier Icons */}

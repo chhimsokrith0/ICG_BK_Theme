@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 import Countdown from "./Countdown";
+import { useTranslations } from "next-intl";
 
 interface PromotionModalProps {
     isOpen: boolean;
@@ -9,6 +10,27 @@ interface PromotionModalProps {
 }
 
 const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
+    const t = useTranslations("promotion.promotionModal");
+
+    const eventDetailsheaders = t.raw("eventDetails.table.headers");
+    const eventDetailsrows = t.raw("eventDetails.table.rows");
+
+    const howToApply = t.raw("howToApply.steps");
+
+    const applicableProvidersheaders = t.raw("applicableProviders.table.headers");
+    const applicableProvidersrows = t.raw("applicableProviders.table.rows");
+
+
+    const termsAndConditionspoints = t.raw("termsAndConditions.points");
+
+
+    const promotionDetailsexampleheaders = t.raw("promotionDetails.example.table.headers");
+    const promotionDetailsexamplerows = t.raw("promotionDetails.example.table.rows");
+
+
+    const additionalTermsPoints = t.raw("additionalTerms.points");
+
+    
     // Prevent page scrolling when modal is open
     useEffect(() => {
         if (isOpen) {
@@ -64,7 +86,7 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                     {/* Join Button */}
                     <div className="flex items-start justify-between mt-4">
                         <button className="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-400 text-sm font-medium">
-                            Join now
+                            {t('joinNow')}
                         </button>
 
                         {/* Countdown */}
@@ -73,185 +95,110 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                     </div>
 
                     {/* Title */}
-                    <h2 className="text-lg font-bold text-gray-900 mt-4 text-left">288% "Have You BK8?" Welcome Bonus</h2>
+                    <h2 className="text-lg font-bold text-gray-900 mt-4 text-left">{t('title')}</h2>
 
                     {/* Promotion Period */}
                     <p className="text-sm text-gray-600 mt-2 text-left">
-                        Promotion Period: 1st January 00:00:00 (GMT+8) to 31st March 2025 23:59:59 (GMT+8)
+                        {t('promotionPeriod')}
                     </p>
 
                 </div>
 
 
                 <div className="mt-6">
-                    <h3 className="text-lg font-bold mb-4">Event Details:</h3>
+                    <h3 className="text-lg font-bold mb-4">{t('eventDetails.title')}</h3>
                     <div className="overflow-x-auto">
                         <table className="table-auto w-full border-collapse border border-gray-200 text-sm">
                             <thead>
                                 <tr>
-                                    <th className="bg-orange-500 text-white px-4 py-2">Min. Deposit</th>
-                                    <th className="bg-orange-500 text-white px-4 py-2">Bonus</th>
-                                    <th className="bg-orange-500 text-white px-4 py-2">Max. Bonus</th>
-                                    <th className="bg-orange-500 text-white px-4 py-2">Turnover</th>
-                                    <th className="bg-orange-500 text-white px-4 py-2">Validity Period</th>
+                                    {eventDetailsheaders.map((header: string, index: number) => (
+                                        <th key={index} className="bg-orange-500 text-white px-4 py-2">{header}</th>
+                                    ))}
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td className="border px-4 py-2 text-center">MYR 50</td>
-                                    <td className="border px-4 py-2 text-center">288%</td>
-                                    <td className="border px-4 py-2 text-center">MYR 2,880</td>
-                                    <td className="border px-4 py-2 text-center">35x</td>
-                                    <td className="border px-4 py-2 text-center">30 days</td>
-                                </tr>
+                                {eventDetailsrows.map((row: string[], rowIndex: number) => (
+                                    <tr key={rowIndex}>
+                                        {row.map((cell: string, cellIndex: number) => (
+                                            <td key={cellIndex} className="border px-4 py-2 text-center">{cell}</td>
+                                        ))}
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>
                 </div>
 
+
                 <div className="mt-6">
-                    <h3 className="text-lg font-bold mb-4">How to Apply:</h3>
+                    <h3 className="text-lg font-bold mb-4">{t("howToApply.title")}</h3>
                     <ol className="list-decimal pl-6 space-y-2 text-sm text-gray-700">
-                        <li>
-                            Register an account with BK8. Not yet a member?{" "}
-                            <a href="/register" className="text-blue-500 hover:underline">
-                                Sign up here!
-                            </a>
-                        </li>
-                        <li>All first deposit MYR account members are entitled to this promotion.</li>
-                        <li>
-                            Members are required to{" "}
-                            <strong>transfer a minimum amount of MYR 50</strong> in selected slots
-                            provider wallet to claim bonus.
-                        </li>
-                        <li>
-                            Go to <span className="font-semibold">[Transfer]</span> page, select{" "}
-                            <span className="font-semibold">“Transfer”</span>.
-                        </li>
-                        <li>
-                            Enter the amount you would like to transfer from{" "}
-                            <span className="font-semibold">“Main Wallet”</span> to the applicable{" "}
-                            <span className="font-semibold">[Provider]</span> wallet.
-                        </li>
-                        <li>
-                            Select the applicable <span className="font-semibold">[Promo Code]</span>{" "}
-                            from the promo code dropdown menu.
-                        </li>
+                        {howToApply.map((step: string, index: number) => (
+                            <li key={index} dangerouslySetInnerHTML={{ __html: step }}></li>
+                        ))}
                     </ol>
                 </div>
 
 
 
+
                 <div className="mt-6">
                     {/* Applicable Providers */}
-                    <h3 className="text-lg font-bold mb-4">Applicable Providers:</h3>
+                    <h3 className="text-lg font-bold mb-4">{t("applicableProviders.title")}</h3>
                     <table className="w-full border-collapse">
                         <thead>
                             <tr className="bg-orange-500 text-white">
-                                <th className="py-2 px-4 text-left">Product</th>
-                                <th className="py-2 px-4 text-left">Applicable Providers</th>
+                                {applicableProvidersheaders.map((header: string, index: number) => (
+                                    <th key={index} className="py-2 px-4 text-left">{header}</th>
+                                ))}
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td className="border border-gray-300 py-2 px-4">Slots</td>
-                                <td className="border border-gray-300 py-2 px-4">
-                                    Pragmatic Play, Habanero, RedTiger, GoldenBay, CQ9, Fa Chai, Spribe, Relax Gaming,
-                                    YGGDrasil, Advantplay, BBIN, Expanse Studio, V-Power, Evoplay
-                                </td>
-                            </tr>
+                            {applicableProvidersrows.map((row: string[], rowIndex: number) => (
+                                <tr key={rowIndex}>
+                                    {row.map((cell: string, cellIndex: number) => (
+                                        <td key={cellIndex} className="border border-gray-300 py-2 px-4">{cell}</td>
+                                    ))}
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
 
                     {/* Terms & Conditions */}
                     <div className="mt-8">
-                        <h3 className="text-lg font-bold mb-4">Terms & Conditions:</h3>
-                        <p className="text-sm text-gray-700 mb-4">
-                            Members are required to fulfil the aforementioned turnover/winover requirements of the
-                            [deposit + bonus] amount in order to transfer or withdraw. Please refer to the following
-                            example:
-                        </p>
+                        <h3 className="text-lg font-bold mb-4">{t("termsAndConditions.title")}</h3>
+                        {termsAndConditionspoints.map((point: string, index: number) => (
+                            <p key={index} className="text-sm text-gray-700 mb-4">{point}</p>
+                        ))}
+
                         <table className="w-full border-collapse">
                             <thead>
                                 <tr className="bg-orange-500 text-white">
-                                    <th className="py-2 px-4 text-left">Deposit</th>
-                                    <th className="py-2 px-4 text-left">Bonus (288%)</th>
-                                    <th className="py-2 px-4 text-left">Turnover</th>
+                                    {promotionDetailsexampleheaders.map((header: string, index: number) => (
+                                        <th key={index} className="py-2 px-4 text-left">{header}</th>
+                                    ))}
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td className="border border-gray-300 py-2 px-4">MYR 100</td>
-                                    <td className="border border-gray-300 py-2 px-4">+ MYR 288</td>
-                                    <td className="border border-gray-300 py-2 px-4">MYR 13,580</td>
-                                </tr>
+                                {promotionDetailsexamplerows.map((row: string[], rowIndex: number) => (
+                                    <tr key={rowIndex}>
+                                        {row.map((cell: string, cellIndex: number) => (
+                                            <td key={cellIndex} className="border border-gray-300 py-2 px-4">{cell}</td>
+                                        ))}
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>
                 </div>
 
-
-
-
-
                 <div className="mt-8">
-                    <h3 className="text-lg font-bold mb-4">Terms & Conditions:</h3>
+                    <h3 className="text-lg font-bold mb-4">{t("additionalTerms.title")}</h3>
                     <ol className="list-decimal list-inside text-sm text-gray-700 space-y-2">
-                        <li>
-                            Promotion is subject to availability. Applicable to all Slot Providers except JDB, PlayStar,
-                            Nextspin, Spadegaming, YesGetRich, Joker, JiLi, Funky Games, PlayTech, Dragoon Soft,
-                            FastSpin, GamePlay, AsiaGaming, Microgaming, 918Kiss and Mega888.
-                        </li>
-                        <li>
-                            Bonus will be credited to your chosen Provider Wallet after a successful fund transfer.
-                        </li>
-                        <li>
-                            Bonuses are valid for thirty (30) days upon issuance unless stated otherwise. Money won using
-                            bonus funds will be removed from the member’s account if prerequisites are not fulfilled
-                            within the given time frame.
-                        </li>
-                        <li>
-                            Any bets resulting in void, tie, cancelled, or made on opposite sides with the same outcome
-                            will not be counted as a valid turnover.
-                        </li>
-                        <li>
-                            Turnover on all types of non-live table games (e.g. Blackjack, Video Poker, Craps, American
-                            Roulette, Baccarat, and other non-live table games), non-slot games, and arcade games will
-                            not count towards this turnover requirement unless SPECIFICALLY stated.
-                        </li>
-                        <li>
-                            Members who claimed the promotion for a certain provider are not allowed to make a second
-                            transfer to the same provider while the promotion is active,{" "}
-                            <strong>EXCEPT FOR</strong> members who achieved the turnover requirement or the promotion
-                            is cancelled.
-                        </li>
-                        <li>
-                            All customer offers are limited to one per person. Meaning one per family, household address,
-                            IP address, email address, telephone number, credit or debit card and/or e-payment account,
-                            or shared computer (e.g. school, public library or workplace).
-                        </li>
-                        <li>
-                            This promotion cannot be used in conjunction with other BK8 promotions.
-                        </li>
-                        <li>
-                            BK8 reserves the right to modify, cancel, suspend or terminate the promotion and/or change
-                            the terms of the promotion at any time without prior notice.
-                        </li>
-                        <li>
-                            BK8 reserves the right to confiscate all the winning/bonus from any customer or group of
-                            customers if found to be a breach of any clause at any time and at our sole and absolute
-                            discretion.
-                        </li>
-                        <li>BK8 is the sole arbiter of the promotion, and its decision is final.</li>
-                        <li>
-                            Participating members must accept and comply with all the terms mentioned above as well as
-                            all relevant and rules and regulations stated on the BK8 website.
-                        </li>
-                        <li>
-                            <a href="/info-centre/tnc" className="text-blue-500 hover:underline">
-                                General BK8 Terms & Conditions apply.
-                            </a>
-                        </li>
+
+                        {additionalTermsPoints.map((term: string, index: number) => (
+                            <li key={index} dangerouslySetInnerHTML={{ __html: term }}></li>
+                        ))}
                     </ol>
                 </div>
             </motion.div>
