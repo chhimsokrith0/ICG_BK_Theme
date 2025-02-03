@@ -7,8 +7,10 @@ import ImportantNotice from "../ImportantNotice";
 import RecentTransactions from "../RecentTransactions";
 import HeaderBarWithMenu from "../HeaderBarWithMenu";
 import WalletApplicationsMobile from "@/components/WalletApplicationsMobile/WalletApplicationsMobile";
-
+import { useTranslations } from 'next-intl';
 const Page = () => {
+  const t = useTranslations('myaccount.withdraw.Page');
+
   const [isAnimating, setIsAnimating] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -35,7 +37,7 @@ const Page = () => {
         >
           <div className="flex items-center">
             <div className="mr-2">
-              <p className="text-sm text-gray-500">Main Wallet</p>
+              <p className="text-sm text-gray-500">{t('walletInfo.mainWallet')}</p>
               <div className="flex items-center space-x-2">
                 {/* USD Text with Loading Animation */}
                 <motion.p

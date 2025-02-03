@@ -2,24 +2,19 @@ import React, { useState } from 'react';
 import { ArrowPathIcon } from "@heroicons/react/24/outline";
 import AddressModal from './AddressModal';
 import { motion } from "framer-motion";
+import { useTranslations } from 'next-intl';
+
+interface option {
+    name: string;
+    image: string
+}
 const CryptoSection = () => {
+
+    const t = useTranslations('myaccount.withdraw.cryptoSection');
 
     const [selectedOption, setSelectedOption] = useState('USDT-TRC20'); // Default selected option
 
-    const options = [
-        {
-            name: 'USDT-TRC20',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737551296/USDT-TRC20_lxfgqc.png',
-        },
-        {
-            name: 'ETH-ERC20',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737551295/ETH-ERC20_epq902.png',
-        },
-        {
-            name: 'BTC-BTC',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737551295/BTC-BTC_wkxxfk.webp',
-        },
-    ];
+    const options: option[] = t.raw('cryptoOptions');
 
     const handleOptionClick = (name: string) => {
         setSelectedOption(name);

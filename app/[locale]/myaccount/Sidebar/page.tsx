@@ -14,7 +14,7 @@ const Sidebar: React.FC = () => {
             <CashierSection/>
             <RewardSection />
             <ProfileSection/>
-            <HistorySection activeItem={activeItem} setActiveItem={setActiveItem} />
+            <HistorySection/>
             <ReferralSection />
         </div>
     );

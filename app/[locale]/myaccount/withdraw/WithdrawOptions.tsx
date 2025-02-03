@@ -2,26 +2,39 @@ import React, { useState } from 'react';
 import { ExclamationTriangleIcon } from '@heroicons/react/24/solid';
 import PinCodeModal from './PinCodeModal';
 import CryptoSection from './CryptoSection';
+import { useTranslations } from 'next-intl';
 interface WithdrawOptionsSelectionProps {
     selectedOption: string;
     setSelectedOption: (option: string) => void;
 }
 
+interface BankOptionProps {
+    name: string;
+    image: string;
+}
+
 const WithdrawOptions = ({ selectedOption, setSelectedOption }: WithdrawOptionsSelectionProps) => {
-    const withdrawOptions = [
-        {
-            name: 'Bank Transfer',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557008/T_rd1wjd.gif',
-        },
-        {
-            name: 'Crypto',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557404/bitcoin_rlsts5.gif',
-        },
-        {
-            name: 'E-Wallet',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557111/wallet_dtgebd.gif',
-        },
-    ];
+    
+    const t = useTranslations('myaccount.withdraw.WithdrawOptions');
+
+    const withdrawOptions: BankOptionProps[] = t.raw('options');
+
+
+    
+    // const withdrawOptions = [
+    //     {
+    //         name: 'Bank Transfer',
+    //         image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557008/T_rd1wjd.gif',
+    //     },
+    //     {
+    //         name: 'Crypto',
+    //         image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557404/bitcoin_rlsts5.gif',
+    //     },
+    //     {
+    //         name: 'E-Wallet',
+    //         image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557111/wallet_dtgebd.gif',
+    //     },
+    // ];
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -61,45 +74,45 @@ const WithdrawOptions = ({ selectedOption, setSelectedOption }: WithdrawOptionsS
             </div>
 
 
-            {selectedOption === 'Bank Transfer' && (
+            {selectedOption === t('options.0.name') && (
                 <>
                     <div className="mt-4">
                         <p className="text-red-500 text-sm flex items-center">
                             <ExclamationTriangleIcon className="w-5 h-5 mr-2" />
-                            Your 6 digit pin code has not been set up yet. Kindly set your PIN{' '}
+                            {t('pinCodeWarning.message')}
                             <button
                                 onClick={handleOpenModal}
                                 className="text-blue-500 underline hover:text-blue-700 ml-1"
                             >
-                                here
+                                {t('pinCodeWarning.setPin')}
                             </button>
-                            .
+                            {t('pinCodeWarning.instruction')}
                         </p>
                         <PinCodeModal isModalOpen={isModalOpen} onClose={handleCloseModal} />
                     </div>
                 </>
             )}
 
-            {selectedOption === 'E-Wallet' && (
+            {selectedOption === t('options.2.name') && (
                 <>
                     <div className="mt-4">
                         <p className="text-red-500 text-sm flex items-center">
                             <ExclamationTriangleIcon className="w-5 h-5 mr-2" />
-                            Your 6 digit pin code has not been set up yet. Kindly set your PIN{' '}
+                            {t('pinCodeWarning.message')}
                             <button
                                 onClick={handleOpenModal}
                                 className="text-blue-500 underline hover:text-blue-700 ml-1"
                             >
-                                here
+                                {t('pinCodeWarning.setPin')}
                             </button>
-                            .
+                            {t('pinCodeWarning.instruction')}
                         </p>
                         <PinCodeModal isModalOpen={isModalOpen} onClose={handleCloseModal} />
                     </div>
                 </>
             )}
 
-            {selectedOption === 'Crypto' && (
+            {selectedOption === t('options.1.name') && (
                 <CryptoSection />
             )}
 

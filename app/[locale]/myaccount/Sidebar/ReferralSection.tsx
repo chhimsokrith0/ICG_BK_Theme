@@ -2,8 +2,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon } from '@heroicons/react/24/solid'; 
+import { useTranslations } from 'next-intl';
 
 const ReferralSection: React.FC = () => {
+    const t = useTranslations('myaccount.Sidebar.ReferralSection');
     return (
         <motion.div
             className="mt-14 p-6 bg-blue-50 rounded-lg text-center shadow-lg"
@@ -22,10 +24,10 @@ const ReferralSection: React.FC = () => {
             }}
         >
             <h3 className="text-sm font-bold text-gray-800">
-                Share Happiness with Your Friend
+                {t('title')}
             </h3>
             <p className="text-xs text-gray-600 mt-2">
-                Get exclusive referral bonuses when your friend signs up using your referral code.
+                {t('description')}
             </p>
             <motion.div
                 className="mt-4 flex justify-center items-center bg-white px-4 py-2 rounded-full shadow-md"
@@ -33,7 +35,7 @@ const ReferralSection: React.FC = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
             >
-                <p className="text-lg font-bold text-blue-700 mr-2">vodydkkr</p>
+                <p className="text-lg font-bold text-blue-700 mr-2">{t('referralCode')}</p>
                 <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}

@@ -50,8 +50,24 @@ export default function RootLayoutClient({
   const selectedFont =
     (fonts.fonts as any)[locale]?.fontFamily;
 
+  const selectedFontOpticalSizing =
+    (fonts.fonts as any)[locale]?.fontOpticalSizing;
+
+  const selectedFontWeight =
+    (fonts.fonts as any)[locale]?.fontWeight;
+
+  const selectedFontStyle =
+    (fonts.fonts as any)[locale]?.fontStyle;
+
+
   return (
-    <html lang={locale} style={{ fontFamily: selectedFont }}>
+    <html lang={locale} style={
+      {
+        fontFamily: selectedFont,
+        fontOpticalSizing: selectedFontOpticalSizing,
+        fontWeight: selectedFontWeight,
+        fontStyle: selectedFontStyle,
+      }}>
       <body className="body min-h-screen">
         {isLoading ? (
           <LoadingPage />

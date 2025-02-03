@@ -6,9 +6,13 @@ import DepositTabs from './DepositTabs';
 import DepositOptions from './DepositOptions';
 import ActionButtons from './ActionButtons';
 import FastDeposit from './FastDeposit';
+import { useTranslations } from 'next-intl';
 
 const DepositTab = () => {
-    const [selectedTab, setSelectedTab] = useState('Normal Deposit');
+
+    const t = useTranslations('myaccount.Deposit.DepositTabs');
+
+    const [selectedTab, setSelectedTab] = useState(t('tabs.0.name'));
 
     const tabContentVariants = {
         hidden: { opacity: 0, x: -20 },
@@ -32,7 +36,7 @@ const DepositTab = () => {
 
                 {/* Tab Content with Motion */}
                 <AnimatePresence mode="wait">
-                    {selectedTab === 'Normal Deposit' && (
+                    {selectedTab === t('tabs.0.name') && (
                         <motion.div
                             key="NormalDeposit"
                             variants={tabContentVariants}
@@ -44,7 +48,7 @@ const DepositTab = () => {
                         </motion.div>
                     )}
 
-                    {selectedTab === 'Fast Deposit' && (
+                    {selectedTab === t('tabs.1.name') && (
                         <motion.div
                             key="FastDeposit"
                             variants={tabContentVariants}

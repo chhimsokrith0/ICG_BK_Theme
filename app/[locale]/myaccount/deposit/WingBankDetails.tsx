@@ -3,8 +3,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { InformationCircleIcon, PlusIcon, ArrowUpTrayIcon } from '@heroicons/react/24/outline';
+import { useTranslations } from 'next-intl';
+
 
 const WingBankDetails = () => {
+
+    const t = useTranslations('myaccount.Deposit.WingBankDetails')
+
+    const optionsSelectBank = t.raw('senderBank.options');
+
     const fadeInVariants = {
         hidden: { opacity: 0, y: 10 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -23,7 +30,7 @@ const WingBankDetails = () => {
             variants={fadeInVariants}
         >
             <motion.p className="text-gray-700 font-medium mb-3" variants={fadeInVariants}>
-                Deposit Bank Account <span className="text-red-500">*</span>
+                {t('title')} <span className="text-red-500">*</span>
             </motion.p>
             <motion.div
                 className="flex items-center space-x-4 mb-3"
@@ -62,21 +69,21 @@ const WingBankDetails = () => {
 
             <motion.div className="mb-4" variants={fadeInVariants}>
                 <label className="text-gray-700 font-medium block mb-2">
-                    Deposit Amount <span className="text-red-500">*</span>
+                    {t('depositAmount.label')} <span className="text-red-500">*</span>
                 </label>
                 <div className="flex items-center space-x-2 mb-2">
                     <input
                         type="number"
-                        placeholder="Amount MIN: 5.00 / MAX: 50,000.00"
+                        placeholder={t('depositAmount.placeholder')}
                         className="flex-1 border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <button className="text-gray-500 hover:text-gray-700">
                         <InformationCircleIcon className="w-5 h-5" />
                     </button>
-                    <span className="text-sm text-gray-500">Min/Max Limit: 5.00/50,000.00</span>
+                    <span className="text-sm text-gray-500">{t('depositAmount.minMaxInfo')}</span>
                 </div>
                 <p className="text-sm text-red-500 mt-1">
-                    Deposit amount must be greater than the minimum deposit amount.
+                    {t('depositAmount.errorMessage')}
                 </p>
                 <div className="flex space-x-2 mt-2">
                     {['5', '10', '20', '50', '100'].map((value) => (
@@ -94,7 +101,7 @@ const WingBankDetails = () => {
 
             <motion.div className="mb-4" variants={fadeInVariants}>
                 <label className="text-gray-700 font-medium block mb-2">
-                    Sender Bank <span className="text-red-500">*</span>
+                    {t('senderBank.addBank')} <span className="text-red-500">*</span>
                     <button className="ml-2 text-gray-500 hover:text-gray-700">
                         <InformationCircleIcon className="w-4 h-4 inline" />
                     </button>
@@ -102,12 +109,18 @@ const WingBankDetails = () => {
                 <div className="flex items-center space-x-2">
                     <select
                         className="flex-1 border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        defaultValue="" // Ensures the default value is selected initially
                     >
-                        <option value="">Please select</option>
-                        <option value="Wing Bank">Wing Bank</option>
-                        <option value="ABA Bank">ABA Bank</option>
-                        <option value="Acleda Bank">Acleda Bank</option>
+                        <option value="" disabled>
+                            {t('senderBank.label')}
+                        </option>
+                        {optionsSelectBank.map((bank: string) => (
+                            <option key={bank} value={bank}>
+                                {bank}
+                            </option>
+                        ))}
                     </select>
+
                     <motion.button
                         className="text-blue-500 hover:text-blue-700 bg-gray-100 p-2 rounded-md shadow"
                         whileHover={{ scale: 1.1 }}
@@ -116,10 +129,10 @@ const WingBankDetails = () => {
                         <PlusIcon className="w-5 h-5" />
                     </motion.button>
                 </div>
-                <p className="text-xs text-red-500 mt-1">Please add your bank account</p>
+                <p className="text-xs text-red-500 mt-1">{t('senderBank.addBankWarning')}</p>
                 <p className="text-xs text-gray-500 mt-1 flex items-center">
                     <ArrowUpTrayIcon className="w-4 h-4 inline mr-1" />
-                    Upload your deposit receipt for faster processing
+                    {t('senderBank.uploadReceipt')}
                 </p>
             </motion.div>
         </motion.div>

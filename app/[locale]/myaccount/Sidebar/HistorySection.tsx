@@ -1,22 +1,34 @@
 'use client';
 
-import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
+import { useTranslations } from 'next-intl';
 
-interface Props {
-    activeItem: string;
-    setActiveItem: (item: string) => void;
+interface Route {
+    label: string;
+    path: string;
 }
 
-const HistorySection: React.FC<Props> = ({ activeItem, setActiveItem }) => {
-    const [isHistoryOpen, setIsHistoryOpen] = useState(false);
+const HistorySection = () => {
+    const t = useTranslations('myaccount.Sidebar.HistorySection');
     const router = useRouter();
+    const pathname = usePathname();
+    const [isHistoryOpen, setIsHistoryOpen] = useState(false);
+    const [activeTab, setActiveTab] = useState<string | null>(null);
 
-    const handleHistoryClick = () => {
-        setActiveItem('Transaction History');
-        router.push('/myaccount/history/bettingSummary'); // Navigate to Transaction History
+    // Fetch routes dynamically from translations
+    const routes: Route[] = t.raw('routes');
+
+    useEffect(() => {
+        const currentRoute = routes.find((route) => pathname?.includes(route.path));
+        setActiveTab(currentRoute ? currentRoute.label : null);
+    }, [pathname]);
+
+    const handleTabClick = (route: Route) => {
+        setActiveTab(route.label);
+        router.push(route.path);
     };
 
     return (
@@ -31,7 +43,7 @@ const HistorySection: React.FC<Props> = ({ activeItem, setActiveItem }) => {
                         alt="History Icon"
                         className="w-10 h-10 mr-3"
                     />
-                    HISTORY
+                    <span className="uppercase text-black tracking-wide">{t('title')}</span>
                 </div>
                 <motion.div
                     initial={{ rotate: isHistoryOpen ? 180 : 0 }}
@@ -52,20 +64,23 @@ const HistorySection: React.FC<Props> = ({ activeItem, setActiveItem }) => {
                     exit={{ opacity: 0, translateY: -10 }}
                     transition={{
                         duration: 0.4,
-                        ease: [0.16, 1, 0.3, 1], // Smooth, bouncy easing
+                        ease: [0.16, 1, 0.3, 1],
                     }}
                     className="space-y-3 bg-white rounded-lg p-4"
                 >
-                    <p
-                        className={`cursor-pointer px-4 py-2 rounded-lg transition-all duration-200 ${
-                            activeItem === 'Transaction History'
-                                ? 'bg-gray-100 text-blue-600 font-bold'
-                                : 'hover:text-blue-600'
-                        }`}
-                        onClick={handleHistoryClick}
-                    >
-                        Transaction History
-                    </p>
+                    {routes.map((route) => (
+                        <p
+                            key={route.label}
+                            onClick={() => handleTabClick(route)}
+                            className={`cursor-pointer px-4 py-2 rounded-lg transition-all duration-200 ${
+                                activeTab === route.label
+                                    ? 'bg-blue-50 text-blue-600 font-bold shadow-sm'
+                                    : 'hover:bg-gray-100 hover:text-blue-600'
+                            }`}
+                        >
+                            {route.label}
+                        </p>
+                    ))}
                 </motion.div>
             )}
         </div>

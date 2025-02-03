@@ -1,30 +1,40 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 interface BankSelectionProps {
     selectedBank: string;
     setSelectedBank: (bank: string) => void;
 }
 
+interface BankOptionProps {
+    name: string;
+    image: string;
+}
+
 const BankSelection = ({ selectedBank, setSelectedBank }: BankSelectionProps) => {
-    const banks = [
-        {
-            name: 'Wing Bank',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533469/wingbank_fm7akz.png',
-        },
-        {
-            name: 'ABA Bank',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533468/aba_bank_logo_d2gbez.jpg',
-        },
-        {
-            name: 'Acleda Bank',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533469/ac_bank_i41ip4.jpg',
-        },
-    ];
+    const t = useTranslations('myaccount.Deposit.BankSelection');
+
+    const banks : BankOptionProps[] = t.raw('banks');
+    
+    // const banks = [
+    //     {
+    //         name: 'Wing Bank',
+    //         image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533469/wingbank_fm7akz.png',
+    //     },
+    //     {
+    //         name: 'ABA Bank',
+    //         image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533468/aba_bank_logo_d2gbez.jpg',
+    //     },
+    //     {
+    //         name: 'Acleda Bank',
+    //         image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533469/ac_bank_i41ip4.jpg',
+    //     },
+    // ];
 
     return (
         <div className="mb-6 mt-4 max-w-lg">
             <p className="text-gray-700 font-medium mb-3">
-                Choose Bank <span className="text-red-500">*</span>
+                {t('title')} <span className="text-red-500">*</span>
             </p>
             <div className="grid grid-cols-3 gap-4">
                 {banks.map((bank) => (

@@ -1,30 +1,40 @@
 import React from 'react';
-
+import { useTranslations } from 'next-intl';
 interface DepositOptionsSelectionProps {
     selectedOption: string;
     setSelectedOption: (option: string) => void;
 }
 
+interface DepositOptionProps {
+    name: string;
+    image: string;
+}
+
 const DepositOptionsSelection = ({ selectedOption, setSelectedOption }: DepositOptionsSelectionProps) => {
-    const depositOptions = [
-        {
-            name: 'Bank Transfer',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557008/T_rd1wjd.gif',
-        },
-        {
-            name: 'RQR',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557075/qr-code_d9giqk.gif',
-        },
-        {
-            name: 'E-Wallet',
-            image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557111/wallet_dtgebd.gif',
-        },
-    ];
+    const t = useTranslations('myaccount.Deposit.DepositOptionsSelection');
+    
+
+    const depositOptions: DepositOptionProps[] = t.raw('depositOptions');
+
+    // const depositOptions = [
+    //     {
+    //         name: 'Bank Transfer',
+    //         image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557008/T_rd1wjd.gif',
+    //     },
+    //     {
+    //         name: 'RQR',
+    //         image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557075/qr-code_d9giqk.gif',
+    //     },
+    //     {
+    //         name: 'E-Wallet',
+    //         image: 'https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557111/wallet_dtgebd.gif',
+    //     },
+    // ];
 
     return (
         <div className="mb-6 max-w-lg">
             <p className="text-gray-700 font-medium mb-3">
-                Deposit Options <span className="text-red-500">*</span>
+                {t('title')} <span className="text-red-500">*</span>
             </p>
             <div className="grid grid-cols-3 gap-4">
                 {depositOptions.map((option) => (

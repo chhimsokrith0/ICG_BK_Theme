@@ -3,20 +3,29 @@ import React, { useEffect, useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
+import { useTranslations } from 'next-intl';
 
 
-const routes = [
-    { label: 'Deposit', path: '/myaccount/deposit' },
-    { label: 'Withdraw', path: '/myaccount/withdraw' },
-    { label: 'Transfer / Promo', path: '/myaccount/transfer' },
-    { label: 'Withdrawal Details', path: '/myaccount/bankdetails' }
-];
+interface Route {
+    label: string;
+    path: string;
+}
+
+// const routes = [
+//     { label: 'Deposit', path: '/myaccount/deposit' },
+//     { label: 'Withdraw', path: '/myaccount/withdraw' },
+//     { label: 'Transfer / Promo', path: '/myaccount/transfer' },
+//     { label: 'Withdrawal Details', path: '/myaccount/bankdetails' }
+// ];
 
 const CashierSection = () => {
+    const t = useTranslations('myaccount.Sidebar.CashierSection');
     const router = useRouter();
     const pathname = usePathname();
     const [isCashierOpen, setIsCashierOpen] = useState(false);
     const [activeTab, setActiveTab] = useState<string | null>(null);
+
+    const routes: Route[] = t.raw('routes');
 
     useEffect(() => {
         // Set active tab based on current route
@@ -41,7 +50,7 @@ const CashierSection = () => {
                         alt="Cashier Icon"
                         className="w-10 h-10 mr-3"
                     />
-                    <span className="uppercase text-black tracking-wide">Cashier</span>
+                    <span className="uppercase text-black tracking-wide">{t('title')}</span>
                 </div>
                 <motion.div
                     initial={{ rotate: isCashierOpen ? 180 : 0 }}

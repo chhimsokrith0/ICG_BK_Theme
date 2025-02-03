@@ -3,18 +3,27 @@ import React, { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
+import { useTranslations } from 'next-intl';
 
-const rewardRoutes = [
-    { label: 'Instant Rebate', path: '/myaccount/rebate' },
-    { label: 'Mission Diary', path: '/myaccount/daily-mission' },
-    { label: 'Referral', path: '/myaccount/referral' },
-];
+interface Route {
+    label: string;
+    path: string;
+}
+
+// const rewardRoutes = [
+//     { label: 'Instant Rebate', path: '/myaccount/rebate' },
+//     { label: 'Mission Diary', path: '/myaccount/daily-mission' },
+//     { label: 'Referral', path: '/myaccount/referral' },
+// ];
 
 const RewardSection = () => {
     const [isRewardOpen, setIsRewardOpen] = useState(false);
     const [activeTab, setActiveTab] = useState<string | null>(null);
     const router = useRouter();
     const pathname = usePathname();
+
+    const t = useTranslations('myaccount.Sidebar.RewardSection');
+    const rewardRoutes: Route[] = t.raw('routes');
 
     useEffect(() => {
         // Set active tab based on current route
@@ -39,7 +48,7 @@ const RewardSection = () => {
                         alt="Reward Icon"
                         className="w-10 h-10 mr-3"
                     />
-                    REWARD
+                    {t('title')}
                 </div>
                 <motion.div
                     initial={{ rotate: isRewardOpen ? 180 : 0 }}

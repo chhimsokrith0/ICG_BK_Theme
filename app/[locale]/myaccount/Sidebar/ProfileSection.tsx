@@ -3,18 +3,29 @@ import React, { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
+import { useTranslations } from 'next-intl';
 
-const profileRoutes = [
-    { label: 'My Profile', path: '/myaccount/profile' },
-    { label: 'Messaging', path: '/myaccount/messaging' },
-    { label: 'Change Password', path: '/myaccount/changepassword' },
-];
+interface Route {
+    label: string;
+    path: string;
+}
+
+
+// const profileRoutes = [
+//     { label: 'My Profile', path: '/myaccount/profile' },
+//     { label: 'Messaging', path: '/myaccount/messaging' },
+//     { label: 'Change Password', path: '/myaccount/changepassword' },
+// ];
 
 const ProfileSection = () => {
     const [isProfileOpen, setIsProfileOpen] = useState(false);
     const [activeTab, setActiveTab] = useState<string | null>(null);
     const router = useRouter();
     const pathname = usePathname();
+
+    const t = useTranslations('myaccount.Sidebar.ProfileSection');
+    const profileRoutes: Route[] = t.raw('routes');
+
 
     useEffect(() => {
         // Set active tab based on current route
@@ -39,7 +50,7 @@ const ProfileSection = () => {
                         alt="Profile Icon"
                         className="w-10 h-10 mr-3"
                     />
-                    PROFILE
+                    {t('title')}
                 </div>
                 <motion.div
                     initial={{ rotate: isProfileOpen ? 180 : 0 }}

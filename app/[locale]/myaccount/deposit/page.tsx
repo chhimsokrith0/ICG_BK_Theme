@@ -8,9 +8,10 @@ import ImportantNotice from "../ImportantNotice";
 import RecentTransactions from "../RecentTransactions";
 import HeaderBarWithMenu from '../HeaderBarWithMenu';
 import WalletApplicationsMobile from '@/components/WalletApplicationsMobile/WalletApplicationsMobile';
-import dynamic from 'next/dynamic';
+import { useTranslations } from 'next-intl';
 
 const Page = () => {
+  const t = useTranslations('myaccount.Deposit.Page');
   const [isAnimating, setIsAnimating] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -39,7 +40,7 @@ const Page = () => {
           {/* Wallet Info */}
           <div className="flex items-center">
             <div className="mr-2">
-              <p className="text-sm text-gray-500">Main Wallet</p>
+              <p className="text-sm text-gray-500">{t('walletSection.mainWallet')}</p>
               <div className="flex items-center space-x-2">
                 {/* USD Text with Loading Animation */}
                 <motion.p
@@ -48,7 +49,7 @@ const Page = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6 }}
                 >
-                  {isLoading ? "USD" : "USD 0.00"}
+                  {isLoading ? t('walletSection.loadingText') : "USD 0.00"}
                 </motion.p>
                 {isLoading && (
                   <div className="flex items-center mt-3 space-x-2">
@@ -107,7 +108,7 @@ const Page = () => {
             >
               <path d="M20.69 4.89l-2.18-2.18c-.39-.39-1.02-.39-1.41 0L12 7.91 6.9 2.71c-.39-.39-1.02-.39-1.41 0l-2.18 2.18c-.39.39-.39 1.02 0 1.41l5.09 5.09-5.09 5.09c-.39.39-.39 1.02 0 1.41l2.18 2.18c.39.39 1.02.39 1.41 0l5.1-5.1 5.09 5.09c.39.39 1.02.39 1.41 0l2.18-2.18c.39-.39.39-1.02 0-1.41l-5.09-5.09 5.09-5.09c.39-.39.39-1.02 0-1.41z" />
             </svg>
-            Restore
+            {t('walletSection.restoreButton')}
           </motion.button>
         </motion.div>
 

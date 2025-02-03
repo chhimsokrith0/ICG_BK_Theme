@@ -1,66 +1,21 @@
 {
     "fonts": {
-        "au": {
-            "fontFamily": "Arial, sans-serif"
+        "km-kh": {
+            "fontFamily": "Battambang",
+            "fontWeight": "900",
+            "fontStyle": "normal"
         },
-        "bn": {
-            "fontFamily": "\"Noto Sans Bengali\", sans-serif"
-        },
-        "ca": {
-            "fontFamily": "Arial, sans-serif"
+        "zh-kh": {
+            "fontFamily": "Noto Serif SC",
+            "fontOpticalSizing": "auto",
+            "fontWeight": "200",
+            "fontStyle": "normal"
         },
         "en-kh": {
-            "fontFamily": "Arial, sans-serif"
-        },
-        "hi": {
-            "fontFamily": "\"Noto Sans Devanagari\", sans-serif"
-        },
-        "hk": {
-            "fontFamily": "\"Noto Sans TC\", sans-serif"
-        },
-        "id": {
-            "fontFamily": "Arial, sans-serif"
-        },
-        "km-kh": {
-            "fontFamily": "\"Battambang\", sans-serif",
-            "font-weight": "300",
-            "font-style": "normal"
-        },
-        "ko": {
-            "fontFamily": "\"Noto Sans KR\", sans-serif"
-        },
-        "lo": {
-            "fontFamily": "\"Phetsarath\", sans-serif"
-        },
-        "mm": {
-            "fontFamily": "\"Noto Sans Myanmar\", sans-serif"
-        },
-        "ms": {
-            "fontFamily": "Arial, sans-serif"
-        },
-        "ph": {
-            "fontFamily": "Arial, sans-serif"
-        },
-        "pt": {
-            "fontFamily": "Arial, sans-serif"
-        },
-        "sg": {
-            "fontFamily": "Arial, sans-serif"
-        },
-        "th": {
-            "fontFamily": "\"Sarabun\", sans-serif"
-        },
-        "tw": {
-            "fontFamily": "\"Noto Sans TC\", sans-serif"
-        },
-        "ur": {
-            "fontFamily": "\"Cairo\", sans-serif"
-        },
-        "vi": {
-            "fontFamily": "Arial, sans-serif"
-        },
-        "zh": {
-            "fontFamily": "\"Noto Sans SC\", sans-serif"
+            "fontFamily": "Cairo, serif",
+            "fontOpticalSizing": "auto",
+            "fontWeight": "200",
+            "fontStyle": "normal"
         }
     }
 }

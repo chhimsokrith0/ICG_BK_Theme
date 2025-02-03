@@ -2,6 +2,13 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+
+
+interface tab {
+    name: string;
+    time: string;
+}
 
 const DepositTabs = ({
     selectedTab,
@@ -10,11 +17,18 @@ const DepositTabs = ({
     selectedTab: string;
     setSelectedTab: (tab: string) => void;
 }) => {
-    const tabs = [
-        { name: "Normal Deposit", time: "5 minutes" },
-        { name: "Fast Deposit", time: "1 minute" },
-        { name: "Crypto Deposit", time: "15 minutes" },
-    ];
+
+
+    const t = useTranslations('myaccount.Deposit.DepositTabs');
+    const tabs: tab[] = t.raw('tabs');
+
+
+
+    // const tabs = [
+    //     { name: "Normal Deposit", time: "5 minutes" },
+    //     { name: "Fast Deposit", time: "1 minute" },
+    //     { name: "Crypto Deposit", time: "15 minutes" },
+    // ];
 
     const indicatorVariants = {
         hidden: { opacity: 0, width: 0 },

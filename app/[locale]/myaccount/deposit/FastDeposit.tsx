@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const FastDeposit = () => {
+
+    const t = useTranslations('myaccount.Deposit.FastDeposit');
+
     const [selectedOption, setSelectedOption] = useState("QR Pay");
     const [selectedBank, setSelectedBank] = useState("");
 
@@ -23,7 +27,7 @@ const FastDeposit = () => {
             {/* Deposit Options */}
             <div className="mb-6">
                 <p className="text-gray-700 font-medium mb-3">
-                    Deposit Options <span className="text-red-500">*</span>
+                    {t('title')} <span className="text-red-500">*</span>
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                     {depositOptions.map((option) => (
@@ -53,7 +57,7 @@ const FastDeposit = () => {
             {selectedOption && (
                 <div className="mb-6">
                     <p className="text-gray-700 font-medium mb-3">
-                        Choose Bank <span className="text-red-500">*</span>
+                        {t('chooseBank.label')} <span className="text-red-500">*</span>
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                         {banks.map((bank) => (
@@ -83,7 +87,7 @@ const FastDeposit = () => {
             {/* How to Deposit */}
             <div className="flex justify-end">
                 <button className="text-gray-500 hover:text-gray-700 text-sm">
-                    <i className="fas fa-question-circle mr-1"></i> How To Deposit
+                    <i className="fas fa-question-circle mr-1"></i> {t('howToDeposit.text')}
                 </button>
             </div>
         </div>
