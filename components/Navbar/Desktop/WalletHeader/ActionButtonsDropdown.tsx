@@ -1,43 +1,67 @@
-import React, { useState } from "react";
-import Link from "next/link";
+
+
+"use client"
+
+import { useState } from "react"
+import Link from "next/link"
+import { Wallet, ArrowLeftRight, ArrowDownToLine, History } from "lucide-react"
 
 const ActionButtonsDropdown = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
-    return (
-        <div
-            className="relative"
-            onMouseEnter={() => setIsDropdownOpen(true)}
-            onMouseLeave={() => setIsDropdownOpen(false)}
-        >
+  const menuItems = [
+    {
+      label: "Deposit",
+      icon: <Wallet className="w-5 h-5 text-blue-500" />,
+      href: "/myaccount/deposit",
+    },
+    {
+      label: "Transfer / Promo",
+      icon: <ArrowLeftRight className="w-5 h-5 text-blue-500" />,
+      href: "/transfer",
+    },
+    {
+      label: "Withdrawal",
+      icon: <ArrowDownToLine className="w-5 h-5 text-blue-500" />,
+      href: "/withdrawal",
+    },
+    {
+      label: "History",
+      icon: <History className="w-5 h-5 text-blue-500" />,
+      href: "/history",
+    },
+  ]
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setIsDropdownOpen(true)}
+      onMouseLeave={() => setIsDropdownOpen(false)}
+    >
+      <button className="px-6 py-2 bg-blue-500 text-white text-sm font-medium rounded-md hover:bg-blue-600 transition-colors duration-200">
+        Deposit
+      </button>
+
+      {isDropdownOpen && (
+        <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg overflow-hidden z-50">
+          {menuItems.map((item, index) => (
             <Link
-                href="/myaccount/deposit"
-                className="px-4 py-2 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition duration-300"
+              key={index}
+              href={item.href}
+              className={`
+                flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200
+                ${index !== menuItems.length - 1 ? "border-b border-gray-100" :     ""}
+              `}
             >
-                Deposit
+              <span className="mr-3">{item.icon}</span>
+              <span className="text-sm">{item.label}</span>
             </Link>
-            {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-200 py-2">
-                    <button className="w-full flex items-center px-4 py-3 text-white font-medium bg-orange-500 rounded-t-xl hover:bg-orange-600 transition duration-200">
-                        <img
-                            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557763/profit_iqgfmu.gif"
-                            alt="Deposit"
-                            className="w-10 h-10 mr-3"
-                        />
-                        Deposit
-                    </button>
-                    <button className="w-full flex items-center px-4 py-3 text-gray-700 font-medium hover:bg-gray-100 transition duration-200">
-                        <img
-                            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557808/promotion_sgoivq.gif"
-                            alt="Transfer / Promo"
-                            className="w-10 h-10 mr-3"
-                        />
-                        Transfer / Promo
-                    </button>
-                </div>
-            )}
+          ))}
         </div>
-    );
-};
+      )}
+    </div>
+  )
+}
 
-export default ActionButtonsDropdown;
+export default ActionButtonsDropdown
+

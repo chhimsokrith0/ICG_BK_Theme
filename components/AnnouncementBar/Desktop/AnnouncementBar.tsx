@@ -15,42 +15,35 @@ export default function AnnouncementBar() {
 
     return (
         <>
-            <section className="announcementBarSection bg-white text-black py-2 overflow-hidden">
-                <div className="annoucement-bar-component flex flex-wrap items-center justify-between max-w-[1200px] mx-auto px-4">
-                    {/* Left Block */}
-                    <div className="announcement-moving announcement-content-container flex items-center flex-1 min-w-0">
-                        <div className="left-block font-bold text-xs sm:text-sm px-3 py-1 bg-blue-600 text-white rounded-full whitespace-nowrap">
-                        {t('news')}
+            <section className="bg-white border-b border-gray-200">
+                <div className="max-w-[1400px] mx-auto px-4 py-3">
+                    <div className="flex items-center gap-4 flex-wrap md:flex-nowrap">
+                        <div className="flex items-center flex-1 min-w-0 bg-gray-50 rounded-lg p-2">
+                            <div className="font-medium text-xs sm:text-sm px-3 py-1.5 bg-blue-600 text-white rounded-full">
+                                {t("news")}
+                            </div>
+                            <div className="flex-1 overflow-hidden relative h-[24px] sm:h-[28px] ml-3">
+                                <motion.div
+                                    className="absolute whitespace-nowrap text-ellipsis overflow-hidden text-gray-600"
+                                    animate={{ x: ["100%", "-100%"] }}
+                                    transition={{
+                                        duration: 15,
+                                        repeat: Number.POSITIVE_INFINITY,
+                                        repeatType: "loop",
+                                        ease: "linear",
+                                    }}
+                                    initial={{ x: "100%" }}
+                                >
+                                    {t("announcementMessage")}
+                                </motion.div>
+                            </div>
                         </div>
-
-                        {/* Animated Text */}
-                        <div
-                            className="announcement-content-animation-box flex-1 overflow-hidden relative h-[24px] sm:h-[28px] ml-2"
-                            id="msg-content"
+                        <button
+                            onClick={handleModalToggle}
+                            className="px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-colors"
                         >
-                            <motion.div
-                                id="msgAnimate"
-                                className="absolute whitespace-nowrap text-ellipsis overflow-hidden"
-                                animate={{ x: ['100%', '-100%'] }}
-                                transition={{
-                                    duration: 20,
-                                    repeat: Infinity,
-                                    repeatType: 'loop',
-                                    ease: 'linear',
-                                }}
-                                initial={{ x: '100%' }}
-                            >
-                                {t('announcementMessage')}
-                            </motion.div>
-                        </div>
-                    </div>
-
-                    {/* More Button */}
-                    <div
-                        className="more-btn text-xs sm:text-sm px-2 sm:px-4 text-blue-600 cursor-pointer mt-2 sm:mt-0"
-                        onClick={handleModalToggle}
-                    >
-                        {t('more')}
+                            {t("more")}
+                        </button>
                     </div>
                 </div>
             </section>

@@ -13,11 +13,11 @@ const WalletHeader = () => {
                 <MessageDropdown />
                 <WalletInfo />
 
-                 {/* Right Section */}
-            <ActionButtonsDropdown />
+                {/* Right Section */}
+                <ActionButtonsDropdown />
             </div>
 
-           
+
         </div>
     );
 };
