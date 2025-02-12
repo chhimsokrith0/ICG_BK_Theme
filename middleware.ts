@@ -18,9 +18,3 @@ export const config = {
     "/(en-kh|km-kh|zh-kh|th-th|en-th|en-id|id-id|en-my|ms-my|zh-my)/:path*", // Include localized paths
   ],
 };
-
-
-
-
-
-

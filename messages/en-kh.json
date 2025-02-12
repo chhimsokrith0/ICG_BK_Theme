@@ -483,25 +483,25 @@
     "gamingLicense": "Gaming License",
     "games": "Games",
     "gameCategories": [
-      "Sports",
-      "E-Sports",
-      "Casino",
-      "Slots",
-      "Fishing",
-      "3D Games",
-      "Lottery",
-      "Fast Games"
+      { "name": "Sports", "link": "/Games/sports/BK8Sports" },
+      { "name": "E-Sports" , "link": "/Games/E-Sports/TF-Gaming" },
+      { "name": "Casino", "link": "/Games/casino/evolution-gaming" },
+      { "name": "Slots", "link": "/Games/Slots/nextspin" }, 
+      { "name": "Fishing", "link": "/Games/Fishing/Spadegaming" },
+      { "name": "3D Games", "link": "/Games/4d/granddragon" },
+      { "name": "Lottery", "link": "/Games/lottery" },
+      { "name": "Fast Games", "link": "/Games/fastgames" }
     ],
     "info": "Information",
     "infoLinks": [
-      "About Us",
-      "VIP",
-      "Leaderboard",
-      "Affiliate Program",
-      "Contact Us",
-      "Responsible Gaming",
-      "Information Center",
-      "Terms & Conditions"
+      { "name": "About Us", "link": "/aboutus" },
+      { "name": "VIP", "link": "/vip" },
+      { "name": "Leaderboard", "link": "/leaderboard" },
+      { "name": "Affiliate Program" , "link": "/affiliate" },
+      { "name": "Contact Us" , "link": "/contact-us" },
+      { "name": "Responsible Gaming" , "link": "/responsible-gaming" },
+      { "name": "Information Center" , "link": "/info-centre" },
+      { "name": "Terms & Conditions" , "link": "/info-centre" }
     ],
     "certifications": "Certifications",
     "paymentMethods": "Payment Methods",
@@ -2668,6 +2668,280 @@
           "stars": 5
         }
       ]
+    }
+  },
+  "myaccount": {
+    "Sidebar": {
+      "CashierSection": {
+        "title": "Cashier",
+        "routes": [
+          {
+            "label": "Deposit",
+            "path": "/myaccount/deposit"
+          },
+          {
+            "label": "Withdraw",
+            "path": "/myaccount/withdraw"
+          },
+          {
+            "label": "Transfer / Promo",
+            "path": "/myaccount/transfer"
+          },
+          {
+            "label": "Withdrawal Details",
+            "path": "/myaccount/bankdetails"
+          }
+        ]
+      },
+      "RewardSection": {
+        "title": "Rewards",
+        "routes": [
+          {
+            "label": "Instant Rebate",
+            "path": "/myaccount/rebate"
+          },
+          {
+            "label": "Mission Diary",
+            "path": "/myaccount/daily-mission"
+          },
+          {
+            "label": "Referral Rewards",
+            "path": "/myaccount/referral"
+          }
+        ]
+      },
+      "ProfileSection": {
+        "title": "Profile",
+        "routes": [
+          {
+            "label": "My Profile",
+            "path": "/myaccount/profile"
+          },
+          {
+            "label": "Messages",
+            "path": "/myaccount/messaging"
+          },
+          {
+            "label": "Change Password",
+            "path": "/myaccount/changepassword"
+          }
+        ]
+      },
+      "HistorySection": {
+        "title": "History",
+        "transactionHistory": "Transaction History",
+        "routes": [
+          {
+            "label": "Transaction History",
+            "path": "/myaccount/history/bettingSummary"
+          }
+        ]
+      },
+      "ReferralSection": {
+        "title": "Share the Joy with Friends",
+        "description": "Let your friends sign up using your referral code and earn exclusive referral bonuses.",
+        "referralCode": "vodydkkr"
+      }
+    },
+    "Deposit": {
+      "Page": {
+        "walletSection": {
+          "mainWallet": "Main Wallet",
+          "loadingText": "Loading...",
+          "restoreButton": "Restore"
+        },
+        "tabs": {
+          "depositTab": "Deposit",
+          "importantNotice": "Important Notice",
+          "recentTransactions": "Recent Transactions"
+        },
+        "animation": {
+          "loadingDots": "Loading Animation",
+          "refreshIcon": "Refresh Icon"
+        },
+        "mobileSection": {
+          "welcomeMessage": "Welcome",
+          "userPlaceholder": "Username",
+          "statusBadges": {
+            "normal": "Normal",
+            "vip": "VIP"
+          }
+        }
+      },
+      "DepositTabs": {
+        "tabs": [
+          {
+            "name": "Normal Deposit",
+            "time": "5 minutes"
+          },
+          {
+            "name": "Fast Deposit",
+            "time": "1 minute"
+          },
+          {
+            "name": "Crypto Deposit",
+            "time": "15 minutes"
+          }
+        ]
+      },
+      "DepositOptionsSelection": {
+        "title": "Deposit Options",
+        "depositOptions": [
+          {
+            "name": "Bank Transfer",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557008/T_rd1wjd.gif"
+          },
+          {
+            "name": "Fast QR Payment",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557075/qr-code_d9giqk.gif"
+          },
+          {
+            "name": "E-Wallet",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557111/wallet_dtgebd.gif"
+          }
+        ]
+      },
+      "BankSelection": {
+        "title": "Select Bank",
+        "banks": [
+          {
+            "name": "Wing Bank",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533469/wingbank_fm7akz.png"
+          },
+          {
+            "name": "ABA Bank",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533468/aba_bank_logo_d2gbez.jpg"
+          },
+          {
+            "name": "ACLEDA Bank",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737533469/ac_bank_i41ip4.jpg"
+          }
+        ]
+      },
+      "FastDeposit": {
+        "title": "Fast Deposit",
+        "depositOptions": {
+          "label": "Deposit Options"
+        },
+        "chooseBank": {
+          "label": "Select Bank"
+        },
+        "howToDeposit": {
+          "text": "How to Deposit"
+        }
+      },
+      "WingBankDetails": {
+        "title": "Deposit Bank Account",
+        "depositAmount": {
+          "label": "Deposit Amount",
+          "placeholder": "Amount MIN: 5.00 / MAX: 50,000.00",
+          "minMaxInfo": "Min/Max Limit: 5.00 / 50,000.00",
+          "errorMessage": "Deposit amount must be greater than the minimum deposit amount."
+        },
+        "senderBank": {
+          "label": "Sender Bank",
+          "selectPlaceholder": "Please select a bank",
+          "options": [
+            "Wing Bank",
+            "ABA Bank",
+            "Acleda Bank"
+          ],
+          "addBank": "Add Bank",
+          "addBankWarning": "Please add your bank account",
+          "uploadReceipt": "Upload deposit receipt for faster processing"
+        },
+        "icons": {
+          "info": "Information",
+          "plus": "Add",
+          "upload": "Upload"
+        }
+      },
+      "ActionButtons": {
+        "submit": "Submit",
+        "uploadReceipt": "Upload Receipt"
+      }
+    },
+    "withdraw": {
+      "Page": {
+        "walletInfo": {
+          "mainWallet": "Main Wallet",
+          "currency": "USD 0.00",
+          "refresh": "Refresh",
+          "restore": "Restore"
+        },
+        "withdrawOptions": "Withdraw Options",
+        "importantNotice": "Important Notice",
+        "recentTransactions": "Recent Transactions",
+        "user": {
+          "welcome": "Welcome",
+          "normalStatus": "Normal",
+          "vipStatus": "VIP",
+          "vipThreshold": ">100"
+        }
+      },
+      "WithdrawOptions": {
+        "title": "Withdraw Options",
+        "options": [
+          {
+            "name": "Bank Transfer",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557008/T_rd1wjd.gif"
+          },
+          {
+            "name": "Crypto",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557404/bitcoin_rlsts5.gif"
+          },
+          {
+            "name": "E-Wallet",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737557111/wallet_dtgebd.gif"
+          }
+        ],
+        "pinCodeWarning": {
+          "message": "Your 6-digit PIN code has not been set up. Please set it up",
+          "setPin": "here",
+          "instruction": "."
+        }
+      },
+      "cryptoSection": {
+        "channelLabel": "Channel *",
+        "channelOptions": [
+          "Channel 1",
+          "Channel 2"
+        ],
+        "cryptoOptions": [
+          {
+            "name": "USDT-TRC20",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737551296/USDT-TRC20_lxfgqc.png"
+          },
+          {
+            "name": "ETH-ERC20",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737551295/ETH-ERC20_epq902.png"
+          },
+          {
+            "name": "BTC-BTC",
+            "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737551295/BTC-BTC_wkxxfk.webp"
+          }
+        ],
+        "exchangeRate": {
+          "chain": "Chain:",
+          "rate": "USDT 1 = USD 1.00",
+          "guaranteedUntil": "Guaranteed Until:"
+        },
+        "addressField": {
+          "label": "Address *",
+          "selectPlaceholder": "Select Address",
+          "addButton": "Add Address"
+        },
+        "amountField": {
+          "label": "Amount (USD) *",
+          "placeholder": "Amount MIN: 150 / MAX: 10,000",
+          "dailyLimit": "Daily Limit Balance: 10,000 / Daily Count Balance: 10"
+        },
+        "staticAmountField": {
+          "label": "Amount (USDT) *",
+          "placeholder": "USDT"
+        },
+        "submitButton": "Submit"
+      }
     }
   }
 }

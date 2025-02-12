@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
+
 const Footer = ({ locale }: { locale: string }) => {
 
     const t = useTranslations("footer");
@@ -12,7 +13,7 @@ const Footer = ({ locale }: { locale: string }) => {
 
     return (
         <footer className="text-gray-700 py-8">
-            <div className="max-w-[1600px] mx-auto px-4">
+            <div className="container mx-auto px-4">
                 <div className="border-t border-gray-300 my-4"></div>
 
                 {/* Top Section */}
@@ -44,9 +45,13 @@ const Footer = ({ locale }: { locale: string }) => {
                     {/* Games Section */}
                     <div>
                         <h4 className="font-semibold text-lg mb-4">{t('games')}</h4>
-                        <ul className="space-y-2 text-sm">
-                            {gameCategories.map((category: string, index: number) => (
-                                <li key={index}>{category}</li>
+                        <ul className="space-y-2 text-sm text-black text-block">
+                            {gameCategories.map((category: { name: string, link: string }, index: number) => (
+                                <li key={index}>
+                                    <a href={category.link} className="text-black text-block hover:text-gray-900">
+                                        {category.name}
+                                    </a>
+                                </li>
                             ))}
                         </ul>
                     </div>
@@ -54,9 +59,17 @@ const Footer = ({ locale }: { locale: string }) => {
                     {/* Info Section */}
                     <div>
                         <h4 className="font-semibold text-lg mb-4">{t('info')}</h4>
-                        <ul className="space-y-2 text-sm">
-                            {infoLinks.map((link: string, index: number) => (
-                                <li key={index}>{link}</li>
+                        <ul className="space-y-2 text-sm text-black text-block">
+                            {infoLinks.map((link: any, index: number) => (
+                                <li key={index}>
+                                    {typeof link === 'object' ? (
+                                        <a href={link.link} className="text-black text-block hover:text-gray-900">
+                                            {link.name}
+                                        </a>
+                                    ) : (
+                                        link
+                                    )}
+                                </li>
                             ))}
                         </ul>
                     </div>
