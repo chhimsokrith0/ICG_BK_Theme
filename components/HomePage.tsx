@@ -1,6 +1,5 @@
 'use client';
 
-import { useTranslations } from "next-intl";
 import React from "react";
 import { motion } from "framer-motion";
 import BannerCarousel from "./BannerCarousel/Desktop/BannerCarousel";
@@ -132,9 +131,6 @@ export default function HomeContent({ locale }: { locale: string }) {
                 <motion.div variants={fadeInVariants} initial="hidden" animate="visible">
                     <PartnershipsAndAwards />
                 </motion.div>
-        
-                
-               
             </div>
         </div>
     );
