@@ -3,9 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import GetUsernameModal from '@/components/ModalForgotUsernamePassword/GetUsernameModal';
 import { signIn } from 'next-auth/react';
-import { useRouter } from 'next/navigation'; 
+import { useRouter } from 'next/navigation';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Link from 'next/link';
 
 const LoginPage: React.FC = () => {
     const [username, setUsername] = useState('');
@@ -55,7 +56,7 @@ const LoginPage: React.FC = () => {
             className={`flex ${isMobile ? 'flex-col' : 'justify-center items-center'
                 } mt-8 px-4`}
         >
-             <ToastContainer />
+            <ToastContainer />
             <div
                 className={`flex ${isMobile ? 'flex-col' : 'flex-row'
                     } w-full max-w-[1500px] rounded-lg overflow-hidden shadow-lg bg-white`}
@@ -151,16 +152,16 @@ const LoginPage: React.FC = () => {
                                 username
                             </button>{' '}
                             or{' '}
-                            <a href="#" className="text-blue-500 underline">
+                            <button onClick={() => setIsModalOpen(true)} className="text-blue-500 underline">
                                 password
-                            </a>
+                            </button>
                             ?
                         </p>
                         <p>
                             Don't have an account?{' '}
-                            <a href="#" className="text-blue-500 underline">
+                            <Link href="/register" className="text-blue-500 underline">
                                 Create Account
-                            </a>
+                            </Link>
                         </p>
                     </div>
                 </div>

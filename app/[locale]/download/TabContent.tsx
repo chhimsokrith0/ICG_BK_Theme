@@ -115,11 +115,6 @@ const TabContent: React.FC<TabContentProps> = ({ activeTab }) => {
                             </div>
 
                         </div>
-
-
-
-
-
                     </motion.div>
                 )}
                 {activeTab === "Android Games" && (
