@@ -100,7 +100,7 @@ const BestLiveCasinoGames = () => {
     >
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-bold text-gray-900">{t("bestLiveCasinoGamesTitle")}</h2>
-        <Link href="/games/livecasino" className="text-sm text-gray-600 hover:text-gray-900">
+        <Link href="/Games/casino/evolution-gaming" className="text-sm text-gray-600 hover:text-gray-900">
           {t("seeAll")}
         </Link>
       </div>

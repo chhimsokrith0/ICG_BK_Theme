@@ -118,7 +118,7 @@ const PopularGames = () => {
     >
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-bold text-gray-900">Popular Games We Love</h2>
-        <Link href="/games" className="text-sm text-gray-600 hover:text-gray-900">
+        <Link href="/Games/Slots/nextspin" className="text-sm text-gray-600 hover:text-gray-900">
           See all
         </Link>
       </div>
