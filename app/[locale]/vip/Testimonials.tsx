@@ -1,27 +1,22 @@
-"use client";
-
-import React from "react";
-import dynamic from "next/dynamic";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useTranslations } from "next-intl";
-
+"use client"
+import dynamic from "next/dynamic"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import { useTranslations } from "next-intl"
 
 interface Testimonial {
-  title: string;
-  description: string;
-  stars: number;
+  title: string
+  description: string
+  stars: number
 }
 
 // Dynamically import react-slick for SSR compatibility
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
+const Slider = dynamic(() => import("react-slick"), { ssr: false })
 
 export function Testimonials() {
+  const t = useTranslations("vip.Testimonials")
 
-  const t = useTranslations("vip.Testimonials");
-
-
-  const testimonials: Testimonial[] = t.raw('testimonials');
+  const testimonials: Testimonial[] = t.raw("testimonials")
 
   const settings = {
     dots: true,
@@ -33,7 +28,7 @@ export function Testimonials() {
     centerPadding: "0",
     responsive: [
       {
-        breakpoint: 1024, // Tablet
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -41,7 +36,7 @@ export function Testimonials() {
         },
       },
       {
-        breakpoint: 768, // Mobile
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -49,14 +44,12 @@ export function Testimonials() {
         },
       },
     ],
-  };
+  }
 
   return (
     <section className="bg-[#0b2134] py-16">
-      <div className="max-w-[1400px] mx-auto px-6 text-center">
-        <h2 className="text-yellow-500 text-lg font-semibold mb-8">
-          {t("title")}
-        </h2>
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 text-center">
+        <h2 className="text-yellow-500 text-lg font-semibold mb-8">{t("title")}</h2>
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div
@@ -83,7 +76,7 @@ export function Testimonials() {
         </Slider>
       </div>
     </section>
-  );
+  )
 }
 
 // Default export of Testimonials
@@ -92,5 +85,6 @@ export default function App() {
     <div>
       <Testimonials />
     </div>
-  );
+  )
 }
+
