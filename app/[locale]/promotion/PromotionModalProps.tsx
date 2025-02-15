@@ -1,53 +1,50 @@
-import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
-import { motion } from "framer-motion";
-import Countdown from "./Countdown";
-import { useTranslations } from "next-intl";
+"use client"
+
+import type React from "react"
+import { useEffect } from "react"
+import { createPortal } from "react-dom"
+import { motion } from "framer-motion"
+import Countdown from "./Countdown"
+import { useTranslations } from "next-intl"
 
 interface PromotionModalProps {
-    isOpen: boolean;
-    onClose: () => void;
+    isOpen: boolean
+    onClose: () => void
 }
 
 const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
-    const t = useTranslations("promotion.promotionModal");
+    const t = useTranslations("promotion.promotionModal")
 
-    const eventDetailsheaders = t.raw("eventDetails.table.headers");
-    const eventDetailsrows = t.raw("eventDetails.table.rows");
+    const eventDetailsheaders = t.raw("eventDetails.table.headers")
+    const eventDetailsrows = t.raw("eventDetails.table.rows")
 
-    const howToApply = t.raw("howToApply.steps");
+    const howToApply = t.raw("howToApply.steps")
 
-    const applicableProvidersheaders = t.raw("applicableProviders.table.headers");
-    const applicableProvidersrows = t.raw("applicableProviders.table.rows");
+    const applicableProvidersheaders = t.raw("applicableProviders.table.headers")
+    const applicableProvidersrows = t.raw("applicableProviders.table.rows")
 
+    const termsAndConditionspoints = t.raw("termsAndConditions.points")
 
-    const termsAndConditionspoints = t.raw("termsAndConditions.points");
+    const promotionDetailsexampleheaders = t.raw("promotionDetails.example.table.headers")
+    const promotionDetailsexamplerows = t.raw("promotionDetails.example.table.rows")
 
+    const additionalTermsPoints = t.raw("additionalTerms.points")
 
-    const promotionDetailsexampleheaders = t.raw("promotionDetails.example.table.headers");
-    const promotionDetailsexamplerows = t.raw("promotionDetails.example.table.rows");
-
-
-    const additionalTermsPoints = t.raw("additionalTerms.points");
-
-    
-    // Prevent page scrolling when modal is open
     useEffect(() => {
         if (isOpen) {
-            document.body.style.overflow = "hidden";
+            document.body.style.overflow = "hidden"
         } else {
-            document.body.style.overflow = "";
+            document.body.style.overflow = ""
         }
 
         return () => {
-            document.body.style.overflow = ""; // Reset overflow when component unmounts
-        };
-    }, [isOpen]);
+            document.body.style.overflow = ""
+        }
+    }, [isOpen])
 
-    // If modal is not open, do not render anything
-    if (!isOpen) return null;
+    if (!isOpen) return null
 
-    return ReactDOM.createPortal(
+    return createPortal(
         <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
             <motion.div
                 className="bg-white rounded-lg shadow-lg max-w-6xl w-full p-6 overflow-y-auto scrollbar-hide max-h-[90vh]"
@@ -86,33 +83,30 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                     {/* Join Button */}
                     <div className="flex items-start justify-between mt-4">
                         <button className="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-400 text-sm font-medium">
-                            {t('joinNow')}
+                            {t("joinNow")}
                         </button>
 
                         {/* Countdown */}
                         <Countdown />
-
                     </div>
 
                     {/* Title */}
-                    <h2 className="text-lg font-bold text-gray-900 mt-4 text-left">{t('title')}</h2>
+                    <h2 className="text-lg font-bold text-gray-900 mt-4 text-left">{t("title")}</h2>
 
                     {/* Promotion Period */}
-                    <p className="text-sm text-gray-600 mt-2 text-left">
-                        {t('promotionPeriod')}
-                    </p>
-
+                    <p className="text-sm text-gray-600 mt-2 text-left">{t("promotionPeriod")}</p>
                 </div>
 
-
                 <div className="mt-6">
-                    <h3 className="text-lg font-bold mb-4">{t('eventDetails.title')}</h3>
+                    <h3 className="text-lg font-bold mb-4">{t("eventDetails.title")}</h3>
                     <div className="overflow-x-auto">
                         <table className="table-auto w-full border-collapse border border-gray-200 text-sm">
                             <thead>
                                 <tr>
                                     {eventDetailsheaders.map((header: string, index: number) => (
-                                        <th key={index} className="bg-orange-500 text-white px-4 py-2">{header}</th>
+                                        <th key={index} className="bg-orange-500 text-white px-4 py-2">
+                                            {header}
+                                        </th>
                                     ))}
                                 </tr>
                             </thead>
@@ -120,7 +114,9 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                                 {eventDetailsrows.map((row: string[], rowIndex: number) => (
                                     <tr key={rowIndex}>
                                         {row.map((cell: string, cellIndex: number) => (
-                                            <td key={cellIndex} className="border px-4 py-2 text-center">{cell}</td>
+                                            <td key={cellIndex} className="border px-4 py-2 text-center">
+                                                {cell}
+                                            </td>
                                         ))}
                                     </tr>
                                 ))}
@@ -128,7 +124,6 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                         </table>
                     </div>
                 </div>
-
 
                 <div className="mt-6">
                     <h3 className="text-lg font-bold mb-4">{t("howToApply.title")}</h3>
@@ -139,9 +134,6 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                     </ol>
                 </div>
 
-
-
-
                 <div className="mt-6">
                     {/* Applicable Providers */}
                     <h3 className="text-lg font-bold mb-4">{t("applicableProviders.title")}</h3>
@@ -149,7 +141,9 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                         <thead>
                             <tr className="bg-orange-500 text-white">
                                 {applicableProvidersheaders.map((header: string, index: number) => (
-                                    <th key={index} className="py-2 px-4 text-left">{header}</th>
+                                    <th key={index} className="py-2 px-4 text-left">
+                                        {header}
+                                    </th>
                                 ))}
                             </tr>
                         </thead>
@@ -157,7 +151,9 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                             {applicableProvidersrows.map((row: string[], rowIndex: number) => (
                                 <tr key={rowIndex}>
                                     {row.map((cell: string, cellIndex: number) => (
-                                        <td key={cellIndex} className="border border-gray-300 py-2 px-4">{cell}</td>
+                                        <td key={cellIndex} className="border border-gray-300 py-2 px-4">
+                                            {cell}
+                                        </td>
                                     ))}
                                 </tr>
                             ))}
@@ -168,14 +164,18 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                     <div className="mt-8">
                         <h3 className="text-lg font-bold mb-4">{t("termsAndConditions.title")}</h3>
                         {termsAndConditionspoints.map((point: string, index: number) => (
-                            <p key={index} className="text-sm text-gray-700 mb-4">{point}</p>
+                            <p key={index} className="text-sm text-gray-700 mb-4">
+                                {point}
+                            </p>
                         ))}
 
                         <table className="w-full border-collapse">
                             <thead>
                                 <tr className="bg-orange-500 text-white">
                                     {promotionDetailsexampleheaders.map((header: string, index: number) => (
-                                        <th key={index} className="py-2 px-4 text-left">{header}</th>
+                                        <th key={index} className="py-2 px-4 text-left">
+                                            {header}
+                                        </th>
                                     ))}
                                 </tr>
                             </thead>
@@ -183,7 +183,9 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                                 {promotionDetailsexamplerows.map((row: string[], rowIndex: number) => (
                                     <tr key={rowIndex}>
                                         {row.map((cell: string, cellIndex: number) => (
-                                            <td key={cellIndex} className="border border-gray-300 py-2 px-4">{cell}</td>
+                                            <td key={cellIndex} className="border border-gray-300 py-2 px-4">
+                                                {cell}
+                                            </td>
                                         ))}
                                     </tr>
                                 ))}
@@ -195,7 +197,6 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                 <div className="mt-8">
                     <h3 className="text-lg font-bold mb-4">{t("additionalTerms.title")}</h3>
                     <ol className="list-decimal list-inside text-sm text-gray-700 space-y-2">
-
                         {additionalTermsPoints.map((term: string, index: number) => (
                             <li key={index} dangerouslySetInnerHTML={{ __html: term }}></li>
                         ))}
@@ -203,8 +204,9 @@ const PromotionModal: React.FC<PromotionModalProps> = ({ isOpen, onClose }) => {
                 </div>
             </motion.div>
         </div>,
-        document.body
-    );
-};
+        document.body,
+    )
+}
 
-export default PromotionModal;
+export default PromotionModal
+

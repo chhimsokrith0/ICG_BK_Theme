@@ -4,16 +4,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useSession } from "next-auth/react";
 interface Game {
     id: number;
     title: string;
     rtp: string;
     image: string;
-    badge?: string; // For badges like "Progressive Multiplier" or "Buy Bonus"
+    badge?: string; 
 }
 
 const TopGames: React.FC = () => {
 
+    const { data: session } = useSession();
     const t = useTranslations("Slots.nextspin.TopGames");
 
     const games: Game[] = t.raw("games");
@@ -53,7 +55,9 @@ const TopGames: React.FC = () => {
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.2 }}
                                 >
-                                    {t("buttons.play")}
+                                    <Link href={session ? `/${game.title}` : "/login"}>
+                                        {t("buttons.play")}
+                                    </Link>
                                 </motion.button>
                                 <motion.div
                                     initial={{ y: 30, opacity: 0 }}
@@ -79,7 +83,7 @@ const TopGames: React.FC = () => {
                             </h3>
                             <div className="mt-2 flex justify-center items-center space-x-2">
                                 <span className="text-xs sm:text-sm font-bold bg-blue-500 text-white px-2 py-1 rounded">
-                                {t("labels.rtp")} {game.rtp}
+                                    {t("labels.rtp")} {game.rtp}
                                 </span>
                                 <button className="text-gray-400 hover:text-black">
                                     <i className="fas fa-info-circle" aria-hidden="true"></i>

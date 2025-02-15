@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useSession } from "next-auth/react";
 
 
 interface GameCardProps {
@@ -14,6 +15,8 @@ interface GameCardProps {
 
 const GameCards = () => {
     const t = useTranslations("fastgames.spb.GameCards");
+
+    const { data: session } = useSession();
 
     const games : GameCardProps[] = t.raw("games");
 
@@ -43,7 +46,7 @@ const GameCards = () => {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.1 }}
                             >
-                                Play
+                                <Link href={ session ? "" : "/login"}>Play</Link>
                             </motion.button>
                             <motion.div
                                 initial={{ y: 20, opacity: 0 }}

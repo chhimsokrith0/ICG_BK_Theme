@@ -2,15 +2,18 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 const GameCards = () => {
+    const { data: session } = useSession();
     const games = [
         {
             id: 1,
             title: "SEA Lottery",
             image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1737090422/7_uenmuf.jpg",
         },
-        
+
     ];
 
     return (
@@ -38,7 +41,9 @@ const GameCards = () => {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.1 }}
                             >
-                                Play
+                                <Link href={session ? "" : "/login"}>
+                                    Play
+                                </Link>
                             </motion.button>
                         </motion.div>
 

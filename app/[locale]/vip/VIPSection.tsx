@@ -36,7 +36,7 @@ const VIPSection = () => {
     }, []);
 
     return (
-        <div className="bg-[#0b2134] p-4 md:p-10">
+        <div id='upgrade' className="bg-[#0b2134] p-4 md:p-10">
             <section
                 className="relative bg-cover bg-center max-w-[1400px] rounded-3xl mx-auto bg-no-repeat py-10 px-6 md:py-16 md:px-12 lg:px-24 flex flex-col lg:flex-row items-center shadow-2xl"
                 style={{

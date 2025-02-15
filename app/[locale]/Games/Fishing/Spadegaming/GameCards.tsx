@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useSession } from "next-auth/react";
 
 interface GameCard {
     id: number;
@@ -12,6 +13,8 @@ interface GameCard {
 }
 
 const GameCards = () => {
+
+    const { data: session } = useSession();
 
     const t = useTranslations("Fishing.Spadegaming.GameCards");
 
@@ -43,7 +46,9 @@ const GameCards = () => {
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.1 }}
                             >
-                                {t("buttons.play")}
+                                <Link href={session ? "" : "/login"}>
+                                    {t("buttons.play")}
+                                </Link>
                             </motion.button>
                             <motion.div
                                 initial={{ y: 20, opacity: 0 }}

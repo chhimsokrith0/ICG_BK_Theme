@@ -15,7 +15,7 @@ const VIPBenefitsTable = () => {
     const rows : Row[] = t.raw("rows");
 
     return (
-        <section className="bg-[#0b2134] py-8 md:py-16 px-4">
+        <section id="benefits" className="bg-[#0b2134] py-8 md:py-16 px-4">
             <div className="max-w-[1400px] mx-auto">
                 <div className="overflow-x-auto">
                     {/* Table Header */}

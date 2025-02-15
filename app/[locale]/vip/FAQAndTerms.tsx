@@ -15,7 +15,7 @@ const FAQAndTerms = () => {
     const terms: string[] = t.raw('TermsAndConditions.content');
 
     return (
-        <section className="bg-[#0b2134] py-8 md:py-16">
+        <section id='faq' className="bg-[#0b2134] py-8 md:py-16">
             <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-8 px-4 md:px-6">
                 {/* FAQ Section */}
                 <div className="w-full lg:w-1/2 bg-[#162b36] p-4 md:p-6 rounded-md text-gray-300 opacity-90">

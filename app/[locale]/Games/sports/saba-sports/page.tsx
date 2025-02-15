@@ -1,6 +1,12 @@
+"use client";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import React from "react";
+import { useSession } from "next-auth/react";
 const SabaSports = () => {
+    const { data: session } = useSession();
     const t = useTranslations("Games.saba-sports");
+    
     return (
         <div className="text-center py-16 px-6  max-w-[1400px] mx-auto">
             {/* Header Section */}
@@ -13,9 +19,15 @@ const SabaSports = () => {
             </p>
 
             <div className="mt-8">
-                <button className="bg-orange-500 text-white font-semibold text-lg py-3 px-10 rounded-full hover:bg-orange-600 transition duration-300">
-                    {t("button.text")}
-                </button>
+                {session ? (
+                    <Link href="" className="bg-orange-500 text-white font-semibold text-lg py-3 px-10 rounded-full hover:bg-orange-600 transition duration-300">
+                        {t("button.text")}
+                    </Link>
+                ) : (
+                    <Link href="/login" className="bg-orange-500 text-white font-semibold text-lg py-3 px-10 rounded-full hover:bg-orange-600 transition duration-300">
+                        {t("button.text")}
+                    </Link>
+                )}
             </div>
 
             {/* Grid Layout */}

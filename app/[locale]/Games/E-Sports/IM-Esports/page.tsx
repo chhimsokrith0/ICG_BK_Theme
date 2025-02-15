@@ -2,10 +2,12 @@
 
 import React from 'react'
 import { useTranslations } from 'next-intl'
-
+import Link from 'next/link'
+import { useSession } from 'next-auth/react'
 
 export default function page() {
     const t = useTranslations("E-sports.IM-Esports");
+    const { data: session } = useSession();
 
 
     return (
@@ -19,9 +21,9 @@ export default function page() {
                     {t("description")}
                 </p>
                 <div className="mt-8">
-                    <button className="bg-orange-500 text-white font-semibold text-xl py-3 px-12 rounded-full hover:bg-orange-600 transition duration-300">
-                    {t("button.text")}
-                    </button>
+                    <Link href={session ? "" : "/login"} className="bg-orange-500 text-white font-semibold text-xl py-3 px-12 rounded-full hover:bg-orange-600 transition duration-300">
+                        {t("button.text")}
+                    </Link>
                 </div>
             </div>
             <div className="relative bg-[#1A1B41] max-w-[1400px] mx-auto">

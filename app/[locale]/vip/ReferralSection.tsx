@@ -40,6 +40,7 @@ const ReferralSection = () => {
 
     return (
         <section
+            id='referral'
             className="bg-[#0b2134] py-16"
             style={{
                 backgroundImage: `url('${bgImage}')`,

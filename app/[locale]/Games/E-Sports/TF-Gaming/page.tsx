@@ -2,9 +2,11 @@
 
 import React from "react";
 import { useTranslations } from "next-intl";
-
+import Link from "next/link";
+import { useSession } from "next-auth/react";
 export default function page() {
     const t = useTranslations("E-sports.TF-Gaming");
+    const { data: session } = useSession();
 
     const FeaturesList = t.raw("features");
     const features = FeaturesList.map((features: any) => ({
@@ -25,9 +27,9 @@ export default function page() {
                     {t("description")}
                 </p>
                 <div className="mt-8">
-                    <button className="bg-orange-500 text-white font-semibold text-xl py-3 px-12 rounded-full hover:bg-orange-600 transition duration-300">
+                    <Link href={session ? "" : "/login"} className="bg-orange-500 text-white font-semibold text-xl py-3 px-12 rounded-full hover:bg-orange-600 transition duration-300">
                         {t("button.text")}
-                    </button>
+                    </Link>
                 </div>
             </div>
 

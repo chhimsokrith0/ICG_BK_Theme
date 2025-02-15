@@ -2,8 +2,11 @@
 
 import React from "react";
 import { useTranslations } from "next-intl";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
 
 export default function BK8Sports() {
+  const { data: session } = useSession();
   const t = useTranslations("Games.sports.BK8Sports");
   return (
     <div className="bg-white text-center py-16 px-6">
@@ -18,9 +21,15 @@ export default function BK8Sports() {
 
       {/* Button Section */}
       <div className="mt-8">
-        <button className="bg-orange-500 text-white font-semibold text-lg py-3 px-10 rounded-full hover:bg-orange-600 transition duration-300">
-          {t("button.text")}
-        </button>
+        {session ? (
+          <Link href="" className="bg-orange-500 text-white font-semibold text-lg py-3 px-10 rounded-full hover:bg-orange-600 transition duration-300">
+            {t("button.text")}
+          </Link>
+        ) : (
+          <Link href="/login" className="bg-orange-500 text-white font-semibold text-lg py-3 px-10 rounded-full hover:bg-orange-600 transition duration-300">
+            {t("button.text")}
+          </Link>
+        )}
       </div>
 
       {/* Image Section */}

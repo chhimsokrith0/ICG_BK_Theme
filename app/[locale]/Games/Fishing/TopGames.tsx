@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useSession } from "next-auth/react";
 
 interface Game {
     id: number;
@@ -14,6 +15,8 @@ interface Game {
 }
 
 const TopGames: React.FC = () => {
+
+    const { data: session } = useSession();
 
     const t = useTranslations("Fishing.TopGames");
 
@@ -42,9 +45,9 @@ const TopGames: React.FC = () => {
                                 initial={{ opacity: 0 }}
                                 whileHover={{ opacity: 1 }}
                             >
-                                <button className="bg-orange-500 text-white font-bold py-2 px-4 rounded-full mb-2">
+                                <Link href={session ? "" : "/login"} className="bg-orange-500 text-white font-bold py-2 px-4 rounded-full mb-2">
                                     {t("buttons.play")}
-                                </button>
+                                </Link>
                                 {/* Demo Button with Link */}
                                 <Link
                                     href={game.demoLink}
